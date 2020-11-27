@@ -1,0 +1,2 @@
+shift
+set shftchk=ok

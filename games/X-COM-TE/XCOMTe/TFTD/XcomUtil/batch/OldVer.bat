@@ -1,0 +1,22 @@
+REM Remove files from older versions of XcomUtil
+if exist sdump.exe del sdump.exe
+if exist xcloader.exe del xcloader.exe
+if exist XcomUtil.exe del XcomUtil.exe
+if exist XcomUtRt.exe del XcomUtRt.exe
+if exist patchxc1.dll del patchxc1.dll
+if exist patchxc2.dll del patchxc2.dll
+if exist XcomUtil.cfg del XcomUtil.cfg
+if exist XcomUtTE.jar del XcomUtTE.jar
+if exist Avenger.map  del Avenger.map
+if exist Barracud.map del Barracud.map
+if exist Fires.map    del Fires.map
+if exist Hammer.map   del Hammer.map
+if exist Interc.map   del Interc.map
+if exist Manta.map    del Manta.map
+if exist XcomUtil.rmx del XcomUtil.rmx
+if exist XcomUtil.rmt del XcomUtil.rmt
+if exist XcomUtil.rnx del XcomUtil.rnx
+if exist XcomUtil.rnt del XcomUtil.rnt
+if exist errlvl.bat   del errlvl.bat
+if exist RunXcomW.bat del RunXcomW.bat
+if exist xdump.bat    del xdump.bat

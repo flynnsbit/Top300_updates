@@ -1,0 +1,3 @@
+echo off
+sciduv
+cd ..

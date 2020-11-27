@@ -1,0 +1,2 @@
+cd CosmosCo
+call run

@@ -1,0 +1,4 @@
+ECHO OFF
+
+CD GOB1
+GOB

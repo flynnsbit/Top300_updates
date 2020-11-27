@@ -1,0 +1,2 @@
+cd Troddler
+call run

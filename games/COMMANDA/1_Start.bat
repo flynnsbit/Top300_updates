@@ -1,0 +1,2 @@
+cd comcon
+call run

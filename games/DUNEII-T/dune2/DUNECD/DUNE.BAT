@@ -1,0 +1,4 @@
+@echo off
+REM *** DUNE-CD launcher V3.6 ***
+C:
+DNCDPRG AMR ADP220 SBP2227 EMS 386 SAF WRIC:\DUNECD\

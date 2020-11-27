@@ -1,0 +1,2 @@
+cd Stunts
+call run

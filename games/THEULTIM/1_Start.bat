@@ -1,0 +1,2 @@
+cd UltDoom
+call run

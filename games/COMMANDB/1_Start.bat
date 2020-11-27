@@ -1,0 +1,2 @@
+cd comconra
+call run
