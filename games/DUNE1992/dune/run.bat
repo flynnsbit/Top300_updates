@@ -53,7 +53,7 @@ goto quit
 CONFIG -set "mididevice=mt32"
 d:
 cls
-DNCDPRG AMR MID330 SBP2227 EMS 386 SAF WRIE:\GAMES\dune\DUNECD\
+DNCDPRG MID330 SBP2227 EMS 386 SAF WRIE:\GAMES\dune\DUNECD\
 goto quit
 
 :CDGOLD
@@ -61,7 +61,7 @@ CONFIG -set "mididevice=default"
 CONFIG -set "oplmode=opl3gold"
 d:
 cls
-DNCDPRG AMR ADG388 SBP2227 EMS 386 SAF WRIE:\GAMES\dune\DUNECD\
+DNCDPRG ADG388 SBP2227 EMS 386 SAF WRIE:\GAMES\dune\DUNECD\
 goto quit
 
 :quit
