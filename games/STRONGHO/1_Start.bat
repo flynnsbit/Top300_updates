@@ -1,2 +1,0 @@
-cd Strongho
-call run

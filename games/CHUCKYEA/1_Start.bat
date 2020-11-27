@@ -1,2 +1,0 @@
-cd ChukYAC
-YEAGER

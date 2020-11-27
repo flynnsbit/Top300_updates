@@ -1,2 +1,0 @@
-cd DOOMII
-call run

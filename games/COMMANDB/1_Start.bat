@@ -1,2 +1,0 @@
-cd comconra
-call run

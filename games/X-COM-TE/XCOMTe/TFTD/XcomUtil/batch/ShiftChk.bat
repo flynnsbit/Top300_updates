@@ -1,2 +1,0 @@
-shift
-set shftchk=ok

@@ -1,2 +1,0 @@
-cd Tyrian
-call run

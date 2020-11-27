@@ -1,2 +1,0 @@
-cd PGATourG
-call run

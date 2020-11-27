@@ -1,2 +1,0 @@
-cd CosmosCo
-call run

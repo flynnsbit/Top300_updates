@@ -1,1 +1,0 @@
-loadpats -iicegus.ini

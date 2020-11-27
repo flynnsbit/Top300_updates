@@ -1,2 +1,0 @@
-cd stjudgec
-call run

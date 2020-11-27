@@ -1,2 +1,0 @@
-cd Troddler
-call run

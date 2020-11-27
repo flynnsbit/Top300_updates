@@ -1,2 +1,0 @@
-cd UltDoom
-call run

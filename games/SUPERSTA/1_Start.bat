@@ -1,2 +1,0 @@
-cd SuperSW
-call run

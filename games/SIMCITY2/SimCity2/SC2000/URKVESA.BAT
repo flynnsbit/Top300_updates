@@ -1,3 +1,0 @@
-.\UNIVBE
-call .\SCURK.COM
-.\UNIVBE -U

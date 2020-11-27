@@ -1,2 +1,0 @@
-cd BRcdoom
-call start

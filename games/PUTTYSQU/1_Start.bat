@@ -1,2 +1,0 @@
-cd puttyS
-call PUTSB

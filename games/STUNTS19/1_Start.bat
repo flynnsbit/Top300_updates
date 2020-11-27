@@ -1,2 +1,0 @@
-cd Stunts
-call run

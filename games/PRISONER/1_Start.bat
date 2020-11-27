@@ -1,2 +1,0 @@
-cd pice
-call run

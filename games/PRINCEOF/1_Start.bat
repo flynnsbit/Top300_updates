@@ -1,2 +1,0 @@
-cd Ppersia
-call run

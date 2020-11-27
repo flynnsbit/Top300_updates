@@ -1,2 +1,0 @@
-cd \DUKE3D
-DUKE3D
