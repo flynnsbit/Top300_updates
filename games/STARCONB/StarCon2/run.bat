@@ -15,14 +15,14 @@ if errorlevel = 1 goto epi1
 :epi1
 cls
 cd starcon2
-STARCON2
+STARCON2 /g:BIOS
 cd ..
 goto menu
 
 :epi2
 cls
 cd starcon2
-MELEE.COM
+MELEE.COM /g:BIOS
 cd ..
 goto menu
 
