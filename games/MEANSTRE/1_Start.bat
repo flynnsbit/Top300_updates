@@ -1,2 +1,0 @@
-cd mstreets
-ms.exe

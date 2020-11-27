@@ -1,1 +1,0 @@
-atet setup

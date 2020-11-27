@@ -1,2 +1,0 @@
-cd IndiJFoA
-INDY4A

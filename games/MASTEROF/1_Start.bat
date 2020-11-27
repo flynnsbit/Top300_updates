@@ -1,2 +1,0 @@
-cd mastori
-call run

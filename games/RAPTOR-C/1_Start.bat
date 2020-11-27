@@ -1,2 +1,0 @@
-cd RaptorCa
-call run

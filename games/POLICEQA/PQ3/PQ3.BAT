@@ -1,2 +1,0 @@
-scidhuv resource.cfg
-cd..

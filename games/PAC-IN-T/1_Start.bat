@@ -1,2 +1,0 @@
-cd Pacin-T
-pac

@@ -1,2 +1,0 @@
-cd bisle
-call run

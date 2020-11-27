@@ -1,2 +1,0 @@
-cd Transpor
-call run

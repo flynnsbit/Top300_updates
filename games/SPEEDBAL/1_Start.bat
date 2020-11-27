@@ -1,2 +1,0 @@
-cd Speedbl
-ega

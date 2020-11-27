@@ -1,2 +1,0 @@
-cd SpectreV
-call run

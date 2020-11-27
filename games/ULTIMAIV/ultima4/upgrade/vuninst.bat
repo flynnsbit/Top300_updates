@@ -1,2 +1,0 @@
-call switch.bat
-exit

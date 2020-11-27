@@ -1,2 +1,0 @@
-cd JillJung
-call run

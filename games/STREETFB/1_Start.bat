@@ -1,3 +1,0 @@
-cd SF2WW
-cd SF2EN
-SF2.BAT

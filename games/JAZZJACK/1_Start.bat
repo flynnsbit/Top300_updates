@@ -1,2 +1,0 @@
-cd JazzJack
-call run
