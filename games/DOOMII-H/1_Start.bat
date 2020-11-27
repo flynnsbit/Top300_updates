@@ -1,0 +1,2 @@
+cd DOOMII
+call run

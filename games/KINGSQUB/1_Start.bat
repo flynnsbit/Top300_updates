@@ -1,0 +1,3 @@
+cd KQ22002
+cd KQ12002
+kq2vga

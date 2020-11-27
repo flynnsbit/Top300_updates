@@ -1,0 +1,7 @@
+@echo off
+LOADHIGH DRIVERS\SB16
+
+DIR D: > nul
+D:
+ cd \SIMON
+CALL SIMON

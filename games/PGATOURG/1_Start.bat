@@ -1,0 +1,2 @@
+cd PGATourG
+call run

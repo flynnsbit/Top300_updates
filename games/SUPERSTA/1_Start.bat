@@ -1,0 +1,2 @@
+cd SuperSW
+call run

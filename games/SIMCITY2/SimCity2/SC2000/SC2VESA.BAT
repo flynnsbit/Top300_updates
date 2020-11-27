@@ -1,0 +1,3 @@
+.\UNIVBE
+call SC2000
+.\UNIVBE -U

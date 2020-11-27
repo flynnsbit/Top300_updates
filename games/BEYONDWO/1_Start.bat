@@ -1,0 +1,3 @@
+cd BeyWolf
+cd BWOLF2SE
+WOLF3D

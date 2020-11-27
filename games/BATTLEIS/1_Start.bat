@@ -1,0 +1,2 @@
+cd bisle
+call run

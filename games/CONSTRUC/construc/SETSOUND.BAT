@@ -1,0 +1,3 @@
+@cd music
+@sndsetup
+@cd ..

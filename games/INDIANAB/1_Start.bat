@@ -1,0 +1,2 @@
+cd IndyCru
+indy256

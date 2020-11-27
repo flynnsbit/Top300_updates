@@ -1,0 +1,4 @@
+@echo off 
+
+gcd -nE:\GAMES\REDBARON\REDBARON\SIERRA\REDBARON 
+ 

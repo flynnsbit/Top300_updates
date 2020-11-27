@@ -1,0 +1,2 @@
+cd JazzJack
+call run
