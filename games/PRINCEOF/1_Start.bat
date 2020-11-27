@@ -1,0 +1,2 @@
+cd Ppersia
+call run

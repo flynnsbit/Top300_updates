@@ -1,0 +1,2 @@
+cd DangDavH
+call run

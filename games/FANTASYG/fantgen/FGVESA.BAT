@@ -1,0 +1,3 @@
+cd exe
+barena
+cd..

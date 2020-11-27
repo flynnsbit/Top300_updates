@@ -1,0 +1,2 @@
+cd CrystalC
+call run

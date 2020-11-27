@@ -1,0 +1,2 @@
+cd DOOM
+call run

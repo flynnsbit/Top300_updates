@@ -1,0 +1,2 @@
+cd SMCivili
+call run

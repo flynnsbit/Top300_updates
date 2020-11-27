@@ -1,0 +1,2 @@
+cd Tyrian
+call run

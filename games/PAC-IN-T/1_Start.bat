@@ -1,0 +1,2 @@
+cd Pacin-T
+pac
