@@ -21,7 +21,7 @@ CONFIG -set "mididevice=default"
 del descent.cfg
 copy .\sb16\*.*
 cls
-@descent
+ds32a descentr
 goto quit
 
 :SB16hi
@@ -29,7 +29,7 @@ CONFIG -set "mididevice=default"
 del descent.cfg
 copy .\sb16\*.*
 cls
-@descent -640x480
+dos32a descentr -640x480
 goto quit
 
 :SC55
@@ -37,7 +37,7 @@ CONFIG -set "mididevice=fluidsynth"
 del descent.cfg
 copy .\sc55\*.*
 cls
-@descent
+dos32a descentr
 goto quit
 
 :SC55hi
@@ -45,7 +45,7 @@ CONFIG -set "mididevice=fluidsynth"
 del descent.cfg
 copy .\sc55\*.*
 cls
-@descent -640x480
+dos32a descentr -640x480
 goto quit
 
 :quit
