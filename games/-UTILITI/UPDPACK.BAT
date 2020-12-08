@@ -1,4 +1,4 @@
-@echo off
+echo off
 :start
 cls
 echo Ao486 Top 300 Pack Update Script v.01
