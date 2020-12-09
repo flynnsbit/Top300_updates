@@ -1,6 +1,8 @@
 # MiSTer eXoDOS Top_300_updates
 AO486 Update scripts to fix games in the flynnsbit eXoDOS V5.0 Top 300 Pack
+
 Initial pack generated using ExoDOSConverter MiSTer option:  https://github.com/Voljega/ExoDOSConverter
+
 Future updates to the pack are contained in the flynnsbit repo: https://github.com/flynnsbit/Top300_updates
 
 v.4 Changes to update script to allow for updates at root level of VHD.
