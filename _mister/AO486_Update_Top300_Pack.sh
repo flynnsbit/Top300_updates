@@ -82,7 +82,7 @@ pause
 # Look for disk image in user's games directory
 find_disk_image
 echo "Disk image found at \"${disk_image}\"."
-
+echo ""
 # Download latest release zip
 get_latest_release "${github_repo}"
 
@@ -90,13 +90,13 @@ get_latest_release "${github_repo}"
 # Just mount partition 2 in the disk image
 mkdir "${mount_dir}"
 mount_image "${disk_image}" 2 "${mount_dir}"
-
+echo ""
 # Extract update, overwriting existing files
 unzip -u -o -d "${mount_dir}/games" /tmp/update.zip
-
+echo ""
 # Clean up
 rm /tmp/update.zip
 unmount_image "${mount_dir}"
 rmdir "${mount_dir}"
-
+echo ""
 echo "Successfully updated to ${tag_name}!"
