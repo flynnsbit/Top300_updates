@@ -17,6 +17,19 @@ github_repo="flynnsbit/Top300_updates"
 disk_image="IDE 0-1 Top 300 DOS Games.vhd"
 mount_dir=/tmp/dos_games
 
+# Ansi color code variables
+red="\e[0;91m"
+blue="\e[0;94m"
+expand_bg="\e[K"
+blue_bg="\e[0;104m${expand_bg}"
+red_bg="\e[0;101m${expand_bg}"
+green_bg="\e[0;102m${expand_bg}"
+green="\e[0;92m"
+white="\e[0;97m"
+bold="\e[1m"
+uline="\e[4m"
+reset="\e[0m"
+
 # Arg $1: GitHub repo name, e.g. "username/repo"
 get_latest_release()
 {
@@ -28,7 +41,11 @@ get_latest_release()
 	curl -k -L "${download_url}" -o /tmp/update.zip
 }
 function pause(){
- echo "This script updates the  (flynnsbit AO486 - Top 300 DOS Games pack) VHD to fix games and add features that were not included in the original version.  This script directly mounts and modifies the VHD in one step. Please backup any changes you have made to the pack before running this update."
+ echo -en "\ec"
+ echo -e "${red_bg}${reset}"
+ echo -e "This script updates the ${green}(flynnsbit AO486 - Top 300 DOS Games pack)${reset} VHD to fix games and add features that were not included in the original version.  This script directly mounts and modifies the VHD in one step." 
+ echo -e "${red}Please backup any changes you have made to the pack before running this update.${reset}"
+ echo -e ""
  read -s -n 1 -p "Press any key to continue . . ."
  echo ""
 }
