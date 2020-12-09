@@ -81,6 +81,7 @@ pause
 
 # Look for disk image in user's games directory
 find_disk_image
+echo ""
 echo "Disk image found at \"${disk_image}\"."
 echo ""
 # Download latest release zip
