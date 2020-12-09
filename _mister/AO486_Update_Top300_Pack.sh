@@ -99,7 +99,7 @@ pause
 # Look for disk image in user's games directory
 find_disk_image
 echo ""
-echo "Disk image found at \"${disk_image}\"."
+echo -e "${white}Disk image found at \"${disk_image}\".${reset}"
 echo ""
 # Download latest release zip
 get_latest_release "${github_repo}"
@@ -117,4 +117,4 @@ rm /tmp/update.zip
 unmount_image "${mount_dir}"
 rmdir "${mount_dir}"
 echo ""
-echo "Successfully updated to ${tag_name}!"
+echo -e "${green}Successfully updated to ${tag_name}!${reset}"
