@@ -10,7 +10,7 @@ echo Press 5 to Quit
 echo.
 echo The demo contains a few exclusive levels
 echo.
-choice /C:12345 /N Please Choose:
+jchoice /C:12345 /N Please Choose:
 
 if errorlevel = 5 goto quit
 if errorlevel = 4 goto demo

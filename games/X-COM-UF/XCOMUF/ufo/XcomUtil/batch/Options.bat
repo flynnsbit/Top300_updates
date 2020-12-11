@@ -105,7 +105,7 @@ if errorlevel 36 goto skpCodes
 :incCodes
 call XcomUtil\Batch\display.bat ForsPat 99
 :skpCodes
-if NOT %Skip%. == Y. jchoice
+if NOT %Skip%. == Y. @jchoice
 :noPre
 
 REM ###################################

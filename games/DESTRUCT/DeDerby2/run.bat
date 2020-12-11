@@ -5,7 +5,7 @@ echo Press 1 to run Destruction Derby 2
 echo Press 2 to run Hi-Res Destruction Derby 2
 echo Press 3 to Quit
 echo.
-choice /c:123 /n Please Choose:
+jchoice /C:123 /n Please Choose:
 
 if errorlevel = 3 goto quit
 if errorlevel = 2 goto hires

@@ -1,5 +1,5 @@
 imgset ide10 "/cd/dune2/dune2-t.cue"
 
-jchoice
+@jchoice
 cd dune2
 call run

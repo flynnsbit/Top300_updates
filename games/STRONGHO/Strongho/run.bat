@@ -9,7 +9,7 @@ echo.
 echo The game launches in a demo mode. Press ESC to
 echo exit the demo and go to the actual menu.
 echo.
-choice /C:123 /N Please Choose:
+jchoice /C:123 /N Please Choose:
 
 if errorlevel = 3 goto quit
 if errorlevel = 2 goto MT32

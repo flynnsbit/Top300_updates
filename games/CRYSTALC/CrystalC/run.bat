@@ -7,7 +7,7 @@ echo Press 2 for Crystal Caves Vol 2: Slugging it Out
 echo Press 3 for Crystal Caves Vol 3: Mylo Versus the Supernova
 echo Press 4 to Quit
 echo.
-choice /c:1234 /N Please Choose
+jchoice /C:1234 /N Please Choose
 
 if errorlevel = 4 goto quit
 if errorlevel = 3 goto cc3

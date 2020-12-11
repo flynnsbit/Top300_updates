@@ -10,7 +10,7 @@ echo Press 5 to Quit
 echo.
 echo Rune fonts replace latin characters with runes.
 echo.
-choice /C:12345 /N Please Choose:
+jchoice /C:12345 /N Please Choose:
 
 if errorlevel = 5 goto quit
 if errorlevel = 4 goto VGAR
@@ -172,7 +172,7 @@ echo.
 echo The second is an alternative arrangement that uses "traditional
 echo instruments", according to the creator.
 echo.
-choice /C:1234 /N Please Choose:
+jchoice /C:1234 /N Please Choose:
 
 if errorlevel = 4 goto quit
 if errorlevel = 3 goto mup2
@@ -209,7 +209,7 @@ echo Press 2 for MT32
 echo Press 3 for Sound Canvas
 echo Press 4 to Quit
 echo.
-choice /C:1234 /N Please Choose:
+jchoice /C:1234 /N Please Choose:
 
 if errorlevel = 4 goto quit
 if errorlevel = 3 goto SC55

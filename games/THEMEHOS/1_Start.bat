@@ -1,5 +1,5 @@
 imgset ide10 "/cd/ThemHosp/themeho.cue"
 
-jchoice
+@jchoice
 cd ThemHosp
 call run

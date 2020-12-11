@@ -1,5 +1,5 @@
 imgset ide10 "/cd/HexenBey/hexen.cue"
 
-jchoice
+@jchoice
 cd HexenBey
 call run

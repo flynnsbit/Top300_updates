@@ -6,7 +6,7 @@ echo Press 1 for Strife: Quest for the Sigil w/ SoundBlaster
 echo Press 2 for Strife: Quest for the Sigil w/ Sound Canvas
 echo Press 3 to Quit
 echo.
-choice /C:123 /N Please Choose:
+jchoice /C:123 /N Please Choose:
 
 if errorlevel = 3 goto quit
 if errorlevel = 2 goto SC55

@@ -11,7 +11,7 @@ echo This game has a High res mode that can be activitaed by
 echo pressing R when in game. This will require increased cycles
 echo however, so follow this by pressing Ctrl-f12 one time.
 echo.
-choice /C:123 /N Please Choose:
+jchoice /C:123 /N Please Choose:
 
 if errorlevel = 3 goto quit
 if errorlevel = 2 goto SC55

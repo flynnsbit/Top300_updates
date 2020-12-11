@@ -3,7 +3,7 @@ REM Multi-Disk install, part 2.
 :try2
 echo Please insert "Disk 2" in Drive
 cd
-jchoice
+@jchoice
 echo 
 if exist 86.lfl goto docopy2
 goto try2
@@ -16,7 +16,7 @@ if not exist %1\LOOM\86.lfl goto InstallError
 :try3
 echo Please insert "Disk 3" in Drive
 cd
-jchoice
+@jchoice
 echo 
 if exist 66.lfl goto docopy3
 goto try3

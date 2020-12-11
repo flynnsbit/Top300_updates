@@ -9,7 +9,7 @@ echo Press 4 to Erase the Current Character So You Can Create a New One
 echo Press 5 to Transfer a Character from a Previous Game
 echo Press 6 to Quit
 echo.
-choice /C:123456 /N Please Choose:
+jchoice /C:123456 /N Please Choose:
 
 if errorlevel = 6 goto quit
 if errorlevel = 5 goto TRAN
@@ -60,7 +60,7 @@ cls
 echo.
 echo Character Cleared
 echo.
-jchoice
+@jchoice
 goto menu
 
 :tran
@@ -78,7 +78,7 @@ echo Press 3 to Transfer from Ultima V
 echo Press 4 to Transfer from Ultima V Upgrade
 echo Press 5 to Return to the Previous Menu
 echo.
-choice /C:12345 /N Please Choose:
+jchoice /C:12345 /N Please Choose:
 
 if errorlevel = 5 goto menu
 if errorlevel = 4 goto 5upg

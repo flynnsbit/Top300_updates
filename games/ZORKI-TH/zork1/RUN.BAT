@@ -10,7 +10,7 @@ echo.
 echo The Solid Gold re-release included a built in hint
 echo system. Typing HINT will activiate it.
 echo.
-choice /C:1234 /N Please Choose:
+jchoice /C:1234 /N Please Choose:
 
 if errorlevel = 4 goto quit
 if errorlevel = 3 goto GOLD

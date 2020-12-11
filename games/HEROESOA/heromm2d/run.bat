@@ -7,7 +7,7 @@ echo Press 2 for The Price of Loyalty (Expansion Pack)
 echo Press 3 to play Network Multiplayer
 echo Press 4 to Quit
 echo.
-choice /C:1234 /N Please Choose:
+jchoice /C:1234 /N Please Choose:
 
 if errorlevel = 4 goto quit
 if errorlevel = 3 goto network
@@ -24,7 +24,7 @@ echo Press 3 for Heroes of Might and Magic II w/ Sound Canvas
 echo Press 4 for Heroes of Might and Magic II w/ CD Audio
 echo Press 5 to Quit
 echo.
-choice /C:12345 /N Please Choose:
+jchoice /C:12345 /N Please Choose:
 
 if errorlevel = 5 goto quit
 if errorlevel = 4 goto HOMMCDA
@@ -90,7 +90,7 @@ echo Press 3 for The Price of Loyalty w/ Sound Canvas
 echo Press 4 for The Price of Loyalty w/ CD Audio
 echo Press 5 to Quit
 echo.
-choice /C:12345 /N Please Choose:
+jchoice /C:12345 /N Please Choose:
 
 if errorlevel = 5 goto quit
 if errorlevel = 4 goto POLCDA

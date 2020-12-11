@@ -1,5 +1,5 @@
 imgset ide10 "/cd/MK/mk1&2.cue"
 
-jchoice
+@jchoice
 cd MK
 call run

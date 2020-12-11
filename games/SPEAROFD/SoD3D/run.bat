@@ -7,7 +7,7 @@ echo Press 2 for Mission 2: Return to Danger
 echo Press 3 for Mission 3: Ultimate Challenge
 echo Press 4 to Quit
 echo.
-choice /C:1234 /N Please Choose:
+jchoice /C:1234 /N Please Choose:
 
 if errorlevel = 4 goto quit
 if errorlevel = 3 goto epi3

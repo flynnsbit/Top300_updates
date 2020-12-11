@@ -18,7 +18,7 @@ echo.
 echo To play the hidden campaign, choose Counterstrike and hold
 echo SHIFT while clicking on the speaker on the main menu.
 echo.
-choice /C:123456 /N Please Choose:
+jchoice /C:123456 /N Please Choose:
 
 if errorlevel = 6 goto quit
 if errorlevel = 5 goto network
@@ -31,7 +31,7 @@ if errorlevel = 1 goto RAA
 imgset ide10 "/cd/comconra/redal1.iso"
 
 
-jchoice
+@jchoice
 cd redalert
 cls
 ra
@@ -39,7 +39,7 @@ goto quit
 
 :RAS
 imgset ide10 "/cd/comconra/redal2.iso"
-jchoice
+@jchoice
 cd redalert
 cls
 ra
@@ -47,7 +47,7 @@ goto quit
 
 :AM
 imgset ide10 "/cd/comconra/redal4.cue"
-jchoice
+@jchoice
 cd redalert
 cls
 ra
@@ -55,7 +55,7 @@ goto quit
 
 :CS
 imgset ide10 "/cd/comconra/redal3.cue"
-jchoice
+@jchoice
 cd redalert
 cls
 ra
@@ -63,7 +63,7 @@ goto quit
 
 :network
 imgset ide10 "/cd/comconra/redal4.cue"
-jchoice
+@jchoice
 cls
 network
 

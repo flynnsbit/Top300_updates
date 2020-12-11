@@ -1,5 +1,5 @@
 imgset ide10 "/cd/heromm/heroeso.iso"
 
-jchoice
+@jchoice
 cd heromm
 call run

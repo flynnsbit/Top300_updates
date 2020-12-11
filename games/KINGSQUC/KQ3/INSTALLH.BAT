@@ -9,7 +9,7 @@ rem	----	Wait for a keystroke before starting.
 echo off 
 echo Hard disk installation for 
 echo King's Quest III 
-jchoice 
+@jchoice 
 rem	----	Create or change to the appropriate directory on the hard disk. 
 makepath %1\sierra 
 if errorlevel 1 goto CantMake 
@@ -28,7 +28,7 @@ echo ÿ
 echo Unable to create the directory 
 echo 	%1\sierra\kq3 
 echo Installation cancelled. 
-jchoice
+@jchoice
 goto Exit 
 rem	----	No parameter or not on the proper drive -- tell user how 
 rem	----	to use installation program. 

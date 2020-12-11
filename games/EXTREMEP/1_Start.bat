@@ -1,6 +1,6 @@
 imgset ide10 "/cd/ExtremeP/extreme.cue"
 
-jchoice
+@jchoice
 cd ExtremeP
 cd Extreme
 extreme

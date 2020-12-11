@@ -15,7 +15,7 @@ echo *The hacked version takes assets from both the CD and Floppy and
 echo. combines them to create an "ultimate" version. 
 echo. It also fixes many bugs.
 echo.
-choice /C:12345678 /N Please Choose:
+jchoice /C:12345678 /N Please Choose:
 
 if errorlevel = 8 goto quit
 if errorlevel = 7 goto HACK

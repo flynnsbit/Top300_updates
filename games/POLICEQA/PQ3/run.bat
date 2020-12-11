@@ -9,7 +9,7 @@ echo Press 4 for Police Quest 3: The Kindred EGA w/ SoundBlaster
 echo Press 5 for Police Quest 3: The Kindred EGA w/ MT32
 echo Press 6 to Quit
 echo.
-choice /C:123456 /N Please Choose:
+jchoice /C:123456 /N Please Choose:
 
 if errorlevel = 6 goto quit
 if errorlevel = 5 goto EGAMT32

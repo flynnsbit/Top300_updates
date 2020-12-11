@@ -8,7 +8,7 @@ echo.
 echo Note: To host a game you need port 5000 forwarded
 echo to the host machine. 
 echo.
-choice /C:123 /N Please Choose:
+jchoice /C:123 /N Please Choose:
 
 if errorlevel = 3 goto quit
 if errorlevel = 2 goto join
@@ -37,13 +37,13 @@ echo Select Direct Connect
 echo Once connected you may use the other person Lat/Long to find them
 echo or send message to them while flying.
 echo.
-jchoice
+@jchoice
 cd FLTSIM5
 call FS
 echo.
 echo Thanks for playing.
 echo.
-jchoice
+@jchoice
 exit
 
 :join
@@ -67,12 +67,12 @@ echo Select Direct Connect
 echo Once connected you may use the other person Lat/Long to find them
 echo or send message to them while flying.
 echo.
-jchoice
+@jchoice
 cd FLTSIM5
 call FS
 echo.
 echo Thanks for playing.
 echo.
-jchoice
+@jchoice
 :later
 exit

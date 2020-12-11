@@ -7,7 +7,7 @@ echo Press 2 for NASCAR Racing 2 3DFX
 rem echo Press 2 for Grand National Series Pack 3DFX
 echo Press 3 to Quit
 echo.
-choice /C:123 /N Please Choose:
+jchoice /C:123 /N Please Choose:
 
 if errorlevel = 3 goto quit
 if errorlevel = 2 goto gns

@@ -19,7 +19,7 @@ if exist vol.2 goto :Vol2Here
 echo Please put disk 2 of 
 echo King's Quest III 
 echo in the drive. 
-jchoice 
+@jchoice 
 if not exist vol.2 goto :GetVol2 
 :Vol2Here 
 copy vol.2 %1 
@@ -29,7 +29,7 @@ if exist vol.3 goto :Vol3Here
 echo Please put disk 3 of 
 echo King's Quest III 
 echo in the drive. 
-jchoice 
+@jchoice 
 if not exist vol.3 goto :GetVol3 
 :Vol3Here 
 copy vol.3 %1 

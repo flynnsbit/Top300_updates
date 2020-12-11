@@ -1,5 +1,5 @@
 imgset ide10 "/cd/DeathRal/deathra.cue"
 
-jchoice
+@jchoice
 cd DeathRal
 call run

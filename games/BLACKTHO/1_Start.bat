@@ -1,6 +1,6 @@
 imgset ide10 "/cd/Blacktho/blackth.iso"
 
-jchoice
+@jchoice
 cd Blacktho
 cd bthorne
 call run

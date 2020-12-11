@@ -9,7 +9,7 @@ echo Press 2 to play Episode 2 - Adventure 2 of 3
 echo Press 3 to play Episode 3 - Adventure 3 of 3
 echo Press 4 to Quit
 echo.
-choice /c:1234 /N Please Choose
+jchoice /C:1234 /N Please Choose
 
 if errorlevel = 4 goto quit
 if errorlevel = 3 goto cca3

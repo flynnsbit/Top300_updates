@@ -8,7 +8,7 @@ echo.
 echo Note: To host a game you need port 5000 forwarded
 echo to the host machine. 
 echo.
-choice /C:123 /N Please Choose:
+jchoice /C:123 /N Please Choose:
 
 if errorlevel = 3 goto quit
 if errorlevel = 2 goto join
@@ -39,13 +39,13 @@ echo Set options and click OK.
 echo Client will now be asked to choose their shield
 echo When complete, you may choose yours and the game will begin.
 echo.
-jchoice
+@jchoice
 cd LORDS
 LORDS
 echo.
 echo Thanks for playing.
 echo.
-jchoice
+@jchoice
 exit
 
 :join
@@ -69,12 +69,12 @@ echo Click cancel, then click Set Up a Modem Conquest Again
 echo Set Link Open to Yes again. It should state "Link Established"
 echo Host will now set up the Game
 echo.
-jchoice
+@jchoice
 cd LORDS
 LORDS
 echo.
 echo Thanks for playing.
 echo.
-jchoice
+@jchoice
 :later
 exit

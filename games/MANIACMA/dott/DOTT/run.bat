@@ -7,7 +7,7 @@ echo Press 2 for Day of the Tentacle w/ MT-32
 echo Press 3 for Day of the Tentacle w/ Sound Canvas
 echo Press 4 to Quit
 echo.
-choice /C:1234 /N Please Choose:
+jchoice /C:1234 /N Please Choose:
 
 if errorlevel = 4 goto quit
 if errorlevel = 3 goto SC55
@@ -19,7 +19,7 @@ CONFIG -set "mididevice=default"
 cls
 cd dott.cd
 dotta
-jchoice
+@jchoice
 goto quit
 
 :MT32

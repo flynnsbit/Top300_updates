@@ -1,6 +1,6 @@
 imgset ide10 "/cd/XCOMUF/ufoenem.iso"
 
-jchoice
+@jchoice
 cd XCOMUF
 cd ufo
 call run

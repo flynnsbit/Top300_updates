@@ -1,6 +1,6 @@
 imgset ide10 "/cd/OTB/otbcd.cue"
 
-jchoice
+@jchoice
 cd OTB
 cd OTB
 call OTBCD

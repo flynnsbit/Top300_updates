@@ -10,7 +10,7 @@ echo Note: New games default to a low resolution. Once you start
 echo hit ESC, select VIDEO, VIDEO MODE, and then you can increase
 echo your resolution.
 echo.
-choice /C:123 /N Please Choose:
+jchoice /C:123 /N Please Choose:
 
 if errorlevel = 3 goto quit
 if errorlevel = 2 goto SC55

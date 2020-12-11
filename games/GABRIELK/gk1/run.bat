@@ -10,7 +10,7 @@ echo Press 5 for Gabriel Knight CD: Sins of the Fathers w/ Sound Canvas
 echo Press 6 for Gabriel Knight CD: Sins of the Fathers w/ Sound Canvas
 echo Press 7 to Quit
 echo.
-choice /C:1234567 /N Please Choose:
+jchoice /C:1234567 /N Please Choose:
 
 if errorlevel = 7 goto quit
 if errorlevel = 6 goto SC55

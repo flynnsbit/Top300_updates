@@ -1,6 +1,6 @@
 imgset ide10 "/cd/SerfCity/settlers.iso"
 
-jchoice
+@jchoice
 cd SerfCity
 cd SETTLERS
 call run

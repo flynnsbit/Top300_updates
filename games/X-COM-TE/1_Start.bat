@@ -1,6 +1,6 @@
 imgset ide10 "/cd/XCOMTe/x-comte.iso"
 
-jchoice
+@jchoice
 cd XCOMTe
 cd tftd
 call run

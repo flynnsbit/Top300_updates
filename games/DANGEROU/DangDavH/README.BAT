@@ -1,10 +1,10 @@
 @echo off
 cls
 type readme1.txt
-jchoice
+@jchoice
 cls
 type readme2.txt
-jchoice
+@jchoice
 cls
 type readme3.txt
 

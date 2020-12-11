@@ -1,5 +1,5 @@
 imgset ide10 "/cd/WormsRe/wormsun.cue"
 
-jchoice
+@jchoice
 cd WormsRe
 call run

@@ -5,7 +5,7 @@ echo Press 1 for SimCity 2000
 echo Press 2 for Urban Renewal Kit
 echo Press 3 to Quit
 echo.
-choice /c:123 /N
+jchoice /C:123 /N
 
 if errorlevel = 3 goto end
 if errorlevel = 2 goto urk

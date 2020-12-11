@@ -1,6 +1,6 @@
 imgset ide10 "/cd/kyra1/fables&.cue"
 
-jchoice
+@jchoice
 cd kyra1
 cd kyracd
 call run

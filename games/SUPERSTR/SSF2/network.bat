@@ -8,7 +8,7 @@ echo.
 echo Note: To host a game you need port 5000 forwarded
 echo to the host machine. 
 echo.
-choice /C:123 /N Please Choose:
+jchoice /C:123 /N Please Choose:
 
 if errorlevel = 3 goto quit
 if errorlevel = 2 goto join
@@ -37,13 +37,13 @@ echo Press ENTER
 echo You will use the Player 1 keys:
 echo WASD & FGH(P), CVB(K)
 echo.
-jchoice
+@jchoice
 cd SSF2
 SETCOM
 echo.
 echo Thanks for playing.
 echo.
-jchoice
+@jchoice
 exit
 
 :join
@@ -67,12 +67,12 @@ echo Press ENTER
 echo You will use the Player 2 keys:
 echo Arrows to move & 456(P), 123(K)
 echo.
-jchoice
+@jchoice
 cd SSF2
 SETCOM
 echo.
 echo Thanks for playing.
 echo.
-jchoice
+@jchoice
 :later
 exit

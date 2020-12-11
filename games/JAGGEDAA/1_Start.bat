@@ -1,5 +1,5 @@
 imgset ide10 "/cd/jaggalld/deadly_.cue"
 
-jchoice
+@jchoice
 cd jaggalld
 call run

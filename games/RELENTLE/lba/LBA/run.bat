@@ -7,7 +7,7 @@ echo Press 2 for Little Big Adventure w/ Gravis Ultrasound
 echo Press 3 for Little Big Adventure w/ MT-32
 echo Press 4 to Quit
 echo.
-choice /C:1234 /N Please Choose:
+jchoice /C:1234 /N Please Choose:
 
 if errorlevel = 4 goto quit
 if errorlevel = 3 goto MT32

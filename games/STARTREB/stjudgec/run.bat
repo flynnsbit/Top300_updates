@@ -8,7 +8,7 @@ echo Press 3 for Star Trek: Judgement Rites CD w/ Sound Canvas
 echo Press 4 for Star Trek: Judgement Rites Collector's CD
 echo Press 5 to Quit
 echo.
-choice /C:12345 /N Please Choose:
+jchoice /C:12345 /N Please Choose:
 
 if errorlevel = 5 goto quit
 if errorlevel = 4 goto CD2
@@ -22,7 +22,7 @@ copy .\sb16\*.* .\
 imgset ide10 "/cd/stjudgec/startre.cue"
 
 
-jchoice
+@jchoice
 cls
 trekjr
 goto quit
@@ -33,7 +33,7 @@ copy .\mt32\*.* .\
 imgset ide10 "/cd/stjudgec/startre.cue"
 
 
-jchoice
+@jchoice
 cls
 trekjr
 goto quit
@@ -44,7 +44,7 @@ copy .\sc55\*.* .\
 imgset ide10 "/cd/stjudgec/startre.cue"
 
 
-jchoice
+@jchoice
 cls
 trekjr
 goto quit
@@ -55,7 +55,7 @@ copy .\sb16\*.* .\
 imgset ide10 "/cd/stjudgec/star_tr.iso"
 
 
-jchoice
+@jchoice
 d:
 cls
 call 2

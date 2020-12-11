@@ -12,7 +12,7 @@ echo  * Original Music Score (Apple II / Commodore 128)
 echo  * Music during Intro & Finale
 echo  * Amiga music during Character Creation
 echo.
-choice /C:1234 /N Please Choose:
+jchoice /C:1234 /N Please Choose:
 
 if errorlevel = 4 goto quit
 if errorlevel = 3 goto tran
@@ -38,7 +38,7 @@ echo Press 1 to Transfer from Ultima IV
 echo Press 2 to Transfer from Ultima IV Upgrade
 echo Press 3 to Return to the Previous Menu
 echo.
-choice /C:123 /N Please Choose:
+jchoice /C:123 /N Please Choose:
 
 if errorlevel = 3 goto original
 if errorlevel = 2 goto 4upg

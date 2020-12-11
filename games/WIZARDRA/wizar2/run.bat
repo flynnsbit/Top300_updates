@@ -6,7 +6,7 @@ echo Press 1 for Wizardry II: The Knight of Diamonds
 echo Press 2 to Transfer a Character from a Previous Game
 echo Press 3 to Quit
 echo.
-choice /C:123 /N Please Choose:
+jchoice /C:123 /N Please Choose:
 
 if errorlevel = 3 goto quit
 if errorlevel = 2 goto TRAN
@@ -39,7 +39,7 @@ if not exist .\wizar1\save1.dsk echo No Wizardry 1 Save Detected
 echo.
 if exist .\wizar2\save1.dsk echo Copy Successful
 echo.
-jchoice
+@jchoice
 cd wizar2
 goto menu
 

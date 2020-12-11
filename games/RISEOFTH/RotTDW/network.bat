@@ -8,7 +8,7 @@ echo.
 echo Note: To host a game you need port 213 forwarded
 echo to the host machine. 
 echo.
-choice /C:123 /N Please Choose:
+jchoice /C:123 /N Please Choose:
 
 if errorlevel = 3 goto quit
 if errorlevel = 2 goto join
@@ -37,13 +37,13 @@ echo Client on top of Server
 echo Game launches when all players have joined.
 echo COMM-BAT Game, Select Battle Mode, Set Options, then Play Game
 echo.
-jchoice
+@jchoice
 cd ROTT
 setup
 echo.
 echo Thanks for playing.
 echo.
-jchoice
+@jchoice
 exit
 
 :join
@@ -63,7 +63,7 @@ echo Press 1 if the connection succeeded
 echo Press 2 if it failed and you want to try again
 echo Press 3 to give up
 echo.
-choice /C:123 /N Please Choose:
+jchoice /C:123 /N Please Choose:
 
 if errorlevel = 3 goto later
 if errorlevel = 2 goto join
@@ -78,12 +78,12 @@ echo Launch as Client
 echo Game launches when all players have joined.
 echo COMM-BAT Game, Select Player, Game Launches when Host Starts
 echo.
-jchoice
+@jchoice
 cd ROTT_N
 setup
 echo.
 echo Thanks for playing.
 echo.
-jchoice
+@jchoice
 :later
 exit

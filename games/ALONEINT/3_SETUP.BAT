@@ -13,7 +13,7 @@ IF EXIST setup.exe goto :setup1
 IF EXIST setup.com goto :setup2
 
 ECHO No setup files were found for this game.  You will need to manually run the appropriate setup in DOS.
-jchoice
+@jchoice
 goto :END
 
 :sound1

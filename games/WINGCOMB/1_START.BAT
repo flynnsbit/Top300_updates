@@ -4,6 +4,6 @@ echo.
 echo This game requires EMM386, please reboot, select it, and restart the game.
 echo.
 
-jchoice
+@jchoice
 cd WingComm
 call run

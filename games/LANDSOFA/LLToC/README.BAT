@@ -23,7 +23,7 @@ ECHO   3) Wait until the patch process completes and then play normally.
 ECHO.
 ECHO.
 ECHO.      
-jchoice
+@jchoice
 CLS
 ECHO What to do if the patch program does not seem to work.
 ECHO -------------------------------------------------------------
@@ -48,7 +48,7 @@ ECHO.
 ECHO.
 ECHO.
 ECHO.
-jchoice
+@jchoice
 CLS
 ECHO If you are experiencing Audio/Sound card problems.
 ECHO -------------------------------------------------------------
@@ -73,7 +73,7 @@ ECHO     ** Hand of Fate will work with various interrupt, address, and DMA
 ECHO     settings.   Just be sure they match the ones on your Soundblaster 
 ECHO     compatible card.
 ECHO.
-jchoice
+@jchoice
 CLS
 ECHO.
 ECHO Where to reach us if you need help.

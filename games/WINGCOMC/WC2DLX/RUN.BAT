@@ -10,7 +10,7 @@ echo Press 5 for Secret Operations 2 w/ SoundBlaster
 echo Press 6 for Secret Operations 2 w/ MT-32
 echo Press 7 to quit
 echo.
-choice /C:1234567 /N Please Choose:
+jchoice /C:1234567 /N Please Choose:
 
 if errorlevel = 7 goto quit
 if errorlevel = 6 goto so2mt

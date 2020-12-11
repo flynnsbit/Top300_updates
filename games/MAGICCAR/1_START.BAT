@@ -3,6 +3,6 @@ imgset ide10 "/cd/MagCarp2/magicca.cue"
 d:
 cd\
 e:
-jchoice
+@jchoice
 cd MagCarp2
 call run

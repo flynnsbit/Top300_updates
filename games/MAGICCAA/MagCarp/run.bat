@@ -11,7 +11,7 @@ echo.
 echo Note: MT32 Has no music in the intro. It appears to
 echo play properly in-game however.
 echo.
-choice /C:12345 /N Please Choose:
+jchoice /C:12345 /N Please Choose:
 
 if errorlevel = 5 goto quit
 if errorlevel = 4 goto network
@@ -31,7 +31,7 @@ echo.
 echo Pressing "r" during gameplay will turn on Hi-Res mode, however the game will run
 echo incredibly slow unless you increase the speed of DOSBox by pressing CTRL-F12.
 echo.
-jchoice
+@jchoice
 carpet
 goto quit
 
@@ -47,7 +47,7 @@ echo.
 echo Pressing "r" during gameplay will turn on Hi-Res mode, however the game will run
 echo incredibly slow unless you increase the speed of DOSBox by pressing CTRL-F12.
 echo.
-jchoice
+@jchoice
 carpet
 goto quit
 
@@ -63,7 +63,7 @@ echo.
 echo Pressing "r" during gameplay will turn on Hi-Res mode, however the game will run
 echo incredibly slow unless you increase the speed of DOSBox by pressing CTRL-F12.
 echo.
-jchoice
+@jchoice
 carpet
 goto quit
 

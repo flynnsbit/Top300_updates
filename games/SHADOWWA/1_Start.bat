@@ -1,6 +1,6 @@
 imgset ide10 "/cd/ShadowWa/sw.cue"
 
-jchoice
+@jchoice
 mixer cdaudio 120
 cd ShadowWa
 call run

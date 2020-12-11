@@ -24,12 +24,12 @@ __insth %1 %2
 :NoSpace
 echo "There is not enough space on %1 to install King's Quest IV!"
 echo "3 megabytes of disk space are necessary."
-jchoice
+@jchoice
 goto Exit
 
 :CantCreate
 echo "Unable to create directory %1."
-jchoice
+@jchoice
 goto Exit
 
 :Exit

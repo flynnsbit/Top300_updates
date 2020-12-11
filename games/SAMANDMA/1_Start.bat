@@ -1,5 +1,5 @@
 imgset ide10 "/cd/samnmax/samnmax.cue"
 
-jchoice
+@jchoice
 cd samnmax
 call run

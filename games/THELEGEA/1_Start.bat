@@ -1,6 +1,6 @@
 imgset ide10 "/cd/kyra3/fables&.cue"
 
-jchoice
+@jchoice
 cd kyra3
 cd malcolm
 main

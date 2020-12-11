@@ -1,6 +1,6 @@
 imgset ide10 "/cd/WipEout/wipeout.cue"
 
-jchoice
+@jchoice
 f:
 cd
 call wipeout.bat

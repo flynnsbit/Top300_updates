@@ -1,6 +1,6 @@
 imgset ide10 "/cd/ThemPark/themepa.iso"
 
-jchoice
+@jchoice
 cd ThemPark
 cd THEME.CD
 call run

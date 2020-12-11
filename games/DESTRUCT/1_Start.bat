@@ -1,5 +1,5 @@
 imgset ide10 "/cd/DeDerby2/dd2_pc.cue"
 
-jchoice
+@jchoice
 cd DeDerby2
 call run

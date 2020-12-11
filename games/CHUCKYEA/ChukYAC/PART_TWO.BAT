@@ -6,7 +6,7 @@ rem --- make sure drive %1 contains Disk 2.
 if exist %1\2a.lib goto 2b
 cls
 echo Insert YEAGER AIR COMBAT Disk 2 in drive %1.
-jchoice
+@jchoice
 goto 2a
 :2b
 
@@ -26,7 +26,7 @@ rem --- make sure drive %1 contains Disk 3.
 if exist %1\3a.lib goto 3b
 cls
 echo Insert YEAGER AIR COMBAT Disk 3 in drive %1.
-jchoice
+@jchoice
 goto 3a
 :3b
 
@@ -46,7 +46,7 @@ rem --- make sure drive %1 contains Disk 4.
 if exist %1\4a.lib goto 4b
 cls
 echo Insert YEAGER AIR COMBAT Disk 4 in drive %1.
-jchoice
+@jchoice
 goto 4a
 :4b
 

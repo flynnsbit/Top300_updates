@@ -1,6 +1,6 @@
 imgset ide10 "/cd/MicroMa2/mm2.cue"
 
-jchoice
+@jchoice
 cd MicroMa2
 cd mm2
 mixer cdaudio 15

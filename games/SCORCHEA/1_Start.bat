@@ -1,6 +1,6 @@
 imgset ide10 "/cd/ScoPlan/scorche.cue"
 
-jchoice
+@jchoice
 cd ScoPlan
 cd splanet
 splanet

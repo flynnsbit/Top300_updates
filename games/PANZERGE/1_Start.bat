@@ -1,5 +1,5 @@
 imgset ide10 "/cd/PanzerGe/pg.cue"
 
-jchoice
+@jchoice
 cd PanzerGe
 call run

@@ -3,7 +3,7 @@ REM Multi-Disk install, part 2.
 :try2
 echo Please insert "Disk 2" in Drive
 cd
-jchoice
+@jchoice
 echo 
 if exist disk02.lec goto docopy2
 goto try2
@@ -16,7 +16,7 @@ if not exist %1\MONKEY\disk02.lec goto InstallError
 :try3
 echo Please insert "Disk 3" in Drive
 cd
-jchoice
+@jchoice
 echo 
 if exist disk03.lec goto docopy3
 goto try3
@@ -29,7 +29,7 @@ if not exist %1\MONKEY\disk03.lec goto InstallError
 :try4
 echo Please insert "Disk 4" in Drive
 cd
-jchoice
+@jchoice
 echo 
 if exist disk04.lec goto docopy4
 goto try4

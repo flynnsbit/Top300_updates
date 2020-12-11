@@ -1,6 +1,6 @@
 imgset ide10 "/cd/Screamer/screamer.cue"
 
-jchoice
+@jchoice
 e:
 cd\screamer
 call screamer

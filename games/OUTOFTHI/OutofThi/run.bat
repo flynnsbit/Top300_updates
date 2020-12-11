@@ -8,7 +8,7 @@ echo Press 3 for Out of This World CD w/ SoundBlaster
 echo Press 4 for Out of This World CD w/ MT-32
 echo Press 5 to Quit
 echo.
-choice /C:12345 /N Please Choose:
+jchoice /C:12345 /N Please Choose:
 
 if errorlevel = 5 goto quit
 if errorlevel = 4 goto MT32

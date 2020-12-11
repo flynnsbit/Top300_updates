@@ -8,7 +8,7 @@ echo Press 3 for Scorched Earth v1.23
 echo Press 4 for Scorched Earth v1.5
 echo Press 5 to Quit
 echo.
-choice /C:12345 /N Please Choose:
+jchoice /C:12345 /N Please Choose:
 
 if errorlevel = 5 goto quit
 if errorlevel = 4 goto epi4

@@ -12,7 +12,7 @@ echo.
 echo Resolution can be increased in the options menu. If you choose to do
 echo this, you should also increase the cpu speed by pressing CTRL-F12 one time.
 echo.
-choice /C:123456 /N Please Choose:
+jchoice /C:123456 /N Please Choose:
 
 if errorlevel = 6 goto quit
 if errorlevel = 5 goto network

@@ -1,5 +1,5 @@
 imgset ide10 "/cd/TranTDLX/ttdx.iso"
 
-jchoice
+@jchoice
 cd TranTDLX
 call run

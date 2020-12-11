@@ -7,7 +7,7 @@ echo Press 2 to play Monkey Island 2: LeChuck's Revenge w/ MT32 & SB16 SFX
 echo Press 3 to play Monkey Island 2: LeChuck's Revenge Ultimate Talkie Edition
 echo Press 4 to Quit
 echo.
-choice /C:1234 /N Please Choose:
+jchoice /C:1234 /N Please Choose:
 
 if errorlevel = 4 goto quit
 if errorlevel = 3 goto talkie

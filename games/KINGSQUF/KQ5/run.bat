@@ -11,7 +11,7 @@ echo Press 6 for King's Quest V: Absence Makes the Heart Go Yonder EGA w/ Adlib
 echo Press 7 for King's Quest V: Absence Makes the Heart Go Yonder EGA w/ MT32
 echo Press 8 to Quit
 echo.
-choice /C:12345678 /N Please Choose:
+jchoice /C:12345678 /N Please Choose:
 
 if errorlevel = 8 goto quit
 if errorlevel = 7 goto EGA32

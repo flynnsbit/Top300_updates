@@ -1,6 +1,6 @@
 imgset ide10 "/cd/Abuse/abusev2.img"
 
-jchoice
+@jchoice
 cd Abuse
 cd Abuse
 call run

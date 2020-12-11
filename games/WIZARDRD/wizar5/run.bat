@@ -6,7 +6,7 @@ echo Press 1 for Wizardry V: Heart of the Maelstrom
 echo Press 2 to Transfer a Character from a Previous Game
 echo Press 3 to Quit
 echo.
-choice /C:123 /N Please Choose:
+jchoice /C:123 /N Please Choose:
 
 if errorlevel = 3 goto quit
 if errorlevel = 2 goto TRAN
@@ -40,7 +40,7 @@ if not exist .\wizar2\save2.dsk echo No Wizardry 2 Save Detected
 if not exist .\wizar3\save3.dsk echo No Wizardry 3 Save Detected
 if not exist .\wizar4\save4.dsk echo No Wizardry 4 Save Detected
 echo.
-jchoice
+@jchoice
 cls
 if exist .\wizar1\save1.dsk copy .\wizar1\save1.dsk .\wizar5\save1.dsk
 if exist .\wizar2\save2.dsk copy .\wizar2\save2.dsk .\wizar5\save2.dsk
@@ -52,7 +52,7 @@ if exist .\wizar5\save2.dsk echo Wizardry 2 Copy Successful
 if exist .\wizar5\save3.dsk echo Wizardry 3 Copy Successful
 if exist .\wizar5\save4.dsk echo Wizardry 4 Copy Successful
 echo.
-jchoice
+@jchoice
 cd wizar5
 goto menu
 

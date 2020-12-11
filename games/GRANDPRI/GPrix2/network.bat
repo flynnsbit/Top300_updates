@@ -8,7 +8,7 @@ echo.
 echo Note: To host a game you need port 5000 forwarded
 echo to the host machine. 
 echo.
-choice /C:123 /N Please Choose:
+jchoice /C:123 /N Please Choose:
 
 if errorlevel = 3 goto quit
 if errorlevel = 2 goto join
@@ -36,13 +36,13 @@ echo Linkup Menu
 echo Choose "Lead" under Direct Link
 echo Click Connect
 echo.
-jchoice
+@jchoice
 cd GP2
 GP2
 echo.
 echo Thanks for playing.
 echo.
-jchoice
+@jchoice
 exit
 
 :join
@@ -65,12 +65,12 @@ echo Linkup Menu
 echo Choose "Follow" under Direct Link
 echo Click Connect
 echo.
-jchoice
+@jchoice
 cd GP2
 GP2
 echo.
 echo Thanks for playing.
 echo.
-jchoice
+@jchoice
 :later
 exit

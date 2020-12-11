@@ -10,7 +10,7 @@ echo Press 5 to play Dune CD using DOSBox w/ MT-32
 echo Press 6 to play Dune CD using DOSBox w/ Adlib Gold
 echo Press 7 to Quit
 echo.
-choice /C:1234567 /N Please Choose:
+jchoice /C:1234567 /N Please Choose:
 
 if errorlevel = 7 goto quit
 if errorlevel = 6 goto CDGOLD

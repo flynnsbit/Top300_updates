@@ -12,7 +12,7 @@ echo Z: to pick up the pack and extract to the e:\games folders.
 echo.
 echo If you setup a custom build that does not match this structure
 echo outlined this pack updater will not work for you.
-jchoice h 2
+@jchoice h 2
 
 if errorlevel = 2 goto quit
 if errorlevel = 3 goto games
@@ -34,7 +34,7 @@ cd games
 pkunzip -d -n update.zip
 echo.
 echo Update complete
-jchoice p
+@jchoice p
 e:
 cd\
 cls

@@ -12,7 +12,7 @@ echo Press 7 for The Secret of Monkey Island CD w/ CD Audio
 echo Press 8 for The Secret of Monkey Island CD w/ MT32 + Ultimate Talkie Edition
 echo Press 9 to Quit
 echo.
-choice /C:123456789 /N Please Choose:
+jchoice /C:123456789 /N Please Choose:
 
 if errorlevel = 9 goto quit
 if errorlevel = 8 goto talkie

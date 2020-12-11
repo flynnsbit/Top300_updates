@@ -1,5 +1,5 @@
 imgset ide10 "/cd/Descent2/descent.cue"
 
-jchoice
+@jchoice
 cd Descent2
 call run

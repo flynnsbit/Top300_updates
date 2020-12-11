@@ -14,7 +14,7 @@ echo.
 echo In addition, the 320 resolution version has additional
 echo animation that is not present in the 640 version.
 echo.
-choice /C:12345 /N Please Choose:
+jchoice /C:12345 /N Please Choose:
 
 if errorlevel = 5 goto quit
 if errorlevel = 4 goto EU640

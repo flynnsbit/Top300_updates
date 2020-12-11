@@ -1,5 +1,5 @@
 subst g: /d
 subst g: wizar7
-jchoice
+@jchoice
 cd wizar7
 call run

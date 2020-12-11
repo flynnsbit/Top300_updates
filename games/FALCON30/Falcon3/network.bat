@@ -8,7 +8,7 @@ echo.
 echo Note: To host a game you need port 213 forwarded
 echo to the host machine. 
 echo.
-choice /C:123 /N Please Choose:
+jchoice /C:123 /N Please Choose:
 
 if errorlevel = 3 goto quit
 if errorlevel = 2 goto join
@@ -39,12 +39,12 @@ echo Ensure CALL and NETWORK are selected
 echo Choose Game Type
 echo Click Accept. Once other players join, you will see them on the list
 echo.
-jchoice
+@jchoice
 falcon3
 echo.
 echo Thanks for playing.
 echo.
-jchoice
+@jchoice
 exit
 
 :join
@@ -64,7 +64,7 @@ echo Press 1 if the connection succeeded
 echo Press 2 if it failed and you want to try again
 echo Press 3 to give up
 echo.
-choice /C:123 /N Please Choose:
+jchoice /C:123 /N Please Choose:
 
 if errorlevel = 3 goto later
 if errorlevel = 2 goto join
@@ -82,11 +82,11 @@ echo Click COMMS button
 echo Ensure ANSWER and Network are selected
 echo Click Accept and then click Y when prompted to connect
 echo.
-jchoice
+@jchoice
 falcon3
 echo.
 echo Thanks for playing.
 echo.
-jchoice
+@jchoice
 :later
 exit

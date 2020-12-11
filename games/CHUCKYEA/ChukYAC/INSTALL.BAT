@@ -49,7 +49,7 @@ echo บ                                                                       บ
 echo บ If you don't want to install YEAGER AIR COMBAT now, press Ctrl-Break. บ
 echo บ                                                                       บ
 echo ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
-jchoice
+@jchoice
 
 rem --- create \COMBAT on the current drive.
 echo 
@@ -61,7 +61,7 @@ echo 
 echo There is already a \COMBAT directory on drive %2.  If you don't want to
 echo install YEAGER AIR COMBAT into that directory, press Ctrl-Break.
 echo Otherwise, press any key to install YEAGER AIR COMBAT into %2\COMBAT.
-jchoice
+@jchoice
 goto go_on2
 :go_on
 md %2\COMBAT
@@ -72,7 +72,7 @@ rem --- make sure source drive contains Disk 1
 if exist %1\1a.lib goto 1b
 echo 
 echo Insert YEAGER AIR COMBAT Disk 1 in drive %1.
-jchoice
+@jchoice
 goto 1a
 :1b
 

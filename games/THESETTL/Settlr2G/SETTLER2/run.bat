@@ -9,7 +9,7 @@ echo Press 4 to Quit
 echo.
 echo Note: CD Audio is also available from within the mission menu.
 echo.
-choice /C:1234 /N Please Choose:
+jchoice /C:1234 /N Please Choose:
 
 if errorlevel = 4 goto quit
 if errorlevel = 3 goto SC55

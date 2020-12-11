@@ -1,5 +1,5 @@
 imgset ide10 "/cd/albion/albion.cue"
 
-jchoice
+@jchoice
 cd albion
 call run

@@ -10,7 +10,7 @@ echo.
 echo Note: Sound Canvas does not provide background music during gameplay.
 echo Just cutscenes.
 echo.
-choice /C:1234 /N Please Choose:
+jchoice /C:1234 /N Please Choose:
 
 if errorlevel = 4 goto quit
 if errorlevel = 3 goto SC55

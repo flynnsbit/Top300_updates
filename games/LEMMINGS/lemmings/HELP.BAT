@@ -1,13 +1,13 @@
 echo off
 cls
 type lem1.doc
-jchoice
+@jchoice
 cls
 type lem2.doc
-jchoice
+@jchoice
 cls
 type lem3.doc
-jchoice
+@jchoice
 cls
 type lem4.doc
 

@@ -11,7 +11,7 @@ echo.
 echo VGA is 256 Colors in 320x200
 echo EGA is 16 Colors in 640x480
 echo.
-choice /C:12345 /N Please Choose:
+jchoice /C:12345 /N Please Choose:
 
 if errorlevel = 5 goto quit
 if errorlevel = 4 goto MT32v

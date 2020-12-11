@@ -1,5 +1,5 @@
 imgset ide10 "/cd/cronmast/chronom.iso"
 
-jchoice
+@jchoice
 cd cronmast
 call run

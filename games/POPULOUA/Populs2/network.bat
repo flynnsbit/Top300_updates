@@ -8,7 +8,7 @@ echo.
 echo Note: To host a game you need port 5000 forwarded
 echo to the host machine. 
 echo.
-choice /C:123 /N Please Choose:
+jchoice /C:123 /N Please Choose:
 
 if errorlevel = 3 goto quit
 if errorlevel = 2 goto join
@@ -40,13 +40,13 @@ echo Note: If connecting hangs at the second try, have the host get to the
 echo connection attempt before the client even types in their IP and starts
 echo the game.
 echo.
-jchoice
+@jchoice
 cd POP2_256
 call GO
 echo.
 echo Thanks for playing.
 echo.
-jchoice
+@jchoice
 exit
 
 :join
@@ -69,12 +69,12 @@ echo Ensure it states 'Connect Serial'
 echo Click Connect
 echo Click Connect
 echo.
-jchoice
+@jchoice
 cd POP2_256
 call GO
 echo.
 echo Thanks for playing.
 echo.
-jchoice
+@jchoice
 :later
 exit

@@ -7,7 +7,7 @@ echo Press 2 for CGA Composite (16-color)
 echo Press 3 for EGA (16-color)
 echo Press 4 to Quit
 echo.
-choice /C:1234 /N Please Choose:
+jchoice /C:1234 /N Please Choose:
 
 if errorlevel = 4 goto quit
 if errorlevel = 3 goto EGA
@@ -40,7 +40,7 @@ echo Press 3 for Alternate EGA Tileset (Wiltshire Dragon)
 echo Press 4 for Commodore 64 Tileset
 echo Press 5 to Quit
 echo.
-choice /C:12345 /N Please Choose:
+jchoice /C:12345 /N Please Choose:
 
 if errorlevel = 5 goto quit
 if errorlevel = 4 goto EGAC64

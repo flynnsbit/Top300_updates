@@ -3,5 +3,5 @@ echo.
 echo When prompted to input the Player Disk drive
 echo or the game disk use "C"
 echo.
-jchoice
+@jchoice
 2400ad

@@ -7,7 +7,7 @@ echo Press 2 for King's Quest VII: The Princeless Bride w/ MT32
 echo Press 3 for King's Quest VII: The Princeless Bride w/ Sound Canvas
 echo Press 4 to Quit
 echo.
-choice /C:1234 /N Please Choose:
+jchoice /C:1234 /N Please Choose:
 
 if errorlevel = 4 goto quit
 if errorlevel = 3 goto SC55

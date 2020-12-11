@@ -7,7 +7,7 @@ echo Press 2 for Prince of Persia v1.3 w/ Sound Blaster
 echo Press 3 for Prince of Persia v1.3 w/ MT32
 echo Press 4 to Quit
 echo.
-choice /C:1234 /N Please Choose:
+jchoice /C:1234 /N Please Choose:
 
 if errorlevel = 4 goto quit
 if errorlevel = 3 goto MT32

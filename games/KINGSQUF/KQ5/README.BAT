@@ -1,18 +1,18 @@
 @echo off
 type readme1
-jchoice
+@jchoice
 type readme2
-jchoice
+@jchoice
 type readme3
-jchoice
+@jchoice
 type readme4
-jchoice
+@jchoice
 type readme5
-jchoice
+@jchoice
 type readme6
-jchoice
+@jchoice
 type readme7
-jchoice
+@jchoice
 type readme8
 
 

@@ -13,7 +13,7 @@ echo.
 echo Options 4 is unique in that it features limited speech samples
 echo not present with other configurations.
 echo.
-choice /C:1234567 /N Please Choose:
+jchoice /C:1234567 /N Please Choose:
 
 if errorlevel = 7 goto quit
 if errorlevel = 6 goto SC55CD

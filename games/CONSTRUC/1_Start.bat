@@ -1,5 +1,5 @@
 imgset ide10 "/cd/construc/constru.iso"
 
-jchoice
+@jchoice
 cd construc
 call run

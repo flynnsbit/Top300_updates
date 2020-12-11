@@ -1,6 +1,6 @@
 imgset ide10 "/cd/wwcscd/carmen.cue"
 
-jchoice
+@jchoice
 cd wwcscd
 cd deluxe
 call run

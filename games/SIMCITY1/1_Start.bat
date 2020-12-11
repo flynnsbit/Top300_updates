@@ -1,5 +1,5 @@
 subst a: /d
 subst a: SimCity\floppy
-jchoice
+@jchoice
 cd SimCity
 call pick

@@ -8,7 +8,7 @@ echo.
 echo Note: To host a game you need port 213 forwarded
 echo to the host machine. 
 echo.
-choice /C:123 /N Please Choose:
+jchoice /C:123 /N Please Choose:
 
 if errorlevel = 3 goto quit
 if errorlevel = 2 goto join
@@ -39,12 +39,12 @@ echo Note: Custom WADS can be used by hitting TAB, scrolling to a WAD
 echo file, and pressing ENTER. Or a WAD set can be created as well, to
 echo string together multiple WAD files.
 echo.
-jchoice
+@jchoice
 doomatic
 echo.
 echo Thanks for playing.
 echo.
-jchoice
+@jchoice
 exit
 
 :join
@@ -64,7 +64,7 @@ echo Press 1 if the connection succeeded
 echo Press 2 if it failed and you want to try again
 echo Press 3 to give up
 echo.
-choice /C:123 /N Please Choose:
+jchoice /C:123 /N Please Choose:
 
 if errorlevel = 3 goto later
 if errorlevel = 2 goto join
@@ -78,11 +78,11 @@ echo Press N to set player Name
 echo Press L to select Color
 echo Press J to Join server (once it appears in the game window)
 echo.
-jchoice
+@jchoice
 doomatic
 echo.
 echo Thanks for playing.
 echo.
-jchoice
+@jchoice
 :later
 exit

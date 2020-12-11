@@ -1,5 +1,5 @@
 subst a: /d
 subst a: wastland\floppy
-jchoice
+@jchoice
 cd wastland
 call run

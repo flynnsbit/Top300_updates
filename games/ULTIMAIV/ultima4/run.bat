@@ -14,7 +14,7 @@ echo Note: If you choose the Upgraded version, do not use a cursor key
 echo during the title, intro, or menu. If you do, the game locks out
 echo all keyboard input and you have to kill dosbox to get out.
 echo.
-choice /C:123 /N Please Choose:
+jchoice /C:123 /N Please Choose:
 
 if errorlevel = 3 goto quit
 if errorlevel = 2 goto upgrade
@@ -43,7 +43,7 @@ echo Press 5 to Return to the Previous Menu
 echo.
 echo Rune fonts replace latin characters with runes.
 echo.
-choice /C:12345 /N Please Choose:
+jchoice /C:12345 /N Please Choose:
 
 if errorlevel = 5 goto menu
 if errorlevel = 4 goto EGA-ALTR

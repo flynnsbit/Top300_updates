@@ -1,5 +1,5 @@
 imgset ide10 "/cd/eob3/eyeofth.iso"
 
-jchoice
+@jchoice
 cd eob3
 call run

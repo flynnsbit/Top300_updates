@@ -1,6 +1,6 @@
 imgset ide10 "/cd/torin/torin.iso"
 
-jchoice
+@jchoice
 cd torin
 cd torindos
 call TORIN

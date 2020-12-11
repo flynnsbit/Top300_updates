@@ -1,6 +1,6 @@
 imgset ide10 "/cd/adark1/alonein.cue"
 
-jchoice
+@jchoice
 cd adark1
 cd DARK
 cd INDARK

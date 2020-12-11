@@ -6,7 +6,7 @@ echo floppy disk in drive A onto the hard
 echo disk directory C:\%1.
 echo If you do not wish to do this then
 echo press Cntrl-Break now.
-jchoice
+@jchoice
 C:
 cd\
 a:install
@@ -16,7 +16,7 @@ echo All of the game files must be
 echo copied to the hard disk.  If
 echo you do not want this done now,
 echo press Cntrl-Break.
-jchoice
+@jchoice
 md\%1 >nul:
 cd\%1
 copy a:*.* \%1 >nul:

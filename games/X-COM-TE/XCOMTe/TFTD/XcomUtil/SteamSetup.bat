@@ -44,7 +44,7 @@ if exist geodata\obdata.dat goto gameok
 REM game not found
 :ErrorOut
 Echo Game Not found. Unable to Configure Steam
-jchoice
+@jchoice
 goto EOF
 :gameok
 REM echo Found %xcv% in %CD%
@@ -56,7 +56,7 @@ if exist "ufo defense.exe" goto StmFiles
 if exist ufo.exe goto StmFiles
 REM NOT Steam
 echo STEAM not found. Please use XcuSetup to configure XcomUtil.
-jchoice
+@jchoice
 goto EOF
 :StmFiles
 if NOT %1. == sfx. echo STEAM Detected
@@ -69,7 +69,7 @@ echo.
 echo Steam configured to start the XcomUtil menu with X-Com.
 echo.
 if NOT %1. == sfx. echo  Please use XcuSetup or Start X-Com from STEAM to configure XcomUtil.
-if NOT %1. == sfx. jchoice
+if NOT %1. == sfx. @jchoice
 
 :EOF 
 set xcv=

@@ -46,7 +46,7 @@ set default=N
 if %beta%. == N. goto release
 if %beta%. == Public. call XcomUtil\Batch\display.bat Beta 00
 if %beta%. == Private. call XcomUtil\Batch\display.bat Beta 99
-jchoice
+@jchoice
 :release
 set beta=
 
@@ -60,7 +60,7 @@ call XcomUtil\Batch\shiftchk.bat
 if %shftchk%. == ok. goto not73
 call XcomUtil\Batch\display.bat DB73 99
 set redir=XcomUtil\debug.txt
-jchoice
+@jchoice
 set shftchk=
 goto endVars
 :not73
@@ -158,7 +158,7 @@ if %ErrOut%. == Y. goto ErrOut
 
 REM ##### Checks Completed #####
 set EnvSp=
-if NOT %Skip%. == Y. jchoice
+if NOT %Skip%. == Y. @jchoice
 
 REM if older ver of XcuSetup has been used, delete ver file.
 xcomutil QueryInfo CheckSetup >>%redir%
@@ -170,7 +170,7 @@ if %xOS%. == DosBox. goto SetSpeed
 goto skipSpeed
 :SetSpeed
 call XcomUtil\Batch\display.bat DosBox 99
-if NOT %CLUn%. == Y. if NOT %Skip%. == Y. jchoice
+if NOT %CLUn%. == Y. if NOT %Skip%. == Y. @jchoice
 config -get "cpu core" >>%redir%
 set DBCPU=%CONFIG%
 config -get "cpu cycles" >>%redir%
@@ -192,7 +192,7 @@ if %CLUn%. == Y. goto UninDel
 
 REM Exit if error set by Restore.
 if %ErrOut%. == Y. goto ErrOut
-if NOT %Skip%. == Y. jchoice
+if NOT %Skip%. == Y. @jchoice
 
 
 
@@ -205,7 +205,7 @@ if exist XcomUtil\ufo.xcu if %skpBackup%. == Y. if %Hyb%. == No. goto skpBack
 if exist XcomUtil\terror.xcu if %skpBackup%. == Y. if %Hyb%. == No. goto skpBack
 call XcomUtil\Batch\Backup.bat
 if %ErrOut%. == Y. goto ErrOut
-if NOT %Skip%. == Y. jchoice
+if NOT %Skip%. == Y. @jchoice
 :skpBack
 
 :stHybChk
@@ -220,7 +220,7 @@ call XcomUtil\Batch\Hybrid.bat
 REM Exit if error set by Hybrid.
 if %ErrOut%. == Y. goto ErrOut
 call XcomUtil\Batch\display.bat HybCpy 99
-if NOT %Skip%. == Y. jchoice
+if NOT %Skip%. == Y. @jchoice
 goto restore
 :NoHyCpy
 set restore=
@@ -269,7 +269,7 @@ REM ##### Addon Pre-Apply####
 REM #########################
 if NOT exist XcomUtil\flags\RunAddon.xcf goto noAdd1
 call XcomUtil\Batch\Display Addon 99
-if NOT %Skip%. == Y. jchoice
+if NOT %Skip%. == Y. @jchoice
 XcomUtil\Bin\BatRun.exe Xcomutil\Addon Setup
 REM Validate Options if changed by Addon
 call XcomUtil\Batch\ChkVals.bat
@@ -317,7 +317,7 @@ call XcomUtil\Batch\ChkVals.bat
 REM ####################
 REM ##### Finished #####
 echo.
-if NOT %Skip%. == Y. jchoice
+if NOT %Skip%. == Y. @jchoice
 if NOT %SplEXE%. == N. call XcomUtil\Batch\display.bat EndSplit 99
 if     %SplEXE%. == N. call XcomUtil\Batch\display.bat EndNoSpl 99
 
@@ -345,7 +345,7 @@ REM #### Error Message Footer #####
 :ErrOut
 echo  Unable to continue!
 set xcuErr=Error
-jchoice
+@jchoice
 
 :EOF
 REM Restore Path

@@ -15,7 +15,7 @@ echo campaign than the one you select here, you will have to hit
 echo ctrl-f4 to switch through the mounted CD's until you find the
 echo right one.
 echo.
-choice /C:123456 /N Please Choose:
+jchoice /C:123456 /N Please Choose:
 
 if errorlevel = 6 goto quit
 if errorlevel = 5 goto network
@@ -28,21 +28,21 @@ if errorlevel = 1 goto GDI
 imgset ide10 "/cd/comcon/comma1.iso"
 
 
-jchoice
+@jchoice
 cls
 C&C
 goto menu
 
 :NOD
 imgset ide10 "/cd/comcon/comma2.iso"
-jchoice
+@jchoice
 cls
 C&C
 goto menu
 
 :COVERT
 imgset ide10 "/cd/comcon/cover3.cue"
-jchoice
+@jchoice
 cls
 C&C
 goto menu
@@ -51,7 +51,7 @@ goto menu
 imgset ide10 "/cd/comcon/comma1.iso"
 
 
-jchoice
+@jchoice
 cls
 C&C funpark
 goto menu
@@ -60,7 +60,7 @@ goto menu
 imgset ide10 "/cd/comcon/comma1.iso"
 
 
-jchoice
+@jchoice
 cls
 network
 

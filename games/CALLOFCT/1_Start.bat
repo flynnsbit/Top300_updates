@@ -1,5 +1,5 @@
 imgset ide10 "/cd/scomet/shadow_.iso"
 
-jchoice
+@jchoice
 f:
 shadow

@@ -1,6 +1,6 @@
 imgset ide10 "/cd/MKTril/trilogy.cue"
 
-jchoice
+@jchoice
 cd MKTril
 cd MKTril
 mktril

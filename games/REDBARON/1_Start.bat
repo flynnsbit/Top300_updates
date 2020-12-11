@@ -1,9 +1,9 @@
 imgset ide10 "/cd/RedBaron/redbaron.iso"
 
-jchoice
+@jchoice
 imgset fdd0 "/floppy/RedBaron/redbaro.ima"
 
-jchoice
+@jchoice
 cd RedBaron
 cd \sierra\redbaron
 call run

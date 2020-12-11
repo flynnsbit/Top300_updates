@@ -33,7 +33,7 @@ if not errorlevel 1 goto okC
 echo Unknown and therefore unsupported version in AMIGA\
 echo Only use Amiga version 1.023!
 echo Press any key to continue anyway, knowing that the patched game might not work...
-jchoice > nul
+@jchoice > nul
 goto okC
 
 :okC
@@ -50,7 +50,7 @@ if errorlevel 0 goto okD
 echo Unknown and therefore unsupported version in PC\
 echo Only use PC version 1.000.111!
 echo Press any key to continue anyway, knowing that the patched game might not work...
-jchoice > nul
+@jchoice > nul
 goto anyway
 
 :okD
@@ -184,7 +184,7 @@ if not errorlevel 1 goto okE
 echo Something went wrong during patching:
 echo The resulting RESOURCE.MAP file has an incorrect CRC32.
 echo Press any key to continue anyway, knowing that the patched game might not work...
-jchoice > nul
+@jchoice > nul
 goto okE
 
 :okE

@@ -10,7 +10,7 @@ echo.
 echo Note: Graphics packs have been installed.
 echo Choose "Load Graphics" to pick between them.
 echo.
-choice /c:1234 /N
+jchoice /C:1234 /N
 
 if errorlevel = 4 goto quit
 if errorlevel = 3 goto ter

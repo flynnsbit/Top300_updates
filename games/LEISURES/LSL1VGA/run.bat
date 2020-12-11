@@ -11,7 +11,7 @@ echo Press 6 for Leisure Suit Larry 1 VGA w/ MT32
 echo Press 7 for Leisure Suit Larry 1 VGA w/ Sound Canvas
 echo Press 8 to Quit
 echo.
-choice /C:12345678 /N Please Choose:
+jchoice /C:12345678 /N Please Choose:
 
 if errorlevel = 8 goto quit
 if errorlevel = 7 goto SC55
@@ -28,7 +28,7 @@ CONFIG -set "sbtype=gb"
 CD EGA
 cls
 SCIDUV cms.cfg
-jchoice
+@jchoice
 goto quit
 
 :EGASB
@@ -43,7 +43,7 @@ CONFIG -set "mididevice=mt32"
 CD EGA
 cls
 SCIDUV MESOURCE.cfg
-jchoice
+@jchoice
 goto quit
 
 :EGASC55

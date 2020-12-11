@@ -7,7 +7,7 @@ echo Press 2 for Final Doom w/ SoundBlaster
 echo Press 3 for Final Doom w/ Sound Canvas
 echo Press 4 to Quit
 echo.
-choice /C:1234 /N Please Choose:
+jchoice /C:1234 /N Please Choose:
 
 if errorlevel = 4 goto quit
 if errorlevel = 3 goto SC55
@@ -63,7 +63,7 @@ echo Press 3 for Final Doom: Plutonia Experiment Network Multiplayer
 echo Press 4 for Final Doom: TNT: Evilution Network Multiplayer
 echo Press 5 to Quit
 echo.
-choice /c:12345 /N Please Choose:
+jchoice /C:12345 /N Please Choose:
 
 if errorlevel = 5 goto quit
 if errorlevel = 4 goto tntmulti

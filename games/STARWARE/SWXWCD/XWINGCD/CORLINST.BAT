@@ -26,7 +26,7 @@ echo :  NOTE: You must have 1,900,000 Bytes free on your C:       :
 echo :  drive to use this installation program.                   :
 echo :                                                            :
 echo +------------------------------------------------------------+
-jchoice
+@jchoice
 md C:\XWINGCD
 copy *.* C:\XWINGCD
 c:

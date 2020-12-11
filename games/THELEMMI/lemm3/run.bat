@@ -7,7 +7,7 @@ echo Press 2 for The Lemmings Chronicles w/ Gravis (Floppy Version)
 echo Press 3 for The Lemmings Chronicles w/ CD Audio
 echo Press 4 to Quit
 echo.
-choice /C:1234 /N Please Choose:
+jchoice /C:1234 /N Please Choose:
 
 if errorlevel = 4 goto quit
 if errorlevel = 3 goto CD
@@ -32,7 +32,7 @@ goto menu
 imgset ide10 "/cd/lemm3/lemming.cue"
 
 
-jchoice
+@jchoice
 cls
 cd l3
 call l3

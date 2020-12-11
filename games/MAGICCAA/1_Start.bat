@@ -1,5 +1,5 @@
 imgset ide10 "/cd/MagCarp/magicca.iso"
 
-jchoice
+@jchoice
 cd MagCarp
 call run

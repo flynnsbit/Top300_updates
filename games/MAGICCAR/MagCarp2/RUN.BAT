@@ -8,7 +8,7 @@ echo Press 3 for Magic Carpet 2: The Netherworlds w/ Sound Canvas
 echo Press 4 to play Network Multiplayer
 echo Press 5 to Quit
 echo.
-choice /C:12345 /N Please Choose:
+jchoice /C:12345 /N Please Choose:
 
 if errorlevel = 5 goto quit
 if errorlevel = 4 goto network
@@ -29,7 +29,7 @@ echo.
 echo Pressing "r" during gameplay will turn on Hi-Res mode, however the game will run
 echo incredibly slow unless you increase the speed of DOSBox by pressing CTRL-F12.
 echo.
-jchoice
+@jchoice
 D:
 dos32a NETHERW
 goto quit
@@ -47,7 +47,7 @@ echo.
 echo Pressing "r" during gameplay will turn on Hi-Res mode, however the game will run
 echo incredibly slow unless you increase the speed of DOSBox by pressing CTRL-F12.
 echo.
-jchoice
+@jchoice
 D:
 dos32a NETHERW
 goto quit
@@ -65,7 +65,7 @@ echo.
 echo Pressing "r" during gameplay will turn on Hi-Res mode, however the game will run
 echo incredibly slow unless you increase the speed of DOSBox by pressing CTRL-F12.
 echo.
-jchoice
+@jchoice
 D:
 NETHERW
 goto quit

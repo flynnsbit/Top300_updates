@@ -1,5 +1,5 @@
 imgset ide10 "/cd/WarCraft/warcraft.cue"
 
-jchoice
+@jchoice
 cd WarCraft
 call run

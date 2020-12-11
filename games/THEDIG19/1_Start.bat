@@ -1,6 +1,6 @@
 imgset ide10 "/cd/dig/thedig.cue"
 
-jchoice
+@jchoice
 f:
 cd dig
 dig

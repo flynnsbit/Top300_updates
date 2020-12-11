@@ -50,7 +50,7 @@ if not exist %1\L2\*.* goto CopyFiles
 echo WARNING:  The directory %1\L2 already exists.
 echo Press Ctrl-C now to abort installation.
 echo 
-jchoice
+@jchoice
 echo 
 
 REM

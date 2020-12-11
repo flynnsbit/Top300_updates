@@ -1,5 +1,5 @@
 imgset ide10 "/cd/Rayman/rayman.cue"
 
-jchoice
+@jchoice
 cd Rayman
 call rayman

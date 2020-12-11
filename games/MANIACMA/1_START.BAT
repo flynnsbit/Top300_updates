@@ -1,6 +1,6 @@
 imgset ide10 "/cd/dott/dayofth.cue"
 
-jchoice
+@jchoice
 cd dott
 cd dott
 call run

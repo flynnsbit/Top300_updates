@@ -1,6 +1,6 @@
 imgset ide10 "/cd/stonkeep/stoneke.cue"
 
-jchoice
+@jchoice
 cd stonkeep
 cd stonkeep
 call run

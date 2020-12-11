@@ -1,6 +1,6 @@
 imgset ide10 "/cd/PPBigRac/brusa.cue"
 
-jchoice
+@jchoice
 cd PPBigRac
 cd propin\bigrace
 bigrace

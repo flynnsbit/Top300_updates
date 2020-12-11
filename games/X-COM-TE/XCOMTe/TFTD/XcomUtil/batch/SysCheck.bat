@@ -30,7 +30,7 @@ REM GAME FOLDER READONLY attempt to fix.
 REM if NOT %xOS%. == XP. if NOT %xOS%. == Vista. if NOT %xOS%. == Win7. goto writeErr
 if %USERNAME%. == . goto writeErr
 call XcomUtil\Batch\display.bat UACFix 02
-if NOT %Skip%. == Y. jchoice
+if NOT %Skip%. == Y. @jchoice
 "XcomUtil\Patches\XcomUtil UAC Fix.exe"
 if exist fixUAC.bat del fixUAC.bat
 if exist test.xcu del test.xcu
@@ -62,7 +62,7 @@ REM #### Is old ver of XcomUtil still present ####
 if NOT exist avenger.map goto oldverok
 echo Pre 9.7 detected >>%redir%
 call XcomUtil\Batch\display.bat oldVer 99
-if NOT %Skip%. == Y. jchoice
+if NOT %Skip%. == Y. @jchoice
 call XcomUtil\Batch\OldVer.bat
 :oldverok
 
@@ -350,7 +350,7 @@ if not exist missdat\saveinfo.dat if %XCOM%. == TFTD. copy /y XcomUtil\Patches\s
 if not exist missdat\mission2.dat echo dummy>missdat\mission2.dat
 if NOT exist missdat\geodata.dat copy /y XcomUtil\Patches\geodata.dat missdat\geodata.dat
 if exist missdat\mission2.dat if exist missdat\saveinfo.dat if exist missdat\geodata.dat goto missdatOK
-jchoice
+@jchoice
 set MdatOK=%clErr%Read Only!%clOff%
 echo MdatOK:%MdatOK%>>%redir%
 call XcomUtil\Batch\display.bat SysChks 08

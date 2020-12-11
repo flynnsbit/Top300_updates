@@ -10,7 +10,7 @@ REM echo Press 5 for Loom Floppy w/ Sound Canvas
 echo Press 5 for Loom CD
 echo Press 6 to Quit
 echo.
-choice /C:123456 /N Please Choose:
+jchoice /C:123456 /N Please Choose:
 
 if errorlevel = 6 goto quit
 if errorlevel = 5 goto CD

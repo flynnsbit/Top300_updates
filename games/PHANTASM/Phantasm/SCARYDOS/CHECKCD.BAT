@@ -1,14 +1,14 @@
 @echo off
 cls
 echo Please put the Phantasmagoria CD into your CD-Rom and then
-jchoice
+@jchoice
 if not "%0"=="CheckCD" goto Abort
 if "%1"=="" goto Abort
 echo Checking for Phantasmagoria CD in drive %1:
 if exist %1:phcheck.bat goto Exit
 cls
 echo Please put the Phantasmagoria CD into your CD-Rom and then
-jchoice
+@jchoice
 
 :LoopCheck
 if exist %1:\phcheck.bat goto Exit
@@ -16,7 +16,7 @@ echo.
 echo Unable to detect the Phantasmagoria CD in drive %1:.
 echo You may abort this looping test by pressing Ctrl-C or
 echo insert the CD into your CD-ROM and then
-jchoice
+@jchoice
 goto LoopCheck
 
 :Abort

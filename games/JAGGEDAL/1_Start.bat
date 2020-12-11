@@ -1,5 +1,5 @@
 imgset ide10 "/cd/jaggall/jaggeda.iso"
 
-jchoice
+@jchoice
 cd jaggall
 call run

@@ -9,7 +9,7 @@ echo Press 4 for Secret Missions 2: Crusade w/ MT-32
 echo Press 5 to Transfer Saves from WC to Secret Missions
 echo Press 6 to Quit
 echo.
-choice /C:123456 /N Please Choose:
+jchoice /C:123456 /N Please Choose:
 
 if errorlevel = 6 goto quit
 if errorlevel = 5 goto TRAN
@@ -57,7 +57,7 @@ echo Press 1 transfer your Wing Commander save to Secret Missions 1
 echo Press 2 transfer your Wing Commander or SM1 save to Secret Missions 2
 echo Press 3 to return to the Launch Menu
 echo.
-choice /C:123 /N Please Choose:
+jchoice /C:123 /N Please Choose:
 
 if errorlevel = 3 goto menu
 if errorlevel = 2 goto WC12SM2
@@ -72,7 +72,7 @@ echo in the final system of the base game (Venice system). The Transfer program
 echo does allow you to convert your save to any mission, so you can always convert
 echo to the final mission before transferring if needed.
 echo.
-jchoice
+@jchoice
 cls
 TRANSFER
 cls
@@ -89,7 +89,7 @@ echo.
 echo The Transfer program does allow you to convert your save to any mission,
 echo so you can always convert to the final mission before transferring if needed.
 echo.
-jchoice
+@jchoice
 cls
 TRANS2
 cls

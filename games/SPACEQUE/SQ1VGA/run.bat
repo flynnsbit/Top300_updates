@@ -12,7 +12,7 @@ echo Press 7 for Space Quest I: The Sarien Encounter EGA w/ MT32
 echo Press 8 for Space Quest I: The Sarien Encounter EGA w/ Sound Canvas
 echo Press 9 to Quit
 echo.
-choice /C:123456789 /N Please Choose:
+jchoice /C:123456789 /N Please Choose:
 
 if errorlevel = 9 goto quit
 if errorlevel = 8 goto SC55EGA

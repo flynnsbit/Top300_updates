@@ -8,7 +8,7 @@ echo Press 3 for Abuse w/ Sound Canvas
 echo Press 4 to play Network Multiplayer
 echo Press 5 to Quit
 echo.
-choice /C:12345 /N Please Choose:
+jchoice /C:12345 /N Please Choose:
 
 if errorlevel = 5 goto quit
 if errorlevel = 4 goto network

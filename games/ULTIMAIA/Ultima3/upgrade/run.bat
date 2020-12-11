@@ -6,7 +6,7 @@ echo Press 1 for Ultima III: Exodus
 echo Press 2 for Sosaria Mod (Lands of Lord British)
 echo Press 3 to Quit
 echo.
-choice /C:123 /N Please Choose:
+jchoice /C:123 /N Please Choose:
 
 if errorlevel = 3 goto quit
 if errorlevel = 2 goto modvideo
@@ -23,7 +23,7 @@ echo Press 4 for EGA Alternate (16-color)
 echo Press 5 for VGA (256-color)
 echo Press 6 to Quit
 echo.
-choice /C:123456 /N Please Choose:
+jchoice /C:123456 /N Please Choose:
 
 if errorlevel = 6 goto quit
 if errorlevel = 5 goto VGA
@@ -75,7 +75,7 @@ echo Press 4 for EGA Alternate (16-color)
 echo Press 5 for VGA (256-color)
 echo Press 6 to Quit
 echo.
-choice /C:123456 /N Please Choose:
+jchoice /C:123456 /N Please Choose:
 
 if errorlevel = 6 goto quit
 if errorlevel = 5 goto VGAM
@@ -125,7 +125,7 @@ echo Press 2 for w/ MT32
 echo Press 3 for w/ Sound Canvas
 echo Press 4 to Quit
 echo.
-choice /C:1234 /N Please Choose:
+jchoice /C:1234 /N Please Choose:
 
 if errorlevel = 4 goto quit
 if errorlevel = 3 goto SC55
