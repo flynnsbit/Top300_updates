@@ -1,6 +1,6 @@
 imgset ide10 "/cd/ActionSo/actions.cue"
 
-pause
+jchoice
 
 REM cd ActionSo
 REM fakehma

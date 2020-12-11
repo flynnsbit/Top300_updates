@@ -4,6 +4,6 @@ if errorlevel 1 goto error_exit
 if errorlevel 0 goto ok_exit
 goto error_exit
 :error_exit
-pause
+jchoice
 :ok_exit
 @echo on

@@ -1,6 +1,6 @@
 imgset ide10 "/cd/SWRA/swra.cue"
 
-pause
+jchoice
 cd SWRA
 cd rebel
 call reb

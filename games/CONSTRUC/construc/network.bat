@@ -35,12 +35,12 @@ echo Set Player Name and Game Name and select New Game
 echo Select which color you will be and other game options.
 echo Then click Accept
 echo.
-pause
+jchoice
 GAME
 echo.
 echo Thanks for playing.
 echo.
-pause
+jchoice
 exit
 
 :join
@@ -75,11 +75,11 @@ echo Select the host's created game
 echo Select which color you will be and other game options.
 echo Then click Accept
 echo.
-pause
+jchoice
 GAME
 echo.
 echo Thanks for playing.
 echo.
-pause
+jchoice
 :later
 exit

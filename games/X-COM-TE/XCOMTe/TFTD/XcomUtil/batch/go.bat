@@ -39,7 +39,7 @@ goto EOF
 echo Error runing XcomUtil Setup.
 echo.
 echo Disabeling This Menu.
-pause
+jchoice
 call XcuSetup uninstall
 call OldBatch.bat
 :EOF

@@ -1,5 +1,5 @@
 imgset ide10 "/cd/RAVAGER/wake_1.0.cue"
 
-pause
+jchoice
 cd RAVAGER
 call run

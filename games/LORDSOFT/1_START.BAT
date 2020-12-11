@@ -1,12 +1,12 @@
 subst a: /d
 subst a: lordofrm\floppy
-pause
+jchoice
 imgset ide10 "/cd/lordofrm/lotr.cue"
 @echo off
 echo.
 echo This game needs to be slowed down.
 echo.
 
-pause
+jchoice
 cd lordofrm
 call run

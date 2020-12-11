@@ -13,7 +13,7 @@ if %OSArch%. == 32. goto archFOK
 if %OSArch%. == 16. if exist XcomUtil\Bin\find.com if exist XcomUtil\Bin\xcopy.exe goto archFOK
 :archErr
 echo  Unable to find %OSArch%bit Files.
-pause
+jchoice
 goto finis
 :archFOK
 
@@ -42,7 +42,7 @@ if errorlevel 40 goto archOK
 :incArch
 echo  DOS X-Com can't run on 64bit Windows. Use DOSBox.
 REM '
-pause
+jchoice
 goto finis
 :archOK
 set OSArch=
@@ -55,7 +55,7 @@ if errorlevel 1 goto abort
 goto noabort
 :abort
 echo XCUSETUP has not been executed for this version of XCOMUTIL
-pause
+jchoice
 goto finis
 :noabort
 
@@ -230,10 +230,10 @@ XcomUtil\Bin\BatRun XcomUtil\Addon AfterTacticalAfterXcomUtil
 :noHook4
 
 
-REM #### If Post Combat Display on Pause.
+REM #### If Post Combat Display on jchoice.
 if not exist XcomUtil\flags\pauserun.xcf goto nopause
 echo.
-pause
+jchoice
 del XcomUtil\flags\pauserun.xcf
 :nopause
 

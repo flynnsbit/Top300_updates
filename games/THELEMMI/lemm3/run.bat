@@ -32,7 +32,7 @@ goto menu
 imgset ide10 "/cd/lemm3/lemming.cue"
 
 
-pause
+jchoice
 cls
 cd l3
 call l3

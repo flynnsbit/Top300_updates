@@ -7,7 +7,7 @@ echo Copying game files...
 exists %2:resource.001
 if	not errorlevel 1 goto GetVol1
 echo Please insert the disk labeled "Disk 1" in drive %2.
-pause
+jchoice
 goto Vol1
 :GetVol1
 copy %2:sierra.exe >nul
@@ -17,7 +17,7 @@ copy %2:resource.* >nul
 exists %2:resource.002
 if	not errorlevel 1 goto GetVol2
 echo Please insert the disk labeled "Disk 2" in drive %2.
-pause
+jchoice
 goto Vol2
 :GetVol2
 copy %2:*.* >nul
@@ -26,7 +26,7 @@ copy %2:*.* >nul
 exists %2:resource.003
 if	not errorlevel 1 goto GetVol3
 echo Please insert the disk labeled "Disk 3" in drive %2.
-pause
+jchoice
 goto Vol3
 :GetVol3
 copy %2:*.* >nul
@@ -35,7 +35,7 @@ copy %2:*.* >nul
 exists %2:resource.004
 if	not errorlevel 1 goto GetVol4
 echo Please insert the disk labeled "Disk 4" in drive %2.
-pause
+jchoice
 goto Vol4
 :GetVol4
 copy %2:*.* >nul

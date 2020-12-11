@@ -37,13 +37,13 @@ echo Press ENTER
 echo You will use the Player 1 keys:
 echo WASD & FGH(P), CVB(K)
 echo.
-pause
+jchoice
 cd SSF2
 SETCOM
 echo.
 echo Thanks for playing.
 echo.
-pause
+jchoice
 exit
 
 :join
@@ -67,12 +67,12 @@ echo Press ENTER
 echo You will use the Player 2 keys:
 echo Arrows to move & 456(P), 123(K)
 echo.
-pause
+jchoice
 cd SSF2
 SETCOM
 echo.
 echo Thanks for playing.
 echo.
-pause
+jchoice
 :later
 exit

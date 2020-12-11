@@ -35,7 +35,7 @@ ECHO - Tocatta and Fugue in D Minorÿ
 ECHO - Yellow Rose of Texas
 ECHO ÿ
 ECHO ÿ
-PAUSE
+jchoice
 REM ***
 @ECHO Loading "Good Vibes"                      1 of 14
 @ECHO Press any key to advance to next song, or CTRL+C to exit.

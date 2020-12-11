@@ -1,6 +1,6 @@
 imgset ide10 "/cd/SWTieCD/swtiecd.cue"
 
-pause
+jchoice
 cd SWTieCD
 cd TIECD
 call run

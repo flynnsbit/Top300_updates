@@ -1,6 +1,6 @@
 imgset ide10 "/cd/BURGER/dburger.cue"
 
-pause
+jchoice
 cd BURGER
 cd burger
 call run

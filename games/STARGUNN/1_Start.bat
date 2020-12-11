@@ -1,6 +1,6 @@
 imgset ide10 "/cd/Stargunn/sg.cue"
 
-pause
+jchoice
 cd Stargunn
 cd Star
 stargun

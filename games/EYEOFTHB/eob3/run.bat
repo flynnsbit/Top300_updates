@@ -49,7 +49,7 @@ echo have more than one party, you may choose the one you would like
 echo to transfer at this point. Now inside Eye of the Beholder III
 echo you can select "Transfer Heroes from Dark Moon".
 echo.
-pause
+jchoice
 cls
 cd..
 md darkmoon

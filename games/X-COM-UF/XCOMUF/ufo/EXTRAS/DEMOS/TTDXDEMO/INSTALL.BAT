@@ -19,7 +19,7 @@ echo.
 echo.
 echo Press any key to continue with the default installation
 echo or CTRL-C to abort.
-pause > nul
+jchoice > nul
 md c:\ttdxdemo
 copy pkunzjr.com  c:\ttdxdemo
 copy ttdxdemo.zip c:\ttdxdemo

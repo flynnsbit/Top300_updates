@@ -1,5 +1,5 @@
 imgset ide10 "/cd/LLToC/lol_cd.cue"
 
-pause
+jchoice
 cd LLToC
 call run.bat

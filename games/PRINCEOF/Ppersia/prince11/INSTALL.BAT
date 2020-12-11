@@ -12,7 +12,7 @@ echo.
 echo.
 echo		This message will NOT appear again, after using install
 echo	        program.
-pause
+jchoice
 rename install1.exe install.exe
 rename prince1.exe prince.exe
 install.exe 

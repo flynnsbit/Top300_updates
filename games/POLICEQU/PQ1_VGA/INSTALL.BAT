@@ -109,7 +109,7 @@ echo This completes the install process.  Thank you.  To run PQ1, enter
 echo the directory above the install directory (i.e.  C:\SIERRA) and 
 echo type PQ1VGA.
 echo.
-pause
+jchoice
 
 :endCont
 set FLAG1=

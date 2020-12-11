@@ -36,13 +36,13 @@ echo Linkup Menu
 echo Choose "Lead" under Direct Link
 echo Click Connect
 echo.
-pause
+jchoice
 cd GP2
 GP2
 echo.
 echo Thanks for playing.
 echo.
-pause
+jchoice
 exit
 
 :join
@@ -65,12 +65,12 @@ echo Linkup Menu
 echo Choose "Follow" under Direct Link
 echo Click Connect
 echo.
-pause
+jchoice
 cd GP2
 GP2
 echo.
 echo Thanks for playing.
 echo.
-pause
+jchoice
 :later
 exit

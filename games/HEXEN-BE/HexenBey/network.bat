@@ -37,12 +37,12 @@ echo Press F10 to Launch
 echo.
 echo Note: All clients must choose the same number of total players
 echo.
-pause
+jchoice
 DM
 echo.
 echo Thanks for playing.
 echo.
-pause
+jchoice
 exit
 
 :join
@@ -79,11 +79,11 @@ echo Press F10 to Launch
 echo.
 echo Note: All clients must choose the same number of total players
 echo.
-pause
+jchoice
 DM
 echo.
 echo Thanks for playing.
 echo.
-pause
+jchoice
 :later
 exit

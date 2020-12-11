@@ -39,13 +39,13 @@ echo Set options and click OK.
 echo Client will now be asked to choose their shield
 echo When complete, you may choose yours and the game will begin.
 echo.
-pause
+jchoice
 cd LORDS
 LORDS
 echo.
 echo Thanks for playing.
 echo.
-pause
+jchoice
 exit
 
 :join
@@ -69,12 +69,12 @@ echo Click cancel, then click Set Up a Modem Conquest Again
 echo Set Link Open to Yes again. It should state "Link Established"
 echo Host will now set up the Game
 echo.
-pause
+jchoice
 cd LORDS
 LORDS
 echo.
 echo Thanks for playing.
 echo.
-pause
+jchoice
 :later
 exit

@@ -60,7 +60,7 @@ cls
 echo.
 echo Character Cleared
 echo.
-pause
+jchoice
 goto menu
 
 :tran

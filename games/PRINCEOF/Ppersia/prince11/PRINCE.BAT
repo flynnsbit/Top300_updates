@@ -12,7 +12,7 @@ echo.
 echo.
 echo.                                                     
 echo.
-pause
+jchoice
 cls
 prince1.exe
 

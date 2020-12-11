@@ -100,7 +100,7 @@ ECHO.
 ECHO   Welcome back, %username%. SHODAN is waiting for you.
 ECHO.
 )
-PAUSE
+jchoice
 REM SET target=main
 REM SET delay=1
 REM GOTO WAIT
@@ -144,7 +144,7 @@ if "%choice%"=="i" GOTO INFO
 if "%choice%"=="q" GOTO EOF
 ECHO.
 ECHO "%choice%" is not a valid choice. Please try again.
-PAUSE
+jchoice
 GOTO MAIN
 
 :VESA
@@ -352,7 +352,7 @@ if "%choice%"=="i" GOTO INFO
 if "%choice%"=="q" GOTO EOF
 ECHO.
 ECHO "%choice%" is not a valid choice. Please try again.
-PAUSE
+jchoice
 GOTO OPTIONS
 
 :XDSHOCK 
@@ -367,7 +367,7 @@ ECHO.
 ECHO  Mouselook mod was disabled.
 ECHO  Resolution has been reset to 640x480.
 ECHO.
-PAUSE
+jchoice
 ) ELSE (
 IF EXIST ./RES/SSP/flags/1024x768 ( DEL .\RES\SSP\flags\1024x768 )
 IF EXIST ./RES/SSP/flags/800x600 ( DEL .\RES\SSP\flags\800x600 )
@@ -385,7 +385,7 @@ ECHO.
 ECHO  Note that Mouse2kv mode is incompatible with Mouselook mod and 
 ECHO  therefor will not be available.
 ECHO.
-PAUSE
+jchoice
 )
 GOTO OPTIONS
 
@@ -398,7 +398,7 @@ CLS
 ECHO.
 ECHO  Original log file texts have been restored.
 ECHO.
-PAUSE
+jchoice
 ) ELSE (
 ECHO flag >> RES/SSP/flags/enhanced_text_enabled
 START /d RES 7za.exe x -y SSP/mods/text_enhanced.7z
@@ -407,7 +407,7 @@ ECHO.
 ECHO  Gigaquad's enhanced text mod has been enabled.
 ECHO  Log file texts will be true to the speech heard.
 ECHO.
-PAUSE
+jchoice
 )
 GOTO OPTIONS
 
@@ -420,7 +420,7 @@ CLS
 ECHO.
 ECHO  Original object textures have been restored.
 ECHO.
-PAUSE
+jchoice
 ) ELSE (
 ECHO flag >> RES/SSP/flags/scaled_object_textures_enabled
 START /d RES 7za.exe x -y SSP/mods/citmat_scaled.7z
@@ -428,7 +428,7 @@ CLS
 ECHO.
 ECHO  Gigaquad's scaled up object textures mod has been enabled.
 ECHO.
-PAUSE
+jchoice
 )
 GOTO OPTIONS
 
@@ -441,7 +441,7 @@ CLS
 ECHO.
 ECHO  Official DOSbox version will be used.
 ECHO.
-PAUSE
+jchoice
 ) ELSE (
 DEL .\RES\SSP\flags\dosbox_enabled
 ECHO flag >> RES/SSP/flags/gulikoza_enabled
@@ -449,7 +449,7 @@ CLS
 ECHO.
 ECHO  Gulikoza's custom DOSbox build will be used.
 ECHO.
-PAUSE
+jchoice
 )
 GOTO OPTIONS
 
@@ -462,7 +462,7 @@ ECHO  VDMSound allows stereo sound effects in DGVESA ^& Mouse2kv modes.
 IF EXIST "%VDMSPath%/dosdrv.exe" (
 ECHO  VDMSound was detected on the system. SFX will be stereo.
 ECHO.
-PAUSE
+jchoice
 ) ELSE (
 GOTO NOVDMS
 )
@@ -498,14 +498,14 @@ CLS
 ECHO.
 ECHO  NTVDM process affinity mask has been restored to system default.  
 ECHO.
-PAUSE
+jchoice
 ) ELSE (
 ECHO flag >> RES\SSP\flags\affinity_1
 CLS
 ECHO.
 ECHO  NTVDM process affinity mask has been set to the first processor.
 ECHO.
-PAUSE
+jchoice
 )
 GOTO OPTIONS
 
@@ -524,7 +524,7 @@ CLS
 ECHO.
 ECHO  800x600 resolution set.
 ECHO.
-PAUSE
+jchoice
 GOTO OPTIONS
 
 :1024x768 
@@ -537,7 +537,7 @@ CLS
 ECHO.
 ECHO  1024x768 resolution set.
 ECHO.
-PAUSE
+jchoice
 GOTO OPTIONS
 
 :640x480 
@@ -550,7 +550,7 @@ CLS
 ECHO.
 ECHO  Original 640x480 resolution reset.
 ECHO.
-PAUSE
+jchoice
 GOTO OPTIONS
 
 ::------------------------------------------------------
@@ -583,7 +583,7 @@ if "%choice%"=="o" GOTO OPTIONS
 if "%choice%"=="q" GOTO EOF
 ECHO.
 ECHO "%choice%" is not a valid choice. Please try again.
-PAUSE
+jchoice
 GOTO CFGEDIT
 
 :EDITXCYBCFG
@@ -644,7 +644,7 @@ if "%choice%"=="c" GOTO CFGEDIT
 if "%choice%"=="q" GOTO EOF
 ECHO.
 ECHO "%choice%" is not a valid choice. Please try again.
-PAUSE
+jchoice
 
 :UNPRTCYBCFG
 ATTRIB -R RES\CYB.CFG >nul
@@ -652,7 +652,7 @@ CLS
 ECHO.
 ECHO  CYB.CFG is writable now.
 ECHO.
-PAUSE
+jchoice
 GOTO EDITCYBCFG
 
 :WPRTCYBCFG
@@ -661,7 +661,7 @@ CLS
 ECHO.
 ECHO  CYB.CFG is write protected now.
 ECHO.
-PAUSE
+jchoice
 GOTO EDITCYBCFG
 
 :EDCYBCFG
@@ -675,7 +675,7 @@ DEL .\RES\SSP\flags\auto_cyb
 ECHO.
 ECHO  SSP will not make automatic adjustments to CYB.CFG any more.  
 ECHO.
-PAUSE
+jchoice
 ) ELSE (
 START /d RES 7za.exe x -y SSP/mods/DEFAULT.CYB.CFG.7z
 ECHO flag >> RES\SSP\flags\auto_cyb
@@ -683,7 +683,7 @@ ECHO.
 ECHO  CYB.CFG has been reset.
 ECHO  SSP will make automatic adjustments for best performance.
 ECHO.
-PAUSE
+jchoice
 )
 GOTO EDITCYBCFG
 ::----------------------------------
@@ -700,7 +700,7 @@ ECHO  path. If the installer doesn't run now, copy the folder "INST"
 ECHO  from SHOCK/RES/INST to C:/INST and run INSTALL.EXE there.
 ECHO  Note that the sound tests will not work.
 ECHO.  
-PAUSE
+jchoice
 START "" RES/INST/INSTALL.EXE
 GOTO CFGEDIT
 
@@ -718,7 +718,7 @@ ECHO.
 ECHO  Note that your OS ^(%win_name%^) does not have the NTVDM
 ECHO  and the game will not run in these modes on your system^. 
 ECHO.
-PAUSE
+jchoice
 GOTO OPTIONS
 ) 
 IF %showNTVDM% EQU 2 (
@@ -729,7 +729,7 @@ ECHO.
 ECHO  Incompatible game modes hidden^.
 ::Hate to say I told you so. 
 ECHO.
-PAUSE
+jchoice
 GOTO OPTIONS
 )
 
@@ -777,7 +777,7 @@ if "%choice%"=="o" GOTO OPTIONS
 if "%choice%"=="q" GOTO EOF
 echo.
 ECHO "%choice%" is not a valid choice. Please try again.
-PAUSE
+jchoice
 GOTO INFO
 
 :SINFO
@@ -797,7 +797,7 @@ ECHO.
 ECHO  Finally press ESC again to find the save game menu. 
 ECHO  Saving the game also saves the settings. 
 ECHO. 
-PAUSE
+jchoice
 GOTO INFO
 
 :CONTROLSINFO
@@ -808,7 +808,7 @@ ECHO  Keybinds and mouse sensitivity can be changed after enabling
 ECHO  Malba's mouselook mod in the Options menu. 
 ECHO  Next choose the Config edit menu and edit XCYB.CFG. 
 ECHO.
-PAUSE
+jchoice
 GOTO INFO
 
 :WINFO
@@ -837,7 +837,7 @@ ECHO  (slowest).
 ECHO  Leave the Speedset window open, start the game and load your save 
 ECHO  game. If you want to disable Speedset, type EXIT in it's window.
 ECHO.
-PAUSE
+jchoice
 GOTO MAIN
 
 :MODESINFO
@@ -862,7 +862,7 @@ echo  There are two versions of DOSbox available: The official build and
 echo  Gulikoza^'s custom build.
 ECHO  When finished playing leave DOSbox by typing "exit".
 ECHO. 
-PAUSE
+jchoice
 GOTO INFO
 
 :RESINFO
@@ -875,7 +875,7 @@ ECHO.
 ECHO  Without this mod you have to enable your preferred resolution from
 ECHO  the Options menu first and then set it in game as described above.
 ECHO.
-PAUSE
+jchoice
 GOTO INFO
 
 :WINDOWEDINFO
@@ -891,7 +891,7 @@ ECHO  To run the game in a window in DOSbox mode go to the Options menu,
 ECHO  then choose the Config edit menu and edit the file dosbox.conf from
 ECHO  there. Change the line ^"fullscreen^=true^" to ^"fullscreen^=false^".
 ECHO.
-PAUSE
+jchoice
 GOTO INFO
 
 :SHOTSINFO
@@ -909,7 +909,7 @@ ECHO  Press CTRL-ALT-F5 again to stop. You can find the videos in
 ECHO  SHOCK/RES/GEN. You may need to install the zmbv-codec to play them. 
 ECHO  Go to SHOCK/GEN/zmbv_codec, rightclick zmbv.inf and choose install.
 ECHO.
-PAUSE
+jchoice
 GOTO INFO
 
 :VDMSINFO
@@ -927,7 +927,7 @@ ECHO  you want to play SSP in. After the installation reboot your system.
 ECHO  Note that VDMSound has been integrated in DOSbox, so installing it 
 ECHO  when you run SSP in DOSbox, will do nothing.
 ECHO.
-PAUSE
+jchoice
 GOTO INFO
 
 :FRENGERINFO
@@ -937,7 +937,7 @@ ECHO  System Shock was originally released trilingual but the German and
 ECHO  French files have been stripped from SSP to make it smaller. 
 ECHO  You can download the language files at Systemshock.org. 
 ECHO.
-PAUSE
+jchoice
 GOTO INFO
 
 :SMA

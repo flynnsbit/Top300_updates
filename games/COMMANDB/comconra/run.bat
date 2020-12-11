@@ -31,7 +31,7 @@ if errorlevel = 1 goto RAA
 imgset ide10 "/cd/comconra/redal1.iso"
 
 
-pause
+jchoice
 cd redalert
 cls
 ra
@@ -39,7 +39,7 @@ goto quit
 
 :RAS
 imgset ide10 "/cd/comconra/redal2.iso"
-pause
+jchoice
 cd redalert
 cls
 ra
@@ -47,7 +47,7 @@ goto quit
 
 :AM
 imgset ide10 "/cd/comconra/redal4.cue"
-pause
+jchoice
 cd redalert
 cls
 ra
@@ -55,7 +55,7 @@ goto quit
 
 :CS
 imgset ide10 "/cd/comconra/redal3.cue"
-pause
+jchoice
 cd redalert
 cls
 ra
@@ -63,7 +63,7 @@ goto quit
 
 :network
 imgset ide10 "/cd/comconra/redal4.cue"
-pause
+jchoice
 cls
 network
 

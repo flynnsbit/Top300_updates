@@ -1,7 +1,7 @@
 @ECHO OFF
 echo.
 echo this game needs to be slowed down...
-pause
+jchoice
 
 cd LodeRu94
 

@@ -34,13 +34,13 @@ echo Multiplayer Race
 echo Answer
 echo Both players will have to choose to start the race
 echo.
-pause
+jchoice
 cd NASCAR
 NASCAR
 echo.
 echo Thanks for playing.
 echo.
-pause
+jchoice
 exit
 
 :join
@@ -61,12 +61,12 @@ echo Multiplayer Race
 echo Dial
 echo The host will set up the game from here
 echo.
-pause
+jchoice
 cd NASCAR
 NASCAR
 echo.
 echo Thanks for playing.
 echo.
-pause
+jchoice
 :later
 exit

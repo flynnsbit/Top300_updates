@@ -4,7 +4,7 @@ echo Now all savegames will be deleted.
 echo.
 echo To abort press CTRL/BREAK !!!
 echo.
-pause
+jchoice
 del ??.ans
 del cyberd.yne
 echo.

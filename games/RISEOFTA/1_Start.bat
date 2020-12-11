@@ -1,5 +1,5 @@
 imgset ide10 "/cd/RotTDLX/rottcd.cue"
 
-pause
+jchoice
 cd RotTDLX
 call run

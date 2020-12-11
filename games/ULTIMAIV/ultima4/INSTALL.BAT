@@ -6,7 +6,7 @@
 @ECHO    will be C:\ULTIMA4. If this is okay, hit the SPACEBAR. If it is not
 @ECHO    hit CTRL-C and when asked to TERMINATE BATCH JOB(Y/N) type in Y.
 @ECHO ...........................................................................
-@PAUSE
+@jchoice
 @MD C:\ULTIMA4
 @COPY *.* C:\ULTIMA4
 @C:
@@ -16,5 +16,5 @@
 @ECHO    Ultima IV is now installed to your hard drive at C:\ULTIMA4. Hit any
 @ECHO    key to begin playing Ultima IV: Quest of the Avatar. Enjoy!
 @ECHO ...........................................................................
-@PAUSE
+@jchoice
 @ULTIMA

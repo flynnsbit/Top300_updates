@@ -37,12 +37,12 @@ echo Begin IPX Game
 echo Enter Name
 echo Select other player and choose Challenge
 echo.
-pause
+jchoice
 TYRIAN
 echo.
 echo Thanks for playing.
 echo.
-pause
+jchoice
 exit
 
 :join
@@ -78,11 +78,11 @@ echo IPX Network
 echo Begin IPX Game
 echo Enter Name
 echo.
-pause
+jchoice
 TYRIAN
 echo.
 echo Thanks for playing.
 echo.
-pause
+jchoice
 :later
 exit

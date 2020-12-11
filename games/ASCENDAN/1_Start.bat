@@ -1,5 +1,5 @@
 imgset ide10 "/cd/ascendy/ascenda.img"
 
-pause
+jchoice
 cd ascendy
 ascend

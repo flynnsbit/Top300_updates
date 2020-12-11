@@ -35,13 +35,13 @@ echo Under network choose challenge
 echo Enter your name
 echo Select the other player's name to challenge them.
 echo.
-pause
+jchoice
 cd mk3
 mk3
 echo.
 echo Thanks for playing.
 echo.
-pause
+jchoice
 exit
 
 :join
@@ -76,12 +76,12 @@ echo Under network choose challenge
 echo Enter your name
 echo Select the other player's name to challenge them.
 echo.
-pause
+jchoice
 cd mk3
 mk3
 echo.
 echo Thanks for playing.
 echo.
-pause
+jchoice
 :later
 exit

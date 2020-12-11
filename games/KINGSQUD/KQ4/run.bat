@@ -45,7 +45,7 @@ echo To bypass the copy protection,
 echo press alt-D, hit enter twice, then type "marble"
 echo (or type "pirate" if you are feeling adventurous)
 echo.
-pause
+jchoice
 kq4
 cd ..
 cls

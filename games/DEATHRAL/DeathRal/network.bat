@@ -36,13 +36,13 @@ echo Enter Nickname and select Car Color
 echo Initialize a New Game, Select options, Initialize Game
 echo Press ENTER when all players have joined
 echo.
-pause
+jchoice
 cd rally
 rally
 echo.
 echo Thanks for playing.
 echo.
-pause
+jchoice
 exit
 
 :join
@@ -78,12 +78,12 @@ echo Enter Nickname and select Car Color
 echo Join an Existing Game
 echo Select Netgame to Join
 echo.
-pause
+jchoice
 cd rally
 rally
 echo.
 echo Thanks for playing.
 echo.
-pause
+jchoice
 :later
 exit

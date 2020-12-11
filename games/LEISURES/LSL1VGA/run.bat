@@ -28,7 +28,7 @@ CONFIG -set "sbtype=gb"
 CD EGA
 cls
 SCIDUV cms.cfg
-pause
+jchoice
 goto quit
 
 :EGASB
@@ -43,7 +43,7 @@ CONFIG -set "mididevice=mt32"
 CD EGA
 cls
 SCIDUV MESOURCE.cfg
-pause
+jchoice
 goto quit
 
 :EGASC55

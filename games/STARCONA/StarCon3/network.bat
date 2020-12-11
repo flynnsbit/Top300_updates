@@ -36,13 +36,13 @@ echo Click the Network Play icon
 echo Click the Setup Player 1 Fleet button and choose your ships
 echo Click the Fight button
 echo.
-pause
+jchoice
 cd STARCON3
 SC3
 echo.
 echo Thanks for playing.
 echo.
-pause
+jchoice
 exit
 
 :join
@@ -78,12 +78,12 @@ echo Click the Network Play icon
 echo Click the Setup Player 1 Fleet button and choose your ships
 echo Click the Fight button
 echo.
-pause
+jchoice
 cd STARCON3
 SC3
 echo.
 echo Thanks for playing.
 echo.
-pause
+jchoice
 :later
 exit

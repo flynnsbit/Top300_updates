@@ -37,13 +37,13 @@ echo Choose a Vehicle, click play
 echo Select Scenario and Team Color
 echo Once all players have joined, click play
 echo.
-pause
+jchoice
 cd SVR
 call SVR
 echo.
 echo Thanks for playing.
 echo.
-pause
+jchoice
 exit
 
 :join
@@ -80,13 +80,13 @@ echo Choose a Vehicle, click play
 echo Select Scenario and Team Color
 echo Once all players have joined, click play
 echo.
-pause
+jchoice
 cd SVR
 cd SVR
 call SVR
 echo.
 echo Thanks for playing.
 echo.
-pause
+jchoice
 :later
 exit

@@ -38,13 +38,13 @@ echo Select I am Good or I am Evil
 echo Select Connect Me
 echo if the game returns to the map, you are connected
 echo.
-pause
+jchoice
 cd POPULOUS
 populous.exe VGA Adlib Sound 
 echo.
 echo Thanks for playing.
 echo.
-pause
+jchoice
 exit
 
 :join
@@ -69,12 +69,12 @@ echo Select I am Good or I am Evil
 echo Select Connect Me
 echo if the game returns to the map, you are connected
 echo.
-pause
+jchoice
 cd POPULOUS
 populous.exe VGA Adlib Sound 
 echo.
 echo Thanks for playing.
 echo.
-pause
+jchoice
 :later
 exit

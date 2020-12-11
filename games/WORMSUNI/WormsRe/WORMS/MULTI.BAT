@@ -17,7 +17,7 @@ if errorlevel 3 goto modem
 if errorlevel 2 goto normal
 if errorlevel 1 goto end
 @goto end
-pause
+jchoice
 
 :normal
 @worms.bat
@@ -36,7 +36,7 @@ pause
 @echo Don`t forget to MESSAGE other players using 'M' !
 @echo.
 @echo.
-@pause
+@jchoice
 @bin\black.exe
 @call batch\locale.bat
 SET NETINFO=1
@@ -57,7 +57,7 @@ SET NETINFO=1
 @echo Press any key once connection is established!
 @echo.
 @echo.
-@pause
+@jchoice
 @bin\black.exe
 SET NETINFO=-M_B9600
 @call batch\locale.bat
@@ -101,7 +101,7 @@ batch\setmodem.bat
 @echo Press any key once connection is established!
 @echo.
 @echo.
-@pause
+@jchoice
 @bin\black.exe
 @call batch\locale.bat
 @batch\modemtx.bat
@@ -121,7 +121,7 @@ batch\setmodem.bat
 @echo Press any key once connection is established!
 @echo.
 @echo.
-@pause
+@jchoice
 @bin\black.exe
 @call batch\locale.bat
 @batch\modemrx.bat

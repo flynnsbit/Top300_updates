@@ -37,12 +37,12 @@ echo Begin IPX Game
 echo Enter Name
 echo Select other player and choose Challenge
 echo.
-pause
+jchoice
 netipx netarena -l 1 file0001
 echo.
 echo Thanks for playing.
 echo.
-pause
+jchoice
 exit
 
 :join
@@ -78,11 +78,11 @@ echo IPX Network
 echo Begin IPX Game
 echo Enter Name
 echo.
-pause
+jchoice
 netipx netarena -l 1 file0001
 echo.
 echo Thanks for playing.
 echo.
-pause
+jchoice
 :later
 exit

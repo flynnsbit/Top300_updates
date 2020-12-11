@@ -37,13 +37,13 @@ echo Client on top of Server
 echo Game launches when all players have joined.
 echo COMM-BAT Game, Select Battle Mode, Set Options, then Play Game
 echo.
-pause
+jchoice
 cd ROTT
 setup
 echo.
 echo Thanks for playing.
 echo.
-pause
+jchoice
 exit
 
 :join
@@ -78,12 +78,12 @@ echo Launch as Client
 echo Game launches when all players have joined.
 echo COMM-BAT Game, Select Player, Game Launches when Host Starts
 echo.
-pause
+jchoice
 cd ROTT_N
 setup
 echo.
 echo Thanks for playing.
 echo.
-pause
+jchoice
 :later
 exit

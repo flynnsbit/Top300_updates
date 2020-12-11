@@ -1,5 +1,5 @@
 imgset ide10 "/cd/Slipstre/slipstrm.iso"
 
-pause
+jchoice
 cd Slipstre
 call run

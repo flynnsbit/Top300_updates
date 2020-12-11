@@ -34,13 +34,13 @@ echo 2 Players
 echo Network - IPX Protocol (receiver)
 echo Attempt Connection
 echo.
-pause
+jchoice
 cd TTDLX
 TYCOON
 echo.
 echo Thanks for playing.
 echo.
-pause
+jchoice
 exit
 
 :join
@@ -74,12 +74,12 @@ echo 2 Players
 echo Network - IPX Protocol (sender)
 echo Attempt Connection
 echo.
-pause
+jchoice
 cd TTDLX
 TYCOON
 echo.
 echo Thanks for playing.
 echo.
-pause
+jchoice
 :later
 exit

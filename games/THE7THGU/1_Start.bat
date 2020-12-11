@@ -1,11 +1,11 @@
 imgset ide10 "/cd/7thguest/t7g1.cue"
 
-pause
+jchoice
 cd 7thguest
 cd t7g
 echo.
 echo This game is is comprised of 2 CD's.  Press Ctrl-F4 to switch
 echo discs when prompted.
 echo.
-pause
+jchoice
 call run.bat

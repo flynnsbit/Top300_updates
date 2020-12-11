@@ -20,7 +20,7 @@ echo ÿTo play King's Quest 7 later:
 echo ÿ From the game directory,
 echo   type kq7dos and press [ENTER].
 echo.
-pause
+jchoice
 goto end
 
 :end

@@ -1,5 +1,5 @@
 imgset ide10 "/cd/fantgen/fantasy.cue"
 
-pause
+jchoice
 cd fantgen
 call fg

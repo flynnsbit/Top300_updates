@@ -39,12 +39,12 @@ echo Note: Custom WADS can be used by hitting TAB, scrolling to a WAD
 echo file, and pressing ENTER. Or a WAD set can be created as well, to
 echo string together multiple WAD files.
 echo.
-pause
+jchoice
 doomatic
 echo.
 echo Thanks for playing.
 echo.
-pause
+jchoice
 exit
 
 :join
@@ -78,11 +78,11 @@ echo Press N to set player Name
 echo Press L to select Color
 echo Press J to Join server (once it appears in the game window)
 echo.
-pause
+jchoice
 doomatic
 echo.
 echo Thanks for playing.
 echo.
-pause
+jchoice
 :later
 exit

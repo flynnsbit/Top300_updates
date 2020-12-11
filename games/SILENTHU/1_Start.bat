@@ -1,6 +1,6 @@
 imgset ide10 "/cd/SilHnt/shce_v1.iso"
 
-pause
+jchoice
 cd SilHnt
 cd silent
 sh

@@ -36,12 +36,12 @@ echo Attempt Connection
 echo If the game returns to the main menu with 2 Players still
 echo highlighted, then it was successful
 echo.
-pause
+jchoice
 TYCOON
 echo.
 echo Thanks for playing.
 echo.
-pause
+jchoice
 exit
 
 :join
@@ -64,11 +64,11 @@ echo Attempt Connection
 echo If the game returns to the main menu with 2 Players still
 echo highlighted, then it was successful
 echo.
-pause
+jchoice
 TYCOON
 echo.
 echo Thanks for playing.
 echo.
-pause
+jchoice
 :later
 exit

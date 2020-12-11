@@ -37,12 +37,12 @@ echo Create Game
 echo The Host sets the options and can Start Game when the clients
 echo select that they are ready.
 echo.
-pause
+jchoice
 war2
 echo.
 echo Thanks for playing.
 echo.
-pause
+jchoice
 exit
 
 :join
@@ -80,11 +80,11 @@ echo Select Your race
 echo The Host sets the options and can Start Game when the clients
 echo select that they are ready.
 echo.
-pause
+jchoice
 war2
 echo.
 echo Thanks for playing.
 echo.
-pause
+jchoice
 :later
 exit

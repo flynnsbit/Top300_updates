@@ -1,6 +1,6 @@
 imgset ide10 "/cd/st25/startre.cue"
 
-pause
+jchoice
 cd st25
 cd trekcd
 call run

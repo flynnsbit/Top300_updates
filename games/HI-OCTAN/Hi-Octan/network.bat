@@ -36,14 +36,14 @@ echo Choose Single Race, Clone Race, or Death Match
 echo Choose Track and Vehicle
 echo All players must join before the timer expires
 echo.
-pause
+jchoice
 netbios
 cd HIOCTANE
 call HIOCTANE
 echo.
 echo Thanks for playing.
 echo.
-pause
+jchoice
 exit
 
 :join
@@ -80,12 +80,12 @@ echo Choose Single Race, Clone Race, or Death Match
 echo Choose Track and Vehicle
 echo All players must join before the timer expires
 echo.
-pause
+jchoice
 cd HIOCTANE
 call HIOCTANE
 echo.
 echo Thanks for playing.
 echo.
-pause
+jchoice
 :later
 exit

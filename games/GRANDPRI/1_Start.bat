@@ -1,5 +1,5 @@
 imgset ide10 "/cd/GPrix2/gp2.cue"
 
-pause
+jchoice
 cd GPrix2
 call run

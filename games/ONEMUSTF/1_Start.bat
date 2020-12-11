@@ -1,5 +1,5 @@
 imgset ide10 "/cd/OneMustF/omf2097.iso"
 
-pause
+jchoice
 cd OneMustF
 call run

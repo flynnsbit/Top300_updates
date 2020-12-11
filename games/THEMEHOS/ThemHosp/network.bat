@@ -36,13 +36,13 @@ echo Start Session (After client has joined)
 echo.
 echo NOTE: All players must choose the same number of players.
 echo.
-pause
+jchoice
 cd hospital
 hospital
 echo.
 echo Thanks for playing.
 echo.
-pause
+jchoice
 exit
 
 :join
@@ -78,12 +78,12 @@ echo Select Host's game
 echo.
 echo NOTE: All players must choose the same number of players.
 echo.
-pause
+jchoice
 cd hospital
 hospital
 echo.
 echo Thanks for playing.
 echo.
-pause
+jchoice
 :later
 exit

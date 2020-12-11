@@ -19,7 +19,7 @@ CONFIG -set "mididevice=default"
 cls
 cd dott.cd
 dotta
-pause
+jchoice
 goto quit
 
 :MT32

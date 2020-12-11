@@ -1,3 +1,3 @@
 @echo off 
 sierra 
-pause 
+jchoice 

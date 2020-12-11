@@ -12,7 +12,7 @@ echo Checking for Gabriel Knight CD in drive %1:
 if exist %1:gkcheck.bat goto Exit
 cls
 echo Please put the Gabriel Knight CD into your CD-ROM and then
-pause
+jchoice
 
 :LoopCheck
 if exist %1:gkcheck.bat goto Exit
@@ -20,7 +20,7 @@ echo.
 echo Unable to detect the Gabriel Knight CD in drive %1:.
 echo You may abort this looping test by pressing Ctrl-C or
 echo insert the CD into your CD-ROM and then
-pause
+jchoice
 goto LoopCheck
 
 :Abort

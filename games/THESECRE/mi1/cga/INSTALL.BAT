@@ -82,7 +82,7 @@ echo บ then press Ctrl-C now.                                        บ
 echo บ                                                               บ
 echo ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
 echo 
-pause
+jchoice
 echo 
 
 if exist %1\MONKEY\*.* goto DirExists
@@ -93,7 +93,7 @@ goto CopyFiles
 echo WARNING:  The directory %1\MONKEY already exists. Press Ctrl-C now if
 echo           you don't want to overwrite the contents of that directory.
 echo 
-pause
+jchoice
 echo 
 
 :CopyFiles

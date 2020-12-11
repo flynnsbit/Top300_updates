@@ -1,6 +1,6 @@
 imgset ide10 "/cd/SWDForc/swdf104.cue"
 
-pause
+jchoice
 cd SWDForc
 cd dark
 call run

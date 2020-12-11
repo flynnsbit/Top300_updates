@@ -1,5 +1,5 @@
 imgset ide10 "/cd/Syndicat/syndica.cue"
 
-pause
+jchoice
 cd Syndicat
 call run

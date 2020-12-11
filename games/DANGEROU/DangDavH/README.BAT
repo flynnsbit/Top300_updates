@@ -1,10 +1,10 @@
 @echo off
 cls
 type readme1.txt
-pause
+jchoice
 cls
 type readme2.txt
-pause
+jchoice
 cls
 type readme3.txt
 

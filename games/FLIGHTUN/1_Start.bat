@@ -1,6 +1,6 @@
 imgset ide10 "/cd/FlightUn/fu.cue"
 
-pause
+jchoice
 cd FlightUn
 cd flight
 call flight

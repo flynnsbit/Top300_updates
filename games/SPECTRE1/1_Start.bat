@@ -1,5 +1,5 @@
 subst a: /d
 subst a: Spectre\floppy
-pause
+jchoice
 cd Spectre
 call run

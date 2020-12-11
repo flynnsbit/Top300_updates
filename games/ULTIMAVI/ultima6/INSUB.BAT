@@ -3,7 +3,7 @@ echo off
 cls
 if exist %2\u6.1 goto adv1a
 echo Please insert the PROGRAM disk.
-pause
+jchoice
 goto adv1
 :adv1a
 cls
@@ -13,7 +13,7 @@ copy %2\*.*>NUL
 cls
 if exist %2\u6.2 goto adv2a
 echo Please insert the INTRODUCTION disk.
-pause
+jchoice
 goto adv2
 :adv2a
 cls
@@ -23,7 +23,7 @@ copy %2\*.*>NUL
 cls
 if exist %2\u6.4 goto adv3a
 echo Please insert the GAME disk.
-pause
+jchoice
 goto adv3
 :adv3a
 cls
@@ -33,7 +33,7 @@ copy %2\*.*>NUL
 cls
 if exist %2\u6.5 goto adv4a
 echo Please insert the MAP disk.
-pause
+jchoice
 goto adv4
 :adv4a
 cls
@@ -43,7 +43,7 @@ copy %2\*.*>NUL
 cls
 if exist %2\u6.6 goto adv5a
 echo Please insert the POPULACE A disk.
-pause
+jchoice
 goto adv5
 :adv5a
 cls
@@ -53,7 +53,7 @@ copy %2\*.*>NUL
 cls
 if exist %2\u6.7 goto adv6a
 echo Please insert the POPULACE B disk.
-pause
+jchoice
 goto adv6
 :adv6a
 cls

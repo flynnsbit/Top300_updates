@@ -1,6 +1,6 @@
 imgset ide10 "/cd/StrikCoC/strikec.cue"
 
-pause
+jchoice
 cd StrikCoC
 cd sc
 call run

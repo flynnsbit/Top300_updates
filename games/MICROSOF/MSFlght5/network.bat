@@ -37,13 +37,13 @@ echo Select Direct Connect
 echo Once connected you may use the other person Lat/Long to find them
 echo or send message to them while flying.
 echo.
-pause
+jchoice
 cd FLTSIM5
 call FS
 echo.
 echo Thanks for playing.
 echo.
-pause
+jchoice
 exit
 
 :join
@@ -67,12 +67,12 @@ echo Select Direct Connect
 echo Once connected you may use the other person Lat/Long to find them
 echo or send message to them while flying.
 echo.
-pause
+jchoice
 cd FLTSIM5
 call FS
 echo.
 echo Thanks for playing.
 echo.
-pause
+jchoice
 :later
 exit

@@ -99,7 +99,7 @@ echo This completes the install process.  Thank you.  To run PQ3, enter
 echo the directory above the install directory (i.e.  C:\SIERRA) and 
 echo type PQ3.
 echo.
-pause
+jchoice
 
 :endCont
 set FLAG1=

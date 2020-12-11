@@ -1,6 +1,6 @@
 imgset ide11 "/cd/SystemSh/system_.cue"
 
-pause
+jchoice
 cd SystemSh
 CD SSHOCK
 call run

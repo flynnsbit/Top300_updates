@@ -1,6 +1,6 @@
 imgset ide10 "/cd/JazzCD/jazzjac.iso"
 
-pause
+jchoice
 cd JazzCD
 cd Jazz
 JAZZ

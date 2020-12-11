@@ -34,13 +34,13 @@ echo Once you see the Players number equal to the number you expect,
 echo Hit ESC to skip the timer and start
 echo Play Game
 echo.
-pause
+jchoice
 cd worms
 call lan
 echo.
 echo Thanks for playing.
 echo.
-pause
+jchoice
 exit
 
 :join
@@ -74,12 +74,12 @@ echo Once you see the Players number equal to the number you expect,
 echo Hit ESC to skip the timer and start
 echo Play Game
 echo.
-pause
+jchoice
 cd worms
 call lan
 echo.
 echo Thanks for playing.
 echo.
-pause
+jchoice
 :later
 exit

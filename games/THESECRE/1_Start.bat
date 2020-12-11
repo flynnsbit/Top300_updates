@@ -1,5 +1,5 @@
 imgset ide10 "/cd/mi1/the_sec.cue"
 
-pause
+jchoice
 cd mi1
 call run

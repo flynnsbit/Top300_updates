@@ -40,13 +40,13 @@ echo Note: Clicking Start will start the game for all players, whether
 echo they are ready or not. It is best to check with everyone else
 echo before doing this.
 echo.
-pause
+jchoice
 D:
 NETHERW
 echo.
 echo Thanks for playing.
 echo.
-pause
+jchoice
 exit
 
 :join
@@ -86,12 +86,12 @@ echo Note: Clicking Start will start the game for all players, whether
 echo they are ready or not. It is best to check with everyone else
 echo before doing this.
 echo.
-pause
+jchoice
 D:
 NETHERW
 echo.
 echo Thanks for playing.
 echo.
-pause
+jchoice
 :later
 exit

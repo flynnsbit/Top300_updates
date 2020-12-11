@@ -37,12 +37,12 @@ echo Click the Check Mark
 echo.
 echo NOTE: All players must choose the same number of players.
 echo.
-pause
+jchoice
 abuse
 echo.
 echo Thanks for playing.
 echo.
-pause
+jchoice
 exit
 
 :join
@@ -79,11 +79,11 @@ echo Click Ok
 echo.
 echo NOTE: All players must choose the same number of players.
 echo.
-pause
+jchoice
 abuse
 echo.
 echo Thanks for playing.
 echo.
-pause
+jchoice
 :later
 exit

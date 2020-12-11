@@ -34,13 +34,13 @@ echo Network Game
 echo Enter Name and Select Car
 echo Press ENTER to start once all players have joined
 echo.
-pause
+jchoice
 cd SCREAMER
 call SCREAMER
 echo.
 echo Thanks for playing.
 echo.
-pause
+jchoice
 exit
 
 :join
@@ -74,12 +74,12 @@ echo Network Game
 echo Enter Name and Select Car
 echo Press ENTER to start once all players have joined
 echo.
-pause
+jchoice
 cd SCREAMER
 call SCREAMER
 echo.
 echo Thanks for playing.
 echo.
-pause
+jchoice
 :later
 exit

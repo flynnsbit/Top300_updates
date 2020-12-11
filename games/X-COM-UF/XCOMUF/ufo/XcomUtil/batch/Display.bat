@@ -1187,7 +1187,7 @@ echo ImpBas    = %ImpBas%
 echo DefBas    = %DefBas%
 echo ITank     = %ITank%
 echo IPst      = %IPst%
-pause
+jchoice
 cls
 echo    :: Debug Questions Pg2 ::
 echo.
@@ -1211,7 +1211,7 @@ echo FDay      = %FDay%
 echo FNight    = %FNight%
 echo BFGorWRnd = %BFGorWRnd%
 
-pause
+jchoice
 cls
 echo    :: Debug Questions Pg3 ::
 echo.
@@ -1224,14 +1224,14 @@ echo RndACSap  = %RndACSap%
 echo KepRndAC  = %KepRndAC%
 echo RndACFr   = %RndACFr%
 echo DisBas    = %DisBas%
-pause
+jchoice
 
 goto EOF
 :ERR
 Echo Error calling Disply.bat
 echo .
 echo This should only be called from xcusetup.
-pause
+jchoice
 
 :EOFC
 set MC=

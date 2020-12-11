@@ -1,5 +1,5 @@
 imgset ide10 "/cd/lordorm2/lordsof.iso"
 
-pause
+jchoice
 cd lordorm2
 l2d

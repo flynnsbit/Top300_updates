@@ -82,7 +82,7 @@ echo บ then press Ctrl-C now.                                      บ
 echo บ                                                             บ
 echo ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
 echo 
-pause
+jchoice
 echo 
 
 if exist %1\LOOM\*.* goto DirExists
@@ -93,7 +93,7 @@ goto CopyFiles
 echo WARNING:  The directory %1\LOOM already exists. Press Ctrl-C now if
 echo           you don't want to overwrite the contents of that directory.
 echo 
-pause
+jchoice
 echo 
 
 :CopyFiles

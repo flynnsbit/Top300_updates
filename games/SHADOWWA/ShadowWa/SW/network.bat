@@ -36,12 +36,12 @@ echo Launch Shadow Warrior
 echo.
 echo NOTE: All players must choose the same number of players.
 echo.
-pause
+jchoice
 setup
 echo.
 echo Thanks for playing.
 echo.
-pause
+jchoice
 exit
 
 :join
@@ -77,11 +77,11 @@ echo Press F10 to launch after you have chosen the game settings
 echo.
 echo NOTE: All players must choose the same number of players.
 echo.
-pause
+jchoice
 setup
 echo.
 echo Thanks for playing.
 echo.
-pause
+jchoice
 :later
 exit

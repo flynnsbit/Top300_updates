@@ -1,5 +1,5 @@
 imgset ide10 "/cd/Strife/strife.iso"
 
-pause
+jchoice
 cd Strife
 call run

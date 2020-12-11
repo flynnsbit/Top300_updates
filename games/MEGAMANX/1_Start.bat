@@ -1,6 +1,6 @@
 imgset ide10 "/cd/MegaManX/megamanx.iso"
 
-pause
+jchoice
 cd MegaManX
 cd mmx
 call run

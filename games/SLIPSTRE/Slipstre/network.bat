@@ -36,13 +36,13 @@ echo Call
 echo Select Race Type
 echo Select your Vehicle
 echo.
-pause
+jchoice
 cd SLIP5000
 call SLIP
 echo.
 echo Thanks for playing.
 echo.
-pause
+jchoice
 exit
 
 :join
@@ -77,12 +77,12 @@ echo Network
 echo Answer
 echo Select your Vehicle
 echo.
-pause
+jchoice
 cd SLIP5000
 call SLIP
 echo.
 echo Thanks for playing.
 echo.
-pause
+jchoice
 :later
 exit

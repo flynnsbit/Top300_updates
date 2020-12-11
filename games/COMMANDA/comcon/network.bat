@@ -34,12 +34,12 @@ echo Multiplayer Game
 echo Network
 echo Set Name, Side, and Color. Click New
 echo.
-pause
+jchoice
 c&c
 echo.
 echo Thanks for playing.
 echo.
-pause
+jchoice
 exit
 
 :join
@@ -76,11 +76,11 @@ echo Select Game Name and click Join
 echo Set Game Options
 echo Click OK
 echo.
-pause
+jchoice
 c&c
 echo.
 echo Thanks for playing.
 echo.
-pause
+jchoice
 :later
 exit

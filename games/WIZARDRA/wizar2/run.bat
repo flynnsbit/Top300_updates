@@ -39,7 +39,7 @@ if not exist .\wizar1\save1.dsk echo No Wizardry 1 Save Detected
 echo.
 if exist .\wizar2\save1.dsk echo Copy Successful
 echo.
-pause
+jchoice
 cd wizar2
 goto menu
 

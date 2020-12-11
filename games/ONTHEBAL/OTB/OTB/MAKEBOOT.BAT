@@ -29,7 +29,7 @@ echo.
 echo.
 echo       Please insert an unformatted disk in drive %1 !
 echo.
-pause
+jchoice
 echo.
 echo       MakeBoot is working........
 echo.

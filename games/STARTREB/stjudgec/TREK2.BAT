@@ -2,5 +2,5 @@
 cls
 eregcard
 type copyrite.txt
-pause
+jchoice
 trekjr

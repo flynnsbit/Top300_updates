@@ -28,21 +28,21 @@ if errorlevel = 1 goto GDI
 imgset ide10 "/cd/comcon/comma1.iso"
 
 
-pause
+jchoice
 cls
 C&C
 goto menu
 
 :NOD
 imgset ide10 "/cd/comcon/comma2.iso"
-pause
+jchoice
 cls
 C&C
 goto menu
 
 :COVERT
 imgset ide10 "/cd/comcon/cover3.cue"
-pause
+jchoice
 cls
 C&C
 goto menu
@@ -51,7 +51,7 @@ goto menu
 imgset ide10 "/cd/comcon/comma1.iso"
 
 
-pause
+jchoice
 cls
 C&C funpark
 goto menu
@@ -60,7 +60,7 @@ goto menu
 imgset ide10 "/cd/comcon/comma1.iso"
 
 
-pause
+jchoice
 cls
 network
 

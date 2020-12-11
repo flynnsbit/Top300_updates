@@ -1,5 +1,5 @@
 imgset ide10 "/cd/gk1/gabriel.cue"
 
-pause
+jchoice
 cd gk1
 call run

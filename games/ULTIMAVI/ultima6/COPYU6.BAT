@@ -43,7 +43,7 @@ echo บ                                                                          
 echo บ     Control - C  followed by Y to abort.                                    บ
 echo บ                                                                             บ
 echo ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
-pause
+jchoice
 cls
 echo Copying files...
 md %2\ultima6>NUL

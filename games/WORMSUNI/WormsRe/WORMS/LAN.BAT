@@ -12,7 +12,7 @@
 @echo Don`t forget to MESSAGE other players using 'M' !
 @echo.
 @echo.
-@pause
+@jchoice
 @bin\black.exe
 @call batch\locale.bat
 SET NETINFO=1

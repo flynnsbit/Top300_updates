@@ -1,5 +1,5 @@
 imgset ide10 "/cd/RotTDW/rott.iso"
 
-pause
+jchoice
 cd RotTDW
 call run

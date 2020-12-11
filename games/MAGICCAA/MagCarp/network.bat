@@ -35,13 +35,13 @@ echo In the main menu choose the network statue on the desk
 echo Select the name of your avatar
 echo When other players are detected, they will be added and the game will start
 echo.
-pause
+jchoice
 cd carpet
 carpet -network
 echo.
 echo Thanks for playing.
 echo.
-pause
+jchoice
 exit
 
 :join
@@ -76,12 +76,12 @@ echo In the main menu choose the network statue on the desk
 echo Select the name of your avatar
 echo When other players are detected, they will be added and the game will start
 echo.
-pause
+jchoice
 cd carpet
 carpet -network
 echo.
 echo Thanks for playing.
 echo.
-pause
+jchoice
 :later
 exit

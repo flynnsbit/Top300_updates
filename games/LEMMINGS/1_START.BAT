@@ -4,9 +4,9 @@ echo.
 echo This game requires EMM386, please reboot and select it and then run the game.
 echo.
 
-pause
+jchoice
 imgset ide10 "/cd/lemmings/az_2246.cue"
 
-pause
+jchoice
 cd lemmings
 call run

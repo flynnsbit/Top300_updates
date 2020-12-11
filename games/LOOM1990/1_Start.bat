@@ -1,5 +1,5 @@
 imgset ide10 "/cd/loom/loom.cue"
 
-pause
+jchoice
 cd loom
 call run

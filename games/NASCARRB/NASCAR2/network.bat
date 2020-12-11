@@ -37,13 +37,13 @@ echo Connect
 echo Set race settings
 echo Once all clients join, click Race
 echo.
-pause
+jchoice
 cd NAS50TH
 NASCAR50
 echo.
 echo Thanks for playing.
 echo.
-pause
+jchoice
 exit
 
 :join
@@ -79,12 +79,12 @@ echo Dial
 echo Connect
 echo Click host's game
 echo.
-pause
+jchoice
 cd NAS50TH
 NASCAR50
 echo.
 echo Thanks for playing.
 echo.
-pause
+jchoice
 :later
 exit

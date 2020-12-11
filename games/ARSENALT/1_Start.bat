@@ -1,5 +1,5 @@
 imgset ide10 "/cd/ARSENALP/arsenal.cue"
 
-pause
+jchoice
 f:
 arsenal

@@ -27,10 +27,10 @@ echo hit ENTER to start the transfer. Once this is completed you need to add
 echo your characters into a party from the "create character" menu inside
 echo Dark Sun 2.
 echo.
-pause
+jchoice
 CHARTRAN
 echo.
-pause
+jchoice
 goto menu
 
 :quit

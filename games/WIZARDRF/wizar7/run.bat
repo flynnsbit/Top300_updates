@@ -49,7 +49,7 @@ if not exist .\wizar6\SAVEGAME.DBS echo A Post-Ending save game has *NOT* been f
 rem if exist .\wizar6\*.dbs echo A Pre-Ending save game has been found. Press 2 to Import it.
 rem echo Press R to Return to the Previous Menu
 echo.
-pause
+jchoice
 rem choice /C:12R /N Please Choose:
 
 rem if errorlevel = 3 goto menu
@@ -63,7 +63,7 @@ echo.
 if exist .\wizar7\SAVEGAME.BCF echo Copy Successful
 if not exist .\wizar7\SAVEGAME.BCF echo Copy unsuccessful
 echo.
-pause
+jchoice
 goto menu
 
 :pre

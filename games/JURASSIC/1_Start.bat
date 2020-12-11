@@ -1,5 +1,5 @@
 imgset ide10 "/cd/Jurassic/jp_cd-r.cue"
 
-pause
+jchoice
 cd Jurassic
 call run

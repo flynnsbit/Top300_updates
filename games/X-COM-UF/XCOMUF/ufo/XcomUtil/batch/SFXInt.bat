@@ -7,7 +7,7 @@ REM ### Varify CWD is Game Folder.
 
 if exist geodata\obdata.dat goto gameok
 echo This must be run from the game directory. 
-pause
+jchoice
 goto EOF
 :gameOK
 
@@ -21,7 +21,7 @@ if %OSArch%. == 32. goto archFOK
 if %OSArch%. == 16. if exist XcomUtil\Bin\find.com if exist XcomUtil\Bin\xcopy.exe goto archFOK
 :archErr
 echo  Unable to find %OSArch%bit Files.
-pause
+jchoice
 goto EOF
 :archFOK
 set OSArch=
@@ -58,7 +58,7 @@ goto EOF
 :Nosetup
 echo.
 echo You will need to run XcuSetup manualy before using XcomUtil.
-pause
+jchoice
 goto EOF
 
 :EOF

@@ -1,5 +1,5 @@
 imgset ide10 "/cd/Hi-Octan/hoctane.cue"
 
-pause
+jchoice
 cd Hi-Octan
 call run

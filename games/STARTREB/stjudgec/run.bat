@@ -22,7 +22,7 @@ copy .\sb16\*.* .\
 imgset ide10 "/cd/stjudgec/startre.cue"
 
 
-pause
+jchoice
 cls
 trekjr
 goto quit
@@ -33,7 +33,7 @@ copy .\mt32\*.* .\
 imgset ide10 "/cd/stjudgec/startre.cue"
 
 
-pause
+jchoice
 cls
 trekjr
 goto quit
@@ -44,7 +44,7 @@ copy .\sc55\*.* .\
 imgset ide10 "/cd/stjudgec/startre.cue"
 
 
-pause
+jchoice
 cls
 trekjr
 goto quit
@@ -55,7 +55,7 @@ copy .\sb16\*.* .\
 imgset ide10 "/cd/stjudgec/star_tr.iso"
 
 
-pause
+jchoice
 d:
 cls
 call 2

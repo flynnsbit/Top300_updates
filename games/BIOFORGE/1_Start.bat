@@ -1,5 +1,5 @@
 imgset ide10 "/cd/bioforge/bioforge.iso"
 
-pause
+jchoice
 cd bioforge
 call run

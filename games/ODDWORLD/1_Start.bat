@@ -1,6 +1,6 @@
 imgset ide10 "/cd/Oddworld/oddworl.iso"
 
-pause
+jchoice
 cd Oddworld
 cd abe
 call abe

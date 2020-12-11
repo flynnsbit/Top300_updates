@@ -39,13 +39,13 @@ echo Click Accept
 echo.
 echo NOTE: All players must choose the same number of players.
 echo.
-pause
+jchoice
 d:
 synd
 echo.
 echo Thanks for playing.
 echo.
-pause
+jchoice
 exit
 
 :join
@@ -84,12 +84,12 @@ echo Click Accept
 echo.
 echo NOTE: All players must choose the same number of players.
 echo.
-pause
+jchoice
 d:
 synd
 echo.
 echo Thanks for playing.
 echo.
-pause
+jchoice
 :later
 exit

@@ -39,12 +39,12 @@ echo Ensure CALL and NETWORK are selected
 echo Choose Game Type
 echo Click Accept. Once other players join, you will see them on the list
 echo.
-pause
+jchoice
 falcon3
 echo.
 echo Thanks for playing.
 echo.
-pause
+jchoice
 exit
 
 :join
@@ -82,11 +82,11 @@ echo Click COMMS button
 echo Ensure ANSWER and Network are selected
 echo Click Accept and then click Y when prompted to connect
 echo.
-pause
+jchoice
 falcon3
 echo.
 echo Thanks for playing.
 echo.
-pause
+jchoice
 :later
 exit

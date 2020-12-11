@@ -31,7 +31,7 @@ echo.
 echo Pressing "r" during gameplay will turn on Hi-Res mode, however the game will run
 echo incredibly slow unless you increase the speed of DOSBox by pressing CTRL-F12.
 echo.
-pause
+jchoice
 carpet
 goto quit
 
@@ -47,7 +47,7 @@ echo.
 echo Pressing "r" during gameplay will turn on Hi-Res mode, however the game will run
 echo incredibly slow unless you increase the speed of DOSBox by pressing CTRL-F12.
 echo.
-pause
+jchoice
 carpet
 goto quit
 
@@ -63,7 +63,7 @@ echo.
 echo Pressing "r" during gameplay will turn on Hi-Res mode, however the game will run
 echo incredibly slow unless you increase the speed of DOSBox by pressing CTRL-F12.
 echo.
-pause
+jchoice
 carpet
 goto quit
 

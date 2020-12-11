@@ -31,13 +31,13 @@ type ExtIP2.txt
 echo.
 echo This game automatically connects once two players join.
 echo.
-pause
+jchoice
 cd STRIFE
 IPXSETUP
 echo.
 echo Thanks for playing.
 echo.
-pause
+jchoice
 exit
 
 :join
@@ -68,12 +68,12 @@ cls
 echo.
 echo This game automatically connects once two players join.
 echo.
-pause
+jchoice
 cd STRIFE
 IPXSETUP
 echo.
 echo Thanks for playing.
 echo.
-pause
+jchoice
 :later
 exit

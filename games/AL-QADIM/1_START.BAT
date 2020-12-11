@@ -1,5 +1,5 @@
 imgset ide10 "/cd/alqadim/alqd_cd.img"
 
-pause
+jchoice
 cd alqadim
 call run

@@ -40,13 +40,13 @@ echo Note: If connecting hangs at the second try, have the host get to the
 echo connection attempt before the client even types in their IP and starts
 echo the game.
 echo.
-pause
+jchoice
 cd POP2_256
 call GO
 echo.
 echo Thanks for playing.
 echo.
-pause
+jchoice
 exit
 
 :join
@@ -69,12 +69,12 @@ echo Ensure it states 'Connect Serial'
 echo Click Connect
 echo Click Connect
 echo.
-pause
+jchoice
 cd POP2_256
 call GO
 echo.
 echo Thanks for playing.
 echo.
-pause
+jchoice
 :later
 exit

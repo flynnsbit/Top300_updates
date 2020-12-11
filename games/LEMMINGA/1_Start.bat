@@ -1,5 +1,5 @@
 subst a: /d
 subst a: lemm2\disk
-pause
+jchoice
 cd lemm2
 call run

@@ -62,7 +62,7 @@ echo บ          InterNET EMail: tech@gravis.com            บ
 echo บ          SBCNET: 13:900/3                           บ
 echo บ                                                     บ
 echo ศอออออออออออออออออออออออออออออออออออออออออออออออออออออผ
-pause
+jchoice
 GOTO NO_GRAVIS
 
 :RUN_GRAVIS

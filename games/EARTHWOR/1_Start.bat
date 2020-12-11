@@ -1,6 +1,6 @@
 imgset ide10 "/cd/EWJ/earthwo.cue"
 
-pause
+jchoice
 cd EWJ
 cd EWJ
 ewj1

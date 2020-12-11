@@ -40,13 +40,13 @@ echo Select Race
 echo Now you will waity as the client's choose their Race
 echo Now the Game Begins
 echo.
-pause
+jchoice
 cd ORION2
 ORION2
 echo.
 echo Thanks for playing.
 echo.
-pause
+jchoice
 exit
 
 :join
@@ -83,12 +83,12 @@ echo Select Host's game
 echo Once host has selected their race, you will select your race
 echo Now the Game Begins
 echo.
-pause
+jchoice
 cd ORION2
 ORION2
 echo.
 echo Thanks for playing.
 echo.
-pause
+jchoice
 :later
 exit

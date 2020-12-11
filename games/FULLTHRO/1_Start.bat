@@ -1,6 +1,6 @@
 imgset ide10 "/cd/fullt/fullt.cue"
 
-pause
+jchoice
 cd fullt
 cd throttle
 THROTTLE

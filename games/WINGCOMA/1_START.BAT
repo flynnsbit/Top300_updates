@@ -3,6 +3,6 @@ imgset ide10 "/cd/WCAcad/wingcom.iso"
 echo.
 echo This game requires EMM386, please reboot, select it and restart the game.
 echo.
-pause
+jchoice
 cd WCAcad
 call run

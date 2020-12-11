@@ -1,8 +1,8 @@
 imgset fdd0 "/floppy/Populous/populou.ima"
 
-pause
+jchoice
 imgset fdd0 "/floppy/Populous/populo1.ima"
 
-pause
+jchoice
 cd Populous
 call run

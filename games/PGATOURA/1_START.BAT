@@ -1,6 +1,6 @@
 imgset ide10 "/cd/PGA486/pga486.iso"
 
-pause
+jchoice
 d:
 cd\golf
 golfvmsx

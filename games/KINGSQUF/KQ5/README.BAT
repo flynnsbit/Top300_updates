@@ -1,18 +1,18 @@
 @echo off
 type readme1
-pause
+jchoice
 type readme2
-pause
+jchoice
 type readme3
-pause
+jchoice
 type readme4
-pause
+jchoice
 type readme5
-pause
+jchoice
 type readme6
-pause
+jchoice
 type readme7
-pause
+jchoice
 type readme8
 
 

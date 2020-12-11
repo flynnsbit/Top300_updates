@@ -36,13 +36,13 @@ echo Launch Duke Nukem 3D
 echo.
 echo NOTE: All players must choose the same number of players.
 echo.
-pause
+jchoice
 cd duke3d
 setup
 echo.
 echo Thanks for playing.
 echo.
-pause
+jchoice
 exit
 
 :join
@@ -78,12 +78,12 @@ echo Launch Duke Nukem 3D
 echo.
 echo NOTE: All players must choose the same number of players.
 echo.
-pause
+jchoice
 cd duke3d
 setup
 echo.
 echo Thanks for playing.
 echo.
-pause
+jchoice
 :later
 exit

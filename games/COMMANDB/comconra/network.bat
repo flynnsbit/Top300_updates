@@ -37,13 +37,13 @@ echo Click New
 echo Select Scenario and set game Options
 echo Click OK once all playeres have joined
 echo.
-pause
+jchoice
 cd redalert
 ra
 echo.
 echo Thanks for playing.
 echo.
-pause
+jchoice
 exit
 
 :join
@@ -78,12 +78,12 @@ echo Network
 echo Set Your Name, Side, and Color
 echo Select game name and click Join
 echo.
-pause
+jchoice
 cd redalert
 ra
 echo.
 echo Thanks for playing.
 echo.
-pause
+jchoice
 :later
 exit

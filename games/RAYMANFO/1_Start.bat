@@ -1,5 +1,5 @@
 imgset ide10 "/cd/RaymanF/cd.cue"
 
-pause
+jchoice
 cd RaymanF
 call run

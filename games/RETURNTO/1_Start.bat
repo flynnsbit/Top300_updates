@@ -1,5 +1,5 @@
 imgset ide10 "/cd/rzork/image.cue"
 
-pause
+jchoice
 cd rzork
 call run

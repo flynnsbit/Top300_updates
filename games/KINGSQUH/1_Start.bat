@@ -1,5 +1,5 @@
 imgset ide10 "/cd/KQ7/kq7.iso"
 
-pause
+jchoice
 cd KQ7
 call run

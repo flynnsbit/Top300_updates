@@ -36,13 +36,13 @@ echo Begin IPX Game
 echo Type Player Name
 echo Select a second player to challenge
 echo.
-pause
+jchoice
 cd OMF
 OMF
 echo.
 echo Thanks for playing.
 echo.
-pause
+jchoice
 exit
 
 :join
@@ -78,12 +78,12 @@ echo Begin IPX Game
 echo Type Player Name
 echo Select a second player to challenge
 echo.
-pause
+jchoice
 cd OMF
 OMF
 echo.
 echo Thanks for playing.
 echo.
-pause
+jchoice
 :later
 exit

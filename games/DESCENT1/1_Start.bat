@@ -1,5 +1,5 @@
 imgset ide10 "/cd/Descent/descent.iso"
 
-pause
+jchoice
 cd Descent
 call run

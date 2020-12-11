@@ -72,7 +72,7 @@ echo in the final system of the base game (Venice system). The Transfer program
 echo does allow you to convert your save to any mission, so you can always convert
 echo to the final mission before transferring if needed.
 echo.
-pause
+jchoice
 cls
 TRANSFER
 cls
@@ -89,7 +89,7 @@ echo.
 echo The Transfer program does allow you to convert your save to any mission,
 echo so you can always convert to the final mission before transferring if needed.
 echo.
-pause
+jchoice
 cls
 TRANS2
 cls

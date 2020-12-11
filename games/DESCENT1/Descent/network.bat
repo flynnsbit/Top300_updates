@@ -36,13 +36,13 @@ echo Select Mission
 echo Set Game Options and Press ENTER
 echo Press ENTER to Begin after all players have joined
 echo.
-pause
+jchoice
 cd DESCENT
 descent -640x480
 echo.
 echo Thanks for playing.
 echo.
-pause
+jchoice
 exit
 
 :join
@@ -76,12 +76,12 @@ echo MultiPlayer
 echo Join a Network Game
 echo Select Netgame
 echo.
-pause
+jchoice
 cd DESCENT
 descent -640x480
 echo.
 echo Thanks for playing.
 echo.
-pause
+jchoice
 :later
 exit

@@ -36,13 +36,13 @@ echo Click Create, Choose Game Type and Asteroid density
 echo Click PLAY once all other players have joined.
 echo Choose Ship and select COMMIT
 echo.
-pause
+jchoice
 cd ARMADA
 pg
 echo.
 echo Thanks for playing.
 echo.
-pause
+jchoice
 exit
 
 :join
@@ -78,12 +78,12 @@ echo Click Available Game and then JOIN
 echo Click PLAY once all other players have joined.
 echo Choose Ship and select COMMIT
 echo.
-pause
+jchoice
 cd ARMADA
 pg
 echo.
 echo Thanks for playing.
 echo.
-pause
+jchoice
 :later
 exit

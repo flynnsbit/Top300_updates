@@ -37,13 +37,13 @@ echo Choose Color
 echo Set Game Options
 echo Click Start 2 player game when all players are in
 echo.
-pause
+jchoice
 cd DEADLY
 call DEADLY
 echo.
 echo Thanks for playing.
 echo.
-pause
+jchoice
 exit
 
 :join
@@ -78,12 +78,12 @@ echo Network Game
 echo Join a Network Game
 echo Choose Host's Game
 echo.
-pause
+jchoice
 cd DEADLY
 call DEADLY
 echo.
 echo Thanks for playing.
 echo.
-pause
+jchoice
 :later
 exit

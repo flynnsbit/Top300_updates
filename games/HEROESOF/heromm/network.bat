@@ -40,13 +40,13 @@ echo.
 echo Note: This game is turn based, and you must wait while
 echo the other player takes their turn.
 echo.
-pause
+jchoice
 cd HEROES
 loadfix -4 heroes.exe
 echo.
 echo Thanks for playing.
 echo.
-pause
+jchoice
 exit
 
 :join
@@ -85,12 +85,12 @@ echo.
 echo Note: This game is turn based, and you must wait while
 echo the other player takes their turn.                                                      
 echo.
-pause
+jchoice
 cd HEROES
 loadfix -4 heroes.exe
 echo.
 echo Thanks for playing.
 echo.
-pause
+jchoice
 :later
 exit

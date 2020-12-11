@@ -36,12 +36,12 @@ echo Leave the Node set to 00 and hit OK
 echo Once connected players get to take turns setting
 echo the match options.
 echo.
-pause
+jchoice
 WAR
 echo.
 echo Thanks for playing.
 echo.
-pause
+jchoice
 exit
 
 :join
@@ -77,11 +77,11 @@ echo Leave the Node set to 00 and hit OK
 echo Once connected players get to take turns setting
 echo the match options.
 echo.
-pause
+jchoice
 WAR
 echo.
 echo Thanks for playing.
 echo.
-pause
+jchoice
 :later
 exit

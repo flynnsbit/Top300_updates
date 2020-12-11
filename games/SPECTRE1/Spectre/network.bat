@@ -36,13 +36,13 @@ echo Choose a vehicle, click Play
 echo Choose a Scenario and a Team
 echo Click Play once all players have joined
 echo.
-pause
+jchoice
 cd SPECTRE
 call SPECTRE
 echo.
 echo Thanks for playing.
 echo.
-pause
+jchoice
 exit
 
 :join
@@ -78,12 +78,12 @@ echo Choose a vehicle, click Play
 echo Choose a Scenario and a Team
 echo Click Play once all players have joined
 echo.
-pause
+jchoice
 cd SPECTREN
 call SPECTRE
 echo.
 echo Thanks for playing.
 echo.
-pause
+jchoice
 :later
 exit

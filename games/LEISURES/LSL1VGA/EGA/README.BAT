@@ -1,6 +1,6 @@
 echo off
 cls
 type readme.1
-pause
+jchoice
 cls
 type readme.2

@@ -1,5 +1,5 @@
 imgset ide10 "/cd/FuzzysWo/fuzzycd2.cue"
 
-pause
+jchoice
 f:
 call fuzzy

@@ -23,7 +23,7 @@ goto menu
 cls
 cd rayfan
 rayfan ver=usa
-pause
+jchoice
 cd ..
 goto menu
 

@@ -39,13 +39,13 @@ echo Host
 echo Enter Handle and press Okay
 echo Set game Settings and Launch
 echo.
-pause
+jchoice
 cd HEROES2
 HEROES2
 echo.
 echo Thanks for playing.
 echo.
-pause
+jchoice
 exit
 
 :join
@@ -83,12 +83,12 @@ echo NetBIOS
 echo Guest
 echo Enter Handle and press Okay
 echo.
-pause
+jchoice
 cd HEROES2
 HEROES2
 echo.
 echo Thanks for playing.
 echo.
-pause
+jchoice
 :later
 exit
