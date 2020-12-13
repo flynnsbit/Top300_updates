@@ -110,7 +110,7 @@ mkdir "${mount_dir}"
 mount_image "${disk_image}" 2 "${mount_dir}"
 echo ""
 # Extract update, overwriting existing files
-unzip -u -o -d "${mount_dir}/" /tmp/update.zip
+unzip -o -d "${mount_dir}/" /tmp/update.zip
 echo ""
 # Clean up
 rm /tmp/update.zip
