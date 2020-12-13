@@ -9,7 +9,7 @@ echo Press 4 for Descent w/ Sound Canvas Hi-res
 echo Press 5 to play Network Multiplayer
 echo Press 6 to Quit
 echo.
-choice /C:123456 /N Please Choose:
+jchoice /C:123456 /N Please Choose:
 
 if errorlevel = 6 goto quit
 if errorlevel = 5 goto network
