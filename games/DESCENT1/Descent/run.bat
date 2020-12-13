@@ -9,7 +9,7 @@ echo Press 4 for Descent w/ Sound Canvas Hi-res
 echo Press 5 to play Network Multiplayer
 echo Press 6 to Quit
 echo.
-jchoice /C:123456 /N Please Choose:
+choice /C:123456 /N Please Choose:
 
 if errorlevel = 6 goto quit
 if errorlevel = 5 goto network
@@ -24,7 +24,7 @@ cd DESCENT
 del descent.cfg
 copy .\sb16\*.*
 cls
-descent
+dos32a descentr
 goto quit
 
 :SB16hi
@@ -33,7 +33,7 @@ cd DESCENT
 del descent.cfg
 copy .\sb16\*.*
 cls
-descent -640x480
+dos32a descentr -640x480
 goto quit
 
 :SC55
@@ -42,7 +42,7 @@ cd DESCENT
 del descent.cfg
 copy .\sc55\*.*
 cls
-descent
+dos32a descentr
 goto quit
 
 :SC55hi
@@ -51,7 +51,7 @@ cd DESCENT
 del descent.cfg
 copy .\sc55\*.*
 cls
-descent -640x480
+dos32a descentr -640x480
 goto quit
 
 :network
@@ -61,7 +61,7 @@ del descent.cfg
 copy .\sb16\*.*
 cd ..
 cls
-network
+dos32a network
 goto quit
 
 :quit
