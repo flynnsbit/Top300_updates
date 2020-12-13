@@ -18,7 +18,8 @@ if errorlevel = 1 goto ADLIB
 del russell.dat
 copy .\russell\russell.dat .\
 cls
-call lemmings
+a:
+call lemmings vga
 goto menu
 
 :CD
