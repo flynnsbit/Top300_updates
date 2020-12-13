@@ -1,5 +1,5 @@
 :menu
-@echo off
+echo off
 cls
 echo.
 echo Press 1 for Lemmings w/ Adlib Music
@@ -17,9 +17,10 @@ if errorlevel = 2 goto CD
 if errorlevel = 1 goto ADLIB
 
 :ADLIB
+attrib -h -r russell.dat
 del russell.dat
-copy .\russell\russell.dat .\
-attrib +R russell.dat
+copy e:\games\lemmings\lemmings\russell\*.* e:\games\lemmings\lemmings
+attrib -H +R russell.dat
 sysctl sys L1-
 cls
 VGALEMMI /v
