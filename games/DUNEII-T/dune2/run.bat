@@ -5,14 +5,20 @@ echo.
 echo Press 1 for Dune 2: The Building of a Dynasty w/ SoundBlaster
 echo Press 2 for Dune 2: The Building of a Dynasty w/ MT-32
 echo Press 3 for Dune 2: The Building of a Dynasty w/ Sound Canvas
-echo Press 4 to Quit
-echo.
-jchoice /C:1234 /N Please Choose:
+echo Press 4 for Dune 2: The Building of a Dynasty w/ MT-32 + SB
+echo Press 5 for Dune 2: The Building of a Dynasty w/ Sound Canvas + SB
 
-if errorlevel = 4 goto quit
+echo Press 6 to Quit
+echo.
+jchoice /C:123456 /N Please Choose:
+
+if errorlevel = 6 goto quit
+if errorlevel = 5 goto SBSC
+if errorlevel = 4 goto SBMT
 if errorlevel = 3 goto SC55
 if errorlevel = 2 goto MT32
 if errorlevel = 1 goto SB16
+if errorlevel = 0 goto quit
 
 :SB16
 CONFIG -set "mididevice=default"
@@ -34,6 +40,22 @@ goto quit
 CONFIG -set "mididevice=fluidsynth"
 del DUNE.CFG
 copy .\sc55\*.*
+cls
+DUNE2
+goto quit
+
+:SBMT
+CONFIG -set "mididevice=mt32"
+del DUNE.CFG
+copy .\SBMT\*.*
+cls
+DUNE2
+goto quit
+
+:SBSC
+CONFIG -set "mididevice=fluidsynth"
+del DUNE.CFG
+copy .\SBSC\*.*
 cls
 DUNE2
 goto quit
