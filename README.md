@@ -12,12 +12,12 @@ AO486 Update scripts for the flynnsbit eXoDOS V5.0 Top 300 Pack
 
 -------------------------------------------------------------------------------------------------------
 
-##More info:
+## More info:
 Initial pack generated using ExoDOSConverter MiSTer option:  https://github.com/Voljega/ExoDOSConverter
 
 Future updates to the pack are contained in the flynnsbit repo: https://github.com/flynnsbit/Top300_updates
 
-##Version History
+## Version History
 v.0.7.1 Fixes for Lemmings Floppy+others, Descent MIDI should finally be fixed, Dune 2 SB+MIDI options, 1830 sound fix, Lemmings 2 problem solved by turning off L1 cache, TDL updated to use ! for favorites in the pack, favicon option in the tdl.ini. Changed AO486 Updater script to push all files for now.
 
 v.6 update all scripts to use jchoice for pause and choice commands.
