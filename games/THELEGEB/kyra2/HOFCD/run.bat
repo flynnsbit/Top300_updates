@@ -15,22 +15,19 @@ if errorlevel = 2 goto MT32
 if errorlevel = 1 goto SB16
 
 :SB16
-CONFIG -set "mididevice=default"
-copy .\sb16\*.* .\
+xcopy .\sb16\*.* .\
 cls
 @HOFCD
 goto quit
 
 :MT32
-CONFIG -set "mididevice=mt32"
-copy .\mt32\*.* .\
+xcopy .\mt32\*.* .\
 cls
 @HOFCD
 goto quit
 
 :SC55
-CONFIG -set "mididevice=fluidsynth"
-copy .\sc55\*.* .\
+xcopy .\sc55\*.* .\
 cls
 @HOFCD
 goto quit
