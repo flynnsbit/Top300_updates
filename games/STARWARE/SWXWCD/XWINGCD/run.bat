@@ -17,7 +17,7 @@ if errorlevel = 1 goto SB16
 :SB16
 CONFIG -set "mididevice=default"
 del SETMUSE.INI
-copy .\sb16\*.*
+xcopy .\sb16\*.*
 cls
 @call XWINGCD
 goto quit
@@ -25,7 +25,7 @@ goto quit
 :MT32
 CONFIG -set "mididevice=mt32"
 del SETMUSE.INI
-copy .\mt32\*.*
+xcopy .\mt32\*.*
 cls
 @call XWINGCD
 goto quit
@@ -33,7 +33,7 @@ goto quit
 :SC55
 CONFIG -set "mididevice=fluidsynth"
 del SETMUSE.INI
-copy .\sc55\*.*
+xcopy .\sc55\*.*
 cls
 @call XWINGCD
 goto quit

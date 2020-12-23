@@ -16,21 +16,21 @@ if errorlevel = 1 goto TANDY
 
 :TANDY
 CONFIG -set "mididevice=default"
-copy .\tandy\*.* .\
+xcopy .\tandy\*.* .\
 cls
 @WINTER.COM
 goto quit
 
 :SB16
 CONFIG -set "mididevice=default"
-copy .\sb16\*.* .\
+xcopy .\sb16\*.* .\
 cls
 @WINTER.COM
 goto quit
 
 :MT32
 CONFIG -set "mididevice=mt32"
-copy .\mt32\*.* .\
+xcopy .\mt32\*.* .\
 cls
 @WINTER.COM
 goto quit

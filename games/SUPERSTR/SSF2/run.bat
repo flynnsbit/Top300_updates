@@ -20,7 +20,7 @@ if errorlevel = 1 goto SB16
 CONFIG -set "mididevice=default"
 cd SSF2
 cd drv
-copy .\sb16\*.* .\
+xcopy .\sb16\*.* .\
 cd ..
 cls
 SSF
@@ -30,7 +30,7 @@ goto quit
 CONFIG -set "mididevice=mt32"
 cd SSF2
 cd drv
-copy .\mt32\*.* .\
+xcopy .\mt32\*.* .\
 cd ..
 cls
 SSF
@@ -40,7 +40,7 @@ goto quit
 CONFIG -set "mididevice=fluidsynth"
 cd SSF2
 cd drv
-copy .\sc55\*.* .\
+xcopy .\sc55\*.* .\
 cd ..
 cls
 SSF
@@ -50,7 +50,7 @@ goto quit
 CONFIG -set "mididevice=default"
 cd SSF2
 cd drv
-copy .\sb16\*.* .\
+xcopy .\sb16\*.* .\
 cd ..
 cd ..
 cls

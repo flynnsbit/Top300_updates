@@ -29,7 +29,7 @@ echo.
 cls
 CONFIG -set "mididevice=default"
 CD CIV
-copy .\sb16\*.* .\
+xcopy .\sb16\*.* .\
 cls
 civ
 goto quit
@@ -58,7 +58,7 @@ echo.
 cls
 CONFIG -set "mididevice=fluidsynth"
 CD CIV
-copy .\sc55\*.* .\
+xcopy .\sc55\*.* .\
 cls
 civ
 goto quit

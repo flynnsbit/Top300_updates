@@ -19,7 +19,7 @@ if errorlevel = 1 goto GUS
 :GUS
 CONFIG -set "mididevice=default"
 del DEFAULT.CFG
-copy .\gus\*.*
+xcopy .\gus\*.*
 cd ultrasnd
 ultramid
 cd ..
@@ -30,7 +30,7 @@ goto quit
 :SB16
 CONFIG -set "mididevice=default"
 del DEFAULT.CFG
-copy .\sb16\*.*
+xcopy .\sb16\*.*
 cls
 DOOM
 goto quit
@@ -38,7 +38,7 @@ goto quit
 :SC55
 CONFIG -set "mididevice=fluidsynth"
 del DEFAULT.CFG
-copy .\sc55\*.*
+xcopy .\sc55\*.*
 cls
 DOOM
 goto quit
@@ -46,7 +46,7 @@ goto quit
 :network
 CONFIG -set "mididevice=default"
 del DEFAULT.CFG
-copy .\sb16\*.*
+xcopy .\sb16\*.*
 cls
 network
 

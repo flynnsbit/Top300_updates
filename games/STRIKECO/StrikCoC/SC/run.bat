@@ -18,7 +18,7 @@ if errorlevel = 1 goto SB16
 CONFIG -set "mididevice=default"
 del SC.CFG
 del SCTO1.CFG
-copy .\sb16\*.*
+xcopy .\sb16\*.*
 cls
 @SCCD
 goto quit
@@ -27,7 +27,7 @@ goto quit
 CONFIG -set "mididevice=mt32"
 del SC.CFG
 del SCTO1.CFG
-copy .\mt32\*.*
+xcopy .\mt32\*.*
 cls
 @SCCD
 goto quit
@@ -36,7 +36,7 @@ goto quit
 CONFIG -set "mididevice=fluidsynth"
 del SC.CFG
 del SCTO1.CFG
-copy .\sc55\*.*
+xcopy .\sc55\*.*
 cls
 @SCCD
 goto quit

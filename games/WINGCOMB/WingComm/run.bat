@@ -19,7 +19,7 @@ CONFIG -set "mididevice=default"
 cd ARMADA
 del INSTALL.CFG
 del ARMADA.CFG
-copy .\sb16\*.*
+xcopy .\sb16\*.*
 cls
 ARMADA
 goto quit
@@ -29,7 +29,7 @@ CONFIG -set "mididevice=fluidsynth"
 cd ARMADA
 del INSTALL.CFG
 del ARMADA.CFG
-copy .\sc55\*.*
+xcopy .\sc55\*.*
 cls
 ARMADA
 goto quit
@@ -39,7 +39,7 @@ CONFIG -set "mididevice=default"
 cd ARMADA
 del INSTALL.CFG
 del ARMADA.CFG
-copy .\sb16\*.*
+xcopy .\sb16\*.*
 cd ..
 cls
 network

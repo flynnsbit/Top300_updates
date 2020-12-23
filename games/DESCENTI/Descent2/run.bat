@@ -24,31 +24,31 @@ if errorlevel = 1 goto GUS
 
 :SB16
 CONFIG -set "mididevice=default"
-copy .\descent2\sb16\*.* .\descent2\
+xcopy .\descent2\sb16\*.* .\descent2\
 cls
 goto menu2
 
 :GUS
 CONFIG -set "mididevice=default"
-copy .\descent2\gus\*.* .\descent2\
+xcopy .\descent2\gus\*.* .\descent2\
 cls
 goto menu2
 
 :SC55
 CONFIG -set "mididevice=fluidsynth"
-copy .\descent2\sc55\*.* .\descent2\
+xcopy .\descent2\sc55\*.* .\descent2\
 cls
 goto menu2
 
 :CDA
 CONFIG -set "mididevice=default"
-copy .\descent2\CD\*.* .\descent2\
+xcopy .\descent2\CD\*.* .\descent2\
 cls
 goto menu2
 
 :network
 CONFIG -set "mididevice=default"
-copy .\descent2\CD\*.* .\descent2\
+xcopy .\descent2\CD\*.* .\descent2\
 cls
 network
 goto quit

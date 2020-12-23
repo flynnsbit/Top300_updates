@@ -25,21 +25,21 @@ if errorlevel = 1 goto SB16
 
 :SB16
 CONFIG -set "mididevice=default"
-copy .\sb16\*.* .\
+xcopy .\sb16\*.* .\
 cls
 @lords
 goto quit
 
 :MT32
 CONFIG -set "mididevice=mt32"
-copy .\mt32\*.* .\
+xcopy .\mt32\*.* .\
 cls
 @lords
 goto quit
 
 :SC55
 CONFIG -set "mididevice=fluidsynth"
-copy .\sc55\*.* .\
+xcopy .\sc55\*.* .\
 cls
 @lords
 goto quit
@@ -58,7 +58,7 @@ CONFIG -set "mididevice=default"
 CONFIG -SET "CYCLES=6000"
 cd ..
 cd lordscd
-copy .\sb16\*.* .\
+xcopy .\sb16\*.* .\
 cls
 @LORDS
 goto quit
@@ -68,7 +68,7 @@ CONFIG -set "mididevice=mt32"
 CONFIG -SET "CYCLES=6000"
 cd ..
 cd lordscd
-copy .\mt32\*.* .\
+xcopy .\mt32\*.* .\
 cls
 @LORDS
 goto quit
@@ -78,7 +78,7 @@ CONFIG -set "mididevice=fluidsynth"
 CONFIG -SET "CYCLES=6000"
 cd ..
 cd lordscd
-copy .\sc55\*.* .\
+xcopy .\sc55\*.* .\
 cls
 @LORDS
 goto quit

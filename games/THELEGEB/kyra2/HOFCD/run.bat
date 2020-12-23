@@ -15,19 +15,19 @@ if errorlevel = 2 goto MT32
 if errorlevel = 1 goto SB16
 
 :SB16
-xcopy .\sb16\*.* .\
+xxcopy .\sb16\*.* .\
 cls
 @HOFCD
 goto quit
 
 :MT32
-xcopy .\mt32\*.* .\
+xxcopy .\mt32\*.* .\
 cls
 @HOFCD
 goto quit
 
 :SC55
-xcopy .\sc55\*.* .\
+xxcopy .\sc55\*.* .\
 cls
 @HOFCD
 goto quit

@@ -25,7 +25,7 @@ CONFIG -set "oplemu=nuked"
 CONFIG -set "oplrate=49716"
 CONFIG -set "oplmode=opl2"
 del CONFIG.U6
-copy .\sb16\*.*
+xcopy .\sb16\*.*
 cls
 @ULTIMA6
 goto quit
@@ -34,7 +34,7 @@ cls
 :MT32
 CONFIG -set "mididevice=mt32"
 del CONFIG.U6
-copy .\mt32\*.*
+xcopy .\mt32\*.*
 cls
 @ULTIMA6
 goto quit
@@ -43,7 +43,7 @@ cls
 :SC55
 CONFIG -set "mididevice=fluidsynth"
 del CONFIG.U6
-copy .\sc55\*.*
+xcopy .\sc55\*.*
 cls
 @ULTIMA6
 goto quit
@@ -54,8 +54,8 @@ cls
 cd savegame
 del *.*
 cd..
-copy .\blank\savegame\*.* .\savegame\
-copy .\blank\*.*
+xcopy .\blank\savegame\*.* .\savegame\
+xcopy .\blank\*.*
 cls
 echo.
 echo Character Cleared

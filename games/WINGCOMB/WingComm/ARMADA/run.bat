@@ -16,7 +16,7 @@ if errorlevel = 1 goto SB16
 CONFIG -set "mididevice=default"
 del INSTALL.CFG
 del ARMADA.CFG
-copy .\sb16\*.*
+xcopy .\sb16\*.*
 cls
 @ARMADA
 goto quit
@@ -25,7 +25,7 @@ goto quit
 CONFIG -set "mididevice=fluidsynth"
 del INSTALL.CFG
 del ARMADA.CFG
-copy .\sc55\*.*
+xcopy .\sc55\*.*
 cls
 @ARMADA
 goto quit

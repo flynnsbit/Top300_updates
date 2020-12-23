@@ -28,7 +28,7 @@ if errorlevel = 1 goto SB16
 :SB16
 CONFIG -set "mididevice=default"
 cd LORDS
-copy .\sb16\*.* .\
+xcopy .\sb16\*.* .\
 cls
 lords
 goto quit
@@ -36,7 +36,7 @@ goto quit
 :MT32
 CONFIG -set "mididevice=mt32"
 cd LORDS
-copy .\mt32\*.* .\
+xcopy .\mt32\*.* .\
 cls
 lords
 goto quit
@@ -44,7 +44,7 @@ goto quit
 :SC55
 CONFIG -set "mididevice=fluidsynth"
 cd LORDS
-copy .\sc55\*.* .\
+xcopy .\sc55\*.* .\
 cls
 lords
 goto quit
@@ -61,7 +61,7 @@ goto quit
 CONFIG -set "mididevice=default"
 CONFIG -SET "CYCLES=6000"
 cd lordscd
-copy .\sb16\*.* .\
+xcopy .\sb16\*.* .\
 cls
 LORDS
 goto quit
@@ -70,7 +70,7 @@ goto quit
 CONFIG -set "mididevice=mt32"
 CONFIG -SET "CYCLES=6000"
 cd lordscd
-copy .\mt32\*.* .\
+xcopy .\mt32\*.* .\
 cls
 LORDS
 goto quit
@@ -79,7 +79,7 @@ goto quit
 CONFIG -set "mididevice=fluidsynth"
 CONFIG -SET "CYCLES=6000"
 cd lordscd
-copy .\sc55\*.* .\
+xcopy .\sc55\*.* .\
 cls
 LORDS
 goto quit
@@ -87,7 +87,7 @@ goto quit
 :network
 CONFIG -set "mididevice=default"
 cd LORDS
-copy .\sb16\*.* .\
+xcopy .\sb16\*.* .\
 cd ..
 cls
 call network

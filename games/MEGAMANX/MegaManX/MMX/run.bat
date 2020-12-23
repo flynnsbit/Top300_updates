@@ -17,7 +17,7 @@ if errorlevel = 1 goto SB16
 :SB16
 CONFIG -set "mididevice=default"
 cd drv
-copy .\sb16\*.* .\
+xcopy .\sb16\*.* .\
 cd ..
 cls
 @call MMX
@@ -26,7 +26,7 @@ goto quit
 :MT32
 CONFIG -set "mididevice=mt32"
 cd drv
-copy .\mt32\*.* .\
+xcopy .\mt32\*.* .\
 cd ..
 cls
 @call MMX
@@ -35,7 +35,7 @@ goto quit
 :SC55
 CONFIG -set "mididevice=fluidsynth"
 cd drv
-copy .\sc55\*.* .\
+xcopy .\sc55\*.* .\
 cd ..
 cls
 @call MMX

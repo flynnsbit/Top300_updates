@@ -21,7 +21,7 @@ del MECH2.BAT
 del RTZ.BAT
 del RTZ.CFG
 del SIMON.BAT
-copy .\sb16\*.*
+xcopy .\sb16\*.*
 cls
 call RTZ
 goto quit
@@ -33,7 +33,7 @@ del MECH2.BAT
 del RTZ.BAT
 del RTZ.CFG
 del SIMON.BAT
-copy .\mt32\*.*
+xcopy .\mt32\*.*
 cls
 call RTZ
 goto quit
@@ -45,7 +45,7 @@ del MECH2.BAT
 del RTZ.BAT
 del RTZ.CFG
 del SIMON.BAT
-copy .\sc55\*.*
+xcopy .\sc55\*.*
 cls
 call RTZ
 goto quit

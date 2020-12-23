@@ -46,7 +46,7 @@ del start.ega
 del stoncrcl.ega
 del truth.ega
 del valor.ega
-copy .\EGA\*.*
+xcopy .\EGA\*.*
 cls
 goto music
 cls
@@ -79,7 +79,7 @@ del start.ega
 del stoncrcl.ega
 del truth.ega
 del valor.ega
-copy .\VGA\*.*
+xcopy .\VGA\*.*
 cls
 goto music
 cls
@@ -112,10 +112,10 @@ del start.ega
 del stoncrcl.ega
 del truth.ega
 del valor.ega
-copy .\EGA\*.*
+xcopy .\EGA\*.*
 del charset.ega
 del charset.vga
-copy .\runic\*.*
+xcopy .\runic\*.*
 cls
 goto music
 cls
@@ -148,10 +148,10 @@ del start.ega
 del stoncrcl.ega
 del truth.ega
 del valor.ega
-copy .\VGA\*.*
+xcopy .\VGA\*.*
 del charset.ega
 del charset.vga
-copy .\runic\*.*
+xcopy .\runic\*.*
 cls
 goto music
 cls
@@ -181,21 +181,21 @@ if errorlevel = 1 goto musorig
 
 :musorig
 del LARGE.XMI
-copy .\musorig\*.*
+xcopy .\musorig\*.*
 cls
 goto output
 cls
 
 :mup
 del LARGE.XMI
-copy .\mup\*.*
+xcopy .\mup\*.*
 cls
 goto output
 cls
 
 :mup2
 del LARGE.XMI
-copy .\mup2\*.*
+xcopy .\mup2\*.*
 cls
 goto output
 cls
@@ -221,7 +221,7 @@ CONFIG -set "mididevice=default"
 del MIDPAK.AD
 del MIDPAK.ADV
 del MIDPAK.COM
-copy .\sb16\*.*
+xcopy .\sb16\*.*
 cls
 @ULTIMA.COM
 goto quit
@@ -232,7 +232,7 @@ CONFIG -set "mididevice=mt32"
 del MIDPAK.AD
 del MIDPAK.ADV
 del MIDPAK.COM
-copy .\mt32\*.*
+xcopy .\mt32\*.*
 cls
 @ULTIMA.COM
 goto quit
@@ -243,7 +243,7 @@ CONFIG -set "mididevice=fluidsynth"
 del MIDPAK.AD
 del MIDPAK.ADV
 del MIDPAK.COM
-copy .\sc55\*.*
+xcopy .\sc55\*.*
 cls
 @ULTIMA.COM
 goto quit

@@ -24,7 +24,7 @@ CONFIG -set "mididevice=default"
 cd CARPET.CD
 del SNDSETUP.DAT
 del SNDSETUP.INF
-copy .\sb16\*.*
+xcopy .\sb16\*.*
 cd ..
 cls
 echo.
@@ -40,7 +40,7 @@ CONFIG -set "mididevice=mt32"
 cd CARPET.CD
 del SNDSETUP.DAT
 del SNDSETUP.INF
-copy .\mt32\*.*
+xcopy .\mt32\*.*
 cd ..
 cls
 echo.
@@ -56,7 +56,7 @@ CONFIG -set "mididevice=fluidsynth"
 cd CARPET.CD
 del SNDSETUP.DAT
 del SNDSETUP.INF
-copy .\sc55\*.*
+xcopy .\sc55\*.*
 cd ..
 cls
 echo.
@@ -72,7 +72,7 @@ CONFIG -set "mididevice=default"
 cd CARPET.CD
 del SNDSETUP.DAT
 del SNDSETUP.INF
-copy .\sb16\*.*
+xcopy .\sb16\*.*
 cd ..
 cls
 network

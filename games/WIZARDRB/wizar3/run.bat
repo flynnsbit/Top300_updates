@@ -44,8 +44,8 @@ if not exist .\wizar2\save2.dsk echo No Wizardry 2 Save Detected
 echo.
 @jchoice
 cls
-if exist .\wizar1\save1.dsk copy .\wizar1\save1.dsk .\wizar3\save1.dsk
-if exist .\wizar2\save2.dsk copy .\wizar2\save2.dsk .\wizar3\save2.dsk
+if exist .\wizar1\save1.dsk xcopy .\wizar1\save1.dsk .\wizar3\save1.dsk
+if exist .\wizar2\save2.dsk xcopy .\wizar2\save2.dsk .\wizar3\save2.dsk
 echo.
 if exist .\wizar3\save1.dsk echo Wizardry 1 Copy Successful
 if exist .\wizar3\save2.dsk echo Wizardry 2 Copy Successful

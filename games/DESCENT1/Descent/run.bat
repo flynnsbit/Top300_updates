@@ -22,7 +22,7 @@ if errorlevel = 1 goto SB16
 CONFIG -set "mididevice=default"
 cd DESCENT
 del descent.cfg
-copy .\sb16\*.*
+xcopy .\sb16\*.*
 cls
 dos32a descentr
 goto quit
@@ -31,7 +31,7 @@ goto quit
 CONFIG -set "mididevice=default"
 cd DESCENT
 del descent.cfg
-copy .\sb16\*.*
+xcopy .\sb16\*.*
 cls
 dos32a descentr -640x480
 goto quit
@@ -40,7 +40,7 @@ goto quit
 CONFIG -set "mididevice=fluidsynth"
 cd DESCENT
 del descent.cfg
-copy .\sc55\*.*
+xcopy .\sc55\*.*
 cls
 dos32a descentr
 goto quit
@@ -49,7 +49,7 @@ goto quit
 CONFIG -set "mididevice=fluidsynth"
 cd DESCENT
 del descent.cfg
-copy .\sc55\*.*
+xcopy .\sc55\*.*
 cls
 dos32a descentr -640x480
 goto quit
@@ -58,7 +58,7 @@ goto quit
 CONFIG -set "mididevice=default"
 cd DESCENT
 del descent.cfg
-copy .\sb16\*.*
+xcopy .\sb16\*.*
 cd ..
 cls
 dos32a network

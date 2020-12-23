@@ -18,7 +18,7 @@ if errorlevel = 1 goto SB16
 CONFIG -set "mididevice=default"
 cd DATA
 del UW.CFG
-copy .\sb16\*.*
+xcopy .\sb16\*.*
 cd ..
 cd SOUND
 del uwa01.xmi
@@ -55,7 +55,7 @@ del uwr16.xmi
 del uwr17.xmi
 del uwr30.xmi
 del uwr31.xmi
-copy .\orig\*.*
+xcopy .\orig\*.*
 cd ..
 cls
 @UW2
@@ -66,7 +66,7 @@ cls
 CONFIG -set "mididevice=mt32"
 cd DATA
 del UW.CFG
-copy .\mt32\*.*
+xcopy .\mt32\*.*
 cd ..
 cd SOUND
 del uwa01.xmi
@@ -103,7 +103,7 @@ del uwr16.xmi
 del uwr17.xmi
 del uwr30.xmi
 del uwr31.xmi
-copy .\orig\*.*
+xcopy .\orig\*.*
 cd ..
 cls
 @UW2
@@ -114,7 +114,7 @@ cls
 CONFIG -set "mididevice=fluidsynth"
 cd DATA
 del UW.CFG
-copy .\sc55\*.*
+xcopy .\sc55\*.*
 cd ..
 cd SOUND
 del uwa01.xmi
@@ -151,7 +151,7 @@ del uwr16.xmi
 del uwr17.xmi
 del uwr30.xmi
 del uwr31.xmi
-copy .\sc55\*.*
+xcopy .\sc55\*.*
 cd ..
 cls
 @UW2

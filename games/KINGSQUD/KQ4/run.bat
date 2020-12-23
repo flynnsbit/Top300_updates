@@ -24,14 +24,14 @@ if errorlevel = 1 goto SCISB
 
 :SCISB
 config -set "mididevice=default"
-copy .\cfg\RESOURCE.SB RESOURCE.CFG
+xcopy .\cfg\RESOURCE.SB RESOURCE.CFG
 sierra
 cls
 goto quit
 
 :SCIMT32
 config -set "mididevice=mt32"
-copy .\cfg\RESOURCE.M32 RESOURCE.CFG
+xcopy .\cfg\RESOURCE.M32 RESOURCE.CFG
 sierra
 cls
 goto quit

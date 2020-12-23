@@ -20,7 +20,7 @@ del MUSIC.COM
 del SOUND.CFG
 del SOUND.COM
 del SOUNDRV.COM
-copy .\sb16\*.*
+xcopy .\sb16\*.*
 cls
 @TYCOON
 goto quit
@@ -31,7 +31,7 @@ del MUSIC.COM
 del SOUND.CFG
 del SOUND.COM
 del SOUNDRV.COM
-copy .\mt32\*.*
+xcopy .\mt32\*.*
 cls
 @TYCOON
 goto quit
@@ -42,7 +42,7 @@ del MUSIC.COM
 del SOUND.CFG
 del SOUND.COM
 del SOUNDRV.COM
-copy .\sc55\*.*
+xcopy .\sc55\*.*
 cls
 @TYCOON
 goto quit

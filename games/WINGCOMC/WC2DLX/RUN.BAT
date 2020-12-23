@@ -23,7 +23,7 @@ if errorlevel = 1 goto wc2sb
 :wc2sb
 cd origin2
 CONFIG -set "mididevice=default"
-copy .\sb16\*.* .\
+xcopy .\sb16\*.* .\
 cd ..
 g:
 cls
@@ -33,7 +33,7 @@ goto menu
 :wc2mt
 cd origin2
 CONFIG -set "mididevice=mt32"
-copy .\mt32\*.* .\
+xcopy .\mt32\*.* .\
 cd ..
 g:
 cls
@@ -43,7 +43,7 @@ goto menu
 :so1sb
 cd origin2
 CONFIG -set "mididevice=default"
-copy .\sb16\*.* .\
+xcopy .\sb16\*.* .\
 cd ..
 g:
 cls
@@ -53,7 +53,7 @@ goto menu
 :so1mt
 cd origin2
 CONFIG -set "mididevice=mt32"
-copy .\mt32\*.* .\
+xcopy .\mt32\*.* .\
 cd ..
 g:
 cls
@@ -63,7 +63,7 @@ goto menu
 :so2sb
 cd origin2
 CONFIG -set "mididevice=default"
-copy .\sb16\*.* .\
+xcopy .\sb16\*.* .\
 cd ..
 g:
 cls
@@ -73,7 +73,7 @@ goto menu
 :so2mt
 cd origin2
 CONFIG -set "mididevice=mt32"
-copy .\mt32\*.* .\
+xcopy .\mt32\*.* .\
 cd ..
 g:
 cls

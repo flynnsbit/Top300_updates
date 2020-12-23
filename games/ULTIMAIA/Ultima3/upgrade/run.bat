@@ -34,33 +34,33 @@ if errorlevel = 1 goto CGA4
 
 :CGA4
 del U3.CFG
-copy .\CGA4\*.*
+xcopy .\CGA4\*.*
 goto sound
 cls
 
 :CGA16
 del U3.CFG
-copy .\CGA16\*.*
+xcopy .\CGA16\*.*
 goto sound
 cls
 
 :EGA
 del U3.CFG
 del SHAPES.EGA
-copy .\EGA\*.*
+xcopy .\EGA\*.*
 goto sound
 cls
 
 :EGA-ALT
 del U3.CFG
 del SHAPES.EGA
-copy .\EGA-ALT\*.*
+xcopy .\EGA-ALT\*.*
 goto sound
 cls
 
 :VGA
 del U3.CFG
-copy .\VGA\*.*
+xcopy .\VGA\*.*
 goto sound
 cls
 
@@ -86,33 +86,33 @@ if errorlevel = 1 goto CGA4M
 
 :CGA4M
 del U3.CFG
-copy .\CGA4M\*.*
+xcopy .\CGA4M\*.*
 goto sound
 cls
 
 :CGA16M
 del U3.CFG
-copy .\CGA16M\*.*
+xcopy .\CGA16M\*.*
 goto sound
 cls
 
 :EGAM
 del U3.CFG
 del SHAPES.EGA
-copy .\EGAM\*.*
+xcopy .\EGAM\*.*
 goto sound
 cls
 
 :EGA-ALTM
 del U3.CFG
 del SHAPES.EGA
-copy .\EGA-ALTM\*.*
+xcopy .\EGA-ALTM\*.*
 goto sound
 cls
 
 :VGAM
 del U3.CFG
-copy .\VGAM\*.*
+xcopy .\VGAM\*.*
 goto sound
 cls
 
@@ -138,7 +138,7 @@ del MIDPAK.AD
 del MIDPAK.ADV
 del MIDPAK.COM
 del SC32MPU.ADD
-copy .\sb16\*.*
+xcopy .\sb16\*.*
 cls
 ultima3.com
 cls
@@ -150,7 +150,7 @@ del MIDPAK.AD
 del MIDPAK.ADV
 del MIDPAK.COM
 del SC32MPU.ADD
-copy .\mt32\*.*
+xcopy .\mt32\*.*
 cls
 ultima3.com
 cls
@@ -162,7 +162,7 @@ del MIDPAK.AD
 del MIDPAK.ADV
 del MIDPAK.COM
 del SC32MPU.ADD
-copy .\sc55\*.*
+xcopy .\sc55\*.*
 cls
 ultima3.com
 cls

@@ -16,7 +16,7 @@ if errorlevel = 1 goto SB16
 CONFIG -set "mididevice=default"
 CONFIG -set "gus=false"
 cd EPIC
-copy .\sb16\*.* .\
+xcopy .\sb16\*.* .\
 d:
 cd pinball
 cls
@@ -30,7 +30,7 @@ cd ULTRASND
 ultramid
 cd ..
 cd EPIC
-copy .\GUS\*.* .\
+xcopy .\GUS\*.* .\
 d:
 cd pinball
 cls

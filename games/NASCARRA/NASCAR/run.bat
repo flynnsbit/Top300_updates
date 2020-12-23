@@ -35,7 +35,7 @@ if errorlevel = 1 goto SB16
 CONFIG -set "mididevice=default"
 cd NASCAR
 del SOUND.CFG
-copy .\sb16\*.*
+xcopy .\sb16\*.*
 cls
 NASCAR %SVGA%
 goto quit
@@ -44,7 +44,7 @@ goto quit
 CONFIG -set "mididevice=fluidsynth"
 cd NASCAR
 del SOUND.CFG
-copy .\sc55\*.*
+xcopy .\sc55\*.*
 cls
 NASCAR %SVGA%
 goto quit
@@ -53,7 +53,7 @@ goto quit
 CONFIG -set "mididevice=default"
 cd NASCAR
 del SOUND.CFG
-copy .\sb16\*.*
+xcopy .\sb16\*.*
 cd ..
 cls
 network

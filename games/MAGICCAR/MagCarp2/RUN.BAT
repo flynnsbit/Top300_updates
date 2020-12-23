@@ -21,7 +21,7 @@ CONFIG -set "mididevice=default"
 cd NETHERW
 cd SOUND
 del MDI.INI
-copy .\sb16\*.*
+xcopy .\sb16\*.*
 cd ..
 cd ..
 cls
@@ -39,7 +39,7 @@ CONFIG -set "mididevice=mt32"
 cd NETHERW
 cd SOUND
 del MDI.INI
-copy .\mt32\*.*
+xcopy .\mt32\*.*
 cd ..
 cd ..
 cls
@@ -57,7 +57,7 @@ CONFIG -set "mididevice=fluidsynth"
 cd NETHERW
 cd SOUND
 del MDI.INI
-copy .\sc55\*.*
+xcopy .\sc55\*.*
 cd ..
 cd ..
 cls
@@ -75,7 +75,7 @@ CONFIG -set "mididevice=default"
 cd NETHERW
 cd SOUND
 del MDI.INI
-copy .\sb16\*.*
+xcopy .\sb16\*.*
 cd ..
 cd ..
 cls

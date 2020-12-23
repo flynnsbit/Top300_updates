@@ -19,7 +19,7 @@ if errorlevel = 1 goto SB16
 :SB16
 CONFIG -set "mididevice=default"
 del WC3.CFG
-copy .\sb16\*.*
+xcopy .\sb16\*.*
 D:
 cls
 @WC3
@@ -28,7 +28,7 @@ goto quit
 :MT32
 CONFIG -set "mididevice=mt32"
 del WC3.CFG
-copy .\mt32\*.*
+xcopy .\mt32\*.*
 D:
 cls
 @WC3
@@ -37,7 +37,7 @@ goto quit
 :SC55
 CONFIG -set "mididevice=fluidsynth"
 del WC3.CFG
-copy .\sc55\*.*
+xcopy .\sc55\*.*
 D:
 cls
 @WC3

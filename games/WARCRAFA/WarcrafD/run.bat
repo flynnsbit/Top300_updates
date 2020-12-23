@@ -19,10 +19,10 @@ if errorlevel = 1 goto SB16
 :SB16
 CONFIG -set "mididevice=default"
 del WAR2.INI
-copy .\sb16\*.*
+xcopy .\sb16\*.*
 cd DRIVERS
 del MDI.INI
-copy .\sb16\*.*
+xcopy .\sb16\*.*
 cd ..
 cls
 WAR2
@@ -31,10 +31,10 @@ goto quit
 :CDA
 CONFIG -set "mididevice=default"
 del WAR2.INI
-copy .\cda\*.*
+xcopy .\cda\*.*
 cd DRIVERS
 del MDI.INI
-copy .\sb16\*.*
+xcopy .\sb16\*.*
 cd ..
 cls
 WAR2
@@ -43,10 +43,10 @@ goto quit
 :SC55
 CONFIG -set "mididevice=fluidsynth"
 del WAR2.INI
-copy .\sc55\*.*
+xcopy .\sc55\*.*
 cd DRIVERS
 del MDI.INI
-copy .\sc55\*.*
+xcopy .\sc55\*.*
 cd ..
 cls
 WAR2
@@ -55,10 +55,10 @@ goto quit
 :network
 CONFIG -set "mididevice=default"
 del WAR2.INI
-copy .\cda\*.*
+xcopy .\cda\*.*
 cd DRIVERS
 del MDI.INI
-copy .\sb16\*.*
+xcopy .\sb16\*.*
 cd ..
 cls
 network

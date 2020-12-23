@@ -17,7 +17,7 @@ CONFIG -set "mididevice=default"
 cd PG
 cd EXE
 del SOUND.CFG
-copy .\sb16\*.*
+xcopy .\sb16\*.*
 cls
 PANZER
 goto quit
@@ -27,7 +27,7 @@ CONFIG -set "mididevice=fluidsynth"
 cd PG
 cd EXE
 del SOUND.CFG
-copy .\sc55\*.*
+xcopy .\sc55\*.*
 cls
 PANZER
 goto quit

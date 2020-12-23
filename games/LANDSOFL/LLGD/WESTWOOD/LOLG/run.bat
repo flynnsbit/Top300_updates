@@ -19,7 +19,7 @@ if errorlevel = 1 goto SB16
 :SB16
 CONFIG -set "mididevice=default"
 del LOLSETUP.INI
-copy .\sb16\*.*
+xcopy .\sb16\*.*
 cls
 @LOLG
 goto quit
@@ -27,7 +27,7 @@ goto quit
 :CDA
 CONFIG -set "mididevice=default"
 del LOLSETUP.INI
-copy .\cda\*.*
+xcopy .\cda\*.*
 cls
 @LOLG
 goto quit
@@ -35,7 +35,7 @@ goto quit
 :MPU401
 CONFIG -set "mididevice=mt32"
 del LOLSETUP.INI
-copy .\mpu401\*.*
+xcopy .\mpu401\*.*
 cls
 @LOLG
 goto quit
@@ -43,7 +43,7 @@ goto quit
 :SC55
 CONFIG -set "mididevice=fluidsynth"
 del LOLSETUP.INI
-copy .\sc55\*.*
+xcopy .\sc55\*.*
 cls
 @LOLG
 goto quit

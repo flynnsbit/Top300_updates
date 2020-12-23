@@ -20,7 +20,7 @@ if errorlevel = 1 goto SB16
 CONFIG -set "mididevice=default"
 cd ORION2
 del MDI.INI
-copy .\sb16\*.*
+xcopy .\sb16\*.*
 cls
 Orion2
 goto quit
@@ -29,7 +29,7 @@ goto quit
 CONFIG -set "mididevice=mt32"
 cd ORION2
 del MDI.INI
-copy .\mt32\*.*
+xcopy .\mt32\*.*
 cls
 Orion2
 goto quit
@@ -38,7 +38,7 @@ goto quit
 CONFIG -set "mididevice=fluidsynth"
 cd ORION2
 del MDI.INI
-copy .\sc55\*.*
+xcopy .\sc55\*.*
 cls
 Orion2
 goto quit
@@ -47,7 +47,7 @@ goto quit
 CONFIG -set "mididevice=default"
 cd ORION2
 del MDI.INI
-copy .\sb16\*.*
+xcopy .\sb16\*.*
 cd ..
 cls
 call network

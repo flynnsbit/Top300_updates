@@ -16,13 +16,13 @@ if errorlevel = 2 goto epi2
 if errorlevel = 1 goto epi1
 
 :epi1
-copy .\old\jjfile2.exe
+xcopy .\old\jjfile2.exe
 jjfile2.exe
 cls
 goto quit
 
 :epi2
-copy .\new\jjfile2.exe
+xcopy .\new\jjfile2.exe
 jjfile2.exe
 cls
 goto quit

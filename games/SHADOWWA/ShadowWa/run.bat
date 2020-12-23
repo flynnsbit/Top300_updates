@@ -21,7 +21,7 @@ if errorlevel = 1 goto bio1
 :bio1
 cls
 cd sw
-copy .\network\sw.cfg sw.cfg
+xcopy .\network\sw.cfg sw.cfg
 sw
 cd ..
 goto menu
@@ -29,7 +29,7 @@ goto menu
 :swsb
 CONFIG -set "mididevice=default"
 cd sw_shar
-copy .\sb16\*.* .\
+xcopy .\sb16\*.* .\
 cls
 sw
 cd ..
@@ -38,7 +38,7 @@ goto menu
 :swsc
 CONFIG -set "mididevice=fluidsynth"
 cd sw_shar
-copy .\sc55\*.* .\
+xcopy .\sc55\*.* .\
 cls
 sw
 cd ..
@@ -47,7 +47,7 @@ goto menu
 :3dfx
 cls
 cd sw
-copy .\network\sw.cfg sw.cfg
+xcopy .\network\sw.cfg sw.cfg
 SW3DFX
 cd ..
 goto menu
@@ -57,7 +57,7 @@ cd ..
 copy ExtIP*.* .\SW\
 cd  SW
 CONFIG -set "mididevice=default"
-copy .\network\net.cfg sw.cfg
+xcopy .\network\net.cfg sw.cfg
 cls
 network
 

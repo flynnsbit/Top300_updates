@@ -18,11 +18,11 @@ if errorlevel = 1 goto GUS
 CONFIG -set "mididevice=default"
 cd TNT
 del DEFAULT.CFG
-copy .\GUS\*.*
+xcopy .\GUS\*.*
 cd ..
 cd PLUTONIA
 del DEFAULT.CFG
-copy .\GUS\*.*
+xcopy .\GUS\*.*
 cd ..
 cls
 goto game
@@ -31,11 +31,11 @@ goto game
 CONFIG -set "mididevice=default"
 cd TNT
 del DEFAULT.CFG
-copy .\sb16\*.*
+xcopy .\sb16\*.*
 cd ..
 cd PLUTONIA
 del DEFAULT.CFG
-copy .\sb16\*.*
+xcopy .\sb16\*.*
 cd ..
 cls
 goto game
@@ -44,11 +44,11 @@ goto game
 CONFIG -set "mididevice=fluidsynth"
 cd TNT
 del DEFAULT.CFG
-copy .\sc55\*.*
+xcopy .\sc55\*.*
 cd ..
 cd PLUTONIA
 del DEFAULT.CFG
-copy .\sc55\*.*
+xcopy .\sc55\*.*
 cd ..
 cls
 goto game

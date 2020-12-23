@@ -19,7 +19,7 @@ if errorlevel = 1 goto SB16
 :SB16
 CONFIG -set "mididevice=default"
 del SNDCARD.CFG
-copy .\sb16\*.*
+xcopy .\sb16\*.*
 cls
 @ABUSE
 goto quit
@@ -27,7 +27,7 @@ goto quit
 :MT32
 CONFIG -set "mididevice=mt32"
 del SNDCARD.CFG
-copy .\mt32\*.*
+xcopy .\mt32\*.*
 cls
 @ABUSE
 goto quit
@@ -35,7 +35,7 @@ goto quit
 :SC55
 CONFIG -set "mididevice=fluidsynth"
 del SNDCARD.CFG
-copy .\sc55\*.*
+xcopy .\sc55\*.*
 cls
 @ABUSE
 goto quit
@@ -46,7 +46,7 @@ copy extip*.* .\abuse\
 cd abuse
 CONFIG -set "mididevice=fluidsynth"
 del SNDCARD.CFG
-copy .\sc55\*.*
+xcopy .\sc55\*.*
 cls
 network
 

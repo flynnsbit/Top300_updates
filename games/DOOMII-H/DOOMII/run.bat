@@ -17,7 +17,7 @@ if errorlevel = 1 goto SB16
 :SB16
 CONFIG -set "mididevice=default"
 del DEFAULT.CFG
-copy .\sb16\*.*
+xcopy .\sb16\*.*
 cls
 DOOM2
 goto quit
@@ -25,7 +25,7 @@ goto quit
 :SC55
 CONFIG -set "mididevice=fluidsynth"
 del DEFAULT.CFG
-copy .\sc55\*.*
+xcopy .\sc55\*.*
 cls
 DOOM2
 goto quit
@@ -33,7 +33,7 @@ goto quit
 :network
 CONFIG -set "mididevice=default"
 del DEFAULT.CFG
-copy .\sb16\*.*
+xcopy .\sb16\*.*
 cls
 network
 

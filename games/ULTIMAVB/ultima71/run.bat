@@ -17,13 +17,13 @@ if errorlevel = 1 goto SB16
 :SB16
 CONFIG -set "mididevice=default"
 del U7.CFG
-copy .\sb16\*.*
+xcopy .\sb16\*.*
 cd .\STATIC
 del INTRORDM.DAT
 del MT32MUS.DAT
 del MT32SFX.DAT
 del U7INTRO.TIM
-copy .\orig\*.*
+xcopy .\orig\*.*
 cd ..
 cls
 @ultima7.com
@@ -34,13 +34,13 @@ cls
 :MT32
 CONFIG -set "mididevice=mt32"
 del U7.CFG
-copy .\mt32\*.*
+xcopy .\mt32\*.*
 cd .\STATIC
 del INTRORDM.DAT
 del MT32MUS.DAT
 del MT32SFX.DAT
 del U7INTRO.TIM
-copy .\orig\*.*
+xcopy .\orig\*.*
 cd ..
 cls
 @ultima7.com
@@ -50,13 +50,13 @@ cls
 :SC55
 CONFIG -set "mididevice=fluidsynth"
 del U7.CFG
-copy .\sc55\*.*
+xcopy .\sc55\*.*
 cd .\STATIC
 del INTRORDM.DAT
 del MT32MUS.DAT
 del MT32SFX.DAT
 del U7INTRO.TIM
-copy .\patch\*.*
+xcopy .\patch\*.*
 cd ..
 cls
 @u7fx.com

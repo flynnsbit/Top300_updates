@@ -20,7 +20,7 @@ del MIDPAK.AD
 del MIDPAK.ADV
 del MIDPAK.COM
 del U5.CFG
-copy .\sb16\*.*
+xcopy .\sb16\*.*
 cls
 @ULTIMA5.COM
 goto quit
@@ -32,7 +32,7 @@ del MIDPAK.AD
 del MIDPAK.ADV
 del MIDPAK.COM
 del U5.CFG
-copy .\mt32\*.*
+xcopy .\mt32\*.*
 cls
 @ULTIMA5.COM
 goto quit
@@ -44,7 +44,7 @@ del MIDPAK.AD
 del MIDPAK.ADV
 del MIDPAK.COM
 del U5.CFG
-copy .\sc55\*.*
+xcopy .\sc55\*.*
 cls
 @ULTIMA5.COM
 goto quit

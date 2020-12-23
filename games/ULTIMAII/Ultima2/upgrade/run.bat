@@ -16,7 +16,7 @@ if errorlevel = 1 goto CGA4
 
 :CGA4
 del U2.CFG
-copy .\CGA4\*.*
+xcopy .\CGA4\*.*
 cls
 ultima2.com
 goto quit
@@ -24,7 +24,7 @@ cls
 
 :CGA16
 del U2.CFG
-copy .\CGA16\*.*
+xcopy .\CGA16\*.*
 cls
 ultima2.com
 goto quit
@@ -51,7 +51,7 @@ if errorlevel = 1 goto EGA20
 :EGA20
 del U2.CFG
 del SHAPES.EGA
-copy .\EGA20\*.*
+xcopy .\EGA20\*.*
 cls
 ultima2.com
 goto quit
@@ -59,7 +59,7 @@ cls
 
 :EGA10
 del U2.CFG
-copy .\EGA10\*.*
+xcopy .\EGA10\*.*
 cls
 ultima2.com
 goto quit
@@ -67,7 +67,7 @@ cls
 
 :EGAALT
 del U2.CFG
-copy .\EGAALT\*.*
+xcopy .\EGAALT\*.*
 cls
 ultima2.com
 goto quit
@@ -75,7 +75,7 @@ cls
 
 :EGAC64
 del U2.CFG
-copy .\EGAC64\*.*
+xcopy .\EGAC64\*.*
 cls
 ultima2.com
 goto quit

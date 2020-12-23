@@ -15,21 +15,21 @@ if errorlevel = 2 goto GUS
 if errorlevel = 1 goto SB16
 
 :SB16
-copy .\sb16\*.* .\
+xcopy .\sb16\*.* .\
 CONFIG -set "mididevice=default"
 cls
 @ROTT
 goto quit
 
 :GUS
-copy .\gus\*.* .\
+xcopy .\gus\*.* .\
 CONFIG -set "mididevice=default"
 cls
 @ROTT
 goto quit
 
 :SC55
-copy .\sc55\*.* .\
+xcopy .\sc55\*.* .\
 CONFIG -set "mididevice=fluidsynth"
 cls
 @ROTT

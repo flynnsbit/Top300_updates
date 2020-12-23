@@ -17,7 +17,7 @@ if errorlevel = 1 goto SB16
 :SB16
 CONFIG -set "mididevice=default"
 del RESOURCE.PQ1
-copy .\sb16\*.*
+xcopy .\sb16\*.*
 cls
 call PQ1VGA
 goto quit
@@ -26,7 +26,7 @@ cls
 :MT32
 CONFIG -set "mididevice=mt32"
 del RESOURCE.PQ1
-copy .\mt32\*.*
+xcopy .\mt32\*.*
 cls
 call PQ1VGA
 goto quit
@@ -35,7 +35,7 @@ cls
 :SC55
 CONFIG -set "mididevice=fluidsynth"
 del RESOURCE.PQ1
-copy .\sc55\*.*
+xcopy .\sc55\*.*
 cls
 call PQ1VGA
 goto quit

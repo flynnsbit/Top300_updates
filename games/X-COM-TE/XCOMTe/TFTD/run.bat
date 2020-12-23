@@ -20,7 +20,7 @@ cd SOUND
 del MUSIC.COM
 del SOUND.CFG
 del SOUNDRV.COM
-copy .\sb16\*.*
+xcopy .\sb16\*.*
 cd ..
 cls
 @call RUNXCOM
@@ -32,7 +32,7 @@ cd SOUND
 del MUSIC.COM
 del SOUND.CFG
 del SOUNDRV.COM
-copy .\mt32\*.*
+xcopy .\mt32\*.*
 cd ..
 cls
 @call RUNXCOM
@@ -44,7 +44,7 @@ cd SOUND
 del MUSIC.COM
 del SOUND.CFG
 del SOUNDRV.COM
-copy .\sc55\*.*
+xcopy .\sc55\*.*
 cd ..
 cls
 @call RUNXCOM

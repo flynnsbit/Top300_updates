@@ -21,28 +21,28 @@ if errorlevel = 1 goto SB16e
 
 :SB16e
 CONFIG -set "mididevice=default"
-copy .\sb16_e\*.* .\
+xcopy .\sb16_e\*.* .\
 cls
 @STARTREK
 goto quit
 
 :SB16v
 CONFIG -set "mididevice=default"
-copy .\sb16_v\*.* .\
+xcopy .\sb16_v\*.* .\
 cls
 @STARTREK
 goto quit
 
 :MT32e
 CONFIG -set "mididevice=mt32"
-copy .\mt32_e\*.* .\
+xcopy .\mt32_e\*.* .\
 cls
 @STARTREK
 goto quit
 
 :MT32v
 CONFIG -set "mididevice=mt32"
-copy .\mt32_v\*.* .\
+xcopy .\mt32_v\*.* .\
 cls
 @STARTREK
 goto quit

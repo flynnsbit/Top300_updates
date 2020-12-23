@@ -34,7 +34,7 @@ echo.
 echo To transfer you need to make sure your Wizardry 1 characters are
 echo not on an adventure in the maze.
 echo.
-if exist .\wizar1\save1.dsk copy .\wizar1\save1.dsk .\wizar2\save1.dsk
+if exist .\wizar1\save1.dsk xcopy .\wizar1\save1.dsk .\wizar2\save1.dsk
 if not exist .\wizar1\save1.dsk echo No Wizardry 1 Save Detected
 echo.
 if exist .\wizar2\save1.dsk echo Copy Successful

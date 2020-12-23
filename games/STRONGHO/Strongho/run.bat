@@ -18,7 +18,7 @@ if errorlevel = 1 goto SB16
 :SB16
 CONFIG -set "mididevice=default"
 cd STRONG.SAV
-copy .\sb16\*.* .\
+xcopy .\sb16\*.* .\
 cd ..
 cls
 STRONG
@@ -27,7 +27,7 @@ goto quit
 :MT32
 CONFIG -set "mididevice=mt32"
 cd STRONG.SAV
-copy .\mt32\*.* .\
+xcopy .\mt32\*.* .\
 cd ..
 cls
 STRONG

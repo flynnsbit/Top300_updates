@@ -20,7 +20,7 @@ if errorlevel = 1 goto SB16
 CONFIG -set "mididevice=default"
 cd DEADLY
 del SOUND.CFG
-copy .\sb16\*.*
+xcopy .\sb16\*.*
 cls
 call Deadly
 goto quit
@@ -29,7 +29,7 @@ goto quit
 CONFIG -set "mididevice=mt32"
 cd DEADLY
 del SOUND.CFG
-copy .\mt32\*.*
+xcopy .\mt32\*.*
 cls
 call Deadly
 goto quit
@@ -38,7 +38,7 @@ goto quit
 CONFIG -set "mididevice=fluidsynth"
 cd DEADLY
 del SOUND.CFG
-copy .\sc55\*.*
+xcopy .\sc55\*.*
 cls
 call Deadly
 goto quit
@@ -47,7 +47,7 @@ goto quit
 CONFIG -set "mididevice=default"
 cd DEADLY
 del SOUND.CFG
-copy .\sb16\*.*
+xcopy .\sb16\*.*
 cd ..
 cls
 call network

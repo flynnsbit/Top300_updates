@@ -18,7 +18,7 @@ if errorlevel = 1 goto SB16
 CONFIG -set "mididevice=default"
 del AILXMI.DLL
 del U8.INI
-copy .\sb16\*.*
+xcopy .\sb16\*.*
 cls
 @U8
 goto quit
@@ -28,7 +28,7 @@ cls
 CONFIG -set "mididevice=mt32"
 del AILXMI.DLL
 del U8.INI
-copy .\mt32\*.*
+xcopy .\mt32\*.*
 cls
 @U8
 goto quit
@@ -38,7 +38,7 @@ cls
 CONFIG -set "mididevice=fluidsynth"
 del AILXMI.DLL
 del U8.INI
-copy .\sc55\*.*
+xcopy .\sc55\*.*
 cls
 @U8
 goto quit

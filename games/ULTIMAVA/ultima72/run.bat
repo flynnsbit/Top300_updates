@@ -17,7 +17,7 @@ if errorlevel = 1 goto SB16
 :SB16
 CONFIG -set "mididevice=default"
 del SERPENT.CFG
-copy .\sb16\*.*
+xcopy .\sb16\*.*
 cd STATIC
 del MAINMENU.TIM
 del MAINSHP.FLX
@@ -26,7 +26,7 @@ del MT32SFX.DAT
 del R_SEND.XMI
 del R_SINTRO.XMI
 del R_VALOR.XMI
-copy .\orig\*.*
+xcopy .\orig\*.*
 cd ..
 @serpent.com
 goto quit
@@ -35,7 +35,7 @@ cls
 :MT32
 CONFIG -set "mididevice=mt32"
 del SERPENT.CFG
-copy .\mt32\*.*
+xcopy .\mt32\*.*
 cd STATIC
 del MAINMENU.TIM
 del MAINSHP.FLX
@@ -44,7 +44,7 @@ del MT32SFX.DAT
 del R_SEND.XMI
 del R_SINTRO.XMI
 del R_VALOR.XMI
-copy .\orig\*.*
+xcopy .\orig\*.*
 cd ..
 @serpent.com
 goto quit
@@ -53,7 +53,7 @@ cls
 :SC55
 CONFIG -set "mididevice=fluidsynth"
 del SERPENT.CFG
-copy .\sc55\*.*
+xcopy .\sc55\*.*
 cd STATIC
 del MAINMENU.TIM
 del MAINSHP.FLX
@@ -62,7 +62,7 @@ del MT32SFX.DAT
 del R_SEND.XMI
 del R_SINTRO.XMI
 del R_VALOR.XMI
-copy .\patch\*.*
+xcopy .\patch\*.*
 cd ..
 @sifx.com
 goto quit

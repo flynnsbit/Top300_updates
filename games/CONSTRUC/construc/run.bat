@@ -20,7 +20,7 @@ if errorlevel = 1 goto SB16
 CONFIG -set "mididevice=default"
 cd SETTINGS
 del SETSND.CFG
-copy .\sb16\*.*
+xcopy .\sb16\*.*
 cd ..
 cls
 game
@@ -31,7 +31,7 @@ goto quit
 CONFIG -set "mididevice=mt32"
 cd SETTINGS
 del SETSND.CFG
-copy .\mt32\*.*
+xcopy .\mt32\*.*
 cd ..
 cls
 game
@@ -42,7 +42,7 @@ goto quit
 CONFIG -set "mididevice=fluidsynth"
 cd SETTINGS
 del SETSND.CFG
-copy .\sc55\*.*
+xcopy .\sc55\*.*
 cd ..
 cls
 game
@@ -53,7 +53,7 @@ goto quit
 CONFIG -set "mididevice=default"
 cd SETTINGS
 del SETSND.CFG
-copy .\sb16\*.*
+xcopy .\sb16\*.*
 cd ..
 cls
 network

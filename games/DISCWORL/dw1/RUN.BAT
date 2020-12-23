@@ -18,7 +18,7 @@ if errorlevel = 1 goto SB16
 CONFIG -set "mididevice=default"
 cd DISCWLD.CD
 del MDI.INI
-copy .\sb16\*.*
+xcopy .\sb16\*.*
 cd ..
 D:
 cls
@@ -29,7 +29,7 @@ goto quit
 CONFIG -set "mididevice=mt32"
 cd DISCWLD.CD
 del MDI.INI
-copy .\mt32\*.*
+xcopy .\mt32\*.*
 cd ..
 D:
 cls
@@ -40,7 +40,7 @@ goto quit
 CONFIG -set "mididevice=fluidsynth"
 cd DISCWLD.CD
 del MDI.INI
-copy .\sc55\*.*
+xcopy .\sc55\*.*
 cd ..
 D:
 cls

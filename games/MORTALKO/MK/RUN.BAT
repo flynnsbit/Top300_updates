@@ -17,7 +17,7 @@ if errorlevel = 1 goto SB16
 :SB16
 CONFIG -set "mididevice=default"
 cd mk1
-copy .\sb16\*.* .\
+xcopy .\sb16\*.* .\
 cls
 call mk1
 goto quit
@@ -25,7 +25,7 @@ goto quit
 :MT32
 CONFIG -set "mididevice=mt32"
 cd kombat
-copy .\mt32\*.* .\
+xcopy .\mt32\*.* .\
 cls
 call play
 goto quit

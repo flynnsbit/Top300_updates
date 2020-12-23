@@ -16,14 +16,14 @@ if errorlevel = 1 goto epi1
 
 :epi1
 del SCENARIO.HDR
-copy .\sb16\SCENARIO.HDR .\
+xcopy .\sb16\SCENARIO.HDR .\
 cls
 call PLAY
 goto menu
 
 :epi2
 del SCENARIO.HDR
-copy .\mt32\SCENARIO.HDR .\
+xcopy .\mt32\SCENARIO.HDR .\
 cls
 call PLAY
 goto menu
@@ -57,7 +57,7 @@ rem if errorlevel = 2 goto pre
 rem if errorlevel = 1 goto post
 
 rem :post
-copy .\wizar6\SAVEGAME.DBS .\wizar7\SAVEGAME.BCF
+xcopy .\wizar6\SAVEGAME.DBS .\wizar7\SAVEGAME.BCF
 cls
 echo.
 if exist .\wizar7\SAVEGAME.BCF echo Copy Successful

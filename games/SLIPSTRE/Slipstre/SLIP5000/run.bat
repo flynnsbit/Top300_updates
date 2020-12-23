@@ -17,7 +17,7 @@ if errorlevel = 1 goto SB16
 :SB16
 del CONFIG.INI
 CONFIG -set "mididevice=default"
-copy .\sb16\*.*
+xcopy .\sb16\*.*
 cls
 @call SLIP
 goto quit
@@ -25,7 +25,7 @@ goto quit
 :MT32
 del CONFIG.INI
 CONFIG -set "mididevice=mt32"
-copy .\mt32\*.*
+xcopy .\mt32\*.*
 cls
 @call SLIP
 goto quit
@@ -33,7 +33,7 @@ goto quit
 :SC55
 del CONFIG.INI
 CONFIG -set "mididevice=fluidsynth"
-copy .\sc55\*.*
+xcopy .\sc55\*.*
 cls
 @call SLIP
 goto quit

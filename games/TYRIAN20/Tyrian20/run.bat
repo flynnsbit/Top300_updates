@@ -21,7 +21,7 @@ if errorlevel = 1 goto SB16
 :SB16
 CONFIG -set "mididevice=default"
 del TYRIAN.CFG
-copy .\sb16\*.*
+xcopy .\sb16\*.*
 cls
 TYRIAN
 goto quit
@@ -29,7 +29,7 @@ goto quit
 :SC55
 CONFIG -set "mididevice=fluidsynth"
 del TYRIAN.CFG
-copy .\sc55\*.*
+xcopy .\sc55\*.*
 cls
 TYRIAN
 goto quit
@@ -37,7 +37,7 @@ goto quit
 :XSB16
 CONFIG -set "mididevice=default"
 del TYRIAN.CFG
-copy .\sb16\*.*
+xcopy .\sb16\*.*
 cls
 file0001 yesxmas
 goto quit
@@ -45,7 +45,7 @@ goto quit
 :XSC55
 CONFIG -set "mididevice=fluidsynth"
 del TYRIAN.CFG
-copy .\sc55\*.*
+xcopy .\sc55\*.*
 cls
 file0001 yesxmas
 goto quit
@@ -53,7 +53,7 @@ goto quit
 :network
 CONFIG -set "mididevice=default"
 del TYRIAN.CFG
-copy .\sb16\*.*
+xcopy .\sb16\*.*
 cls
 network
 goto quit

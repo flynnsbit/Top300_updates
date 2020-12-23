@@ -20,7 +20,7 @@ if errorlevel = 1 goto SB16
 CONFIG -set "mididevice=default"
 cd DRIVERS
 del MDI.INI
-copy .\sb16\*.*
+xcopy .\sb16\*.*
 cd ..
 cls
 @call START
@@ -30,7 +30,7 @@ goto quit
 CONFIG -set "mididevice=mt32"
 cd DRIVERS
 del MDI.INI
-copy .\mt32\*.*
+xcopy .\mt32\*.*
 cd ..
 cls
 @call START
@@ -40,7 +40,7 @@ goto quit
 CONFIG -set "mididevice=fluidsynth"
 cd DRIVERS
 del MDI.INI
-copy .\sc55\*.*
+xcopy .\sc55\*.*
 cd ..
 cls
 @call START

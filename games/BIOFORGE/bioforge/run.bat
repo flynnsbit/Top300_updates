@@ -16,7 +16,7 @@ if errorlevel = 1 goto SB16
 CONFIG -set "mididevice=default"
 del AILXMI.DLL
 del INSTALL.OPT
-copy .\sb16\*.*
+xcopy .\sb16\*.*
 cls
 BIOFORGE
 goto quit
@@ -25,7 +25,7 @@ goto quit
 CONFIG -set "mididevice=fluidsynth"
 del AILXMI.DLL
 del INSTALL.OPT
-copy .\sc55\*.*
+xcopy .\sc55\*.*
 cls
 BIOFORGE
 goto quit

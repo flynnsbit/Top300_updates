@@ -23,7 +23,7 @@ if errorlevel = 0 goto quit
 :SB16
 CONFIG -set "mididevice=default"
 del DUNE.CFG
-copy .\sb16\*.*
+xcopy .\sb16\*.*
 cls
 DUNE2
 goto quit
@@ -31,7 +31,7 @@ goto quit
 :MT32
 CONFIG -set "mididevice=mt32"
 del DUNE.CFG
-copy .\mt32\*.*
+xcopy .\mt32\*.*
 cls
 DUNE2
 goto quit
@@ -39,7 +39,7 @@ goto quit
 :SC55
 CONFIG -set "mididevice=fluidsynth"
 del DUNE.CFG
-copy .\sc55\*.*
+xcopy .\sc55\*.*
 cls
 DUNE2
 goto quit
@@ -47,7 +47,7 @@ goto quit
 :SBMT
 CONFIG -set "mididevice=mt32"
 del DUNE.CFG
-copy .\SBMT\*.*
+xcopy .\SBMT\*.*
 cls
 DUNE2
 goto quit
@@ -55,7 +55,7 @@ goto quit
 :SBSC
 CONFIG -set "mididevice=fluidsynth"
 del DUNE.CFG
-copy .\SBSC\*.*
+xcopy .\SBSC\*.*
 cls
 DUNE2
 goto quit

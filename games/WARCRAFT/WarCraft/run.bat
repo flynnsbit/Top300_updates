@@ -17,7 +17,7 @@ if errorlevel = 1 goto SB16
 :SB16
 CONFIG -set "mididevice=default"
 del CONFIG.WAR
-copy .\sb16\*.*
+xcopy .\sb16\*.*
 cls
 WAR
 goto quit
@@ -25,7 +25,7 @@ goto quit
 :SC55
 CONFIG -set "mididevice=fluidsynth"
 del CONFIG.WAR
-copy .\sc55\*.*
+xcopy .\sc55\*.*
 cls
 WAR
 goto quit
@@ -33,7 +33,7 @@ goto quit
 :network
 CONFIG -set "mididevice=default"
 del CONFIG.WAR
-copy .\sb16\*.*
+xcopy .\sb16\*.*
 cls
 network
 goto quit

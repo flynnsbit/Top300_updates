@@ -76,7 +76,7 @@ del truth.ega
 del love.ega
 del courage.ega
 del stoncrcl.ega
-copy .\EGA\*.*
+xcopy .\EGA\*.*
 cls
 ULTIMA.COM
 goto quit
@@ -107,7 +107,7 @@ del truth.ega
 del love.ega
 del courage.ega
 del stoncrcl.ega
-copy .\EGA-ALT\*.*
+xcopy .\EGA-ALT\*.*
 cls
 ULTIMA.COM
 goto quit
@@ -138,9 +138,9 @@ del truth.ega
 del love.ega
 del courage.ega
 del stoncrcl.ega
-copy .\EGA\*.*
+xcopy .\EGA\*.*
 del charset.ega
-copy .\runic\*.*
+xcopy .\runic\*.*
 cls
 ULTIMA.COM
 goto quit
@@ -171,9 +171,9 @@ del truth.ega
 del love.ega
 del courage.ega
 del stoncrcl.ega
-copy .\EGA-ALT\*.*
+xcopy .\EGA-ALT\*.*
 del charset.ega
-copy .\runic\*.*
+xcopy .\runic\*.*
 cls
 ULTIMA.COM
 goto quit

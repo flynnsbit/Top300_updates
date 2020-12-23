@@ -32,7 +32,7 @@ if errorlevel = 1 goto FSB16
 CONFIG -set "mididevice=default"
 cd floppy
 del RESOURCE.CFG
-copy .\sb16\*.*
+xcopy .\sb16\*.*
 cls
 @SIERRA
 goto quit
@@ -42,7 +42,7 @@ cls
 CONFIG -set "mididevice=mt32"
 cd floppy
 del RESOURCE.CFG
-copy .\mt32\*.*
+xcopy .\mt32\*.*
 cls
 @SIERRA
 goto quit
@@ -52,7 +52,7 @@ cls
 CONFIG -set "mididevice=fluidsynth"
 cd floppy
 del RESOURCE.CFG
-copy .\sc55\*.*
+xcopy .\sc55\*.*
 cls
 @SIERRA
 goto quit
@@ -80,7 +80,7 @@ if errorlevel = 1 goto SB16
 CONFIG -set "mididevice=default"
 cd KQ6CD
 del RESOURCE.CFG
-copy .\sb16\*.*
+xcopy .\sb16\*.*
 cls
 @SIERRA
 goto quit
@@ -90,7 +90,7 @@ cls
 CONFIG -set "mididevice=default"
 cd KQ6CD
 del RESOURCE.CFG
-copy .\gus\*.*
+xcopy .\gus\*.*
 cls
 LH ULTRAMID -C -M100
 @SIERRA
@@ -101,7 +101,7 @@ cls
 CONFIG -set "mididevice=mt32"
 cd KQ6CD
 del RESOURCE.CFG
-copy .\mt32\*.*
+xcopy .\mt32\*.*
 cls
 @SIERRA
 goto quit
@@ -111,7 +111,7 @@ cls
 CONFIG -set "mididevice=fluidsynth"
 cd KQ6CD
 del RESOURCE.CFG
-copy .\sc55\*.*
+xcopy .\sc55\*.*
 cls
 @SIERRA
 goto quit

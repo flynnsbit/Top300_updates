@@ -24,21 +24,21 @@ goto quit
 
 :SB16
 CONFIG -set "mididevice=default"
-copy .\sb16\*.* .\
+xcopy .\sb16\*.* .\
 cls
 @call SSF2T MIDI
 goto quit
 
 :MT32
 CONFIG -set "mididevice=mt32"
-copy .\mt32\*.* .\
+xcopy .\mt32\*.* .\
 cls
 @call SSF2T MIDI
 goto quit
 
 :SC55
 CONFIG -set "mididevice=fluidsynth"
-copy .\sc55\*.* .\
+xcopy .\sc55\*.* .\
 cls
 @call SSF2T MIDI
 goto quit

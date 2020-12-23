@@ -18,7 +18,7 @@ if errorlevel = 1 goto SB16
 
 :SB16
 CONFIG -set "mididevice=default"
-copy .\sb16\*.* .\
+xcopy .\sb16\*.* .\
 imgset ide10 "/cd/stjudgec/startre.cue"
 
 
@@ -29,7 +29,7 @@ goto quit
 
 :MT32
 CONFIG -set "mididevice=mt32"
-copy .\mt32\*.* .\
+xcopy .\mt32\*.* .\
 imgset ide10 "/cd/stjudgec/startre.cue"
 
 
@@ -40,7 +40,7 @@ goto quit
 
 :SC55
 CONFIG -set "mididevice=fluidsynth"
-copy .\sc55\*.* .\
+xcopy .\sc55\*.* .\
 imgset ide10 "/cd/stjudgec/startre.cue"
 
 
@@ -51,7 +51,7 @@ goto quit
 
 :CD2
 CONFIG -set "mididevice=default"
-copy .\sb16\*.* .\
+xcopy .\sb16\*.* .\
 imgset ide10 "/cd/stjudgec/star_tr.iso"
 
 

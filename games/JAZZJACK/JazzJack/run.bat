@@ -14,7 +14,7 @@ if errorlevel = 1 goto SB16
 
 :SB16
 CONFIG -set "mididevice=default"
-copy .\sb16\*.* .\
+xcopy .\sb16\*.* .\
 cls
 JAZZ
 goto quit
@@ -22,7 +22,7 @@ goto quit
 :GUS
 CONFIG -set "mididevice=default"
 CONFIG -set "sbtype=none"
-copy .\GUS\*.* .\
+xcopy .\GUS\*.* .\
 cls
 JAZZ
 goto quit

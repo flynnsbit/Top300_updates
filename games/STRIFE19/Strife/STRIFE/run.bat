@@ -15,7 +15,7 @@ if errorlevel = 1 goto SB16
 :SB16
 CONFIG -set "mididevice=default"
 del STRIFE.CFG
-copy .\sb16\*.*
+xcopy .\sb16\*.*
 cls
 @call STRIFE
 goto quit
@@ -23,7 +23,7 @@ goto quit
 :SC55
 CONFIG -set "mididevice=fluidsynth"
 del STRIFE.CFG
-copy .\sc55\*.*
+xcopy .\sc55\*.*
 cls
 @call STRIFE
 goto quit

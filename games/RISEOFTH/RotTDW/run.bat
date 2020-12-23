@@ -18,7 +18,7 @@ if errorlevel = 1 goto SB16
 
 :SB16
 cd ROTT
-copy .\sb16\*.* .\
+xcopy .\sb16\*.* .\
 CONFIG -set "mididevice=default"
 cls
 ROTT
@@ -26,7 +26,7 @@ goto quit
 
 :GUS
 cd ROTT
-copy .\gus\*.* .\
+xcopy .\gus\*.* .\
 CONFIG -set "mididevice=default"
 cls
 ROTT
@@ -34,7 +34,7 @@ goto quit
 
 :SC55
 cd ROTT
-copy .\sc55\*.* .\
+xcopy .\sc55\*.* .\
 CONFIG -set "mididevice=fluidsynth"
 cls
 ROTT
@@ -42,7 +42,7 @@ goto quit
 
 :network
 cd ROTT
-copy .\sb16\*.* .\
+xcopy .\sb16\*.* .\
 cd ..
 CONFIG -set "mididevice=default"
 cls

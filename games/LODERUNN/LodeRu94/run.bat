@@ -20,7 +20,7 @@ del MIDPAK.AD
 del MIDPAK.ADV
 del MIDPAK.COM
 del SOUNDRV.COM
-copy .\sb16\*.*
+xcopy .\sb16\*.*
 @LODERUNN
 goto quit
 cls
@@ -31,7 +31,7 @@ del MIDPAK.AD
 del MIDPAK.ADV
 del MIDPAK.COM
 del SOUNDRV.COM
-copy .\mt32\*.*
+xcopy .\mt32\*.*
 @LODERUNN
 goto quit
 cls
@@ -42,7 +42,7 @@ del MIDPAK.AD
 del MIDPAK.ADV
 del MIDPAK.COM
 del SOUNDRV.COM
-copy .\sc55\*.*
+xcopy .\sc55\*.*
 @LODERUNN
 goto quit
 cls

@@ -24,7 +24,7 @@ if errorlevel = 1 goto flSB16
 CONFIG -set "mididevice=default"
 cd GKCD
 del RESOURCE.CFG
-copy .\sb16\*.*
+xcopy .\sb16\*.*
 cls
 SIERRA
 goto quit
@@ -33,7 +33,7 @@ goto quit
 CONFIG -set "mididevice=mt32"
 cd GKCD
 del RESOURCE.CFG
-copy .\mt32\*.*
+xcopy .\mt32\*.*
 cls
 SIERRA
 goto quit
@@ -42,7 +42,7 @@ goto quit
 CONFIG -set "mididevice=fluidsynth"
 cd GKCD
 del RESOURCE.CFG
-copy .\sc55\*.*
+xcopy .\sc55\*.*
 cls
 SIERRA
 goto quit
@@ -51,7 +51,7 @@ goto quit
 CONFIG -set "mididevice=default"
 cd GK
 del RESOURCE.CFG
-copy .\sb16\*.*
+xcopy .\sb16\*.*
 cls
 SIERRA
 goto quit
@@ -60,7 +60,7 @@ goto quit
 CONFIG -set "mididevice=mt32"
 cd GK
 del RESOURCE.CFG
-copy .\mt32\*.*
+xcopy .\mt32\*.*
 cls
 SIERRA
 goto quit
@@ -69,7 +69,7 @@ goto quit
 CONFIG -set "mididevice=fluidsynth"
 cd GK
 del RESOURCE.CFG
-copy .\sc55\*.*
+xcopy .\sc55\*.*
 cls
 SIERRA
 goto quit

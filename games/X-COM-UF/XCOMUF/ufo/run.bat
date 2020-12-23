@@ -18,7 +18,7 @@ if errorlevel = 1 goto SB
 CONFIG -set "mididevice=default"
 @cd sound
 cls
-copy .\sb\*.* .\
+xcopy .\sb\*.* .\
 cd..
 cls
 @call RUNXCOM
@@ -28,7 +28,7 @@ goto quit
 CONFIG -set "mididevice=mt32"
 @cd sound
 cls
-copy .\mt32\*.* .\
+xcopy .\mt32\*.* .\
 cd..
 cls
 @call RUNXCOM
@@ -38,7 +38,7 @@ goto quit
 CONFIG -set "mididevice=fluidsynth"
 @cd sound
 cls
-copy .\sc55\*.* .\
+xcopy .\sc55\*.* .\
 cd..
 cls
 @call RUNXCOM

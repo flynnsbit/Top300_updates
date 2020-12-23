@@ -18,7 +18,7 @@ if errorlevel = 1 goto SB16
 CONFIG -set "mididevice=default"
 cd KQ7DOS
 del RESOURCE.CFG
-copy .\sb16\*.*
+xcopy .\sb16\*.*
 cls
 SIERRA -o .\RESOURCE.CFG
 goto quit
@@ -28,7 +28,7 @@ cls
 CONFIG -set "mididevice=mt32"
 cd KQ7DOS
 del RESOURCE.CFG
-copy .\mt32\*.*
+xcopy .\mt32\*.*
 cls
 SIERRA -o .\RESOURCE.CFG
 goto quit
@@ -38,7 +38,7 @@ cls
 CONFIG -set "mididevice=fluidsynth"
 cd KQ7DOS
 del RESOURCE.CFG
-copy .\sc55\*.*
+xcopy .\sc55\*.*
 cls
 SIERRA -o .\RESOURCE.CFG
 goto quit
