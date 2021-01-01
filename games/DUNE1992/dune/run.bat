@@ -37,7 +37,7 @@ duneprg ENG VGA AGD388 HIM 386
 goto quit
 
 :MT32
- CONFIG -set "mididevice=mt32"
+CONFIG -set "mididevice=mt32"
 cls
 logo
 duneprg ENG VGA MID330 HIM 386
