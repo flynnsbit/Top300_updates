@@ -22,28 +22,34 @@ if errorlevel = 2 goto MT32
 if errorlevel = 1 goto SB16
 
 :SB16
+CONFIG -set "mididevice=default"
 cls
 logo
 duneprg ENG VGA SDB2207 HIM 386
 goto quit
 
 :GOLD
+CONFIG -set "mididevice=default"
+CONFIG -set "oplmode=opl3gold"
 cls
 logo
 duneprg ENG VGA AGD388 HIM 386
 goto quit
 
 :MT32
+ CONFIG -set "mididevice=mt32"
 cls
 logo
 duneprg ENG VGA MID330 HIM 386
 goto quit
 
 :CDSB16
+REM CONFIG -set "mididevice=default"
 RUN_EMM D: \ DNCDPRG AMR ADP220 SBP2227 EMS 386 SAF WRIE:\GAMES\dune\DUNECD\
 goto quit
 
 :CDMT32
+CONFIG -set "mididevice=mt32"
 RUN_EMM D: \ DNCDPRG MID330 SBP2227 EMS 386 SAF WRIE:\GAMES\dune\DUNECD\
 goto quit
 
