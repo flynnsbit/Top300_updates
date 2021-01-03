@@ -44,27 +44,13 @@ duneprg ENG VGA MID330 HIM 386
 goto quit
 
 :CDSB16
-echo off
-cls
-echo.
-echo This game option requires EMM386. Press any key to reboot into the game...
-jchoice s 
 REM CONFIG -set "mididevice=default"
-echo d: >> e:\launch.bat
-echo cls >> e:\launch.bat
-echo call DNCDPRG AMR ADP220 SBP2227 EMS 386 SAF WRIE:\GAMES\dune\DUNECD\ >> e:\launch.bat
-echo e: >> e:\launch.bat
-echo tdlreset.bat >> e:\launch.bat
-copy e:\utils\configs\config.emm c:\config.sys
-copy e:\utils\configs\loading.sys c:\logo.sys
-imgset r
+RUN_EMM D: \ DNCDPRG AMR ADP220 SBP2227 EMS 386 SAF WRIE:\GAMES\dune\DUNECD\
 goto quit
 
 :CDMT32
 CONFIG -set "mididevice=mt32"
-d:
-cls
-DNCDPRG MID330 SBP2227 EMS 386 SAF WRIE:\GAMES\dune\DUNECD\
+RUN_EMM D: \ DNCDPRG MID330 SBP2227 EMS 386 SAF WRIE:\GAMES\dune\DUNECD\
 goto quit
 
 :CDGOLD
