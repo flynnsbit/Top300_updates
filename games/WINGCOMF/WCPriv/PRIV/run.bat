@@ -13,17 +13,15 @@ if errorlevel = 2 goto SC55
 if errorlevel = 1 goto SB16
 
 :SB16
-CONFIG -set "mididevice=default"
-del SOUND.CFG
-xcopy .\sb16\*.*
-cls
+del SOUND.CFG >> NUL
+xcopy .\sb16\*.* >> NUL
 goto game
 
 :SC55
-CONFIG -set "mididevice=fluidsynth"
-del SOUND.CFG
-xcopy .\sc55\*.*
-cls
+mpuctl fluid 0
+REM CONFIG -set "mididevice=fluidsynth"
+del SOUND.CFG >> NUL
+xcopy .\sc55\*.* >> NUL
 goto game
 
 :game
@@ -41,13 +39,9 @@ if errorlevel = 2 goto RF
 if errorlevel = 1 goto WCP
 
 :WCP
-cls
-priv
-goto menu
+RUN_EM16 E: \GAMES\WINGCOMF\WCPRIV\PRIV PRIV
 
 :RF
-cls
-priv r
-goto menu
+RUN_EM16 E: \GAMES\WINGCOMF\WCPRIV\PRIV PRIV r
 
-:QUIT
+:quit
