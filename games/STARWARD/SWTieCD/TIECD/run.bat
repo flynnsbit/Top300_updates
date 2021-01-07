@@ -16,24 +16,24 @@ if errorlevel = 1 goto SB16
 
 :SB16
 CONFIG -set "mididevice=default"
-del IMUSE.INI
-xcopy .\sb16\*.*
+del c:\tiecd\IMUSE.INI
+xcopy .\sb16\*.* c:\tiecd
 cls
 @TIE
 goto quit
 
 :MT32
 CONFIG -set "mididevice=mt32"
-del IMUSE.INI
-xcopy .\mt32\*.*
+del c:\tiecd\IMUSE.INI
+xcopy .\mt32\*.* c:\tiecd
 cls
 @TIE
 goto quit
 
 :SC55
 CONFIG -set "mididevice=fluidsynth"
-del IMUSE.INI
-xcopy .\sc55\*.*
+del c:\tiecd\IMUSE.INI
+xcopy .\sc55\*.* c:\tiecd
 cls
 @TIE
 goto quit
