@@ -19,7 +19,7 @@ if errorlevel = 2 goto MT32
 if errorlevel = 1 goto MT32SB16
 
 :SB16
-xxcopy .\sb16\*.* .\
+xcopy .\sb16\*.* .\
 cls
 echo for working sound, disable
 echo L1 and L2 cache before continuing
@@ -32,7 +32,7 @@ L2
 goto quit
 
 :MT32
-xxcopy .\mt32\*.* .\
+xcopy .\mt32\*.* .\
 cls
 sysctl sys L1-
 L2
@@ -40,7 +40,7 @@ sysctl menu
 goto quit
 
 :MT32SB16
-xxcopy .\mt32sb16\*.* .\
+xcopy .\mt32sb16\*.* .\
 cls
 echo for working SFX, disable
 echo L1 and L2 cache before continuing
