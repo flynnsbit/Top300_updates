@@ -22,6 +22,44 @@ Initial pack generated using ExoDOSConverter MiSTer option:  https://github.com/
 Future updates to the pack are contained in the flynnsbit repo: https://github.com/flynnsbit/Top300_updates
 
 ## Version History
+
+v.0.7.2
+Updater AO486 Top 300 pack update script for Mister:
+One step process to pull down the latest release changes from github and push the changes to the VHDs.
+
+
+Updates to the AO486 DOS Launcher:
+Full mouse support
+Joystick Support (analog and digital)
+Joystick support for pause, Coverart/Game Description/About
+Joystick and mouse support for Choice allowing for selection of the sound choice using joystick, mouse, or arrowing up and down to select. Great for living room setups.
+Icon changes to change the way we are using favorites in this specific pack (changed flag to ! icon instead of a ♥) to signify that there is an issue with the game that was found. These will be removed as we fix issues with games.
+Launcher persists User Selection and place (config file option)
+General fixes:
+Changes to order of boot menu and add defaults
+Memory swapper scripts
+move from using copy to xcopy
+Game index update
+Add new MPUCTL for MT32-pi support
+
+
+Fixed the following games:
+Lots of changes for Dune/Dune CD including our initial automatic memory swapper working.
+PGA Golf 486
+Star Control
+Bioforge
+Warcraft 2
+Xwing
+Descent (and general MIDI fix), added one time update to pull correct files from mounted CD
+Lemmings
+Lemmings 2
+1830
+Dune 2 SB and MIDI fix
+2400AD
+Kyrandia 1+2
+Star Wars TIE CD
+
+
 v.0.7.1 Fixes for Lemmings Floppy+others, Descent MIDI should finally be fixed, Dune 2 SB+MIDI options, 1830 sound fix, Lemmings 2 problem solved by turning off L1 cache, TDL updated to use ! for favorites in the pack, favicon option in the tdl.ini. Changed AO486 Updater script to push all files for now.
 
 v.6 update all scripts to use jchoice for pause and choice commands.
