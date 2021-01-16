@@ -44,7 +44,7 @@ duneprg ENG VGA MID330 HIM 386
 goto quit
 
 :CDSB16
-REM REM CONFIG -set"mididevice=default"
+REM CONFIG -set"mididevice=default"
 RUN_EMM D: \ DNCDPRG AMR ADP220 SBP2227 EMS 386 SAF WRIE:\GAMES\dune\DUNECD\
 goto quit
 
