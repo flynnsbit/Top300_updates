@@ -15,7 +15,7 @@ if errorlevel = 2 goto SB16
 if errorlevel = 1 goto GUS
 
 :GUS
-CONFIG -set "mididevice=default"
+REM CONFIG -set"mididevice=default"
 cd TNT
 del DEFAULT.CFG
 xcopy .\GUS\*.*
@@ -28,7 +28,7 @@ cls
 goto game
 
 :SB16
-CONFIG -set "mididevice=default"
+REM CONFIG -set"mididevice=default"
 cd TNT
 del DEFAULT.CFG
 xcopy .\sb16\*.*
@@ -41,7 +41,7 @@ cls
 goto game
 
 :SC55
-CONFIG -set "mididevice=fluidsynth"
+mt32-pi -g -v
 cd TNT
 del DEFAULT.CFG
 xcopy .\sc55\*.*

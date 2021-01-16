@@ -13,15 +13,15 @@ if errorlevel = 2 goto GUS
 if errorlevel = 1 goto SB16
 
 :SB16
-CONFIG -set "mididevice=default"
+REM CONFIG -set"mididevice=default"
 xcopy .\sb16\*.* .\
 cls
 JAZZ
 goto quit
 
 :GUS
-CONFIG -set "mididevice=default"
-CONFIG -set "sbtype=none"
+REM CONFIG -set"mididevice=default"
+REM CONFIG -set"sbtype=none"
 xcopy .\GUS\*.* .\
 cls
 JAZZ

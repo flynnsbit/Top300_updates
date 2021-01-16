@@ -13,18 +13,18 @@ if errorlevel = 2 goto upgrade
 if errorlevel = 1 goto original
 
 :original
-CONFIG -set "core=simple"
-CONFIG -set "cputype=386_slow"
-CONFIG -set "cycles=500"
+REM CONFIG -set"core=simple"
+REM CONFIG -set"cputype=386_slow"
+REM CONFIG -set"cycles=500"
 cls
 ultimaII.exe
 goto quit
 cls
 
 :upgrade
-CONFIG -set "core=auto"
-CONFIG -set "cputype=auto"
-CONFIG -set "cycles=10000"
+REM CONFIG -set"core=auto"
+REM CONFIG -set"cputype=auto"
+REM CONFIG -set"cycles=10000"
 cd .\upgrade
 call run.bat
 goto quit

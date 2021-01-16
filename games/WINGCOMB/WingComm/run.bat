@@ -15,7 +15,7 @@ if errorlevel = 2 goto SC55
 if errorlevel = 1 goto SB16
 
 :SB16
-CONFIG -set "mididevice=default"
+REM CONFIG -set"mididevice=default"
 cd ARMADA
 del INSTALL.CFG
 del ARMADA.CFG
@@ -25,7 +25,7 @@ ARMADA
 goto quit
 
 :SC55
-CONFIG -set "mididevice=fluidsynth"
+mt32-pi -g -v
 cd ARMADA
 del INSTALL.CFG
 del ARMADA.CFG
@@ -35,7 +35,7 @@ ARMADA
 goto quit
 
 :network
-CONFIG -set "mididevice=default"
+REM CONFIG -set"mididevice=default"
 cd ARMADA
 del INSTALL.CFG
 del ARMADA.CFG

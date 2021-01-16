@@ -23,8 +23,8 @@ if errorlevel = 2 goto EGASB
 if errorlevel = 1 goto EGACMS
 
 :EGACMS
-CONFIG -set "mididevice=default"
-CONFIG -set "sbtype=gb"
+REM CONFIG -set"mididevice=default"
+REM CONFIG -set"sbtype=gb"
 CD EGA
 cls
 SCIDUV cms.cfg
@@ -32,14 +32,14 @@ SCIDUV cms.cfg
 goto quit
 
 :EGASB
-CONFIG -set "mididevice=default"
+REM CONFIG -set"mididevice=default"
 CD EGA
 cls
 SCIDUV SESOURCE.cfg
 goto quit
 
 :EGAMT32
-CONFIG -set "mididevice=mt32"
+mt32-pi -m -v
 CD EGA
 cls
 SCIDUV MESOURCE.cfg
@@ -47,26 +47,26 @@ SCIDUV MESOURCE.cfg
 goto quit
 
 :EGASC55
-CONFIG -set "mididevice=fluidsynth"
+mt32-pi -g -v
 CD EGA
 cls
 SCIDUV GESOURCE.cfg
 goto quit
 
 :SB16
-CONFIG -set "mididevice=default"
+REM CONFIG -set"mididevice=default"
 cls
 SCIDHUV sesource.cfg
 goto quit
 
 :MT32
-CONFIG -set "mididevice=mt32"
+mt32-pi -m -v
 cls
 SCIDHUV mesource.cfg
 goto quit
 
 :SC55
-CONFIG -set "mididevice=fluidsynth"
+mt32-pi -g -v
 cls
 SCIDHUV gesource.cfg
 goto quit

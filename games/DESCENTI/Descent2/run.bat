@@ -23,31 +23,31 @@ if errorlevel = 2 goto SB16
 if errorlevel = 1 goto GUS
 
 :SB16
-CONFIG -set "mididevice=default"
+REM CONFIG -set"mididevice=default"
 xcopy .\descent2\sb16\*.* .\descent2\
 cls
 goto menu2
 
 :GUS
-CONFIG -set "mididevice=default"
+REM CONFIG -set"mididevice=default"
 xcopy .\descent2\gus\*.* .\descent2\
 cls
 goto menu2
 
 :SC55
-CONFIG -set "mididevice=fluidsynth"
+mt32-pi -g -v
 xcopy .\descent2\sc55\*.* .\descent2\
 cls
 goto menu2
 
 :CDA
-CONFIG -set "mididevice=default"
+REM CONFIG -set"mididevice=default"
 xcopy .\descent2\CD\*.* .\descent2\
 cls
 goto menu2
 
 :network
-CONFIG -set "mididevice=default"
+REM CONFIG -set"mididevice=default"
 xcopy .\descent2\CD\*.* .\descent2\
 cls
 network

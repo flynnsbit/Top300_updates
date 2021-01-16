@@ -15,7 +15,7 @@ if errorlevel = 2 goto MT32
 if errorlevel = 1 goto SB16
 
 :SB16
-CONFIG -set "mididevice=default"
+REM CONFIG -set"mididevice=default"
 cd POPULOUS
 xcopy .\sb16\*.* .\
 cls
@@ -23,7 +23,7 @@ populous.exe VGA Adlib Sound
 goto quit
 
 :MT32
-CONFIG -set "mididevice=mt32"
+mt32-pi -m -v
 cd POPULOUS
 xcopy .\mt32\*.* .\
 cls
@@ -31,7 +31,7 @@ populous.exe VGA Roland MT-32
 goto quit
 
 :network
-CONFIG -set "mididevice=default"
+REM CONFIG -set"mididevice=default"
 cd POPULOUS
 xcopy .\sb16\*.* .\
 cd ..

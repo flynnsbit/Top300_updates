@@ -13,14 +13,14 @@ if errorlevel = 2 goto MT32
 if errorlevel = 1 goto SB16
 
 :SB16
-CONFIG -set "mididevice=default"
-CONFIG -set "mpu401=none"
+REM CONFIG -set"mididevice=default"
+REM CONFIG -set"mpu401=none"
 cls
 TRODDLER
 goto quit
 
 :MT32
-CONFIG -set "mididevice=mt32"
+mt32-pi -m -v
 cls
 TRODDLER
 goto quit

@@ -17,7 +17,7 @@ if errorlevel = 2 goto MT32
 if errorlevel = 1 goto SB16
 
 :SB16
-CONFIG -set "mididevice=default"
+REM CONFIG -set"mididevice=default"
 cd SETTINGS
 del SETSND.CFG
 xcopy .\sb16\*.*
@@ -28,7 +28,7 @@ rem @MOUSEX 20 10 GAME.EXE
 goto quit
 
 :MT32
-CONFIG -set "mididevice=mt32"
+mt32-pi -m -v
 cd SETTINGS
 del SETSND.CFG
 xcopy .\mt32\*.*
@@ -39,7 +39,7 @@ rem @MOUSEX 20 10 GAME.EXE
 goto quit
 
 :SC55
-CONFIG -set "mididevice=fluidsynth"
+mt32-pi -g -v
 cd SETTINGS
 del SETSND.CFG
 xcopy .\sc55\*.*
@@ -50,7 +50,7 @@ rem @MOUSEX 20 10 GAME.EXE
 goto quit
 
 :network
-CONFIG -set "mididevice=default"
+REM CONFIG -set"mididevice=default"
 cd SETTINGS
 del SETSND.CFG
 xcopy .\sb16\*.*

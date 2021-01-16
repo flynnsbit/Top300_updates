@@ -15,21 +15,21 @@ if errorlevel = 2 goto MT32
 if errorlevel = 1 goto SB16
 
 :SB16
-CONFIG -set "mididevice=default"
+REM CONFIG -set"mididevice=default"
 cd sb16
 cls
 monkey2 s
 goto quit
 
 :MT32
-CONFIG -set "mididevice=mt32"
+mt32-pi -m -v
 cd mt32
 cls
 monkey2 s
 goto quit
 
 :talkie
-CONFIG -set "mididevice=mt32"
+mt32-pi -m -v
 cd talkie
 cls
 monkey2 s

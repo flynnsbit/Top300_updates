@@ -13,14 +13,14 @@ if errorlevel = 2 goto upgrade
 if errorlevel = 1 goto original
 
 :original
-config -set "cycles=300"
+REM CONFIG -set"cycles=300"
 cls
 ultima.com
 goto quit
 cls
 
 :upgrade
-config -set "cycles=5000"
+REM CONFIG -set"cycles=5000"
 cd .\upgrade
 cls
 call run.bat

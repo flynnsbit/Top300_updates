@@ -13,8 +13,8 @@ if errorlevel = 2 goto GUS
 if errorlevel = 1 goto SB16
 
 :SB16
-CONFIG -set "mididevice=default"
-CONFIG -set "gus=false"
+REM CONFIG -set"mididevice=default"
+REM CONFIG -set"gus=false"
 cd EPIC
 xcopy .\sb16\*.* .\
 d:
@@ -24,8 +24,8 @@ pinball
 goto quit
 
 :GUS
-CONFIG -set "mididevice=default"
-CONFIG -set "sbtype=none"
+REM CONFIG -set"mididevice=default"
+REM CONFIG -set"sbtype=none"
 cd ULTRASND
 ultramid
 cd ..

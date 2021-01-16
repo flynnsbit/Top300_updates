@@ -16,21 +16,21 @@ if errorlevel = 1 goto SB16
 
 :SB16
 xcopy .\sb16\*.* .\
-CONFIG -set "mididevice=default"
+REM CONFIG -set"mididevice=default"
 cls
 @ROTT
 goto quit
 
 :GUS
 xcopy .\gus\*.* .\
-CONFIG -set "mididevice=default"
+REM CONFIG -set"mididevice=default"
 cls
 @ROTT
 goto quit
 
 :SC55
 xcopy .\sc55\*.* .\
-CONFIG -set "mididevice=fluidsynth"
+mt32-pi -g -v
 cls
 @ROTT
 goto quit

@@ -15,21 +15,21 @@ if errorlevel = 2 goto SB16
 if errorlevel = 1 goto TANDY
 
 :TANDY
-CONFIG -set "mididevice=default"
+REM CONFIG -set"mididevice=default"
 xcopy .\tandy\*.* .\
 cls
 @WINTER.COM
 goto quit
 
 :SB16
-CONFIG -set "mididevice=default"
+REM CONFIG -set"mididevice=default"
 xcopy .\sb16\*.* .\
 cls
 @WINTER.COM
 goto quit
 
 :MT32
-CONFIG -set "mididevice=mt32"
+mt32-pi -m -v
 xcopy .\mt32\*.* .\
 cls
 @WINTER.COM

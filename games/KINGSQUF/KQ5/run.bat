@@ -23,19 +23,19 @@ if errorlevel = 2 goto SCIMT32
 if errorlevel = 1 goto SCISB
 
 :SCISB
-CONFIG -set "mididevice=default"
+REM CONFIG -set"mididevice=default"
 sierra SESOURCE.CFG
 cls
 goto quit
 
 :SCIMT32
-CONFIG -set "mididevice=mt32"
+mt32-pi -m -v
 sierra MESOURCE.CFG
 cls
 goto quit
 
 :FLOPSB
-CONFIG -set "mididevice=default"
+REM CONFIG -set"mididevice=default"
 cd floppy
 cls
 sierra SESOURCE.CFG
@@ -44,7 +44,7 @@ cls
 goto quit
 
 :FLOP32
-CONFIG -set "mididevice=mt32"
+mt32-pi -m -v
 cd floppy
 cls
 sierra MESOURCE.CFG
@@ -53,7 +53,7 @@ cls
 goto quit
 
 :EGA32
-CONFIG -set "mididevice=mt32"
+mt32-pi -m -v
 cd EGA
 cls
 sierra MT32.CFG
@@ -62,7 +62,7 @@ cls
 goto quit
 
 :EGASB
-CONFIG -set "mididevice=default"
+REM CONFIG -set"mididevice=default"
 cd EGA
 cls
 sierra SESOURCE.CFG
@@ -70,8 +70,8 @@ cd ..
 goto quit
 
 :EGAGB
-CONFIG -set "mididevice=default"
-CONFIG -set "sbtype=gb"
+REM CONFIG -set"mididevice=default"
+REM CONFIG -set"sbtype=gb"
 cd EGA
 cls
 sierra CMS.CFG
