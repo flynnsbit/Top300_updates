@@ -30,7 +30,7 @@ SIERRA
 goto quit
 
 :MT32
-mt32-pi -m -v
+CONFIG -set "mididevice=mt32"
 cd GKCD
 del RESOURCE.CFG
 xcopy .\mt32\*.*
@@ -39,7 +39,7 @@ SIERRA
 goto quit
 
 :SC55
-mt32-pi -g -v
+CONFIG -set "mididevice=fluidsynth"
 cd GKCD
 del RESOURCE.CFG
 xcopy .\sc55\*.*
@@ -57,7 +57,7 @@ SIERRA
 goto quit
 
 :flMT32
-mt32-pi -m -v
+CONFIG -set "mididevice=mt32"
 cd GK
 del RESOURCE.CFG
 xcopy .\mt32\*.*
@@ -66,7 +66,7 @@ SIERRA
 goto quit
 
 :flSC55
-mt32-pi -g -v
+CONFIG -set "mididevice=fluidsynth"
 cd GK
 del RESOURCE.CFG
 xcopy .\sc55\*.*

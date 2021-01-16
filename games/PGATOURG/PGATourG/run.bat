@@ -13,7 +13,7 @@ if errorlevel = 2 goto MT32
 if errorlevel = 1 goto GB
 
 :MT32
-mt32-pi -m -v
+CONFIG -set "mididevice=mt32"
 cls
 golf
 goto quit

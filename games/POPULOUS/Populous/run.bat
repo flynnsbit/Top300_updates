@@ -23,7 +23,7 @@ populous.exe VGA Adlib Sound
 goto quit
 
 :MT32
-mt32-pi -m -v
+CONFIG -set "mididevice=mt32"
 cd POPULOUS
 xcopy .\mt32\*.* .\
 cls

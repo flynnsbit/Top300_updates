@@ -25,7 +25,7 @@ tim2
 goto quit
 
 :MT32
-mt32-pi -m -v
+CONFIG -set "mididevice=mt32"
 copy mesource.cfg resource.cfg
 imgmount -u d
 cls
@@ -33,7 +33,7 @@ tim2
 goto quit
 
 :SC55
-mt32-pi -g -v
+CONFIG -set "mididevice=fluidsynth"
 copy gesource.cfg resource.cfg
 imgmount -u d
 cls
@@ -41,7 +41,7 @@ tim2
 goto quit
 
 :CDA
-mt32-pi -m -v
+CONFIG -set "mididevice=mt32"
 copy cesource.cfg resource.cfg
 cls
 tim2

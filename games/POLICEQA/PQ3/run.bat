@@ -25,7 +25,7 @@ cls
 goto quit
 
 :MT32
-mt32-pi -m -v
+CONFIG -set "mididevice=mt32"
 pq3 MESOURCE.CFG
 cls
 goto quit
@@ -46,7 +46,7 @@ cls
 goto quit
 
 :EGAMT32
-mt32-pi -m -v
+CONFIG -set "mididevice=mt32"
 cd ega
 SCIDUV MESOURCE.CFG
 cls

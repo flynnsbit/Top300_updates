@@ -26,7 +26,7 @@ call Deadly
 goto quit
 
 :MT32
-mt32-pi -m -v
+CONFIG -set "mididevice=mt32"
 cd DEADLY
 del SOUND.CFG
 xcopy .\mt32\*.*
@@ -35,7 +35,7 @@ call Deadly
 goto quit
 
 :SC55
-mt32-pi -g -v
+CONFIG -set "mididevice=fluidsynth"
 cd DEADLY
 del SOUND.CFG
 xcopy .\sc55\*.*

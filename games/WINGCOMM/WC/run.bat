@@ -35,7 +35,7 @@ sm2
 goto quit
 
 :wcMT32
-mt32-pi -m -v
+CONFIG -set "mididevice=mt32"
 cd wing
 xcopy .\mt32\*.* .\
 cls
@@ -43,7 +43,7 @@ wc
 goto quit
 
 :smMT32
-mt32-pi -m -v
+CONFIG -set "mididevice=mt32"
 cd wing
 xcopy .\mt32\*.* .\
 cls

@@ -37,7 +37,7 @@ dos32a descentr -640x480
 goto quit
 
 :SC55
-mt32-pi -g -v
+CONFIG -set "mididevice=fluidsynth"
 cd DESCENT
 del descent.cfg
 xcopy .\sc55\*.*
@@ -46,7 +46,7 @@ dos32a descentr
 goto quit
 
 :SC55hi
-mt32-pi -g -v
+CONFIG -set "mididevice=fluidsynth"
 cd DESCENT
 del descent.cfg
 xcopy .\sc55\*.*

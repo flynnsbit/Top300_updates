@@ -32,7 +32,7 @@ goto quit
 cls
 
 :MT32
-mt32-pi -m -v
+CONFIG -set "mididevice=mt32"
 del CONFIG.U6
 xcopy .\mt32\*.*
 cls
@@ -41,7 +41,7 @@ goto quit
 cls
 
 :SC55
-mt32-pi -g -v
+CONFIG -set "mididevice=fluidsynth"
 del CONFIG.U6
 xcopy .\sc55\*.*
 cls

@@ -26,7 +26,7 @@ call disc
 goto quit
 
 :MT32
-mt32-pi -m -v
+CONFIG -set "mididevice=mt32"
 cd DISCWLD.CD
 del MDI.INI
 xcopy .\mt32\*.*
@@ -37,7 +37,7 @@ call disc
 goto quit
 
 :SC55
-mt32-pi -g -v
+CONFIG -set "mididevice=fluidsynth"
 cd DISCWLD.CD
 del MDI.INI
 xcopy .\sc55\*.*

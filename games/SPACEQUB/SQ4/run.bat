@@ -44,7 +44,7 @@ cls
 goto quit
 
 :EGAMT32
-mt32-pi -m -v
+CONFIG -set "mididevice=mt32"
 CD EGA
 cls
 SCIDUV MESOURCE.CFG
@@ -60,7 +60,7 @@ cls
 goto quit
 
 :MT32
-mt32-pi -m -v
+CONFIG -set "mididevice=mt32"
 CD SQ4
 cls
 sierra MESOURCE.CFG 
@@ -68,7 +68,7 @@ cls
 goto quit
 
 :SC55
-mt32-pi -g -v
+CONFIG -set "mididevice=fluidsynth"
 CD SQ4
 cls
 sierra GESOURCE.CFG 
@@ -76,7 +76,7 @@ cls
 goto quit
 
 :HACK
-mt32-pi -m -v
+CONFIG -set "mididevice=mt32"
 echo off
 cd patch
 cls

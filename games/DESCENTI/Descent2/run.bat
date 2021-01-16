@@ -35,7 +35,7 @@ cls
 goto menu2
 
 :SC55
-mt32-pi -g -v
+CONFIG -set "mididevice=fluidsynth"
 xcopy .\descent2\sc55\*.* .\descent2\
 cls
 goto menu2

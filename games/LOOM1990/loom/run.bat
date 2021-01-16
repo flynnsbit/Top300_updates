@@ -43,21 +43,21 @@ loom v a
 goto quit
 
 :MT32
-mt32-pi -m -v
+CONFIG -set "mididevice=mt32"
 cd floppy
 cls
 loom v r
 goto quit
 
 :SC55
-mt32-pi -g -v
+CONFIG -set "mididevice=fluidsynth"
 cd floppy
 cls
 loom v r
 goto quit
 
 :CD
-mt32-pi -g -v
+CONFIG -set "mididevice=fluidsynth"
 d:
 cls
 loom

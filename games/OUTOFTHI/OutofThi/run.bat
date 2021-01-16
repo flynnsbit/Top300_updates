@@ -26,7 +26,7 @@ goto quit
 
 :FMT32
 CD Floppy
-mt32-pi -m -v
+CONFIG -set "mididevice=mt32"
 xcopy .\mt32\*.* .\
 cls
 World
@@ -42,7 +42,7 @@ goto quit
 
 :MT32
 CD WORLD
-mt32-pi -m -v
+CONFIG -set "mididevice=mt32"
 xcopy .\mt32\*.* .\
 cls
 World

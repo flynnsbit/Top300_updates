@@ -41,7 +41,7 @@ NASCAR %SVGA%
 goto quit
 
 :SC55
-mt32-pi -g -v
+CONFIG -set "mididevice=fluidsynth"
 cd NASCAR
 del SOUND.CFG
 xcopy .\sc55\*.*

@@ -41,7 +41,7 @@ cls
 goto game
 
 :SC55
-mt32-pi -g -v
+CONFIG -set "mididevice=fluidsynth"
 cd TNT
 del DEFAULT.CFG
 xcopy .\sc55\*.*

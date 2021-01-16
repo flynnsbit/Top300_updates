@@ -33,7 +33,7 @@ goto quit
 cls
 
 :MT32
-mt32-pi -m -v
+CONFIG -set "mididevice=mt32"
 del SERPENT.CFG
 xcopy .\mt32\*.*
 cd STATIC
@@ -51,7 +51,7 @@ goto quit
 cls
 
 :SC55
-mt32-pi -g -v
+CONFIG -set "mididevice=fluidsynth"
 del SERPENT.CFG
 xcopy .\sc55\*.*
 cd STATIC

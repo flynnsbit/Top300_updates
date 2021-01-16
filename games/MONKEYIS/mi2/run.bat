@@ -22,14 +22,14 @@ monkey2 s
 goto quit
 
 :MT32
-mt32-pi -m -v
+CONFIG -set "mididevice=mt32"
 cd mt32
 cls
 monkey2 s
 goto quit
 
 :talkie
-mt32-pi -m -v
+CONFIG -set "mididevice=mt32"
 cd talkie
 cls
 monkey2 s

@@ -36,7 +36,7 @@ cd ..
 goto menu
 
 :swsc
-mt32-pi -g -v
+CONFIG -set "mididevice=fluidsynth"
 cd sw_shar
 xcopy .\sc55\*.* .\
 cls

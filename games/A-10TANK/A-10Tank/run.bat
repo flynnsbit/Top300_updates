@@ -25,7 +25,7 @@ A10
 goto quit
 
 :MT32
-mt32-pi -m -v
+CONFIG -set "mididevice=mt32"
 cd 1.5
 xcopy .\mt32\*.* .\
 cls
@@ -41,7 +41,7 @@ A10
 goto quit
 
 :MT32old
-mt32-pi -m -v
+CONFIG -set "mididevice=mt32"
 cd 1.4
 xcopy .\mt32\*.* .\
 cls

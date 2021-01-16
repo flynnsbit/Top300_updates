@@ -24,7 +24,7 @@ goto quit
 cls
 
 :MT32
-mt32-pi -m -v
+CONFIG -set "mididevice=mt32"
 del RESOURCE.CFG
 xcopy .\mt32\*.*
 cls
@@ -33,7 +33,7 @@ goto quit
 cls
 
 :SC55
-mt32-pi -g -v
+CONFIG -set "mididevice=fluidsynth"
 del RESOURCE.CFG
 xcopy .\sc55\*.*
 cls

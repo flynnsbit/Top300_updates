@@ -46,14 +46,14 @@ monkey a
 goto quit
 
 :EGAMT32
-mt32-pi -m -v
+CONFIG -set "mididevice=mt32"
 cd cga
 cls
 monkey e r
 goto quit
 
 :MT32
-mt32-pi -m -v
+CONFIG -set "mididevice=mt32"
 cd floppy
 cls
 mtadl v mo
@@ -68,7 +68,7 @@ monkey e g
 goto quit
 
 :talkie
-mt32-pi -m -v
+CONFIG -set "mididevice=mt32"
 cd talkie
 cls
 monkey r1

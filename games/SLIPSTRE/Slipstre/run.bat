@@ -28,7 +28,7 @@ goto quit
 :MT32
 del CONFIG.INI
 cd SLIP5000
-mt32-pi -m -v
+CONFIG -set "mididevice=mt32"
 xcopy .\mt32\*.*
 cls
 call SLIP
@@ -37,7 +37,7 @@ goto quit
 :SC55
 del CONFIG.INI
 cd SLIP5000
-mt32-pi -g -v
+CONFIG -set "mididevice=fluidsynth"
 xcopy .\sc55\*.*
 cls
 call SLIP

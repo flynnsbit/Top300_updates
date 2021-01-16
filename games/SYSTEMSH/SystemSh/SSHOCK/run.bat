@@ -24,7 +24,7 @@ cls
 goto game
 
 :SC55
-mt32-pi -g -v
+CONFIG -set "mididevice=fluidsynth"
 del CYB.CFG
 xcopy .\sc55\*.*
 cls

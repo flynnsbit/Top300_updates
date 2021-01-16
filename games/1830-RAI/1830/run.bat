@@ -23,7 +23,7 @@ cls
 goto quit
 
 :MT32
-mt32-pi -m -v
+CONFIG -set "mididevice=mt32"
 del SOUND.CFG
 xcopy .\mt32\*.*
 cls
@@ -31,7 +31,7 @@ cls
 goto quit
 
 :SC55
-mt32-pi -g -v
+CONFIG -set "mididevice=fluidsynth"
 del SOUND.CFG
 xcopy .\sc55\*.*
 cls

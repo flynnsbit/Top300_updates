@@ -25,7 +25,7 @@ ALBION
 goto quit
 
 :MT32
-mt32-pi -m -v
+CONFIG -set "mididevice=mt32"
 cd DRIVERS
 del MDI.INI
 xcopy .\mt32\*.*
@@ -35,7 +35,7 @@ ALBION
 goto quit
 
 :SC55
-mt32-pi -g -v
+CONFIG -set "mididevice=fluidsynth"
 cd DRIVERS
 del MDI.INI
 xcopy .\sc55\*.*

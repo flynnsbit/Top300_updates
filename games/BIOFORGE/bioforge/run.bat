@@ -22,7 +22,7 @@ BIOFORGE
 goto quit
 
 :SC55
-mt32-pi -g -v
+CONFIG -set "mididevice=fluidsynth"
 del AILXMI.DLL
 del INSTALL.OPT
 xcopy .\sc55\*.*

@@ -39,7 +39,7 @@ SCIDUV SESOURCE.cfg
 goto quit
 
 :EGAMT32
-mt32-pi -m -v
+CONFIG -set "mididevice=mt32"
 CD EGA
 cls
 SCIDUV MESOURCE.cfg
@@ -47,7 +47,7 @@ SCIDUV MESOURCE.cfg
 goto quit
 
 :EGASC55
-mt32-pi -g -v
+CONFIG -set "mididevice=fluidsynth"
 CD EGA
 cls
 SCIDUV GESOURCE.cfg
@@ -60,13 +60,13 @@ SCIDHUV sesource.cfg
 goto quit
 
 :MT32
-mt32-pi -m -v
+CONFIG -set "mididevice=mt32"
 cls
 SCIDHUV mesource.cfg
 goto quit
 
 :SC55
-mt32-pi -g -v
+CONFIG -set "mididevice=fluidsynth"
 cls
 SCIDHUV gesource.cfg
 goto quit

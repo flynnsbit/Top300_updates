@@ -25,7 +25,7 @@ HEXEN
 goto quit
 
 :SC55
-mt32-pi -g -v
+CONFIG -set "mididevice=fluidsynth"
 del HEXEN.CFG
 xcopy .\sc55\*.*
 cls

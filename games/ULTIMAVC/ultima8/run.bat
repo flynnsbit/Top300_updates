@@ -25,7 +25,7 @@ goto quit
 cls
 
 :MT32
-mt32-pi -m -v
+CONFIG -set "mididevice=mt32"
 del AILXMI.DLL
 del U8.INI
 xcopy .\mt32\*.*
@@ -35,7 +35,7 @@ goto quit
 cls
 
 :SC55
-mt32-pi -g -v
+CONFIG -set "mididevice=fluidsynth"
 del AILXMI.DLL
 del U8.INI
 xcopy .\sc55\*.*

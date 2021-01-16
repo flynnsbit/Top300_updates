@@ -32,7 +32,7 @@ cls
 
 
 :MT32
-mt32-pi -m -v
+CONFIG -set "mididevice=mt32"
 del U7.CFG
 xcopy .\mt32\*.*
 cd .\STATIC
@@ -48,7 +48,7 @@ goto quit
 cls
 
 :SC55
-mt32-pi -g -v
+CONFIG -set "mididevice=fluidsynth"
 del U7.CFG
 xcopy .\sc55\*.*
 cd .\STATIC

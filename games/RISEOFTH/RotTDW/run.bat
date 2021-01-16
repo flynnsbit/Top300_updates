@@ -35,7 +35,7 @@ goto quit
 :SC55
 cd ROTT
 xcopy .\sc55\*.* .\
-mt32-pi -g -v
+CONFIG -set "mididevice=fluidsynth"
 cls
 ROTT
 goto quit

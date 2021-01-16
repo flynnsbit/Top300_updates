@@ -39,7 +39,7 @@ goto quit
 cls
 
 :FMT32
-mt32-pi -m -v
+CONFIG -set "mididevice=mt32"
 cd floppy
 del RESOURCE.CFG
 xcopy .\mt32\*.*
@@ -49,7 +49,7 @@ goto quit
 cls
 
 :FSC55
-mt32-pi -g -v
+CONFIG -set "mididevice=fluidsynth"
 cd floppy
 del RESOURCE.CFG
 xcopy .\sc55\*.*
@@ -98,7 +98,7 @@ goto quit
 cls
 
 :MT32
-mt32-pi -m -v
+CONFIG -set "mididevice=mt32"
 cd KQ6CD
 del RESOURCE.CFG
 xcopy .\mt32\*.*
@@ -108,7 +108,7 @@ goto quit
 cls
 
 :SC55
-mt32-pi -g -v
+CONFIG -set "mididevice=fluidsynth"
 cd KQ6CD
 del RESOURCE.CFG
 xcopy .\sc55\*.*

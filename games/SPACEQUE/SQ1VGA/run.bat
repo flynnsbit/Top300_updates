@@ -38,13 +38,13 @@ cls
 goto quit
 
 :MT32
-mt32-pi -m -v
+CONFIG -set "mididevice=mt32"
 SCIDHUV mesource.cfg
 cls
 goto quit
 
 :SC55
-mt32-pi -g -v
+CONFIG -set "mididevice=fluidsynth"
 SCIDHUV gesource.cfg
 cls
 goto quit
@@ -65,14 +65,14 @@ cls
 goto quit
 
 :MT32EGA
-mt32-pi -m -v
+CONFIG -set "mididevice=mt32"
 CD EGA
 SCIDUV mesource.cfg
 cls
 goto quit
 
 :SC55EGA
-mt32-pi -g -v
+CONFIG -set "mididevice=fluidsynth"
 CD EGA
 SCIDUV gesource.cfg
 cls

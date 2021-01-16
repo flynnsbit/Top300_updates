@@ -26,7 +26,7 @@ SC3
 goto quit
 
 :MT32
-mt32-pi -m -v
+CONFIG -set "mididevice=mt32"
 cd STARCON3
 del MDI.INI
 xcopy .\mt32\*.*
@@ -35,7 +35,7 @@ SC3
 goto quit
 
 :SC55
-mt32-pi -g -v
+CONFIG -set "mididevice=fluidsynth"
 cd STARCON3
 del MDI.INI
 xcopy .\sc55\*.*

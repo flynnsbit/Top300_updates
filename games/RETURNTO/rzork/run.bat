@@ -27,7 +27,7 @@ call RTZ
 goto quit
 
 :MT32
-mt32-pi -m -v
+CONFIG -set "mididevice=mt32"
 cd RTZ-CD
 del MECH2.BAT
 del RTZ.BAT
@@ -39,7 +39,7 @@ call RTZ
 goto quit
 
 :SC55
-mt32-pi -g -v
+CONFIG -set "mididevice=fluidsynth"
 cd RTZ-CD
 del MECH2.BAT
 del RTZ.BAT

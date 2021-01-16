@@ -28,7 +28,7 @@ rem @MOUSEX 20 10 GAME.EXE
 goto quit
 
 :MT32
-mt32-pi -m -v
+CONFIG -set "mididevice=mt32"
 cd SETTINGS
 del SETSND.CFG
 xcopy .\mt32\*.*
@@ -39,7 +39,7 @@ rem @MOUSEX 20 10 GAME.EXE
 goto quit
 
 :SC55
-mt32-pi -g -v
+CONFIG -set "mididevice=fluidsynth"
 cd SETTINGS
 del SETSND.CFG
 xcopy .\sc55\*.*

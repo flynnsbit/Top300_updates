@@ -23,7 +23,7 @@ PANZER
 goto quit
 
 :SC55
-mt32-pi -g -v
+CONFIG -set "mididevice=fluidsynth"
 cd PG
 cd EXE
 del SOUND.CFG

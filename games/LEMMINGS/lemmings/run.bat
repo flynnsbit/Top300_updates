@@ -3,8 +3,8 @@ echo off
 cls
 echo.
 echo Press 1 for Lemmings w/ Adlib Music
-echo Press 2 for Lemmings w/ CD Music (EMM386 Required)
-echo Press 3 for Oh No More Lemmings w/ CD Musc (EMM386 Required)
+echo Press 2 for Lemmings w/ CD Music
+echo Press 3 for Oh No More Lemmings w/ CD Music
 echo Press 4 for Lemmings Official Companion Bonus Disk Levels
 echo Press 5 to quit
 echo.
@@ -29,18 +29,12 @@ goto quit
 
 :CdOhNo
 imgset ide10 "/cd/lemmings/az_2246.cue"
-cd CDLEMM
-cls
-ohno vga
-cd ..
+run_emm E: \games\lemmings\lemmings\cdlemm ohno vga
 goto quit
 
 :CD
 imgset ide10 "/cd/lemmings/az_2246.cue"
-cd CDLEMM
-cls
-lemmings vga
-cd ..
+run_emm E: \games\lemmings\lemmings\cdlemm lemmings vga
 goto quit
 
 :bonus

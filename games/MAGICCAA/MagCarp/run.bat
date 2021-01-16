@@ -36,7 +36,7 @@ carpet
 goto quit
 
 :MT32
-mt32-pi -m -v
+CONFIG -set "mididevice=mt32"
 cd CARPET.CD
 del SNDSETUP.DAT
 del SNDSETUP.INF
@@ -52,7 +52,7 @@ carpet
 goto quit
 
 :SC55
-mt32-pi -g -v
+CONFIG -set "mididevice=fluidsynth"
 cd CARPET.CD
 del SNDSETUP.DAT
 del SNDSETUP.INF

@@ -25,7 +25,7 @@ ARMADA
 goto quit
 
 :SC55
-mt32-pi -g -v
+CONFIG -set "mididevice=fluidsynth"
 cd ARMADA
 del INSTALL.CFG
 del ARMADA.CFG

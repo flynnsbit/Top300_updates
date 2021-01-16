@@ -44,7 +44,7 @@ call HIOCTANE
 goto quit
 
 :MT32
-mt32-pi -m -v
+CONFIG -set "mididevice=mt32"
 cd HIOCTANE.CD\sound
 xcopy .\mt32\*.* .\
 cd ..
@@ -55,7 +55,7 @@ call HIOCTANE
 goto quit
 
 :SC55
-mt32-pi -g -v
+CONFIG -set "mididevice=fluidsynth"
 cd HIOCTANE.CD\sound
 xcopy .\sc55\*.* .\
 cd ..

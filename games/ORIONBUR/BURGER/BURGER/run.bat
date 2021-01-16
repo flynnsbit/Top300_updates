@@ -20,7 +20,7 @@ cls
 goto quit
 
 :SC55
-mt32-pi -g -v
+CONFIG -set "mididevice=fluidsynth"
 xcopy .\sc55\*.* .\
 cls
 @call ORION

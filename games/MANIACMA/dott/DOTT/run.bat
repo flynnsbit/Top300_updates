@@ -23,14 +23,14 @@ dotta
 goto quit
 
 :MT32
-mt32-pi -m -v
+CONFIG -set "mididevice=mt32"
 cls
 cd dott.cd
 dottr
 goto quit
 
 :SC55
-mt32-pi -g -v
+CONFIG -set "mididevice=fluidsynth"
 cls
 cd dott.cd
 dottg

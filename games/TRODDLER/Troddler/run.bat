@@ -20,7 +20,7 @@ TRODDLER
 goto quit
 
 :MT32
-mt32-pi -m -v
+CONFIG -set "mididevice=mt32"
 cls
 TRODDLER
 goto quit

@@ -42,7 +42,7 @@ echo choose: 5) Roland MT-32 MIDI Board
 echo. 
 @jchoice
 cls
-mt32-pi -m -v
+CONFIG -set "mididevice=mt32"
 CD CIV
 cls
 civ
@@ -56,7 +56,7 @@ echo choose: 6) Custom sound driver
 echo. 
 @jchoice
 cls
-mt32-pi -g -v
+CONFIG -set "mididevice=fluidsynth"
 CD CIV
 xcopy .\sc55\*.* .\
 cls

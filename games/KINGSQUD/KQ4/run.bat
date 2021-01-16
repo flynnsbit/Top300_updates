@@ -30,7 +30,7 @@ cls
 goto quit
 
 :SCIMT32
-mt32-pi -m -v
+config -set "mididevice=mt32"
 xcopy .\cfg\RESOURCE.M32 RESOURCE.CFG
 sierra
 cls

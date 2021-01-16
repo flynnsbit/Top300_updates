@@ -20,7 +20,7 @@ SB2
 goto quit
 
 :MT32
-mt32-pi -m -v
+CONFIG -set "mididevice=mt32"
 xcopy .\mt32\*.* .\
 cls
 SB2
