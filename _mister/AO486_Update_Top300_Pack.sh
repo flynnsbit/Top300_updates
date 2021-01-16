@@ -33,7 +33,7 @@ reset="\e[0m"
 # Arg $1: GitHub repo name, e.g. "username/repo"
 get_latest_release()
 {
-	local api_url="https://api.github.com/repos/${1}/releases/assets/30793495"
+	local api_url="https://api.github.com/repos/${1}/releases/assets/36498179"
 	local download_url
 
 	read -r tag_name download_url < <(echo $(curl -k -s "${api_url}" | jq -r ".tag_name, .assets[0].browser_download_url"))
