@@ -31,21 +31,21 @@ cls
 goto quit
 
 :MT32
-CONFIG -set "mididevice=mt32"
+mt32-pi -m -v
 xcopy .\mt32\*.* .\
 cls
 @lords
 goto quit
 
 :SC55
-CONFIG -set "mididevice=fluidsynth"
+mt32-pi -g -v
 xcopy .\sc55\*.* .\
 cls
 @lords
 goto quit
 
 :CD
-CONFIG -set "mididevice=fluidsynth"
+mt32-pi -g -v
 CONFIG -SET "CYCLES=6000"
 cd ..
 cd lordscd
@@ -64,7 +64,7 @@ cls
 goto quit
 
 :MT32CD
-CONFIG -set "mididevice=mt32"
+mt32-pi -m -v
 CONFIG -SET "CYCLES=6000"
 cd ..
 cd lordscd
@@ -74,7 +74,7 @@ cls
 goto quit
 
 :SC55CD
-CONFIG -set "mididevice=fluidsynth"
+mt32-pi -g -v
 CONFIG -SET "CYCLES=6000"
 cd ..
 cd lordscd

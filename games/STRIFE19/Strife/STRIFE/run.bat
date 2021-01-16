@@ -21,7 +21,7 @@ cls
 goto quit
 
 :SC55
-CONFIG -set "mididevice=fluidsynth"
+mt32-pi -g -v
 del STRIFE.CFG
 xcopy .\sc55\*.*
 cls

@@ -24,7 +24,7 @@ cls
 goto quit
 
 :MT32
-CONFIG -set "mididevice=mt32"
+mt32-pi -m -v
 del SC.CFG
 del SCTO1.CFG
 xcopy .\mt32\*.*
@@ -33,7 +33,7 @@ cls
 goto quit
 
 :SC55
-CONFIG -set "mididevice=fluidsynth"
+mt32-pi -g -v
 del SC.CFG
 del SCTO1.CFG
 xcopy .\sc55\*.*

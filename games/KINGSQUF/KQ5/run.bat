@@ -29,7 +29,7 @@ cls
 goto quit
 
 :SCIMT32
-CONFIG -set "mididevice=mt32"
+mt32-pi -m -v
 sierra MESOURCE.CFG
 cls
 goto quit
@@ -44,7 +44,7 @@ cls
 goto quit
 
 :FLOP32
-CONFIG -set "mididevice=mt32"
+mt32-pi -m -v
 cd floppy
 cls
 sierra MESOURCE.CFG
@@ -53,7 +53,7 @@ cls
 goto quit
 
 :EGA32
-CONFIG -set "mididevice=mt32"
+mt32-pi -m -v
 cd EGA
 cls
 sierra MT32.CFG

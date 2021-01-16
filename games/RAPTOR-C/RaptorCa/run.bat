@@ -29,7 +29,7 @@ RAP
 goto quit
 
 :SC55
-CONFIG -set "mididevice=fluidsynth"
+mt32-pi -g -v
 xcopy .\sc55\*.* .\
 cls
 RAP

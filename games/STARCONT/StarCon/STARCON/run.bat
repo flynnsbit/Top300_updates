@@ -28,7 +28,7 @@ cls
 goto quit
 
 :MT32
-CONFIG -set "mididevice=mt32"
+mt32-pi -m -v
 cls
 @STARCON /s:MT32
 goto quit

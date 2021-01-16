@@ -27,7 +27,7 @@ TYRIAN
 goto quit
 
 :SC55
-CONFIG -set "mididevice=fluidsynth"
+mt32-pi -g -v
 del TYRIAN.CFG
 xcopy .\sc55\*.*
 cls
@@ -43,7 +43,7 @@ file0001 yesxmas
 goto quit
 
 :XSC55
-CONFIG -set "mididevice=fluidsynth"
+mt32-pi -g -v
 del TYRIAN.CFG
 xcopy .\sc55\*.*
 cls

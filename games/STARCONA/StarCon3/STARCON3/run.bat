@@ -23,7 +23,7 @@ cls
 goto quit
 
 :MT32
-CONFIG -set "mididevice=mt32"
+mt32-pi -m -v
 del MDI.INI
 xcopy .\mt32\*.*
 cls
@@ -31,7 +31,7 @@ cls
 goto quit
 
 :SC55
-CONFIG -set "mididevice=fluidsynth"
+mt32-pi -g -v
 del MDI.INI
 xcopy .\sc55\*.*
 cls

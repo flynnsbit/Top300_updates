@@ -25,14 +25,14 @@ prince
 goto quit
 
 :MT32
-CONFIG -set "mididevice=mt32"
+mt32-pi -m -v
 xcopy .\mt32\*.* .\
 cls
 prince
 goto quit
 
 :SC55
-CONFIG -set "mididevice=fluidsynth"
+mt32-pi -g -v
 xcopy .\sc55\*.* .\
 cls
 prince

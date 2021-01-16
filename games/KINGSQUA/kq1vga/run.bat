@@ -19,7 +19,7 @@ cls
 goto quit
 
 :MT32
-CONFIG -set "mididevice=mt32"
+mt32-pi -m -v
 sierra mesource.cfg
 cls
 goto quit

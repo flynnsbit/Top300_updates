@@ -26,7 +26,7 @@ Orion2
 goto quit
 
 :MT32
-CONFIG -set "mididevice=mt32"
+mt32-pi -m -v
 cd ORION2
 del MDI.INI
 xcopy .\mt32\*.*
@@ -35,7 +35,7 @@ Orion2
 goto quit
 
 :SC55
-CONFIG -set "mididevice=fluidsynth"
+mt32-pi -g -v
 cd ORION2
 del MDI.INI
 xcopy .\sc55\*.*

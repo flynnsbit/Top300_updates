@@ -33,7 +33,7 @@ DUKE3D
 goto quit
 
 :SC55
-CONFIG -set "mididevice=fluidsynth"
+mt32-pi -g -v
 cd duke3d
 xcopy .\sc55\*.* .\
 cls

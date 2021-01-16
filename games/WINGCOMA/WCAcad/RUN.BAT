@@ -20,7 +20,7 @@ wca
 goto quit
 
 :MT32
-CONFIG -set "mididevice=mt32"
+mt32-pi -m -v
 cd wcam
 cls
 wca

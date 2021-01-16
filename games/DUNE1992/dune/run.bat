@@ -37,7 +37,7 @@ duneprg ENG VGA AGD388 HIM 386
 goto quit
 
 :MT32
-CONFIG -set "mididevice=mt32"
+mt32-pi -m -v
 cls
 logo
 duneprg ENG VGA MID330 HIM 386
@@ -61,7 +61,7 @@ imgset r
 goto quit
 
 :CDMT32
-CONFIG -set "mididevice=mt32"
+mt32-pi -m -v
 d:
 cls
 DNCDPRG MID330 SBP2227 EMS 386 SAF WRIE:\GAMES\dune\DUNECD\

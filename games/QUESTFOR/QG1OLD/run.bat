@@ -36,7 +36,7 @@ SIERRA sesource.cfg
 goto quit
 
 :MT32
-CONFIG -set "mididevice=mt32"
+mt32-pi -m -v
 cls
 SIERRA mesource.cfg
 goto quit

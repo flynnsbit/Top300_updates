@@ -228,7 +228,7 @@ goto quit
 cls
 
 :MT32
-CONFIG -set "mididevice=mt32"
+mt32-pi -m -v
 del MIDPAK.AD
 del MIDPAK.ADV
 del MIDPAK.COM
@@ -239,7 +239,7 @@ goto quit
 cls
 
 :SC55
-CONFIG -set "mididevice=fluidsynth"
+mt32-pi -g -v
 del MIDPAK.AD
 del MIDPAK.ADV
 del MIDPAK.COM

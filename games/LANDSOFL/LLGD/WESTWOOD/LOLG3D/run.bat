@@ -33,7 +33,7 @@ cls
 goto quit
 
 :MPU401
-CONFIG -set "mididevice=mt32"
+mt32-pi -m -v
 del LOLSETUP.INI
 xcopy .\mpu401\*.*
 cls
@@ -41,7 +41,7 @@ cls
 goto quit
 
 :SC55
-CONFIG -set "mididevice=fluidsynth"
+mt32-pi -g -v
 del LOLSETUP.INI
 xcopy .\sc55\*.*
 cls

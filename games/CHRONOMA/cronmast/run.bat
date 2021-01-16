@@ -21,7 +21,7 @@ CMASTER
 goto quit
 
 :SC55
-CONFIG -set "mididevice=fluidsynth"
+mt32-pi -g -v
 del HMISET.CFG
 xcopy .\sc55\*.*
 cls

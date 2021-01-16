@@ -20,7 +20,7 @@ cls
 goto game
 
 :SC55
-CONFIG -set "mididevice=fluidsynth"
+mt32-pi -g -v
 del SOUND.CFG
 xcopy .\sc55\*.*
 cls

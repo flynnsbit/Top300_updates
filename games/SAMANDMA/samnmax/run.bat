@@ -26,7 +26,7 @@ SAMNMAX
 goto quit
 
 :MT32
-CONFIG -set "mididevice=mt32"
+mt32-pi -m -v
 cd SAMNMAX.CD
 copy SETMUSE.M32 SETMUSE.INI
 cd ..
@@ -37,7 +37,7 @@ SAMNMAX
 goto quit
 
 :SC55
-CONFIG -set "mididevice=fluidsynth"
+mt32-pi -g -v
 cd SAMNMAX.CD
 copy SETMUSE.SC SETMUSE.INI
 cd ..

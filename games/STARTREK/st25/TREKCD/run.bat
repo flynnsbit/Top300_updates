@@ -34,14 +34,14 @@ cls
 goto quit
 
 :MT32e
-CONFIG -set "mididevice=mt32"
+mt32-pi -m -v
 xcopy .\mt32_e\*.* .\
 cls
 @STARTREK
 goto quit
 
 :MT32v
-CONFIG -set "mididevice=mt32"
+mt32-pi -m -v
 xcopy .\mt32_v\*.* .\
 cls
 @STARTREK

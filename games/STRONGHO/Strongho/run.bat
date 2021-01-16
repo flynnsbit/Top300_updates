@@ -25,7 +25,7 @@ STRONG
 goto quit
 
 :MT32
-CONFIG -set "mididevice=mt32"
+mt32-pi -m -v
 cd STRONG.SAV
 xcopy .\mt32\*.* .\
 cd ..

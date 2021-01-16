@@ -41,7 +41,7 @@ WAR2
 goto quit
 
 :SC55
-CONFIG -set "mididevice=fluidsynth"
+mt32-pi -g -v
 del WAR2.INI
 xcopy .\sc55\*.*
 cd DRIVERS

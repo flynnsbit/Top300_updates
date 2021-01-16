@@ -32,7 +32,7 @@ goto menu
 
 :wc2mt
 cd origin2
-CONFIG -set "mididevice=mt32"
+mt32-pi -m -v
 xcopy .\mt32\*.* .\
 cd ..
 g:
@@ -52,7 +52,7 @@ goto menu
 
 :so1mt
 cd origin2
-CONFIG -set "mididevice=mt32"
+mt32-pi -m -v
 xcopy .\mt32\*.* .\
 cd ..
 g:
@@ -72,7 +72,7 @@ goto menu
 
 :so2mt
 cd origin2
-CONFIG -set "mididevice=mt32"
+mt32-pi -m -v
 xcopy .\mt32\*.* .\
 cd ..
 g:
