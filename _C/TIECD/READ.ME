@@ -1,0 +1,522 @@
+             TIE FIGHTER CD SPACE COMBAT SIMULATION
+
+                         READ.ME FILE
+
+
+This file has been included to supplement the troubleshooting
+guide included in the game package. If you are having problems
+running the game, you will probably find your answers in the
+troubleshooting guide. Here you'll discover late-breaking
+information on the game and suggestions for getting the most
+out of TIE Fighter CD. 
+
+CONTENTS:
+
+    I) Known Problems with TIE Fighter CD.
+
+    II) Making a Boot Disk for TIE Fighter CD.
+
+    III) Sound and Music issues.
+
+    IV) Video Card and Display issues.
+
+    V) Running TIE Fighter within WINDOWS 95.
+
+    VI) Support for Joysticks and Programmable Input Devices.
+ 
+    VII) If Install Program Fails to Execute.
+
+    VIII) If TIE Fighter CD Fails to Execute.
+
+    IX) Installing over Previous Installation.
+
+    X) Skipping to the New Missions.
+
+    XI) Making TIE Fighter run Faster and Better.
+
+    XII) Miscellaneous.
+
+
+
+I) Known Problems with TIE Fighter CD.
+
+  1) Some ships must survive earlier missions in order for
+    later missions to be winnable.  Usually, these 'key' ships
+    are impossible to destroy. However, there are some
+    missions in which these ships can be destroyed by the
+    player.  If the player does destroy a 'key' ship, they may
+    not be able to complete a later mission.  This is a rare
+    condition, mostly associated with capital ships and the
+    use of INVULNERABLE mode by the player.
+      If you are interested in taking out every ship in a
+    mission, we suggest you do so in the Virtual Combat
+    Chamber or use the MANUAL BACKUP feature at the end of
+    each battle to safeguard against being trapped in an
+    unwinnable mission.
+      Because some missions safeguard against 'key' ships
+    being destroyed, the player may find capital ships that do
+    not take damage.
+
+   2) Some of the animated cutscenes may stop and stutter as
+    they are being played. To alleviate this problem, remove
+    any CD-ROM caching utilities such as SMARTDRV.EXE from
+    your boot-up configuration.  If you are unsure about how
+    to do this, it is highly recommended that you make a boot
+    disk for TIE Fighter CD.  Refer to the next section for
+    details on how to make a boot disk.
+
+
+II) Making a Boot Disk for TIE Fighter CD.
+
+   To make a boot disk, select the "Make a Boot Disk" option
+   from the main menu of the install program.  Make sure you
+   have a floppy disk available to use as your boot disk.
+   (Note: you must use the A: drive to make your boot disk.)
+   You will be instructed at each step of the process of
+   making your boot disk.
+
+   Alternately, you may run boottie.exe from the
+   TIE Fighter CD by typing:
+
+      D:\BOOTTIE.EXE
+
+   where D: is the letter of your CD-ROM drive.
+
+
+III) Sound and Music Issues.
+
+   1) Setting up your sound card.
+   
+   After selecting the "Set Up Sound Card" option from the
+   install program you will be asked to choose either Express
+   Setup or Custom Setup. If you choose Express Setup, the
+   program will attempt to set up your sound board
+   automatically. If the install program fails to configure
+   your sound board automatically, you should choose Custom
+   Setup. 
+
+   From the Custom Setup Standard Menu you can choose from
+   the sound standards supported by TIE Fighter and manually
+   set the Port, IRQ, DMA, and Stereo Reverse settings.  You
+   can also test your configuration for both music and sound.
+   In some cases, you may want to select the Advanced Menu.
+   This menu allows you to select the Music and Digital Sound
+   standards for TIE Fighter independently of each other.
+   This is most useful for systems with more than one sound
+   board, or sound boards which support more than one
+   standard.
+
+   2) Hanging Notes or Pauses while using General MIDI.
+   
+   We have found that some sound cards with General MIDI
+   daughterboards may experience hanging notes or pauses and
+   occasionally the game may lock up.  If this occurs, disable
+   General MIDI and choose the FM driver for your sound and it
+   should work fine.  To do this, re-run TIE Fighter CD's Sound
+   setup utility from the main menu of the install program and
+   choose Express setup.  We are researching a solution to this
+   problem.
+
+   3) Poor digital sound quality.
+   
+   We have found that some sound cards such as Aztech Sound
+   Galaxy, Media Vision Pro Audio Spectrum 16/Studio, and ESS
+   Audiodrive, may have intermittent static or other sound
+   distortion in the voices and sound effects of TIE Fighter
+   CD while playing within a Windows 95 DOS Box.  If this
+   occurs, try restarting in MS-DOS mode to play the game
+   or make a boot disk.  
+   
+
+IV) Video Card and Display issues.
+
+   
+  1) Diamond Viper Video Card
+  
+   The Diamond Viper requires a driver for VESA compatibility.
+   UNIVBE does not support this card, therefore, you will need
+   to load the VESA driver that came with your card.  The
+   driver, usually located in C:\VIPER, is called VPRMODE.EXE.
+  
+   At the C:\VIPER> command prompt, type:
+  
+      VPRMODE VESA
+
+   Then start TIE Fighter CD. You may wish to include this
+   command in the Autoexec.bat file on your boot disk to play
+   TIE Fighter CD in high-resolution.  Check the documentation
+   that came with your video card for more information.
+
+   NOTE: TIE Fighter CD may not work in high-resolution with
+         some versions of the Diamond Viper display card.  If
+         your Viper is one of these, entering the combat
+         portion of the game while it is set to high-res will
+         result in corrupted graphics or a black screen.  If
+         this occurs, restart your computer, and set TIE
+         Fighter CD to low-resolution (320x200) in the Pilot
+         Datapad.
+
+  2) Getting high-res mode to work with a VESA Compatible card.
+
+   If you are having trouble getting TIE Fighter to work
+   properly with your VESA compatible video card in high
+   resolution, try forcing UniVBE by using the /u option when
+   you start TIE Fighter CD.  Do this by typing:
+ 
+     D:\TIE.EXE /u
+ 
+   For more information, Please refer to the 'Display Concerns'
+   section in the Troubleshooting Guide included with the game. 
+
+   NOTE: In very rare instances, specifying the /u option to
+   force UniVBE will cause the game to lock up.  In this case,
+   try using the /v option instead.  Do this by typing:
+
+     D:\TIE.EXE /v
+
+   where D: is the letter of your CD-ROM drive.  Specifying
+   the /v option will cause an options screen to pop up
+   before the game starts asking the user to configure UNIVBE
+   for their video card manually.  Usually, you just have to
+   press RETURN and then the game will run as normal.  If you
+   know that the configuration selected for you by default is
+   incorrect, you may choose to change it before hitting the
+   OK button.
+
+  3) Adjusting Display Brightness while in flight.
+  
+   If you find the colors in the inflight portion of
+   the game too dark, you can adjust the brightness by
+   pressing ALT-B.  Repeated presses will cycle through
+   eight different brightness settings.
+
+
+V) Running TIE Fighter within WINDOWS 95.
+
+  Here are some tips on getting TIE Fighter to run well
+  within Windows 95. Before reading this section, you should
+  refer to the Troubleshooting Guide included with the game. 
+
+  1) TIE Fighter CD runs best in Windows 95 if there are
+    no other programs running. Since Windows 95 is a 
+    multitasking system, it may switch away from the game
+    to run the other processes, causing long delays, stuttering
+    sound, or other problems. First, turn off any programs
+    that are listed on the task bar. Second, if you are running
+    any "shell" program such as Microsoft Office, Hewlett
+    Packard Personal Pages, Packard Bell Navigator, or Norton
+    Desktop, refer to that program's manual for instructions
+    on how to suspend them while you play TIE Fighter. 
+
+  2) As is with other disk cache utilities, Windows 95's built
+    in CD-ROM caching may slow down some parts of TIE Fighter
+    and may also cause the problems described above. While you
+    can turn off CD-ROM caching in Windows 95, this may
+    negatively affect other programs. We recommend running the
+    game from a boot disk instead.
+
+  3) Some users may get a "Stack Overflow" error message
+    when first starting the game. If you experience this 
+    problem, first try running the game off a boot disk.
+    Refer to Section II: "Making a Boot Disk" for more 
+    detail. 
+
+    If the problem remains, try adding the following line to 
+    the CONFIG.SYS file on the boot disk:
+
+           STACKS = 9,256
+
+    Then reboot the computer and try running TIE Fighter CD
+    with the boot disk again.
+
+  4) If you still experience problems while running the TIE
+    Fighter CD in Windows 95, keep in mind that you can make
+    a boot disk at any time and use it to run the game in a true
+    DOS environment; you won't have to reinstall TIE Fighter
+    CD. The boot disk has been designed to provide the best
+    environment for running the game.
+
+
+VI) Support for Joysticks and Programmable Input Devices.
+
+  For your convenience, we have included with TIE Fighter CD,
+  some files for use with popular programmable controllers.  
+
+  1) CH Throttle
+    
+   We have included a couple of *.KEY files on the CD for the
+   12 function CH Throttle. They are located in the \DEVICES
+   subdirectory on the TIE Fighter CD.
+
+     TIECD.KEY - optimized for use with a CH Flightstick Pro.
+     TIECD2.KEY - optimized for a standard two-button joystick.
+  
+   Follow the directions that came with your CH Throttle to
+   download either of these files to your unit before playing
+   TIE Fighter CD.
+
+  2) CH Pedals are not compatible with TIE Fighter CD.  If
+    they are plugged into your game port, it may cause the
+    joystick calibration to fail or become erratic.  Please
+    unplug your CH Pedals before running TIE Fighter CD.
+
+  3) Thrustmaster WCS Mark II
+    
+    To program your THRUSTMASTER for use with TIE Fighter CD
+    enter the following line at the DOS prompt:
+ 
+       \MARK2\MK2LOAD D:\DEVICES\TIE2.ADV
+ 
+    where MARK2 is the directory where you installed the
+    THRUSTMASTER software, and D: is your CD-ROM drive letter.
+ 
+    If you have the older version of the WCS Mark II, the
+    line above will not work.  You need to contact
+    THRUSTMASTER for an upgrade.
+ 
+    You can print the TIE2.ADV file to make a quick
+    reference sheet for using your THRUSTMASTER with
+    TIE Fighter CD.  To do so, enter:
+ 
+       TYPE D:\DEVICES\TIE2.ADV >PRN:
+ 
+    at the DOS prompt.  Be sure to have your printer ready
+    first.
+
+  4) Thrustmaster FCS
+    
+    The extra buttons on the FCS are supported by TIE Fighter
+    CD. NOTE: TIE Fighter CD does not support the 'Hat'
+    control on the Thrustmaster FCS. 
+  
+ 
+VII) If the Install Program Fails to Execute.
+
+  If you have any problems preventing you from running the 
+  TIE Fighter CD installation program, you may follow these
+  steps to install using a batch file installer:
+
+  1) Change to your CD-ROM drive. ( This is usually D: )
+
+  2) Change to the SUPPORT directory.  Do this by typing:
+
+      CD SUPPORT
+
+  3) Type:
+
+       install [drive letter]:
+
+    where drive letter is the drive you want to install to.
+    For example, if you want to install to the C: drive, type
+  
+       install c:
+
+  4) Installation will now proceed.  Afterwards, it will
+   allow you to set up your sound card.
+
+
+VIII) If TIE Fighter CD fails to execute.
+
+  Since TIE Fighter CD is a protected mode program, it
+  requires DOS4GW.EXE to run properly.  This is included
+  on the CD and normally, you do not have to worry about it.
+  However, on certain machines, DOS4GW.EXE may crash, thus
+  preventing you from playing TIE Fighter CD.  Included in
+  the SUPPORT directory of your TIE Fighter CD are several
+  patches which copies various versions of DOS4GW.EXE to
+  your install directory to try to solve this problem.
+  These files are:
+
+     PATCH197.BAT
+     PATCH195.BAT
+     PATCH192.BAT
+     PATCH108.BAT
+
+  To use these patch files, you must have either selected
+  a Recommended install or a Maximum install.  If you have
+  a Minimum install, see Section IX: "Installing over
+  previous installation."  in this read.me file.
+
+  To use the patches, change to your CD-ROM drive 
+  ( usually D: ) and then change to SUPPORT directory by
+  typing:
+
+     CD SUPPORT
+
+  After that, type the following:
+
+     PATCH???.BAT [install path]
+
+  where ??? is the number of the patch and [install path] is
+  the path where the Recommended or Maximum install of
+  TIE Fighter CD is.  You should start with PATCH195.BAT,
+  since PATCH197 is the default one installed for you by
+  the install program.  For example, if you have performed a
+  Recommended Install in C:\TIECD directory and you want to
+  try PATCH195.BAT, you would type:
+
+     PATCH195.BAT C:\TIECD
+
+  Then run TIE Fighter CD and see if it works.  If not, then
+  try the next lower patch, then the next lower patch, etc.
+  If none of these patches work, you may want to try making
+  a boot disk (see section on "Making a Boot Disk").  
+
+  Note:  The DOS4GW.EXE version installed by PATCH180.BAT
+         will not work in a Windows 95 DOS Box.  Refer to
+         your Windows 95 manual for details on how to restart
+         your computer in MS-DOS mode.
+
+
+IX) Installing Over the Previous Installation.
+
+  There may be times when it will be necessary to install
+  TIE Fighter CD again.  One example would be if you have
+  done a Minimum installation and are not satisfied with
+  the performance and now you want to do a Recommended
+  install.  You can do this by choosing the new
+  install option and when it requests the path, simply
+  use the default that is displayed.  You cannot install
+  a second copy of TIE Fighter CD into a different
+  directory.
+
+  WARNING:  Installing over a previous installation will
+       erase any TOPACE or NEWACE pilots and replace
+       them with the standard ones.  If you have been
+       playing with these pilots and do not wish to lose
+       them, please rename them so that the install
+       program will not erase them.  The install program
+       will not delete or modify any other pilots unless
+       you perform a "Complete Uninstall".
+
+  If you have done a Recommended or Maximum install, do
+  not select Minimum Install to revert to a minimum
+  configuration.  Instead, select the Uninstall option and
+  then select Minimum.  This will erase unnecessary files
+  from the hard disk and leave only those files necessary
+  for the game to run in the minimum configuration. 
+
+
+X) Skipping to the New Missions.
+
+  For those of you who have played TIE Fighter and/or
+  D.O.E, have not saved your old pilots, and do not wish
+  to replay all the missions before playing the new
+  missions, there are NEWACE and TOPACE pilots included
+  for that purpose. Here is a list of pilots and their
+  progress in the game:
+
+       NEWACE7 and TOPACE 7 - Completed battles 1-7
+       NEWACE10 and TOPACE 10 - Completed battles 1-10
+
+  These pilots have been installed for you, and you can
+  copy and rename them (pilot file names have a .TFR 
+  extension) to create your own pilots that have
+  completed the appropriate number of battles.
+
+  The difference between the NEWACE and the TOPACE pilots
+  is that the NEWACE pilots have no score, rank or
+  anything.  So any score and rank you achieve will
+  accurately reflect what you have done in the game. The
+  TOPACE pilots are completely decked out in all the
+  medals, scores and ranks.  If you use the TOPACE pilots,
+  then any score you achieve will be a combination of your
+  score and the TOPACE's original score.  Which one you
+  use is up to you. 
+
+
+XI) Making TIE Fighter Run Faster and Better.
+
+  Here are some tips on making your TIE Fighter playing
+  experience more enjoyable.
+
+  1) Use a good joystick.  We recommend the CH Products
+    Flightstick line of joysticks, and the Thrustmaster
+    line of products as well.
+
+  2) Use the RETURN (i.e. ENTER) key to match speed with
+    your target.
+
+  3) Use the 'r' key to target the nearest enemy.
+
+  4) Use the '.' (period) key to toggle the cockpit art
+    off when you are dogfighting a tough opponent.
+
+  5) Use the SHIFT-H command to send a targeted ship home
+    (allies only).  Some ships, such as reload craft,
+    may await your permission to depart.  And for a 
+    greater challenge, try sending your wingmen home
+    with this command.
+
+  6) Customize TIE Fighter to your preferences.  Press
+    ESC during a mission to customize the combat portion
+    of the game.  Any settings you change will stay that
+    way until you change them back.
+
+  7) If you are a new player, don't use the TOPACE or
+    NEWACE pilots.  Otherwise, you will miss out on
+    significant portions of the game.  You can safely
+    delete these pilots from your hard drive if you are
+    not going to use them; you can always copy them
+    back over from the CD if you need them.
+
+  8) Play the Combat Chamber missions in order of
+    difficulty.  In other words, play all the Mission 1
+    missions first, then all the Mission 2 missions, etc.
+
+  9) Also for the new players:  TIE Defender and Missile
+    Boat Combat Chamber missions have been made available
+    to veteran players, but these ships won't actually
+    be invented until the middle of the story.  You may
+    wish to hold off training in these advanced fighters
+    until your flight officer recommends it.
+
+ 10) If the game runs too slowly when there is a lot of
+    action try using the ALT-D command to set the Graphics
+    detail to LOW or LOWEST.
+
+ 11) If you are waiting for something, or simply have a
+    long way to go in order to get to the hangar, you can
+    use ALT-T to cause time to pass either 2 or 4 times as
+    quickly (there is an indicator at the bottom right
+    corner of your cockpit display that will show the
+    rate of time passage as 2x or 4x).
+
+ 12) For a fun challenge, try flying the training course
+    and using the ALT-T command to accelerate time.
+
+ 13) If you're getting frustrated with a mission, don't
+    forget about the SHIFT-S command which calls for
+    reinforcements.  There is a scoring penalty
+    (5000 points), but you may find it to be worth it.
+
+ 14) If the game seems to be running slow in DOS mode,
+    check to make sure you don't have DOS shells running.
+    Some common DOS shells are Norton Commander, Xtree
+    Gold, and Microsoft DOSshell.  Booting from a boot disk
+    and then launching TIE Fighter CD directly from the
+    DOS prompt is the best way to avoid problems.
+
+
+XII) Miscellaneous.
+
+  1) TIE Fighter tries to make disk access faster by
+    keeping frequently accessed files open.  This means
+    that you must set a FILES=nn line in your CONFIG.SYS
+    to allow DOS to have nn files open at once. We
+    recommend you set FILES=30.  It is recommended that
+    you modify the CONFIG.SYS only on your boot disk.
+
+  2) There is a cool new feature in TIE Fighter CD that
+    allows you to capture a screen shot any time in the
+    game.  Simply press ALT-o when the screen you want
+    is showing, and the program will save a SCREEN??.PCX
+    file to your installation directory.  Each time you
+    press ALT-o, a new .PCX file will be written to the
+    directory under a different filename, so you can
+    capture as many screen shots as you have hard disk
+    space for.
+
+
+---- END OF FILE ----
+

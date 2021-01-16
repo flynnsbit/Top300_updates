@@ -43,7 +43,7 @@ get_latest_release()
 function pause(){
  echo -en "\ec"
  echo -e "${red_bg}${reset}"
- echo -e "This script updates the ${green}(flynnsbit AO486 - Top 300 DOS Games pack)${reset} VHD to fix games and add features that were not included in the original version.  This script directly mounts and modifies the VHD in one step." 
+ echo -e "This script updates the ${green}(flynnsbit AO486 - Top 300 DOS Games pack)${reset} VHD to fix games and add features that were not included in the original version.  This script directly mounts and modifies the VHD in one step. If the script fails to find your VHD you will need to edit the script and change the User options at the top to fit your setup and re-run." 
  echo -e "${red}Please backup any changes you have made to the pack before running this update.${reset}"
  echo -e ""
  read -s -n 1 -p "Press any key to continue . . ."
@@ -107,14 +107,15 @@ get_latest_release "${github_repo}"
 
 # Just mount partition 2 in the disk image
 mkdir "${mount_dir}"
-mount_image "${disk_image}" 2 "${mount_dir}"
+mkdir "${mount_dir}/E"
+mount_image "${disk_image}" 2 "${mount_dir}/E"
 echo ""
 # Extract update, overwriting existing files
-unzip -o -d "${mount_dir}/" /tmp/update.zip
+unzip -o /tmp/update.zip -d "${mount_dir}/"
 echo ""
 # Clean up
 rm /tmp/update.zip
-unmount_image "${mount_dir}"
-rmdir "${mount_dir}"
+unmount_image "${mount_dir}/E"
+rm -r "${mount_dir}"
 echo ""
 echo -e "${green}Successfully updated to ${tag_name}!${reset}"
