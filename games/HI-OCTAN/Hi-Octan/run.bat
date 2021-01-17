@@ -22,7 +22,7 @@ if errorlevel = 2 goto GRAVIS
 if errorlevel = 1 goto SB16
 
 :SB16
-CONFIG -set "mididevice=default"
+REM CONFIG -set"mididevice=default"
 cd HIOCTANE.CD\sound
 xcopy .\sb16\*.* .\
 cd ..
@@ -33,7 +33,7 @@ call HIOCTANE
 goto quit
 
 :GRAVIS
-CONFIG -set "mididevice=default"
+REM CONFIG -set"mididevice=default"
 cd HIOCTANE.CD\sound
 xcopy .\gus\*.* .\
 cd ..
@@ -44,7 +44,7 @@ call HIOCTANE
 goto quit
 
 :MT32
-CONFIG -set "mididevice=mt32"
+mt32-pi -m -v
 cd HIOCTANE.CD\sound
 xcopy .\mt32\*.* .\
 cd ..
@@ -55,7 +55,7 @@ call HIOCTANE
 goto quit
 
 :SC55
-CONFIG -set "mididevice=fluidsynth"
+mt32-pi -g -v
 cd HIOCTANE.CD\sound
 xcopy .\sc55\*.* .\
 cd ..
@@ -66,7 +66,7 @@ call HIOCTANE
 goto quit
 
 :network
-CONFIG -set "mididevice=default"
+REM CONFIG -set"mididevice=default"
 cd HIOCTANE.CD\sound
 xcopy .\sb16\*.* .\
 cd ..

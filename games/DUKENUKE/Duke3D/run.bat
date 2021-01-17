@@ -17,7 +17,7 @@ if errorlevel = 2 goto SB16
 if errorlevel = 1 goto GUS
 
 :SB16
-CONFIG -set "mididevice=default"
+REM CONFIG -set"mididevice=default"
 cd duke3d
 xcopy .\sb16\*.* .\
 cls
@@ -25,7 +25,7 @@ DUKE3D
 goto quit
 
 :GUS
-CONFIG -set "mididevice=default"
+REM CONFIG -set"mididevice=default"
 cd duke3d
 xcopy .\gus\*.* .\
 cls
@@ -33,7 +33,7 @@ DUKE3D
 goto quit
 
 :SC55
-CONFIG -set "mididevice=fluidsynth"
+mt32-pi -g -v
 cd duke3d
 xcopy .\sc55\*.* .\
 cls
@@ -41,7 +41,7 @@ DUKE3D
 goto quit
 
 :network
-CONFIG -set "mididevice=default"
+REM CONFIG -set"mididevice=default"
 cd duke3d
 xcopy .\network\*.*
 cd ..

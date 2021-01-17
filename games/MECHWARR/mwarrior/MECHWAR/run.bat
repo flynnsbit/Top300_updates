@@ -15,21 +15,21 @@ if errorlevel = 2 goto SB16
 if errorlevel = 1 goto TANDY
 
 :SB16
-CONFIG -set "mididevice=default"
+REM CONFIG -set"mididevice=default"
 MRESET
 cls
 @MW 1 A
 goto quit
 
 :MT32
-CONFIG -set "mididevice=mt32"
+mt32-pi -m -v
 MRESET
 cls
 @MW 1 R
 goto quit
 
 :TANDY
-CONFIG -set "mididevice=default"
+REM CONFIG -set"mididevice=default"
 MRESET
 cls
 @MW 1 T

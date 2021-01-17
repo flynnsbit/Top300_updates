@@ -15,22 +15,22 @@ if errorlevel = 2 goto SB16
 if errorlevel = 1 goto GB
 
 :SB16
-CONFIG -set "mididevice=default"
+REM CONFIG -set"mididevice=default"
 xcopy .\sb16\*.* .\
 cls
 prince sblast
 goto quit
 
 :MT32
-CONFIG -set "mididevice=mt32"
+mt32-pi -m -v
 xcopy .\mt32\*.* .\
 cls
 prince
 goto quit
 
 :GB
-CONFIG -set "mididevice=default"
-CONFIG -set "sbtype=gb"
+REM CONFIG -set"mididevice=default"
+REM CONFIG -set"sbtype=gb"
 cd prince11
 cls
 PRINCE1 gblast

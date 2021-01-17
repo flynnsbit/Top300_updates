@@ -17,7 +17,7 @@ if errorlevel = 2 goto MT32
 if errorlevel = 1 goto SB16
 
 :SB16
-CONFIG -set "mididevice=default"
+REM CONFIG -set"mididevice=default"
 xcopy .\sb16\*.* .\
 imgset ide10 "/cd/stjudgec/startre.cue"
 
@@ -28,7 +28,7 @@ trekjr
 goto quit
 
 :MT32
-CONFIG -set "mididevice=mt32"
+mt32-pi -m -v
 xcopy .\mt32\*.* .\
 imgset ide10 "/cd/stjudgec/startre.cue"
 
@@ -39,7 +39,7 @@ trekjr
 goto quit
 
 :SC55
-CONFIG -set "mididevice=fluidsynth"
+mt32-pi -g -v
 xcopy .\sc55\*.* .\
 imgset ide10 "/cd/stjudgec/startre.cue"
 
@@ -50,7 +50,7 @@ trekjr
 goto quit
 
 :CD2
-CONFIG -set "mididevice=default"
+REM CONFIG -set"mididevice=default"
 xcopy .\sb16\*.* .\
 imgset ide10 "/cd/stjudgec/star_tr.iso"
 

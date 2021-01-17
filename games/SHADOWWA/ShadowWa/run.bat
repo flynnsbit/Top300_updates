@@ -27,7 +27,7 @@ cd ..
 goto menu
 
 :swsb
-CONFIG -set "mididevice=default"
+REM CONFIG -set"mididevice=default"
 cd sw_shar
 xcopy .\sb16\*.* .\
 cls
@@ -36,7 +36,7 @@ cd ..
 goto menu
 
 :swsc
-CONFIG -set "mididevice=fluidsynth"
+mt32-pi -g -v
 cd sw_shar
 xcopy .\sc55\*.* .\
 cls
@@ -56,7 +56,7 @@ goto menu
 cd ..
 copy ExtIP*.* .\SW\
 cd  SW
-CONFIG -set "mididevice=default"
+REM CONFIG -set"mididevice=default"
 xcopy .\network\net.cfg sw.cfg
 cls
 network

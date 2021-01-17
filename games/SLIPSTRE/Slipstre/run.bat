@@ -19,7 +19,7 @@ if errorlevel = 1 goto SB16
 :SB16
 del CONFIG.INI
 cd SLIP5000
-CONFIG -set "mididevice=default"
+REM CONFIG -set"mididevice=default"
 xcopy .\sb16\*.*
 cls
 call SLIP
@@ -28,7 +28,7 @@ goto quit
 :MT32
 del CONFIG.INI
 cd SLIP5000
-CONFIG -set "mididevice=mt32"
+mt32-pi -m -v
 xcopy .\mt32\*.*
 cls
 call SLIP
@@ -37,7 +37,7 @@ goto quit
 :SC55
 del CONFIG.INI
 cd SLIP5000
-CONFIG -set "mididevice=fluidsynth"
+mt32-pi -g -v
 xcopy .\sc55\*.*
 cls
 call SLIP
@@ -46,7 +46,7 @@ goto quit
 :network
 del CONFIG.INI
 cd SLIP5000
-CONFIG -set "mididevice=default"
+REM CONFIG -set"mididevice=default"
 xcopy .\sb16\*.*
 cd ..
 cls

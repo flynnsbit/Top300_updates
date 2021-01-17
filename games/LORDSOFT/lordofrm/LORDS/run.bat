@@ -24,29 +24,29 @@ if errorlevel = 2 goto MT32
 if errorlevel = 1 goto SB16
 
 :SB16
-CONFIG -set "mididevice=default"
+REM CONFIG -set"mididevice=default"
 xcopy .\sb16\*.* .\
 cls
 @lords
 goto quit
 
 :MT32
-CONFIG -set "mididevice=mt32"
+mt32-pi -m -v
 xcopy .\mt32\*.* .\
 cls
 @lords
 goto quit
 
 :SC55
-CONFIG -set "mididevice=fluidsynth"
+mt32-pi -g -v
 xcopy .\sc55\*.* .\
 cls
 @lords
 goto quit
 
 :CD
-CONFIG -set "mididevice=fluidsynth"
-CONFIG -SET "CYCLES=6000"
+mt32-pi -g -v
+REM CONFIG -set"CYCLES=6000"
 cd ..
 cd lordscd
 cls
@@ -54,8 +54,8 @@ cls
 goto quit
 
 :SB16CD
-CONFIG -set "mididevice=default"
-CONFIG -SET "CYCLES=6000"
+REM CONFIG -set"mididevice=default"
+REM CONFIG -set"CYCLES=6000"
 cd ..
 cd lordscd
 xcopy .\sb16\*.* .\
@@ -64,8 +64,8 @@ cls
 goto quit
 
 :MT32CD
-CONFIG -set "mididevice=mt32"
-CONFIG -SET "CYCLES=6000"
+mt32-pi -m -v
+REM CONFIG -set"CYCLES=6000"
 cd ..
 cd lordscd
 xcopy .\mt32\*.* .\
@@ -74,8 +74,8 @@ cls
 goto quit
 
 :SC55CD
-CONFIG -set "mididevice=fluidsynth"
-CONFIG -SET "CYCLES=6000"
+mt32-pi -g -v
+REM CONFIG -set"CYCLES=6000"
 cd ..
 cd lordscd
 xcopy .\sc55\*.* .\

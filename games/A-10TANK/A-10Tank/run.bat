@@ -17,7 +17,7 @@ if errorlevel = 2 goto MT32old
 if errorlevel = 1 goto SB16old
 
 :SB16
-CONFIG -set "mididevice=default"
+REM CONFIG -set"mididevice=default"
 cd 1.5
 xcopy .\sb16\*.* .\
 cls
@@ -25,7 +25,7 @@ A10
 goto quit
 
 :MT32
-CONFIG -set "mididevice=mt32"
+mt32-pi -m -v
 cd 1.5
 xcopy .\mt32\*.* .\
 cls
@@ -33,7 +33,7 @@ A10
 goto quit
 
 :SB16old
-CONFIG -set "mididevice=default"
+REM CONFIG -set"mididevice=default"
 cd 1.4
 xcopy .\sb16\*.* .\
 cls
@@ -41,7 +41,7 @@ A10
 goto quit
 
 :MT32old
-CONFIG -set "mididevice=mt32"
+mt32-pi -m -v
 cd 1.4
 xcopy .\mt32\*.* .\
 cls

@@ -13,13 +13,13 @@ if errorlevel = 2 goto MT32
 if errorlevel = 1 goto SB16
 
 :SB16
-CONFIG -set "mididevice=default"
+REM CONFIG -set"mididevice=default"
 cls
 call start
 goto quit
 
 :MT32
-CONFIG -set "mididevice=default"
+REM CONFIG -set"mididevice=default"
 cd roomdoom
 cls
 call start

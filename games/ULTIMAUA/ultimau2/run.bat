@@ -15,7 +15,7 @@ if errorlevel = 2 goto MT32
 if errorlevel = 1 goto SB16
 
 :SB16
-CONFIG -set "mididevice=default"
+REM CONFIG -set"mididevice=default"
 cd DATA
 del UW.CFG
 xcopy .\sb16\*.*
@@ -63,7 +63,7 @@ goto quit
 cls
 
 :MT32
-CONFIG -set "mididevice=mt32"
+mt32-pi -m -v
 cd DATA
 del UW.CFG
 xcopy .\mt32\*.*
@@ -111,7 +111,7 @@ goto quit
 cls
 
 :SC55
-CONFIG -set "mididevice=fluidsynth"
+mt32-pi -g -v
 cd DATA
 del UW.CFG
 xcopy .\sc55\*.*

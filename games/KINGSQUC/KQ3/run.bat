@@ -13,13 +13,13 @@ if errorlevel = 2 goto TANDY
 if errorlevel = 1 goto PC
 
 :pc
-CONFIG -set "mididevice=default"
+REM CONFIG -set"mididevice=default"
 cls
 @sierra
 goto quit
 
 :tandy
-CONFIG -set "tandy=on"
+REM CONFIG -set"tandy=on"
 cls
 @sierra
 goto quit

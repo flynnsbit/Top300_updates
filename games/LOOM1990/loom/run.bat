@@ -21,43 +21,43 @@ if errorlevel = 2 goto GB
 if errorlevel = 1 goto TANDY
 
 :TANDY
-CONFIG -set "mididevice=default"
+REM CONFIG -set"mididevice=default"
 cd floppy
 cls
 loom v ts
 goto quit
 
 :GB
-CONFIG -set "mididevice=default"
-CONFIG -set "sbtype=gb"
+REM CONFIG -set"mididevice=default"
+REM CONFIG -set"sbtype=gb"
 cd floppy
 cls
 loom v g
 goto quit
 
 :SB16
-CONFIG -set "mididevice=default"
+REM CONFIG -set"mididevice=default"
 cd floppy
 cls
 loom v a
 goto quit
 
 :MT32
-CONFIG -set "mididevice=mt32"
+mt32-pi -m -v
 cd floppy
 cls
 loom v r
 goto quit
 
 :SC55
-CONFIG -set "mididevice=fluidsynth"
+mt32-pi -g -v
 cd floppy
 cls
 loom v r
 goto quit
 
 :CD
-CONFIG -set "mididevice=fluidsynth"
+mt32-pi -g -v
 d:
 cls
 loom
