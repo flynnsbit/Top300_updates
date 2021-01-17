@@ -9,7 +9,7 @@ set -e
 games_subdir=""
 
 # Base directory for all script’s tasks, "/media/fat" for SD root, "/media/usb0" for USB drive root.
-base_path="/media/usb0"
+base_path="/media/fat"
 
 # ========= END USER OPTIONS =========
 
@@ -33,7 +33,7 @@ reset="\e[0m"
 # Arg $1: GitHub repo name, e.g. "username/repo"
 get_latest_release()
 {
-	local api_url="https://api.github.com/repos/flynnsbit/Top300_updates/releases/36498179"
+	local api_url="https://api.github.com/repos/${1}/releases/latest"
 	local download_url
 
 	read -r tag_name download_url < <(echo $(curl -k -s "${api_url}" | jq -r ".tag_name, .assets[0].browser_download_url"))
@@ -101,8 +101,6 @@ find_disk_image
 echo ""
 echo -e "${white}Disk image found at \"${disk_image}\".${reset}"
 echo ""
-echo "Cleaning up any old files from previous updates"
-
 # Download latest release zip
 get_latest_release "${github_repo}"
 
