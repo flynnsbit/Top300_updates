@@ -32,7 +32,7 @@ if errorlevel = 2 goto SC55
 if errorlevel = 1 goto SB16
 
 :SB16
-CONFIG -set "mididevice=default"
+REM CONFIG -set"mididevice=default"
 cd NASCAR
 del SOUND.CFG
 xcopy .\sb16\*.*
@@ -41,7 +41,7 @@ NASCAR %SVGA%
 goto quit
 
 :SC55
-CONFIG -set "mididevice=fluidsynth"
+mt32-pi -g -v
 cd NASCAR
 del SOUND.CFG
 xcopy .\sc55\*.*
@@ -50,7 +50,7 @@ NASCAR %SVGA%
 goto quit
 
 :network
-CONFIG -set "mididevice=default"
+REM CONFIG -set"mididevice=default"
 cd NASCAR
 del SOUND.CFG
 xcopy .\sb16\*.*

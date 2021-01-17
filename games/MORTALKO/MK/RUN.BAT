@@ -15,7 +15,7 @@ if errorlevel = 2 goto MT32
 if errorlevel = 1 goto SB16
 
 :SB16
-CONFIG -set "mididevice=default"
+REM CONFIG -set"mididevice=default"
 cd mk1
 xcopy .\sb16\*.* .\
 cls
@@ -23,7 +23,7 @@ call mk1
 goto quit
 
 :MT32
-CONFIG -set "mididevice=mt32"
+mt32-pi -m -v
 cd kombat
 xcopy .\mt32\*.* .\
 cls
@@ -31,7 +31,7 @@ call play
 goto quit
 
 :SC55
-CONFIG -set "mididevice=default"
+REM CONFIG -set"mididevice=default"
 cd MK1
 cls
 mk1

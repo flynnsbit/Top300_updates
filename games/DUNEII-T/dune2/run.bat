@@ -21,7 +21,7 @@ if errorlevel = 1 goto SB16
 if errorlevel = 0 goto quit
 
 :SB16
-CONFIG -set "mididevice=default"
+REM CONFIG -set"mididevice=default"
 del DUNE.CFG
 xcopy .\sb16\*.*
 cls
@@ -29,7 +29,7 @@ DUNE2
 goto quit
 
 :MT32
-CONFIG -set "mididevice=mt32"
+mt32-pi -m -v
 del DUNE.CFG
 xcopy .\mt32\*.*
 cls
@@ -37,7 +37,7 @@ DUNE2
 goto quit
 
 :SC55
-CONFIG -set "mididevice=fluidsynth"
+mt32-pi -g -v
 del DUNE.CFG
 xcopy .\sc55\*.*
 cls
@@ -45,7 +45,7 @@ DUNE2
 goto quit
 
 :SBMT
-CONFIG -set "mididevice=mt32"
+mt32-pi -m -v
 del DUNE.CFG
 xcopy .\SBMT\*.*
 cls
@@ -53,7 +53,7 @@ DUNE2
 goto quit
 
 :SBSC
-CONFIG -set "mididevice=fluidsynth"
+mt32-pi -g -v
 del DUNE.CFG
 xcopy .\SBSC\*.*
 cls

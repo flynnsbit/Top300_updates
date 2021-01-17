@@ -19,7 +19,7 @@ if errorlevel = 2 goto smSB16
 if errorlevel = 1 goto wcSB16
 
 :wcSB16
-CONFIG -set "mididevice=default"
+REM CONFIG -set"mididevice=default"
 cd wing
 xcopy .\sb16\*.* .\
 cls
@@ -27,7 +27,7 @@ cls
 goto quit
 
 :smSB16
-CONFIG -set "mididevice=default"
+REM CONFIG -set"mididevice=default"
 cd wing
 xcopy .\sb16\*.* .\
 cls
@@ -35,7 +35,7 @@ cls
 goto quit
 
 :wcMT32
-CONFIG -set "mididevice=mt32"
+mt32-pi -m -v
 cd wing
 xcopy .\mt32\*.* .\
 cls
@@ -43,7 +43,7 @@ cls
 goto quit
 
 :smMT32
-CONFIG -set "mididevice=mt32"
+mt32-pi -m -v
 cd wing
 xcopy .\mt32\*.* .\
 cls

@@ -17,27 +17,27 @@ if errorlevel = 2 goto MT32
 if errorlevel = 1 goto SB16
 
 :CDA
-CONFIG -set "mididevice=default"
+REM CONFIG -set"mididevice=default"
 cls
 @call SSF2T
 goto quit
 
 :SB16
-CONFIG -set "mididevice=default"
+REM CONFIG -set"mididevice=default"
 xcopy .\sb16\*.* .\
 cls
 @call SSF2T MIDI
 goto quit
 
 :MT32
-CONFIG -set "mididevice=mt32"
+mt32-pi -m -v
 xcopy .\mt32\*.* .\
 cls
 @call SSF2T MIDI
 goto quit
 
 :SC55
-CONFIG -set "mididevice=fluidsynth"
+mt32-pi -g -v
 xcopy .\sc55\*.* .\
 cls
 @call SSF2T MIDI

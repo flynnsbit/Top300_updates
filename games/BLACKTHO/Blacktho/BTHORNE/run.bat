@@ -15,21 +15,21 @@ if errorlevel = 2 goto GUS
 if errorlevel = 1 goto SB16
 
 :SB16
-CONFIG -set "mididevice=default"
+REM CONFIG -set"mididevice=default"
 xcopy .\sb16\*.* .\
 cls
 @BTHORNE
 goto quit
 
 :GUS
-CONFIG -set "mididevice=default"
+REM CONFIG -set"mididevice=default"
 xcopy .\gus\*.* .\
 cls
 @call BTHORNEG
 goto quit
 
 :SC55
-CONFIG -set "mididevice=fluidsynth"
+mt32-pi -g -v
 xcopy .\sc55\*.* .\
 cls
 @BTHORNE

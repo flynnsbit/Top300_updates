@@ -29,7 +29,7 @@ if errorlevel = 2 goto FMT32
 if errorlevel = 1 goto FSB16
 
 :FSB16
-CONFIG -set "mididevice=default"
+REM CONFIG -set"mididevice=default"
 cd floppy
 del RESOURCE.CFG
 xcopy .\sb16\*.*
@@ -39,7 +39,7 @@ goto quit
 cls
 
 :FMT32
-CONFIG -set "mididevice=mt32"
+mt32-pi -m -v
 cd floppy
 del RESOURCE.CFG
 xcopy .\mt32\*.*
@@ -49,7 +49,7 @@ goto quit
 cls
 
 :FSC55
-CONFIG -set "mididevice=fluidsynth"
+mt32-pi -g -v
 cd floppy
 del RESOURCE.CFG
 xcopy .\sc55\*.*
@@ -77,7 +77,7 @@ if errorlevel = 2 goto GUS
 if errorlevel = 1 goto SB16
 
 :SB16
-CONFIG -set "mididevice=default"
+REM CONFIG -set"mididevice=default"
 cd KQ6CD
 del RESOURCE.CFG
 xcopy .\sb16\*.*
@@ -87,7 +87,7 @@ goto quit
 cls
 
 :GUS
-CONFIG -set "mididevice=default"
+REM CONFIG -set"mididevice=default"
 cd KQ6CD
 del RESOURCE.CFG
 xcopy .\gus\*.*
@@ -98,7 +98,7 @@ goto quit
 cls
 
 :MT32
-CONFIG -set "mididevice=mt32"
+mt32-pi -m -v
 cd KQ6CD
 del RESOURCE.CFG
 xcopy .\mt32\*.*
@@ -108,7 +108,7 @@ goto quit
 cls
 
 :SC55
-CONFIG -set "mididevice=fluidsynth"
+mt32-pi -g -v
 cd KQ6CD
 del RESOURCE.CFG
 xcopy .\sc55\*.*

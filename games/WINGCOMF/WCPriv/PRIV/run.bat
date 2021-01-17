@@ -19,7 +19,7 @@ goto game
 
 :SC55
 mpuctl fluid 0
-REM CONFIG -set "mididevice=fluidsynth"
+REM mt32-pi -g -v
 del SOUND.CFG >> NUL
 xcopy .\sc55\*.* >> NUL
 goto game

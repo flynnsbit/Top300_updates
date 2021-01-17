@@ -13,7 +13,7 @@ if errorlevel = 2 goto SC55
 if errorlevel = 1 goto SB16
 
 :SB16
-CONFIG -set "mididevice=default"
+REM CONFIG -set"mididevice=default"
 del AILXMI.DLL
 del INSTALL.OPT
 xcopy .\sb16\*.*
@@ -22,7 +22,7 @@ BIOFORGE
 goto quit
 
 :SC55
-CONFIG -set "mididevice=fluidsynth"
+mt32-pi -g -v
 del AILXMI.DLL
 del INSTALL.OPT
 xcopy .\sc55\*.*

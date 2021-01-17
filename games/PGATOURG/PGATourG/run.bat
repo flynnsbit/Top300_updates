@@ -13,15 +13,15 @@ if errorlevel = 2 goto MT32
 if errorlevel = 1 goto GB
 
 :MT32
-CONFIG -set "mididevice=mt32"
+mt32-pi -m -v
 cls
 golf
 goto quit
 
 :GB
-CONFIG -set "sbtype=gb"
-CONFIG -set "mpu401=none"
-CONFIG -set "mididevice=default"
+REM CONFIG -set"sbtype=gb"
+REM CONFIG -set"mpu401=none"
+REM CONFIG -set"mididevice=default"
 cls
 golf
 goto quit

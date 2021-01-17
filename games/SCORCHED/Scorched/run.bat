@@ -38,7 +38,7 @@ cd ..
 goto menu
 
 :epi4
-config -set "cycles=30000"
+REM CONFIG -set"cycles=30000"
 cls
 cd Scorch1.50
 scorch

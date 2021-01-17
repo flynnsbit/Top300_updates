@@ -18,7 +18,7 @@ if errorlevel = 1 goto FSB16
 
 :FSB16
 CD Floppy
-CONFIG -set "mididevice=default"
+REM CONFIG -set"mididevice=default"
 xcopy .\sb16\*.* .\
 cls
 World
@@ -26,7 +26,7 @@ goto quit
 
 :FMT32
 CD Floppy
-CONFIG -set "mididevice=mt32"
+mt32-pi -m -v
 xcopy .\mt32\*.* .\
 cls
 World
@@ -34,7 +34,7 @@ goto quit
 
 :SB16
 CD WORLD
-CONFIG -set "mididevice=default"
+REM CONFIG -set"mididevice=default"
 xcopy .\sb16\*.* .\
 cls
 World
@@ -42,7 +42,7 @@ goto quit
 
 :MT32
 CD WORLD
-CONFIG -set "mididevice=mt32"
+mt32-pi -m -v
 xcopy .\mt32\*.* .\
 cls
 World

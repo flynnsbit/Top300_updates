@@ -27,7 +27,7 @@ echo as this sounds much worse
 echo. 
 @jchoice
 cls
-CONFIG -set "mididevice=default"
+REM CONFIG -set"mididevice=default"
 CD CIV
 xcopy .\sb16\*.* .\
 cls
@@ -42,7 +42,7 @@ echo choose: 5) Roland MT-32 MIDI Board
 echo. 
 @jchoice
 cls
-CONFIG -set "mididevice=mt32"
+mt32-pi -m -v
 CD CIV
 cls
 civ
@@ -56,7 +56,7 @@ echo choose: 6) Custom sound driver
 echo. 
 @jchoice
 cls
-CONFIG -set "mididevice=fluidsynth"
+mt32-pi -g -v
 CD CIV
 xcopy .\sc55\*.* .\
 cls
@@ -71,7 +71,7 @@ echo choose: 3) Tandy sounds
 echo. 
 @jchoice
 cls
-CONFIG -set "mididevice=default"
+REM CONFIG -set"mididevice=default"
 CD CIV
 cls
 civ

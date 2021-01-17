@@ -25,57 +25,57 @@ if errorlevel = 2 goto gb
 if errorlevel = 1 goto TANDY
 
 :EGADLIB
-CONFIG -set "mididevice=default"
+REM CONFIG -set"mididevice=default"
 cd cga
 cls
 monkey e a
 goto quit
 
 :TANDY
-CONFIG -set "mididevice=default"
+REM CONFIG -set"mididevice=default"
 cd cga
 cls
 monkey e TS
 goto quit
 
 :SB16
-CONFIG -set "mididevice=default"
+REM CONFIG -set"mididevice=default"
 cd floppy
 cls
 monkey a
 goto quit
 
 :EGAMT32
-CONFIG -set "mididevice=mt32"
+mt32-pi -m -v
 cd cga
 cls
 monkey e r
 goto quit
 
 :MT32
-CONFIG -set "mididevice=mt32"
+mt32-pi -m -v
 cd floppy
 cls
 mtadl v mo
 goto quit
 
 :gb
-CONFIG -set "mididevice=default"
-CONFIG -set "sbtype=gb"
+REM CONFIG -set"mididevice=default"
+REM CONFIG -set"sbtype=gb"
 cd cga
 cls
 monkey e g
 goto quit
 
 :talkie
-CONFIG -set "mididevice=mt32"
+mt32-pi -m -v
 cd talkie
 cls
 monkey r1
 goto quit
 
 :CDaudio
-CONFIG -set "mididevice=default"
+REM CONFIG -set"mididevice=default"
 d:
 cd english
 cls

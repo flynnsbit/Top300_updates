@@ -13,13 +13,13 @@ if errorlevel = 2 goto MT32
 if errorlevel = 1 goto SB
 
 :SB
-CONFIG -set "mididevice=default"
+REM CONFIG -set"mididevice=default"
 sierra sesource.cfg
 cls
 goto quit
 
 :MT32
-CONFIG -set "mididevice=mt32"
+mt32-pi -m -v
 sierra mesource.cfg
 cls
 goto quit

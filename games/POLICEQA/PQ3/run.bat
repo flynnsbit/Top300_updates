@@ -19,34 +19,34 @@ if errorlevel = 2 goto MT32
 if errorlevel = 1 goto SB
 
 :SB
-CONFIG -set "mididevice=default"
+REM CONFIG -set"mididevice=default"
 pq3 SESOURCE.CFG
 cls
 goto quit
 
 :MT32
-CONFIG -set "mididevice=mt32"
+mt32-pi -m -v
 pq3 MESOURCE.CFG
 cls
 goto quit
 
 :EGAGB
-CONFIG -set "mididevice=default"
-CONFIG -set "sbtype=gb"
+REM CONFIG -set"mididevice=default"
+REM CONFIG -set"sbtype=gb"
 cd ega
 SCIDUV GESOURCE.CFG
 cls
 goto quit
 
 :EGASB
-CONFIG -set "mididevice=default"
+REM CONFIG -set"mididevice=default"
 cd ega
 SCIDUV SESOURCE.CFG
 cls
 goto quit
 
 :EGAMT32
-CONFIG -set "mididevice=mt32"
+mt32-pi -m -v
 cd ega
 SCIDUV MESOURCE.CFG
 cls
