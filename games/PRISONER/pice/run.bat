@@ -23,32 +23,29 @@ if errorlevel = 2 goto US640
 if errorlevel = 1 goto US320
 
 :US320
-mount d .\eXoDOS\pice\cd-us -t cdrom
-d:
+cd cd-us
 cls
 ice320
 goto quit
 
 :US640
-mount d .\eXoDOS\pice\cd-us -t cdrom
-d:
+cd cd-us
 cls
 ice640
 goto quit
 
 :EU320
-mount d .\eXoDOS\pice\cd-eur -t cdrom
-d:
+cd cd-eur
 cls
 ice320
 goto quit
 
 :EU640
-mount d .\eXoDOS\pice\cd-eur -t cdrom
-d:
+cd cd-eur
 cls
 ice640
 goto quit
 
 :quit
 exit
+s
