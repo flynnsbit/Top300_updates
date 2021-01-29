@@ -19,10 +19,7 @@ REM CONFIG -set"mididevice=default"
 cd DISCWLD.CD
 del MDI.INI
 xcopy .\sb16\*.*
-cd ..
-D:
-cls
-call disc
+call dwb
 goto quit
 
 :MT32
@@ -30,10 +27,8 @@ mt32-pi -m -v
 cd DISCWLD.CD
 del MDI.INI
 xcopy .\mt32\*.*
-cd ..
-D:
 cls
-call disc
+call dwb
 goto quit
 
 :SC55
@@ -41,10 +36,8 @@ mt32-pi -g -v
 cd DISCWLD.CD
 del MDI.INI
 xcopy .\sc55\*.*
-cd ..
-D:
 cls
-call disc
+call dwb
 goto quit
 
 :quit
