@@ -1,5 +1,6 @@
 @echo off
 cd SWDForc
+cd dark
 
 IF EXIST setsound.exe goto :sound1
 IF EXIST sound.exe goto :sound2
