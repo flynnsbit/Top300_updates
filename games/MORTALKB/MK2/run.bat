@@ -16,6 +16,7 @@ if errorlevel = 1 goto SB
 
 :SB
 cd mk2
+ATTRIB -S -H CMOS.MK2
 del CMOS.MK2
 xcopy .\SB16\*.* .\
 cls
@@ -28,6 +29,7 @@ cd ultrasnd
 ULTRAMID
 cd ..
 cd mk2
+ATTRIB -S -H CMOS.MK2
 del CMOS.MK2
 xcopy .\GUS\*.* .\
 cls
@@ -37,6 +39,7 @@ goto quit
 
 :MT32
 cd mk2
+ATTRIB -S -H CMOS.MK2
 del CMOS.MK2
 xcopy .\MT32\*.* .\
 cls
