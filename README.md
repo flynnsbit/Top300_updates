@@ -1,5 +1,5 @@
 # MiSTer eXoDOS Top_300_updates
-AO486 Update scripts for the flynnsbit eXoDOS V5.0 Top 300 Pack
+AO486 Update scripts for the flynnsbit eXoDOS V5.0 Top 300 Pack.  This is not the actual pack and only provides update to the scripts, ini files, and launcher fixes.  There is no copywrite material here.
 
 ## How to Install and Update
 1. ssh to your MiSTer
