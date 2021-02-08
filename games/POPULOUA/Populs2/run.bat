@@ -15,15 +15,11 @@ if errorlevel = 2 goto hi
 if errorlevel = 1 goto lo
 
 :lo
-cd POP2_256
-cls
-call GO
+RUN_EMM E: \GAMES\POPULOUA\POPULS2\POP2_256 GO
 goto quit
 
 :hi
-cd POP2_16
-cls
-call GO
+RUN_EMM E: \GAMES\POPULOUA\POPULS2\POP2_16 GO
 goto quit
 
 :network
