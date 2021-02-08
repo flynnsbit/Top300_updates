@@ -28,23 +28,23 @@ sysctl menu
 goto quit
 
 :CdOhNo
-imgset ide10 "/cd/lemmings/az_2246.cue"
+CALL imgtry ide10 D "/cd/lemmings/az_2246.chd" "/cd/lemmings/az_2246.cue"
 run_emm E: \games\lemmings\lemmings\cdlemm ohno vga
 goto quit
 
 :CD
-imgset ide10 "/cd/lemmings/az_2246.cue"
+CALL imgtry ide10 D "/cd/lemmings/az_2246.chd" "/cd/lemmings/az_2246.cue"
 run_emm E: \games\lemmings\lemmings\cdlemm lemmings vga
 goto quit
 
 :bonus
-imgset fdd0 "/floppy/lemmings/lemming.img"
+CALL imgtry fdd0 D "/floppy/lemmings/lemming.chd" "/floppy/lemmings/lemming.img"
 a:
 sysctl sys L1-
 cls
 call lemmings vga
 e:
-imgset fdd0 ""
+CALL imgtry fdd0 D "".chd" ""
 sysctl menu
 goto quit
 

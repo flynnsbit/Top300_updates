@@ -1,4 +1,4 @@
-imgset ide10 "/cd/dw1/discwor.iso"
+CALL imgtry ide10 D "/cd/dw1/discwor.chd" "/cd/dw1/discwor.iso"
 
 @jchoice
 cd dw1

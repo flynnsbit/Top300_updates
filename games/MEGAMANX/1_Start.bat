@@ -1,4 +1,4 @@
-imgset ide10 "/cd/MegaManX/megamanx.iso"
+CALL imgtry ide10 D "/cd/MegaManX/megamanx.chd" "/cd/MegaManX/megamanx.iso"
 
 @jchoice
 cd MegaManX

@@ -1,4 +1,4 @@
-imgset ide10 "/cd/SerfCity/settlers.iso"
+CALL imgtry ide10 D "/cd/SerfCity/settlers.chd" "/cd/SerfCity/settlers.iso"
 
 @jchoice
 cd SerfCity

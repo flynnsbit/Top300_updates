@@ -1,4 +1,4 @@
-imgset ide10 "/cd/scomet/shadow_.iso"
+CALL imgtry ide10 D "/cd/scomet/shadow_.chd" "/cd/scomet/shadow_.iso"
 
 @jchoice
 f:

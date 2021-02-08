@@ -1,4 +1,4 @@
-imgset ide10 "/cd/kyra2/fables&.cue"
+CALL imgtry ide10 D "/cd/kyra2/fables&.chd" "/cd/kyra2/fables&.cue"
 
 cd kyra2
 cd hofcd

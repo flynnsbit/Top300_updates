@@ -1,4 +1,4 @@
-imgset ide10 "/cd/SSF2T/sf2.cue"
+CALL imgtry ide10 D "/cd/SSF2T/sf2.chd" "/cd/SSF2T/sf2.cue"
 
 @jchoice
 cd SSF2T

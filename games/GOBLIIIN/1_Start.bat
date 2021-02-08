@@ -1,4 +1,4 @@
-imgset ide10 "/cd/gob1/gobliii.cue"
+CALL imgtry ide10 D "/cd/gob1/gobliii.chd" "/cd/gob1/gobliii.cue"
 
 @jchoice
 cd gob1

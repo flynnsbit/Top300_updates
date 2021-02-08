@@ -1,4 +1,4 @@
-imgset ide10 "/cd/ThemPark/themepa.iso"
+CALL imgtry ide10 D "/cd/ThemPark/themepa.chd" "/cd/ThemPark/themepa.iso"
 
 @jchoice
 cd ThemPark

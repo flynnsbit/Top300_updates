@@ -1,4 +1,4 @@
-imgset ide10 "/cd/ActionSo/actions.cue"
+CALL imgtry ide10 D "/cd/ActionSo/actions.chd" "/cd/ActionSo/actions.cue"
 
 @jchoice
 
@@ -9,4 +9,3 @@ REM call as
 F:
 cd soccer
 soccer
-

@@ -1,4 +1,4 @@
-imgset ide10 "/cd/MSFlght5/msf5.cue"
+CALL imgtry ide10 D "/cd/MSFlght5/msf5.chd" "/cd/MSFlght5/msf5.cue"
 
 @jchoice
 subst a: /d

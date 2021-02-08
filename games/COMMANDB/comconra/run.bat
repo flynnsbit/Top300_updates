@@ -28,7 +28,7 @@ if errorlevel = 2 goto RAS
 if errorlevel = 1 goto RAA
 
 :RAA
-imgset ide10 "/cd/comconra/redal1.iso"
+CALL imgtry ide10 D "/cd/comconra/redal1.chd" "/cd/comconra/redal1.iso"
 
 
 @jchoice
@@ -38,7 +38,7 @@ ra
 goto quit
 
 :RAS
-imgset ide10 "/cd/comconra/redal2.iso"
+CALL imgtry ide10 D "/cd/comconra/redal2.chd" "/cd/comconra/redal2.iso"
 @jchoice
 cd redalert
 cls
@@ -46,7 +46,7 @@ ra
 goto quit
 
 :AM
-imgset ide10 "/cd/comconra/redal4.cue"
+CALL imgtry ide10 D "/cd/comconra/redal4.chd" "/cd/comconra/redal4.cue"
 @jchoice
 cd redalert
 cls
@@ -54,7 +54,7 @@ ra
 goto quit
 
 :CS
-imgset ide10 "/cd/comconra/redal3.cue"
+CALL imgtry ide10 D "/cd/comconra/redal3.chd" "/cd/comconra/redal3.cue"
 @jchoice
 cd redalert
 cls
@@ -62,7 +62,7 @@ ra
 goto quit
 
 :network
-imgset ide10 "/cd/comconra/redal4.cue"
+CALL imgtry ide10 D "/cd/comconra/redal4.chd" "/cd/comconra/redal4.cue"
 @jchoice
 cls
 network

@@ -1,4 +1,4 @@
-imgset ide11 "/cd/SystemSh/system_.cue"
+CALL imgtry ide11  "/cd/SystemSh/system_.chd" "/cd/SystemSh/system_.cue"
 
 @jchoice
 cd SystemSh

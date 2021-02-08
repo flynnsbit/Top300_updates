@@ -1,4 +1,4 @@
-imgset ide10 "/cd/PanzerGe/pg.cue"
+CALL imgtry ide10 D "/cd/PanzerGe/pg.chd" "/cd/PanzerGe/pg.cue"
 
 @jchoice
 cd PanzerGe

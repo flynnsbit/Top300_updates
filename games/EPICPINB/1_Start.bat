@@ -1,4 +1,4 @@
-imgset ide10 "/cd/EpicPC95/epic_pi.iso"
+CALL imgtry ide10 D "/cd/EpicPC95/epic_pi.chd" "/cd/EpicPC95/epic_pi.iso"
 
 @jchoice
 cd EpicPC95

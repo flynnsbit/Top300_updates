@@ -1,4 +1,4 @@
-imgset ide10 "/cd/WarcrafD/wc2tod.cue"
+CALL imgtry ide10 D "/cd/WarcrafD/wc2tod.chd" "/cd/WarcrafD/wc2tod.cue"
 
 @jchoice
 cd WarcrafD

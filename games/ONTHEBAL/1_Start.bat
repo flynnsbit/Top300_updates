@@ -1,4 +1,4 @@
-imgset ide10 "/cd/OTB/otbcd.cue"
+CALL imgtry ide10 D "/cd/OTB/otbcd.chd" "/cd/OTB/otbcd.cue"
 
 @jchoice
 cd OTB

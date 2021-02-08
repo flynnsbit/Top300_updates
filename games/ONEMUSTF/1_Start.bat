@@ -1,5 +1,5 @@
 @echo off
-imgset ide10 "/cd/OneMustF/omf2097.iso"
+CALL imgtry ide10 D "/cd/OneMustF/omf2097.chd" "/cd/OneMustF/omf2097.iso"
 Echo.
 
 @jchoice

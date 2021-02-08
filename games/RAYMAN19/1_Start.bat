@@ -1,4 +1,4 @@
-imgset ide10 "/cd/Rayman/rayman.cue"
+CALL imgtry ide10 D "/cd/Rayman/rayman.chd" "/cd/Rayman/rayman.cue"
 
 @jchoice
 cd Rayman

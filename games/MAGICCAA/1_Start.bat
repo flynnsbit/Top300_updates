@@ -1,4 +1,4 @@
-imgset ide10 "/cd/MagCarp/magicca.iso"
+CALL imgtry ide10 D "/cd/MagCarp/magicca.chd" "/cd/MagCarp/magicca.iso"
 
 @jchoice
 cd MagCarp

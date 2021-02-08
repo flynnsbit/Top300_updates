@@ -1,4 +1,4 @@
-imgset ide10 "/cd/rzork/image.cue"
+CALL imgtry ide10 D "/cd/rzork/image.chd" "/cd/rzork/image.cue"
 
 @jchoice
 cd rzork

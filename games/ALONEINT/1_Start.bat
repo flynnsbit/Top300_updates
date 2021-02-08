@@ -1,4 +1,4 @@
-imgset ide10 "/cd/adark1/alonein.cue"
+CALL imgtry ide10 D "/cd/adark1/alonein.chd" "/cd/adark1/alonein.cue"
 
 @jchoice
 cd adark1

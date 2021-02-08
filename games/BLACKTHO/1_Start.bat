@@ -1,4 +1,4 @@
-imgset ide10 "/cd/Blacktho/blackth.iso"
+CALL imgtry ide10 D "/cd/Blacktho/blackth.chd" "/cd/Blacktho/blackth.iso"
 echo.
 echo.
 Echo This game requires EMM386 and softMPU for the Sound Canvas version.

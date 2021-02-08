@@ -1,4 +1,4 @@
-imgset ide10 "/cd/TranTDLX/ttdx.iso"
+CALL imgtry ide10 D "/cd/TranTDLX/ttdx.chd" "/cd/TranTDLX/ttdx.iso"
 
 @jchoice
 cd TranTDLX
