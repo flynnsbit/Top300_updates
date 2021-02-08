@@ -38,13 +38,13 @@ run_emm E: \games\lemmings\lemmings\cdlemm lemmings vga
 goto quit
 
 :bonus
-CALL imgtry fdd0 D "/floppy/lemmings/lemming.chd" "/floppy/lemmings/lemming.img"
+CALL imgtry fdd0 A "/floppy/lemmings/lemming.chd" "/floppy/lemmings/lemming.img"
 a:
 sysctl sys L1-
 cls
 call lemmings vga
 e:
-CALL imgtry fdd0 D "".chd" ""
+imgset fdd0 ""
 sysctl menu
 goto quit
 
