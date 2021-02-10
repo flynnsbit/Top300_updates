@@ -19,7 +19,7 @@ REM CONFIG -set"mididevice=default"
 del SOUND.CFG
 xcopy .\sb16\*.*
 cls
-1830
+RUN_EMM E: \games\1830-rai\1830 1830
 goto quit
 
 :MT32
@@ -27,7 +27,7 @@ mt32-pi -m -v
 del SOUND.CFG
 xcopy .\mt32\*.*
 cls
-1830
+RUN_EMM E: \games\1830-rai\1830 1830
 goto quit
 
 :SC55
@@ -35,7 +35,7 @@ mt32-pi -g -v
 del SOUND.CFG
 xcopy .\sc55\*.*
 cls
-1830
+RUN_EMM E: \games\1830-rai\1830 1830
 goto quit
 
 :quit

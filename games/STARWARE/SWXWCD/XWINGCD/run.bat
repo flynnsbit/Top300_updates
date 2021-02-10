@@ -18,8 +18,7 @@ if errorlevel = 1 goto SB16
 REM CONFIG -set"mididevice=default"
 del SETMUSE.INI
 xcopy .\sb16\*.*
-cls
-@call XWINGCD
+RUN_EMM E: \GAMES\STARWARE\SWXWCD\XWINGCD XWINGCD
 goto quit
 
 :MT32
@@ -27,7 +26,7 @@ mt32-pi -m -v
 del SETMUSE.INI
 xcopy .\mt32\*.*
 cls
-@call XWINGCD
+RUN_EMM E: \GAMES\STARWARE\SWXWCD\XWINGCD XWINGCD
 goto quit
 
 :SC55
@@ -35,7 +34,7 @@ mt32-pi -g -v
 del SETMUSE.INI
 xcopy .\sc55\*.*
 cls
-@call XWINGCD
+RUN_EMM E: \GAMES\STARWARE\SWXWCD\XWINGCD XWINGCD
 goto quit
 
 :quit
