@@ -1,6 +1,6 @@
 #!/bin/bash
 set -e
-version="v.0.4"
+version="v.0.5"
 
 # ======== BEGIN USER OPTIONS ========
 
@@ -152,19 +152,17 @@ echo -en "\ec"
 echo ""
 echo -e "${blue}Cleaning up any previous failed updates, ignore any errors...${reset}"
 echo ""
-
 #get rid of this hacky cleanup or dont show users the error when the command could not complete
 set +e
-rm /tmp/update.zip
-unmount_simage "${mount_dir}/E"
-unmount_pimage "${mount_dir}/C"
-rm -r "${mount_dir}"
-rm -r "${extract_dir}"
-set -e
+rm /tmp/update.zip 2>/dev/null
+unmount_simage "${mount_dir}/E" 2>/dev/null
+unmount_pimage "${mount_dir}/C" 2>/dev/null
+rm -r "${mount_dir}" 2>/dev/null
+rm -r "${extract_dir}" 2>/dev/null
 echo ""
-echo -e "${white}Hit any key within 5 seconds to continue...${reset}"
-read -t 5 -p ""
-
+echo -e "${white}Hit any key to continue...${reset}"
+read -p ""
+set -e
 #pause
 pause
 
@@ -197,7 +195,6 @@ echo ""
 # Extract updates from repos, rsync files to both vhds
 unzip -o /tmp/update.zip -d "${extract_dir}/"
 unzip -o /tmp/FastDoom_0.7.zip -d "${fastdoom_dir}/"
-read -p "Pause"
 
 #Fast doom copy
 rsync /tmp/fastdoom/486/Doom/FDOOM.EXE /tmp/dos_vhds/E/games/DOOM1993/DOOM/
