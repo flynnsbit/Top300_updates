@@ -1,6 +1,6 @@
 #!/bin/bash
 set -e
-version="v.0.5"
+ver="v.0.5"
 
 # ======== BEGIN USER OPTIONS ========
 
@@ -53,7 +53,7 @@ function pause(){
  echo -e "This script updates the ${green}(flynnsbit AO486 - Top 300 DOS Games pack)${reset} VHD to fix games and add features that were not included in the original version.  This script directly mounts and modifies the VHD in one step. If the script fails to find your VHD you will need to edit the script and change the User options at the top to fit your setup and re-run." 
  echo -e "${red}Please backup any changes you have made to the pack before running this update.${reset}"
  echo -e ""
- echo -e "${green}Script version ${version}${reset}"
+ echo -e "${green}Script version ${ver}${reset}"
  read -s -n 1 -p "Press any key to continue . . ."
  echo ""
 }
@@ -178,8 +178,9 @@ echo -e "${white}Disk image found at \"${primary_disk_image}\".${reset}"
 echo ""
 
 # Download latest release zip
-get_latest_release "${github_repo}"
 get_latest_release "${fastdoom_repo}"
+get_latest_release "${github_repo}"
+
 
 # Mount partition 2 for secondary and 1 for primary in the disk image for C and E
 mkdir "${mount_dir}"
@@ -197,7 +198,7 @@ unzip -o /tmp/update.zip -d "${extract_dir}/"
 unzip -o /tmp/FastDoom_0.7.zip -d "${fastdoom_dir}/"
 
 #Fast doom copy
-rsync /tmp/fastdoom/486/Doom/FDOOM.EXE /tmp/dos_vhds/E/games/DOOM1993/DOOM/
+rsync '/tmp/fastdoom/486/Doom/' /tmp/dos_vhds/E/games/DOOM1993/DOOM/  -r -I -v
 rsync '/tmp/fastdoom/486/Doom 2/' /tmp/dos_vhds/E/games/DOOMII-H/DOOMII/ -r -I -v
 rsync '/tmp/fastdoom/486/Ultimate Doom/' /tmp/dos_vhds/E/games/THEULTIM/UltDoom -r -I -v
 
