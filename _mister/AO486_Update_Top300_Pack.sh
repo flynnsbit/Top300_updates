@@ -37,6 +37,7 @@ uline="\e[4m"
 reset="\e[0m"
 
 # Arg $1: GitHub repo name, e.g. "username/repo"
+# Can we grab the file names and insert them into a variable ex. FastDoom_0.7.zip so it is not hard coded in the execution part below
 get_latest_release()
 {
 	local api_url="https://api.github.com/repos/${1}/releases/latest"
@@ -151,6 +152,8 @@ echo -en "\ec"
 echo ""
 echo -e "${blue}Cleaning up any previous failed updates, ignore any errors...${reset}"
 echo ""
+
+#get rid of this hacky cleanup or dont show users the error when the command could not complete
 set +e
 rm /tmp/update.zip
 unmount_simage "${mount_dir}/E"
