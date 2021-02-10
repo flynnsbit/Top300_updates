@@ -18,7 +18,7 @@ del AILXMI.DLL
 del INSTALL.OPT
 xcopy .\sb16\*.*
 cls
-BIOFORGE
+RUN_EMM E: \GAMES\BIOFORGE\BIOFORGE BIOFORGE
 goto quit
 
 :SC55
@@ -27,7 +27,7 @@ del AILXMI.DLL
 del INSTALL.OPT
 xcopy .\sc55\*.*
 cls
-BIOFORGE
+RUN_EMM E: \GAMES\BIOFORGE\BIOFORGE BIOFORGE
 goto quit
 
 :quit
