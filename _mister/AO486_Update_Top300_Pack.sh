@@ -1,6 +1,7 @@
 #!/bin/bash
 set -e
 
+version="v.0.4"
 # ======== BEGIN USER OPTIONS ========
 
 # Specifies the Games/Programs subdirectory where core specific directories will be placed.
@@ -14,9 +15,11 @@ base_path="/media/fat"
 # ========= END USER OPTIONS =========
 
 github_repo="flynnsbit/Top300_updates"
-secondary_disk_image="IDE 0-1 Top 300 DOS Games.vhd"
-mount_dir=/tmp/dos_games
 primary_disk_image="IDE 0-0 BOOT-DOS98.vhd"
+secondary_disk_image="IDE 0-1 Top 300 DOS Games.vhd"
+mount_dir=/tmp/dos_vhds
+extract_dir=/tmp/dos_extract
+
 
 # Ansi color code variables
 red="\e[0;91m"
@@ -47,7 +50,7 @@ function pause(){
  echo -e "This script updates the ${green}(flynnsbit AO486 - Top 300 DOS Games pack)${reset} VHD to fix games and add features that were not included in the original version.  This script directly mounts and modifies the VHD in one step. If the script fails to find your VHD you will need to edit the script and change the User options at the top to fit your setup and re-run." 
  echo -e "${red}Please backup any changes you have made to the pack before running this update.${reset}"
  echo -e ""
- echo -e "${green}Script version v.0.3${reset}"
+ echo -e "${green}Script version ${version}${reset}"
  read -s -n 1 -p "Press any key to continue . . ."
  echo ""
 }
@@ -140,6 +143,7 @@ find_primary_disk_image()
 		exit 1
 	fi
 }
+
 #Cleaning up any bad updates or failed updates before running again
 echo -en "\ec"
 echo ""
@@ -150,6 +154,7 @@ rm /tmp/update.zip
 unmount_simage "${mount_dir}/E"
 unmount_pimage "${mount_dir}/C"
 rm -r "${mount_dir}"
+rm -r "${extract_dir}"
 set -e
 echo ""
 echo -e "${white}Press any key to continue update . . .${reset}"
@@ -157,8 +162,6 @@ read -s -n 1 -p ""
 
 #pause
 pause
-
-
 
 # Look for disk image in user's games directory
 find_secondary_disk_image
@@ -171,14 +174,12 @@ echo ""
 echo -e "${white}Disk image found at \"${primary_disk_image}\".${reset}"
 echo ""
 
-
-
 # Download latest release zip
 get_latest_release "${github_repo}"
 
-
 # Just mount partition 2 for secondary and p1 for primary in the disk image
 mkdir "${mount_dir}"
+mkdir "${extract_dir}"
 mkdir "${mount_dir}/E"
 mkdir "${mount_dir}/C"
 echo "${secondary_disk_image}"
@@ -187,12 +188,14 @@ mount_simage "${secondary_disk_image}" 2 "${mount_dir}/E"
 mount_pimage "${primary_disk_image}" 1 "${mount_dir}/C"
 echo ""
 # Extract update, overwriting existing files
-unzip -o /tmp/update.zip -d "${mount_dir}/"
+unzip -o /tmp/update.zip -d "${extract_dir}/"
+rsync "${extract_dir}" "${mount_dir}" -r -I -v
 echo ""
 # Clean up
 rm /tmp/update.zip
 unmount_simage "${mount_dir}/E"
 unmount_pimage "${mount_dir}/C"
 rm -r "${mount_dir}"
+rm -r "${extract_dir}"
 echo ""
 echo -e "${green}Successfully updated to ${tag_name}!${reset}"
