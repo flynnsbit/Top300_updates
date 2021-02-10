@@ -49,7 +49,7 @@ del uw15.xmi
 xcopy .\orig\*.*
 cd ..
 cls
-call UW
+RUN_EMM E: \GAMES\ULTIMAUN\ULTIMAU1 UW
 goto quit
 cls
 
@@ -87,7 +87,7 @@ del uw15.xmi
 xcopy .\orig\*.*
 cd ..
 cls
-call UW
+RUN_EMM E: \GAMES\ULTIMAUN\ULTIMAU1 UW
 goto quit
 cls
 
@@ -125,7 +125,7 @@ del uw15.xmi
 xcopy .\sc55\*.*
 cd ..
 cls
-call UW
+RUN_EMM E: \GAMES\ULTIMAUN\ULTIMAU1 UW
 goto quit
 cls
 
