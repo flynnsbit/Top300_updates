@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
-
 version="v.0.4"
+
 # ======== BEGIN USER OPTIONS ========
 
 # Specifies the Games/Programs subdirectory where core specific directories will be placed.
@@ -15,10 +15,12 @@ base_path="/media/fat"
 # ========= END USER OPTIONS =========
 
 github_repo="flynnsbit/Top300_updates"
+fastdoom_repo="viti95/FastDoom"
 primary_disk_image="IDE 0-0 BOOT-DOS98.vhd"
 secondary_disk_image="IDE 0-1 Top 300 DOS Games.vhd"
 mount_dir=/tmp/dos_vhds
 extract_dir=/tmp/dos_extract
+fastdoom_dir=/tmp/fastdoom
 
 
 # Ansi color code variables
@@ -42,7 +44,7 @@ get_latest_release()
 
 	read -r tag_name download_url < <(echo $(curl -k -s "${api_url}" | jq -r ".tag_name, .assets[0].browser_download_url"))
 	echo Downloading "${tag_name}"...
-	curl -k -L "${download_url}" -o /tmp/update.zip
+	cd /tmp && { curl -k -L "${download_url}" -O ; cd -; }
 }
 function pause(){
  echo -en "\ec"
@@ -157,8 +159,8 @@ rm -r "${mount_dir}"
 rm -r "${extract_dir}"
 set -e
 echo ""
-echo -e "${white}Press any key to continue update . . .${reset}"
-read -s -n 1 -p ""
+echo -e "${white}Hit any key within 5 seconds to continue...${reset}"
+read -t 5 -p ""
 
 #pause
 pause
@@ -176,8 +178,9 @@ echo ""
 
 # Download latest release zip
 get_latest_release "${github_repo}"
+get_latest_release "${fastdoom_repo}"
 
-# Just mount partition 2 for secondary and p1 for primary in the disk image
+# Mount partition 2 for secondary and 1 for primary in the disk image for C and E
 mkdir "${mount_dir}"
 mkdir "${extract_dir}"
 mkdir "${mount_dir}/E"
@@ -187,15 +190,28 @@ echo "${primary_disk_image}"
 mount_simage "${secondary_disk_image}" 2 "${mount_dir}/E"
 mount_pimage "${primary_disk_image}" 1 "${mount_dir}/C"
 echo ""
-# Extract update, overwriting existing files
+
+# Extract updates from repos, rsync files to both vhds
 unzip -o /tmp/update.zip -d "${extract_dir}/"
+unzip -o /tmp/FastDoom_0.7.zip -d "${fastdoom_dir}/"
+read -p "Pause"
+
+#Fast doom copy
+rsync /tmp/fastdoom/486/Doom/FDOOM.EXE /tmp/dos_vhds/E/games/DOOM1993/DOOM/
+rsync '/tmp/fastdoom/486/Doom 2/' /tmp/dos_vhds/E/games/DOOMII-H/DOOMII/ -r -I -v
+rsync '/tmp/fastdoom/486/Ultimate Doom/' /tmp/dos_vhds/E/games/THEULTIM/UltDoom -r -I -v
+
+#Rsync all the updates to the VHDs that are mounted
 rsync "${extract_dir}" "${mount_dir}" -r -I -v
 echo ""
-# Clean up
+
+# Clean up everything
 rm /tmp/update.zip
+rm /tmp/FastDoom_0.7.zip
 unmount_simage "${mount_dir}/E"
 unmount_pimage "${mount_dir}/C"
 rm -r "${mount_dir}"
 rm -r "${extract_dir}"
+rm -r "${fastdoom_dir}"
 echo ""
 echo -e "${green}Successfully updated to ${tag_name}!${reset}"
