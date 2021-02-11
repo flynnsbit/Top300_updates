@@ -1,4 +1,4 @@
-imgset ide10 "/cd/PPBigRac/brusa.cue"
+CALL imgtry ide10 D "/cd/PPBigRac/brusa.chd" "/cd/PPBigRac/brusa.cue"
 
 @jchoice
 cd PPBigRac

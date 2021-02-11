@@ -1,4 +1,4 @@
-imgset ide10 "/cd/FlightUn/fu.cue"
+CALL imgtry ide10 D "/cd/FlightUn/fu.chd" "/cd/FlightUn/fu.cue"
 
 @jchoice
 cd FlightUn

@@ -1,4 +1,4 @@
-imgset ide10 "/cd/jaggall/jaggeda.iso"
+CALL imgtry ide10 D "/cd/jaggall/jaggeda.chd" "/cd/jaggall/jaggeda.iso"
 
 @jchoice
 cd jaggall

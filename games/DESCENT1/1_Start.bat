@@ -1,8 +1,7 @@
 
 CLS
 @Echo Automounting CD image to F: and D: drives
-imgset ide10 "/cd/Descent/descent.iso"
-@jchoice
+CALL imgtry ide10 D "/cd/Descent/descent.chd" "/cd/Descent/descent.iso" 
 @echo off
 IF NOT EXIST E:\GAMES\DESCENT1\DESCENT\DESCENT\FIXED.TXT GOTO FIXGAME
 

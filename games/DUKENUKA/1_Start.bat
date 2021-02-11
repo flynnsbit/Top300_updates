@@ -1,4 +1,4 @@
-imgset ide10 "/cd/Duke3DAt/atomic15.cue"
+CALL imgtry ide10 D "/cd/Duke3DAt/atomic15.chd" "/cd/Duke3DAt/atomic15.cue"
 
 @jchoice
 cd Duke3DAt

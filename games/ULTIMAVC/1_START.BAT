@@ -1,4 +1,4 @@
-imgset ide10 "/cd/ultima8/ultima8.cue"
+CALL imgtry ide10 D "/cd/ultima8/ultima8.chd" "/cd/ultima8/ultima8.cue"
 @echo off
 echo.
 echo This game requires QEMM. Reboot and select it and then relaunch the game.

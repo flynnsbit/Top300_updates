@@ -1,4 +1,4 @@
-imgset ide10 "/cd/construc/constru.iso"
+CALL imgtry ide10 D "/cd/construc/constru.chd" "/cd/construc/constru.iso"
 
 @jchoice
 cd construc

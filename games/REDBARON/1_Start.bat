@@ -1,9 +1,7 @@
-imgset ide10 "/cd/RedBaron/redbaron.iso"
+@ECHO OFF
+CALL imgtry ide10 D "/cd/RedBaron/redbaron.chd" "/cd/RedBaron/redbaron.iso"
+CALL imgtry fdd0 A "/floppy/RedBaron/redbaro.chd" "/floppy/RedBaron/redbaro.ima"
 
-@jchoice
-imgset fdd0 "/floppy/RedBaron/redbaro.ima"
-
-@jchoice
-cd RedBaron
-cd \sierra\redbaron
-call run
+CD RedBaron
+CALL run
+IMGRESET

@@ -1,8 +1,4 @@
-imgset fdd0 "/floppy/Populous/populou.ima"
+CALL imgtry fdd0 A "/floppy/Populous/populo1.chd" "/floppy/Populous/populo1.ima"
 
-@jchoice
-imgset fdd0 "/floppy/Populous/populo1.ima"
-
-@jchoice
 cd Populous
 call run

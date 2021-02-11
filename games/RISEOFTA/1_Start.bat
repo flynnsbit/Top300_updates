@@ -1,4 +1,4 @@
-imgset ide10 "/cd/RotTDLX/rottcd.cue"
+CALL imgtry ide10 D "/cd/RotTDLX/rottcd.chd" "/cd/RotTDLX/rottcd.cue"
 
 @jchoice
 cd RotTDLX

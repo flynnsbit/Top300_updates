@@ -1,4 +1,4 @@
-imgset ide10 "/cd/albion/albion.cue"
+CALL imgtry ide10 D "/cd/albion/albion.chd" "/cd/albion/albion.cue"
 
 @jchoice
 cd albion

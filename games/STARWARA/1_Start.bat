@@ -1,4 +1,4 @@
-imgset ide10 "/cd/SWDForc/swdf104.cue"
+CALL imgtry ide10 D "/cd/SWDForc/swdf104.chd" "/cd/SWDForc/swdf104.cue"
 
 @jchoice
 cd SWDForc

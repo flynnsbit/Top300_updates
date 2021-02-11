@@ -1,4 +1,4 @@
-imgset ide10 "/cd/HexenBey/hexen.cue"
+CALL imgtry ide10 D "/cd/HexenBey/hexen.chd" "/cd/HexenBey/hexen.cue"
 
 @jchoice
 cd HexenBey

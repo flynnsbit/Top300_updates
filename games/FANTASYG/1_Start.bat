@@ -1,4 +1,4 @@
-imgset ide10 "/cd/fantgen/fantasy.cue"
+CALL imgtry ide10 D "/cd/fantgen/fantasy.chd" "/cd/fantgen/fantasy.cue"
 
 @jchoice
 cd fantgen

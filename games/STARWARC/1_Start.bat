@@ -1,4 +1,4 @@
-imgset ide10 "/cd/SWRA2/ra2_cd1.cue"
+CALL imgtry ide10 D "/cd/SWRA2/ra2_cd1.chd" "/cd/SWRA2/ra2_cd1.cue"
 
 @jchoice
 f:

@@ -1,4 +1,4 @@
-imgset ide10 "/cd/samnmax/samnmax.cue"
+CALL imgtry ide10 D "/cd/samnmax/samnmax.chd" "/cd/samnmax/samnmax.cue"
 
 @jchoice
 cd samnmax

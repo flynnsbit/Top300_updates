@@ -1,4 +1,4 @@
-imgset ide10 "/cd/jaggalld/deadly_.cue"
+CALL imgtry ide10 D "/cd/jaggalld/deadly_.chd" "/cd/jaggalld/deadly_.cue"
 
 @jchoice
 cd jaggalld
