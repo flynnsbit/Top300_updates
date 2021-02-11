@@ -1,4 +1,4 @@
-imgset ide10 "/cd/MKTril/trilogy.cue"
+CALL imgtry ide10 D "/cd/MKTril/trilogy.chd" "/cd/MKTril/trilogy.cue"
 
 @jchoice
 cd MKTril

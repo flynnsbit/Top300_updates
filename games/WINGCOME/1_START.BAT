@@ -1,4 +1,4 @@
-imgset ide10 "/cd/WC4PoF/cd1.iso"
+CALL imgtry ide10 D "/cd/WC4PoF/cd1.chd" "/cd/WC4PoF/cd1.iso"
 @echo off
 echo.
 Echo This game requires QEMM, please reboot, select QEMM and relauch the game.

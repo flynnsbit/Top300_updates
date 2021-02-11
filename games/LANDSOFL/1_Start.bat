@@ -1,4 +1,4 @@
-imgset ide10 "/cd/LLGD/llgd1.cue"
+CALL imgtry ide10 D "/cd/LLGD/llgd1.chd" "/cd/LLGD/llgd1.cue"
 
 @jchoice
 cd LLGD

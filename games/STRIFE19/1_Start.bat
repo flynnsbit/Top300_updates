@@ -1,4 +1,4 @@
-imgset ide10 "/cd/Strife/strife.iso"
+CALL imgtry ide10 D "/cd/Strife/strife.chd" "/cd/Strife/strife.iso"
 
 @jchoice
 cd Strife

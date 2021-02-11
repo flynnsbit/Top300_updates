@@ -1,4 +1,4 @@
-imgset ide10 "/cd/alqadim/alqd_cd.img"
+CALL imgtry ide10 D "/cd/alqadim/alqd_cd.chd" "/cd/alqadim/alqd_cd.img"
 
 @jchoice
 cd alqadim

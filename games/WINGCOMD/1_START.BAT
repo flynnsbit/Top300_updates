@@ -1,4 +1,4 @@
-imgset ide10 "/cd/WC3HotT/cd1.iso"
+CALL imgtry ide10 D "/cd/WC3HotT/cd1.chd" "/cd/WC3HotT/cd1.iso"
 
 @jchoice
 REM cd WC3HotT
@@ -7,4 +7,3 @@ REM call run
 d:
 cd\
 wc3
-

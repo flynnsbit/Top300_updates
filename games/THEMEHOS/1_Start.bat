@@ -1,4 +1,4 @@
-imgset ide10 "/cd/ThemHosp/themeho.cue"
+CALL imgtry ide10 D "/cd/ThemHosp/themeho.chd" "/cd/ThemHosp/themeho.cue"
 
 @jchoice
 cd ThemHosp

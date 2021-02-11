@@ -1,4 +1,4 @@
-imgset ide10 "/cd/MicroMa2/mm2.cue"
+CALL imgtry ide10 D "/cd/MicroMa2/mm2.chd" "/cd/MicroMa2/mm2.cue"
 
 @jchoice
 cd MicroMa2

@@ -1,4 +1,4 @@
-imgset ide10 "/cd/WingComm/original.iso"
+CALL imgtry ide10 D "/cd/WingComm/original.chd" "/cd/WingComm/original.iso"
 @echo off
 echo.
 echo This game requires EMM386, please reboot, select it, and restart the game.

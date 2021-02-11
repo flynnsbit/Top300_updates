@@ -1,4 +1,4 @@
-imgset ide10 "/cd/SWTieCD/swtiecd.cue"
+CALL imgtry ide10 D "/cd/SWTieCD/swtiecd.chd" "/cd/SWTieCD/swtiecd.cue"
 
 @jchoice
 cd SWTieCD

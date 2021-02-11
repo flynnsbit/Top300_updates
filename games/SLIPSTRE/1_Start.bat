@@ -1,4 +1,4 @@
-imgset ide10 "/cd/Slipstre/slipstrm.iso"
+CALL imgtry ide10 D "/cd/Slipstre/slipstrm.chd" "/cd/Slipstre/slipstrm.iso"
 
 @jchoice
 cd Slipstre

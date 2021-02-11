@@ -25,7 +25,7 @@ if errorlevel = 2 goto NOD
 if errorlevel = 1 goto GDI
 
 :GDI
-imgset ide10 "/cd/comcon/comma1.iso"
+CALL imgtry ide10 D "/cd/comcon/comma1.chd" "/cd/comcon/comma1.iso"
 
 
 @jchoice
@@ -34,21 +34,21 @@ C&C
 goto menu
 
 :NOD
-imgset ide10 "/cd/comcon/comma2.iso"
+CALL imgtry ide10 D "/cd/comcon/comma2.chd" "/cd/comcon/comma2.iso"
 @jchoice
 cls
 C&C
 goto menu
 
 :COVERT
-imgset ide10 "/cd/comcon/cover3.cue"
+CALL imgtry ide10 D "/cd/comcon/cover3.chd" "/cd/comcon/cover3.cue"
 @jchoice
 cls
 C&C
 goto menu
 
 :FUNPARK
-imgset ide10 "/cd/comcon/comma1.iso"
+CALL imgtry ide10 D "/cd/comcon/comma1.chd" "/cd/comcon/comma1.iso"
 
 
 @jchoice
@@ -57,7 +57,7 @@ C&C funpark
 goto menu
 
 :network
-imgset ide10 "/cd/comcon/comma1.iso"
+CALL imgtry ide10 D "/cd/comcon/comma1.chd" "/cd/comcon/comma1.iso"
 
 
 @jchoice

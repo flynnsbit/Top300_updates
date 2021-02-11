@@ -1,4 +1,4 @@
-imgset ide10 "/cd/eob3/eyeofth.iso"
+CALL imgtry ide10 D "/cd/eob3/eyeofth.chd" "/cd/eob3/eyeofth.iso"
 
 @jchoice
 cd eob3

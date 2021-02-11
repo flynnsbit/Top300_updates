@@ -1,4 +1,4 @@
-imgset ide10 "/cd/ScoPlan/scorche.cue"
+CALL imgtry ide10 D "/cd/ScoPlan/scorche.chd" "/cd/ScoPlan/scorche.cue"
 
 @jchoice
 cd ScoPlan

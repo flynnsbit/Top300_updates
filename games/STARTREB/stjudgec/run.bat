@@ -19,7 +19,7 @@ if errorlevel = 1 goto SB16
 :SB16
 REM CONFIG -set"mididevice=default"
 xcopy .\sb16\*.* .\
-imgset ide10 "/cd/stjudgec/startre.cue"
+CALL imgtry ide10 D "/cd/stjudgec/startre.chd" "/cd/stjudgec/startre.cue"
 
 
 @jchoice
@@ -30,7 +30,7 @@ goto quit
 :MT32
 mt32-pi -m -v
 xcopy .\mt32\*.* .\
-imgset ide10 "/cd/stjudgec/startre.cue"
+CALL imgtry ide10 D "/cd/stjudgec/startre.chd" "/cd/stjudgec/startre.cue"
 
 
 @jchoice
@@ -41,7 +41,7 @@ goto quit
 :SC55
 mt32-pi -g -v
 xcopy .\sc55\*.* .\
-imgset ide10 "/cd/stjudgec/startre.cue"
+CALL imgtry ide10 D "/cd/stjudgec/startre.chd" "/cd/stjudgec/startre.cue"
 
 
 @jchoice
@@ -52,7 +52,7 @@ goto quit
 :CD2
 REM CONFIG -set"mididevice=default"
 xcopy .\sb16\*.* .\
-imgset ide10 "/cd/stjudgec/star_tr.iso"
+CALL imgtry ide10 D "/cd/stjudgec/star_tr.chd" "/cd/stjudgec/star_tr.iso"
 
 
 @jchoice

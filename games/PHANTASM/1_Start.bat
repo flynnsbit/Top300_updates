@@ -1,4 +1,4 @@
-imgset ide10 "/cd/Phantasm/phant1.iso"
+CALL imgtry ide10 D "/cd/Phantasm/phant1.chd" "/cd/Phantasm/phant1.iso"
 
 @jchoice
 cd Phantasm

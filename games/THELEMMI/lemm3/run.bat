@@ -29,7 +29,7 @@ cd ..
 goto menu
 
 :CD
-imgset ide10 "/cd/lemm3/lemming.cue"
+CALL imgtry ide10 D "/cd/lemm3/lemming.chd" "/cd/lemm3/lemming.cue"
 
 
 @jchoice
