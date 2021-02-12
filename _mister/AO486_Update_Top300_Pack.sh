@@ -1,6 +1,6 @@
 #!/bin/bash
 set -e
-ver="v.0.6"
+ver="v.0.7"
 
 # ======== BEGIN USER OPTIONS ========
 
@@ -90,6 +90,7 @@ mount_pimage()
 unmount_simage()
 {
 	# Unmount partition
+	sync
 	umount "${1}"
 	
 	# Disassociate loop device
@@ -100,6 +101,7 @@ unmount_simage()
 unmount_pimage()
 {
 	# Unmount partition
+	sync
 	umount "${1}"
 	
 	# Disassociate loop device
@@ -198,17 +200,18 @@ unzip -o /tmp/update.zip -d "${extract_dir}/"
 unzip -o /tmp/FastDoom_0.7.zip -d "${fastdoom_dir}/"
 
 #Fast doom copy
-rsync '/tmp/fastdoom/486/Doom/' /tmp/dos_vhds/E/games/DOOM1993/DOOM/  -av
-rsync '/tmp/fastdoom/486/Doom 2/' /tmp/dos_vhds/E/games/DOOMII-H/DOOMII/ -av
-rsync '/tmp/fastdoom/486/Ultimate Doom/' /tmp/dos_vhds/E/games/THEULTIM/UltDoom -av
+rsync '/tmp/fastdoom/486/Doom/' /tmp/dos_vhds/E/games/DOOM1993/DOOM/  -r -I -v
+rsync '/tmp/fastdoom/486/Doom 2/' /tmp/dos_vhds/E/games/DOOMII-H/DOOMII/ -r -I -v
+rsync '/tmp/fastdoom/486/Ultimate Doom/' /tmp/dos_vhds/E/games/THEULTIM/UltDoom -r -I -v
 
 #Rsync all the updates to the VHDs that are mounted
-rsync -av "${extract_dir}"/ "${mount_dir}"/ 
+rsync -rIv "${extract_dir}"/ "${mount_dir}"/ 
 echo ""
 
 # Clean up everything
 rm /tmp/update.zip
 rm /tmp/FastDoom_0.7.zip
+sync
 unmount_simage "${mount_dir}/E"
 unmount_pimage "${mount_dir}/C"
 rm -r "${mount_dir}"
