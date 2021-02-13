@@ -17,8 +17,7 @@
 # You can download the latest version of this script from:
 # https://github.com/MiSTer-devel/Updater_script_MiSTer
 
-# Version 1.0 - 2021-02-12 - First commit
-
+ver="v.0.9"
 
 # ========= OPTIONS ==================
 URL="https://github.com"
@@ -63,7 +62,6 @@ ORIGINAL_SCRIPT_PATH="${0}"
 [[ "${ORIGINAL_SCRIPT_PATH}" == "bash" ]] && \
 	ORIGINAL_SCRIPT_PATH="$(ps -o comm,pid | awk -v PPID=${PPID} '$2 == PPID {print $1}')"
 
-pause
 # ini file can contain user defined variables (as bash commands)
 # Load and execute the content of the ini file, if there is one
 INI_PATH="${ORIGINAL_SCRIPT_PATH%.*}.ini"
@@ -102,6 +100,7 @@ case $? in
 esac
 
 # download and execute the latest AO486 Top 300 Update pack.sh
+pause
 echo "Downloading and executing"
 echo "${SCRIPT_URL/*\//}"
 echo ""
