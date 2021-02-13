@@ -220,7 +220,7 @@ rsync '/tmp/fastdoom/486/Doom 2/' /tmp/dos_vhds/E/games/DOOMII-H/DOOMII/ -r -I -
 rsync '/tmp/fastdoom/486/Ultimate Doom/' /tmp/dos_vhds/E/games/THEULTIM/UltDoom -r -I -v
 
 #Rsync all the updates to the VHDs that are mounted
-rsync -rIv "${extract_dir}"/ "${mount_dir}"/ 
+rsync -crv "${extract_dir}"/ "${mount_dir}"/ 
 echo ""
 
 # Clean up everything
