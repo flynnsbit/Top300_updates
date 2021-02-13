@@ -18,7 +18,7 @@ source_ini()
 	original_script_path="$0"
 	if [ $original_script_path == "bash" ]
 	then
-		original_script_path=$(ps -o pid,comm=COMMAND_NO_TRUNCATE | awk -v PPID=${PPID} '$1 == PPID {print $2}')
+		original_script_path=$(ps | grep "^ *$PPID " | grep -o "[^ ]*$")
 	fi
 	ini_path=${original_script_path%.*}.ini
 	if [[ -f "${ini_path}" ]] ; then
