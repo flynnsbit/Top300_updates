@@ -64,7 +64,7 @@ ORIGINAL_SCRIPT_PATH="${0}"
 [[ "${ORIGINAL_SCRIPT_PATH}" == "bash" ]] && \
 	ORIGINAL_SCRIPT_PATH="$(ps -o comm,pid | awk -v PPID=${PPID} '$2 == PPID {print $1}')"
 
-pause
+
 # ini file can contain user defined variables (as bash commands)
 # Load and execute the content of the ini file, if there is one
 INI_PATH="${ORIGINAL_SCRIPT_PATH%.*}.ini"
@@ -106,6 +106,7 @@ esac
 echo "Downloading and executing"
 echo "${SCRIPT_URL/*\//}"
 echo ""
+pause
 
 curl \
 	${CURL_RETRY} \
