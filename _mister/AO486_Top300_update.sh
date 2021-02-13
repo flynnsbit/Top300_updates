@@ -36,6 +36,20 @@ CURL_RETRY="--connect-timeout 15 --max-time 120 --retry 3 --retry-delay 5 --sile
 ALLOW_INSECURE_SSL="true"
 
 # ========= CODE STARTS HERE =========
+# Ansi color code variables
+red="\e[0;91m"
+blue="\e[0;94m"
+expand_bg="\e[K"
+blue_bg="\e[0;104m${expand_bg}"
+red_bg="\e[0;101m${expand_bg}"
+green_bg="\e[0;102m${expand_bg}"
+green="\e[0;92m"
+white="\e[0;97m"
+bold="\e[1m"
+uline="\e[4m"
+reset="\e[0m"
+
+
 # get the name of the script, or of the parent script if called through a 'curl ... | bash -'
 ORIGINAL_SCRIPT_PATH="${0}"
 [[ "${ORIGINAL_SCRIPT_PATH}" == "bash" ]] && \
@@ -82,6 +96,18 @@ esac
 echo "Downloading and executing"
 echo "${SCRIPT_URL/*\//}"
 echo ""
+
+function pause(){
+ echo -en "\ec"
+ echo -e "${red_bg}${reset}"
+ echo -e "This script updates the ${green}(flynnsbit AO486 - Top 300 DOS Games pack)${reset} VHD to fix games and add features that were not included in the original version.  This script directly mounts and modifies the VHD in one step. If the script fails to find your VHD you will need to edit the script and change the User options at the top to fit your setup and re-run." 
+ echo -e "${red}Please backup any changes you have made to the pack before running this update.${reset}"
+ echo -e ""
+ echo -e "${green}Script version ${ver}${reset}"
+ read -s -n 1 -p "Press any key to continue . . ."
+ echo ""
+}
+pause
 curl \
 	${CURL_RETRY} \
 	${SSL_SECURITY_OPTION} \
