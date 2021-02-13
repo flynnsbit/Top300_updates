@@ -191,9 +191,7 @@ unmount_simage "${secondary_disk_image}" "${mount_dir}/E" 2>/dev/null
 unmount_pimage "${primary_disk_image}" "${mount_dir}/C" 2>/dev/null
 rm -r "${mount_dir}" 2>/dev/null
 rm -r "${extract_dir}" 2>/dev/null
-echo ""
-echo -e "${white}Hit any key to continue...${reset}"
-read -p ""
+
 set -e
 
 # Download latest release zip
