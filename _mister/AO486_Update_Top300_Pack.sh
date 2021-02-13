@@ -16,10 +16,9 @@ set -e
 # Copyright 2019-2020 Alessandro "Locutus73" Miele
 
 # You can download the latest version of this script from:
-# https://github.com/MiSTer-devel/Updater_script_MiSTer
+# https://raw.githubusercontent.com/flynnsbit/Top300_updates/main/_mister/AO486_Update_Top300_Pack.sh
 
-# Version 1.0 - 2021-02-12 - First commit
-
+ver="v.0.8"
 
 # ========= OPTIONS ==================
 URL="https://github.com"
