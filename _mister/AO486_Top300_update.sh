@@ -1,5 +1,5 @@
 #!/bin/bash
-
+set -e
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
 # the Free Software Foundation, either version 3 of the License, or
@@ -48,13 +48,23 @@ white="\e[0;97m"
 bold="\e[1m"
 uline="\e[4m"
 reset="\e[0m"
-
+function pause(){
+ echo -en "\ec"
+ echo -e "${red_bg}${reset}"
+ echo -e "This script updates the ${green}(flynnsbit AO486 - Top 300 DOS Games pack)${reset} VHD to fix games and add features that were not included in the original version.  This script directly mounts and modifies the VHD in one step. If the script fails to find your VHD you will need to edit the script and change the User options at the top to fit your setup and re-run." 
+ echo -e "${red}Please backup any changes you have made to the pack before running this update.${reset}"
+ echo -e ""
+ echo -e "${green}Script version ${ver}${reset}"
+ read -s -n 1 -p "Press any key to continue . . ."
+ echo ""
+}
 
 # get the name of the script, or of the parent script if called through a 'curl ... | bash -'
 ORIGINAL_SCRIPT_PATH="${0}"
 [[ "${ORIGINAL_SCRIPT_PATH}" == "bash" ]] && \
 	ORIGINAL_SCRIPT_PATH="$(ps -o comm,pid | awk -v PPID=${PPID} '$2 == PPID {print $1}')"
 
+pause
 # ini file can contain user defined variables (as bash commands)
 # Load and execute the content of the ini file, if there is one
 INI_PATH="${ORIGINAL_SCRIPT_PATH%.*}.ini"
@@ -97,17 +107,6 @@ echo "Downloading and executing"
 echo "${SCRIPT_URL/*\//}"
 echo ""
 
-function pause(){
- echo -en "\ec"
- echo -e "${red_bg}${reset}"
- echo -e "This script updates the ${green}(flynnsbit AO486 - Top 300 DOS Games pack)${reset} VHD to fix games and add features that were not included in the original version.  This script directly mounts and modifies the VHD in one step. If the script fails to find your VHD you will need to edit the script and change the User options at the top to fit your setup and re-run." 
- echo -e "${red}Please backup any changes you have made to the pack before running this update.${reset}"
- echo -e ""
- echo -e "${green}Script version ${ver}${reset}"
- read -s -n 1 -p "Press any key to continue . . ."
- echo ""
-}
-pause
 curl \
 	${CURL_RETRY} \
 	${SSL_SECURITY_OPTION} \
