@@ -18,7 +18,7 @@ set -e
 # You can download the latest version of this script from:
 # https://raw.githubusercontent.com/flynnsbit/Top300_updates/main/_mister/AO486_Update_Top300_Pack.sh
 
-ver="v.0.8"
+ver="v.0.8"  
 
 # ========= OPTIONS ==================
 URL="https://github.com"
