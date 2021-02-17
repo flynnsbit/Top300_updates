@@ -6,7 +6,7 @@ AO486 Update scripts for the flynnsbit eXoDOS V5.0 Top 300 Pack.  This is not th
 
 2. cd /media/fat/Scripts
 
-3. wget https://raw.githubusercontent.com/flynnsbit/Top300_updates/main/_mister/AO486_Top300_update.sh
+3. wget https://raw.githubusercontent.com/flynnsbit/Top300_updates/main/_mister/AO486_Update_Top300_Pack.sh
 
 4. Turn on your __MiSTer__, go to the _Scripts_ menu and run this script from there. This will download the latest Top 300 Pack (updates only, base VHDs required before updating) release with any fixes to games, new features, and updated programs from this github.  It will auto mount your VHD pack, update it, and clean up any temp folders.
 
