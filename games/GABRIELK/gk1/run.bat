@@ -5,8 +5,8 @@ echo.
 echo Press 1 for Gabriel Knight: Sins of the Fathers w/ SoundBlaster
 echo Press 2 for Gabriel Knight: Sins of the Fathers w/ MT32
 echo Press 3 for Gabriel Knight: Sins of the Fathers w/ Sound Canvas
-echo Press 4 for Gabriel Knight CD: Sins of the Fathers w/ Sound Canvas
-echo Press 5 for Gabriel Knight CD: Sins of the Fathers w/ Sound Canvas
+echo Press 4 for Gabriel Knight CD: Sins of the Fathers w/ SoundBlaster
+echo Press 5 for Gabriel Knight CD: Sins of the Fathers w/ MT32
 echo Press 6 for Gabriel Knight CD: Sins of the Fathers w/ Sound Canvas
 echo Press 7 to Quit
 echo.
