@@ -1,11 +1,9 @@
+@echo off
 CALL imgtry ide10 D "/cd/ActionSo/actions.chd" "/cd/ActionSo/actions.cue"
-
+echo This game requires EMM386
 @jchoice
-
-REM cd ActionSo
+cd ActionSo
 REM fakehma
-REM cd Action
-REM call as
-F:
-cd soccer
-soccer
+cd Action
+call as
+cd\
