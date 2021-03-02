@@ -68,6 +68,7 @@ VESA=108h
 ;Change favorite ico - default heart=3h  
 favicon=21
 ;favicon=AD
+unpicon=20h
 
 ;Set the colors for TDL's Menu
 COLOR_Border=0fh

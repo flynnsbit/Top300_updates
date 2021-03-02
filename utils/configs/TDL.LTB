@@ -69,6 +69,7 @@ pauseafterrun=disabled
 ;Change favorite ico - default heart=3h  
 favicon=21
 ;favicon=AD
+unpicon=20h
 
 ;Mouse options 12h is arrows
 Color_Mouse=$94h
