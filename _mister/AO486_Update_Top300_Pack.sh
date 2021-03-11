@@ -23,6 +23,9 @@ ver="v.0.9"
 URL="https://github.com"
 SCRIPT_URL="${URL}/flynnsbit/Top300_updates/blob/main/_mister/update/AO486_Update_Top300_updater.sh"
 CURL_RETRY="--connect-timeout 15 --max-time 120 --retry 3 --retry-delay 5 --silent --show-error"
+# Make sure you download the latest .ini file with this .sh script and change the basepath to where your VHDs are located.
+# ini located at https://raw.githubusercontent.com/flynnsbit/Top300_updates/main/_mister/AO486_Update_Top300_Pack.ini
+
 
 # ========= ADVANCED OPTIONS =========
 # ALLOW_INSECURE_SSL="true" will check if SSL certificate verification (see https://curl.haxx.se/docs/sslcerts.html )
