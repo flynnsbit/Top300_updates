@@ -15,7 +15,7 @@
 # Copyright 2019-2020 Alessandro "Locutus73" Miele
 
 # You can download the latest version of this script from:
-# https://github.com/MiSTer-devel/Updater_script_MiSTer
+# https://github.com/flynnsbit/Top300_updates/tree/main/_mister
 
 ver="v.0.9"
 
