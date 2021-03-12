@@ -1,0 +1,1 @@
+These will be lists used for either Pack generation or to import into ExoDOSConverter to generate packs.
