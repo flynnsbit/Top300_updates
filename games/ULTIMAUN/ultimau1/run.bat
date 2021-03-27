@@ -54,7 +54,7 @@ goto quit
 cls
 
 :MT32
-mt32-pi -m -v
+mt32-pi.exe -m -b cm32l
 cd DATA
 del UW.CFG
 xcopy .\mt32\*.*
