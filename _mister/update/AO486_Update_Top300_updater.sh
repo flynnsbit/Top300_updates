@@ -212,7 +212,7 @@ echo ""
 
 # Extract updates from repos, rsync files to both vhds
 unzip -o /tmp/update.zip -d "${extract_dir}/"
-unzip -o /tmp/FastDoom_0.7.zip -d "${fastdoom_dir}/"
+unzip -o /tmp/FastDoom_0.8.zip -d "${fastdoom_dir}/"
 
 #Fast doom copy
 rsync '/tmp/fastdoom/486/Doom/' /tmp/dos_vhds/E/games/DOOM1993/DOOM/  -r -I -v
@@ -225,7 +225,7 @@ echo ""
 
 # Clean up everything
 rm /tmp/update.zip
-rm /tmp/FastDoom_0.7.zip
+rm /tmp/FastDoom_0.8.zip
 sync
 unmount_simage "${secondary_disk_image}" "${mount_dir}/E"
 unmount_pimage "${primary_disk_image}" "${mount_dir}/C"
