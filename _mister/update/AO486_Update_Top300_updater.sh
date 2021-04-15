@@ -215,9 +215,9 @@ unzip -o /tmp/update.zip -d "${extract_dir}/"
 unzip -o /tmp/FastDoom_0.8.zip -d "${fastdoom_dir}/"
 
 #Fast doom copy
-rsync '/tmp/fastdoom/486/Doom/' /tmp/dos_vhds/E/games/DOOM1993/DOOM/  -r -I -v
-rsync '/tmp/fastdoom/486/Doom 2/' /tmp/dos_vhds/E/games/DOOMII-H/DOOMII/ -r -I -v
-rsync '/tmp/fastdoom/486/Ultimate Doom/' /tmp/dos_vhds/E/games/THEULTIM/UltDoom -r -I -v
+rsync '/tmp/fastdoom/' /tmp/dos_vhds/E/games/DOOM1993/DOOM/  -r -I -v
+rsync '/tmp/fastdoom/' /tmp/dos_vhds/E/games/DOOMII-H/DOOMII/ -r -I -v
+rsync '/tmp/fastdoom/' /tmp/dos_vhds/E/games/THEULTIM/UltDoom -r -I -v
 
 #Rsync all the updates to the VHDs that are mounted
 rsync -crv "${extract_dir}"/ "${mount_dir}"/ 
