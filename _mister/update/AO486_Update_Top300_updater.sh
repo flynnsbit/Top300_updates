@@ -68,9 +68,19 @@ get_latest_release()
 	cd /tmp && { curl -k -L "${download_url}" -O ; cd -; }
 }
 
+get_fastdoom_release()
+{
+	local api_url="https://api.github.com/repos/viti95/FastDoom/releases/assets/29106181"
+	local download_url
+
+	read -r tag_name download_url < <(echo $(curl -k -s "${api_url}" | jq -r ".tag_name, .assets[0].browser_download_url"))
+	echo Downloading "${tag_name}"...
+	cd /tmp && { curl -k -L "${download_url}" -O ; cd -; }
+}
 # Arg $1: Path to image
 # Arg $2: Partition number 
 # Arg $3: Mount point
+
 mount_simage()
 {
 	# Get next free loop device
@@ -195,7 +205,7 @@ rm -r "${extract_dir}" 2>/dev/null
 set -e
 
 # Download latest release zip
-get_latest_release "${fastdoom_repo}"
+get_fastdoom_release "${fastdoom_repo}"
 get_latest_release "${github_repo}"
 
 
