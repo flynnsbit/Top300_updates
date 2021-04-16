@@ -1,6 +1,6 @@
 #!/bin/bash
 set -e
-ver="v.0.11"
+ver="v.0.12"
 
 # ======== BEGIN USER OPTIONS ========
 
