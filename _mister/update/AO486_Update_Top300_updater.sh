@@ -196,7 +196,7 @@ rm -r "${extract_dir}" 2>/dev/null
 set -e
 
 # Download latest release zip
-get_fastdoom_release "${fastdoom_repo}"
+get_latest_release "${fastdoom_repo}"
 get_latest_release "${github_repo}"
 
 
