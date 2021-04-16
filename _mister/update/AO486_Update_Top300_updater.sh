@@ -71,11 +71,11 @@ get_latest_release()
 get_fastdoom_release()
 {
 	local api_url="https://api.github.com/repos/viti95/FastDoom/releases/assets/29106181"
-	local download_url
+	local browser_download_url
 
-	read -r tag_name download_url < <(echo $(curl -k -s "${api_url}" | jq -r ".tag_name, .assets[0].browser_download_url"))
+	read -r tag_name browser_download_url < <(echo $(curl -k -s "${api_url}" | jq -r ".tag_name, .assets[0].browser_download_url"))
 	echo Downloading "${tag_name}"...
-	cd /tmp && { curl -k -L "${download_url}" -O ; cd -; }
+	cd /tmp && { curl -k -L "${browser_download_url}" -O ; cd -; }
 }
 # Arg $1: Path to image
 # Arg $2: Partition number 
