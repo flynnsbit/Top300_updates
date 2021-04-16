@@ -1,6 +1,6 @@
 #!/bin/bash
 set -e
-ver="v.0.9"
+ver="v.0.10"
 
 # ======== BEGIN USER OPTIONS ========
 
@@ -70,7 +70,7 @@ get_latest_release()
 
 get_fastdoom_release()
 {
-	local api_url="https://api.github.com/repos/viti95/FastDoom/releases/assets/29106181"
+	local api_url="https://api.github.com/repos/${1}/releases/assets/29106181"
 	local browser_download_url
 
 	read -r tag_name browser_download_url < <(echo $(curl -k -s "${api_url}" | jq -r ".tag_name, .assets[0].browser_download_url"))
