@@ -1,6 +1,6 @@
 #!/bin/bash
 set -e
-ver="v.0.10"
+ver="v.0.11"
 
 # ======== BEGIN USER OPTIONS ========
 
@@ -68,15 +68,6 @@ get_latest_release()
 	cd /tmp && { curl -k -L "${download_url}" -O ; cd -; }
 }
 
-get_fastdoom_release()
-{
-	local api_url="https://api.github.com/repos/${1}/releases/assets/29106181"
-	local browser_download_url
-
-	read -r tag_name browser_download_url < <(echo $(curl -k -s "${api_url}" | jq -r ".tag_name, .assets[0].browser_download_url"))
-	echo Downloading "${tag_name}"...
-	cd /tmp && { curl -k -L "${browser_download_url}" -O ; cd -; }
-}
 # Arg $1: Path to image
 # Arg $2: Partition number 
 # Arg $3: Mount point
@@ -205,7 +196,7 @@ rm -r "${extract_dir}" 2>/dev/null
 set -e
 
 # Download latest release zip
-#get_fastdoom_release "${fastdoom_repo}"
+get_fastdoom_release "${fastdoom_repo}"
 get_latest_release "${github_repo}"
 
 
@@ -222,7 +213,7 @@ echo ""
 
 # Extract updates from repos, rsync files to both vhds
 unzip -o /tmp/update.zip -d "${extract_dir}/"
-#unzip -o /tmp/FastDoom_0.8.zip -d "${fastdoom_dir}/"
+unzip -o "/tmp/FastDoom*.zip" -d "${fastdoom_dir}/"
 
 #Fast doom copy
 #rsync '/tmp/fastdoom/' /tmp/dos_vhds/E/games/DOOM1993/DOOM/  -r -I -v
@@ -235,12 +226,12 @@ echo ""
 
 # Clean up everything
 rm /tmp/update.zip
-#rm /tmp/FastDoom_0.8.zip
+rm /tmp/FastDoom*.zip
 sync
 unmount_simage "${secondary_disk_image}" "${mount_dir}/E"
 unmount_pimage "${primary_disk_image}" "${mount_dir}/C"
 rm -r "${mount_dir}"
 rm -r "${extract_dir}"
-#rm -r "${fastdoom_dir}"
+rm -r "${fastdoom_dir}"
 echo ""
 echo -e "${green}Successfully updated to ${tag_name}!${reset}"
