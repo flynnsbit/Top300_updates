@@ -235,7 +235,7 @@ echo ""
 
 # Clean up everything
 rm /tmp/update.zip
-rm /tmp/FastDoom_0.8.zip
+#rm /tmp/FastDoom_0.8.zip
 sync
 unmount_simage "${secondary_disk_image}" "${mount_dir}/E"
 unmount_pimage "${primary_disk_image}" "${mount_dir}/C"
