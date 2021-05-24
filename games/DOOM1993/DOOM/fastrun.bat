@@ -24,7 +24,7 @@ cd ultrasnd
 ultramid
 cd ..
 cls
-fdoom
+fdoom13h
 goto quit
 
 :SB16
@@ -32,7 +32,7 @@ REM CONFIG -set"mididevice=default"
 del DEFAULT.CFG
 xcopy .\sb16\*.*
 cls
-fdoom
+fdoom13h
 goto quit
 
 :SC55
@@ -40,7 +40,7 @@ mt32-pi -g -v
 del DEFAULT.CFG
 xcopy .\sc55\*.*
 cls
-fdoom
+fdoom13h
 goto quit
 
 :network
