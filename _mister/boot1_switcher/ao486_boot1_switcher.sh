@@ -127,6 +127,5 @@ elif [[ "${COUNTDOWN_SELECTION}" == "original" ]] ; then
     echo "... Replaced contents of boot1.rom with ${ORIGINAL_ROM_FILENAME}"   
 fi
 
-read -s -n 1 -p "Press any key to continue."
 echo
 echo
