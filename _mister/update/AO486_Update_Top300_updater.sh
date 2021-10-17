@@ -144,7 +144,7 @@ find_secondary_disk_image()
 	secondary_disk_image="${ao486_dir}/${secondary_disk_image}"
 	
 	if [ ! -f "${secondary_disk_image}" ]; then
-		echo "Couldn't find disk image in \"${ao486_dir}\"."
+		echo "Couldn't find disk image: \" ${secondary_disk_image}\"."
 		exit 1
 	fi
 }
@@ -164,7 +164,7 @@ find_primary_disk_image()
 	primary_disk_image="${ao486_dir}/${primary_disk_image}"
 	
 	if [ ! -f "${primary_disk_image}" ]; then
-		echo "Couldn't find disk image in \"${ao486_dir}\"."
+		echo "Couldn't find disk image: \"${primary_disk_image}\"."
 		exit 1
 	fi
 }
