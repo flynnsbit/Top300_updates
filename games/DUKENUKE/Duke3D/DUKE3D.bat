@@ -1,2 +1,2 @@
 cd \DUKE3D
-DUKE3D
+dos32a DUKE3D
