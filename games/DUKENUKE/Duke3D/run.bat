@@ -21,7 +21,7 @@ REM CONFIG -set"mididevice=default"
 cd duke3d
 xcopy .\sb16\*.* .\
 cls
-DUKE3D
+dos32a DUKE3D
 goto quit
 
 :GUS
@@ -29,7 +29,7 @@ REM CONFIG -set"mididevice=default"
 cd duke3d
 xcopy .\gus\*.* .\
 cls
-DUKE3D
+dos32a DUKE3D
 goto quit
 
 :SC55
@@ -37,7 +37,7 @@ mt32-pi -g -v
 cd duke3d
 xcopy .\sc55\*.* .\
 cls
-DUKE3D
+dos32a DUKE3D
 goto quit
 
 :network
