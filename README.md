@@ -6,10 +6,10 @@ AO486 Update scripts for the flynnsbit eXoDOS V5.0 Top 300 Pack.  This is not th
 
 2. cd /media/fat/Scripts
 
-3. wget https://raw.githubusercontent.com/flynnsbit/Top300_updates/main/_mister/AO486_Update_Top300_Pack.sh
-4. wget https://raw.githubusercontent.com/flynnsbit/Top300_updates/main/_mister/AO486_Update_Top300_Pack.ini
-5. change the .ini file to the base path (BASE_PATH=/media/fat) where your vhds are located, /media/fat, /media/usb0, /media/fat/games/cifs, etc
-6. Turn on your __MiSTer__, go to the _Scripts_ menu and run this script from there. This will download the latest Top 300 Pack (updates only, base VHDs required before updating) release with any fixes to games, new features, and updated programs from this github.  It will auto mount your VHD pack, update it, and clean up any temp folders.
+3. wget https://raw.githubusercontent.com/flynnsbit/Top300_updates/main/_mister/AO486_Update_Top300_Pack.sh  or wget https://tinyurl.com/updatetop300
+5. wget https://raw.githubusercontent.com/flynnsbit/Top300_updates/main/_mister/AO486_Update_Top300_Pack.ini
+6. change the .ini file to the base path (BASE_PATH=/media/fat) where your vhds are located, /media/fat, /media/usb0, /media/fat/games/cifs, etc
+7. Turn on your __MiSTer__, go to the _Scripts_ menu and run this script from there. This will download the latest Top 300 Pack (updates only, base VHDs required before updating) release with any fixes to games, new features, and updated programs from this github.  It will auto mount your VHD pack, update it, and clean up any temp folders.
 
 **CIFS SHARE WARNING:** If you have your VHDs on a network share and are mounting them remotely and are not confident in your network design, using wifi, etc. then there is a chance of corrupting your VHD.  You will see this when during the update your VHD mount switches to Read ONLY mode or you start getting I/O errors.  You can try the update again if it fails.  As a failsafe, you can just mount your two VHDs on your Windows/Linux/SAN directly and extract the contents of update.zip/C to the primary VHD and update.zip/e to the secondary VHD to update your pack manually.  I've tried to minimize this by using rsync and forcing a write sync before disconnecting the VHDs. You can always manually update your VHDs using the contents of the released update.zip file and extracting to the C and E drives respectively.  
 
