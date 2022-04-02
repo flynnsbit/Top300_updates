@@ -8,9 +8,15 @@ REM Add DOSLFNM to Autoexec
 
 REM Move all TDL to E:\TDL
 
-REM Remove files
+REM Remove E:\files
 
 REM Remove bad games, non-working -- free up space for conversion
+
+REM Remove all OGG files for space
+
+FIX all 1_Start/Run files to remove Gravis Ultrasound
+
+FIX ALL 1_Start/Run files to remove 3dfx options
 
 REM Run script to rename all E:\GAMES base folders to their long file name verison  - pull new script from private repo that uses eXoDOSv5.csv for LFN
 
