@@ -1,0 +1,78 @@
+@ECHO OFF
+rem @CTTY: NUL
+
+REM Comment this line if changing to IRQ 7
+REM SET BLASTER=A220 I5 D1 T4
+
+REM Uncomment these lines to change the sound blaster port to IRQ 7
+LOADHIGH C:\DRIVERS\SBCTL.EXE I7 T6
+SET BLASTER=A220 I7 D1 H5 P330 T6
+
+SET DIRCMD=/A/4/O:GEN
+SET TEMP=C:\TMP
+SET TMP=C:\TMP
+PATH=C:\;c:\wdosx;C:\DOS;C:\Drivers;C:\DRIVERS\SHCD;c:\programs\dos32a;e:\utils;e:\utils\pictview
+PROMPT $P$G
+
+GOTO %CONFIG%
+
+:QEMM
+C:\QEMM\LOADHI /RF C:\DRIVERS\SHSUCDX.COM /D:IDE-CD /L:F /V /C
+c:\qemm\loadhi /rf c:\DRIVERS\cute20\ctmouse.exe /r2
+REM C:\QEMM\LOADHI /RF C:\DRIVERS\SOFTMPU\SOFTMPU /MPU:330 /OUTPUT:COM1
+C:\QEMM\LOADHI /RF C:\DRIVERS\DOSKEY20.COM /INSERT
+c:\QEMM\LOADHI /RF C:\WINDOWS\SMARTDRV.EXE 65536 /E:65536 /B:0
+GOTO COMMON
+
+:HIRAM
+CLS
+REM LOADHIGH xmsdsk g: 150000 /y
+GOTO COMMON
+
+:EXTENDED
+CLS
+REM LOADHIGH xmsdsk g: 150000 /y
+GOTO COMMON
+
+
+:EMM386
+REM LOADHIGH xmsdsk g: 196608 /y
+REM Remove REM from next line to load softmpi by default
+REM LOADHIGH C:\DRIVERS\SOFTMPU\SOFTMPU /MPU:330 /OUTPUT:COM1
+GOTO COMMON
+
+:COMMON
+CLS
+LOADHIGH C:\DRIVERS\SHSUCDX.COM /D:IDE-CD /L:F /V /C
+ASSIGN D:=F:
+REM Smartdrv performance is dubious with the faster hdd, uncomment to use
+REM LOADHIGH C:\WINDOWS\SMARTDRV.EXE 65536 C+ /E:32768 /B8192
+LOADHIGH C:\DRIVERS\CUTE19\CTMOUSE.EXE /r3
+LOADHIGH C:\DRIVERS\DOSKEY20.COM /INSERT
+REM LOADHIGH C:\DRIVERS\UNIVBE.EXE -q
+LOADHIGH C:\DRIVERS\MISTERFS.EXE Z
+SET DOS32A=C:\DRIVERS
+REM hdpmi32.exe -x -y -r
+cls
+vmode 3
+e:
+call runme
+ECHO.
+ECHO ---------------Secondary VHD not mounted!-------------------
+ECHO Something went wrong. Please mount a games VHD to the "Mount Secondary HDD *.VHD" on your MiSTer and reset.
+ECHO.
+
+
+GOTO END
+
+:CLEAN
+rem @CTTY CON
+C:\DRIVERS\SHSUCDX.COM /D:IDE-CD /L:F /V /C
+c:\DRIVERS\cute20\ctmouse.exe /r2
+e:
+@ECHO.
+@ECHO TDL was not auto loaded as CLEAN was selected.
+
+:END
+rem MODE.COM CON: RATE=32 DELAY=1
+
