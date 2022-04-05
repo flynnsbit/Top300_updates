@@ -11,7 +11,7 @@ SET BLASTER=A220 I7 D1 H5 P330 T6
 SET DIRCMD=/A/4/O:GEN
 SET TEMP=C:\TMP
 SET TMP=C:\TMP
-PATH=C:\;c:\wdosx;C:\DOS;C:\Drivers;C:\DRIVERS\SHCD;c:\programs\dos32a;e:\utils;e:\utils\pictview
+PATH=C:\;E:\MYMENU;c:\wdosx;C:\DOS;C:\Drivers;C:\DRIVERS\SHCD;c:\programs\dos32a;e:\utils;e:\utils\pictview
 PROMPT $P$G
 
 GOTO %CONFIG%
