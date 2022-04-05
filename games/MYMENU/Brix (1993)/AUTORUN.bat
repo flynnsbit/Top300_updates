@@ -1,0 +1,3 @@
+CD\GAMES\BRIX1993
+cd brix93
+brix1
