@@ -1,0 +1,3 @@
+cd CHAMPKon
+cd CHAMP
+CALL KONG

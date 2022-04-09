@@ -1,0 +1,3 @@
+CD\GAMES\COMMANDG
+cd CKeen5
+keen5

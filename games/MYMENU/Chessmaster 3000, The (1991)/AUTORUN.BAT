@@ -1,0 +1,3 @@
+CD\GAMES\THECHESA
+cd chessms3
+cm3000
