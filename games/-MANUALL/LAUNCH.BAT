@@ -1,3 +1,3 @@
 @echo off
-cd launchbx
-launch.bat
+cd\mymenu
+mymenu
