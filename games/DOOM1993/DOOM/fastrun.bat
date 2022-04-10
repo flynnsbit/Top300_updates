@@ -2,7 +2,7 @@
 echo off
 cls
 echo.
-echo Press 1 for fdoom w/ Gravis Ultrasound
+echo Press 1 for fdoom VBD w/ SoundBlaster (Fastest fps)
 echo Press 2 for fdoom w/ SoundBlaster
 echo Press 3 for fdoom w/ Sound Canvas
 echo Press 4 to play Network Multiplayer
@@ -14,17 +14,14 @@ if errorlevel = 5 goto quit
 if errorlevel = 4 goto network
 if errorlevel = 3 goto SC55
 if errorlevel = 2 goto SB16
-if errorlevel = 1 goto GUS
+if errorlevel = 1 goto VBD
 
-:GUS
+:VBD
 REM CONFIG -set"mididevice=default"
 del DEFAULT.CFG
-xcopy .\gus\*.*
-cd ultrasnd
-ultramid
-cd ..
+xcopy .\sb16\*.*
 cls
-fdoom13h
+fdoomvbd
 goto quit
 
 :SB16
