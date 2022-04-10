@@ -1,0 +1,3 @@
+CD\GAMES\FRONTIER
+cd frontir2
+FRONTIER
