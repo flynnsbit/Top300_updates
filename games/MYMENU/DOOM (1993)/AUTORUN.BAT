@@ -1,7 +1,6 @@
 cd DOOM
 :menu
 echo off
-CD\GAMES\DOOM1993
 cls
 echo.
 echo Press 1 for Fast Doom
@@ -16,9 +15,12 @@ if errorlevel = 1 goto fdoom
 
 
 :fdoom
+
+CD\GAMES\DOOM1993
 call fastrun
 
 :doom
+CD\GAMES\DOOM1993
 call run
 
 :quit
