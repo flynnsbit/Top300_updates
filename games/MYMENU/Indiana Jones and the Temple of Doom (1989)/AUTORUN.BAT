@@ -1,0 +1,3 @@
+CD\GAMES\INDIANAC
+cd IndiJTD
+indy

@@ -1,0 +1,7 @@
+The Incredible Machine is a puzzle game where the player has to assemble a Rube Goldberg-type contraption to solve a simple puzzle.
+
+The game consists of a series of puzzles, each having a simple objective, such as "put the baseball into the basket" or "turn on the fan". To achieve this, the player is given a number of parts such as: balls, girders, rope, balloons, seesaws, cats or monkeys, and his job is to arrange and connect them on the playfield, so that, upon clicking the "start puzzle" button, the whole contraption activates and achieves the objective.
+
+For added difficulty, some puzzles have different gravity or air pressure from that of Earth.
+
+There is also a freeform mode where the player is given an unlimited number of parts to construct a machine of his own invention. The machines created this way can be saved to disk.

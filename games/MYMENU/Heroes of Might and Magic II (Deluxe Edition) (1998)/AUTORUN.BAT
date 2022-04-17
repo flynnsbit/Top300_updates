@@ -1,0 +1,2 @@
+CD\GAMES\HEROMM2D
+call run
