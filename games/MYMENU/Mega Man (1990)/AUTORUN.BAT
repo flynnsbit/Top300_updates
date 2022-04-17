@@ -1,0 +1,3 @@
+CD\GAMES\MEGAMAN1
+cd MegaMan
+mm
