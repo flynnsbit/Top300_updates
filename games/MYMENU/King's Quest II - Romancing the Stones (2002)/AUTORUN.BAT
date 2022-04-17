@@ -1,0 +1,3 @@
+CD\GAMES\KINGSQUB
+cd KQ22002
+kq2vga

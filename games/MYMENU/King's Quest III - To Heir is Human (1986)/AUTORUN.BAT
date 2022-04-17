@@ -1,0 +1,3 @@
+CD\GAMES\KINGSQUC
+cd KQ3
+sierra
