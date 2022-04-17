@@ -1,0 +1,3 @@
+CD\GAMES\UGH1992Z
+cd Ugh!
+ugh
