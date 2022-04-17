@@ -1,0 +1,3 @@
+CD\GAMES\POLICEQU
+cd PQ1_VGA
+run.bat

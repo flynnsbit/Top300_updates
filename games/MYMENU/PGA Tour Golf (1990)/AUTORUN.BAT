@@ -1,0 +1,3 @@
+CD\GAMES\PGATOURG
+cd PGATourG
+call run

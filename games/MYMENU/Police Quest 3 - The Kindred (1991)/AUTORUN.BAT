@@ -1,0 +1,3 @@
+CD\GAMES\POLICEQA
+cd PQ3
+call run

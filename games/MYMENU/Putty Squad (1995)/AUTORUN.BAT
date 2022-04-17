@@ -1,0 +1,3 @@
+CD\GAMES\PUTTYSQU
+cd puttyS
+call PUTSB
