@@ -1,0 +1,3 @@
+CD\GAMES\WORMSDEL
+cd WormDLX
+worms

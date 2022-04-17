@@ -1,0 +1,5 @@
+Zork: The Great Underground Empire is a classic text adventure game. You begin as an "adventurer" standing near a white house in a nice forest, but soon you set foot in the Great Underground Empire, where most of the game takes place. Your quest is to collect the Nineteen Treasures of Zork.
+
+As in every text adventure, Zork does not use graphics. It communicates with the player via text, and the player interacts with the game by typing commands, such as "examine mailbox" or "take torch". For movement, the player types in geographical directions (such as "north" or "east" - or just "n" and "e"), and he can check what items he's carrying with the "inventory" command (or just "i").
+
+Zork was ported over from mainframes in the late 1970s. It is one of the first "text adventures" (although the proper term for such by die-hard fans is Interactive Fiction) and is widely considered to be one of the great classics of the genre which reached the peak of its popularity in the 80's.

@@ -1,0 +1,3 @@
+CD\GAMES\WIZARDRY
+cd wizar1
+wiz1
