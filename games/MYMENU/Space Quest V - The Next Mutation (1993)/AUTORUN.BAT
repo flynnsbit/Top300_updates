@@ -1,0 +1,3 @@
+CD\GAMES\SPACEQUC
+cd SQ5
+call run

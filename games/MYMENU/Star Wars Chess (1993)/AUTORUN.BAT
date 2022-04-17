@@ -1,0 +1,3 @@
+CD\GAMES\THESOFTW
+cd SWarsChs
+swc

@@ -1,0 +1,15 @@
+A DOS platformer with only 5 levels.
+
+The graphics and the gameplay are good. It's only a pity that there only are 5 levels.
+
+The controls are very strange too:
+- in menu:
+Arrow keys + "A" or "S"
+- in game:
+Left/right arrow = move
+Up arrow = look up / enter a pipe above Mario
+Down arrow = duck / enter a pipe
+S = jump
+D = special jump (longer jump)
+Esc = give up and back to main menu
+Alt-X = exit game

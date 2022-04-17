@@ -1,0 +1,3 @@
+CD\GAMES\SPEAROFD
+cd SoD3D
+call run

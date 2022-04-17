@@ -1,0 +1,4 @@
+CD\GAMES\RAILROAA
+cd SMRailTD
+cd RAILSDX
+call run

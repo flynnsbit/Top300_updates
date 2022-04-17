@@ -1,0 +1,3 @@
+CD\GAMES\STREETFI
+cd SF
+SF

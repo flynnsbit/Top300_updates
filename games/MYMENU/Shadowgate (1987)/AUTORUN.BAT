@@ -1,0 +1,3 @@
+CD\GAMES\SHADOWGA
+cd SGate
+sgate

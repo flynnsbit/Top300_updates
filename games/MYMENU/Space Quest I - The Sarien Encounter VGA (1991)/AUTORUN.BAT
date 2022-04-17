@@ -1,0 +1,3 @@
+CD\GAMES\SPACEQUE
+cd SQ1VGA
+call run

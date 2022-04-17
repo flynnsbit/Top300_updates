@@ -1,0 +1,3 @@
+CD\GAMES\SPACEQUA
+cd SQ1
+sq
