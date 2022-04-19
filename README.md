@@ -1,4 +1,4 @@
-# MiSTer eXoDOS Top_300_updates
+# MiSTer flynnsbit eXoDOS v5.0 Top 300 Game Pack Updater
 AO486 Update scripts for the flynnsbit eXoDOS V5.0 Top 300 Pack.  This is not the actual pack and only provides update to the scripts, ini files, and launcher fixes.  There are no copywrite materials here.
 
 ## How to Install and Update
