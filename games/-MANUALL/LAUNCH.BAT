@@ -1,3 +1,3 @@
 @echo off
 cd\mymenu
-mymenu
+menu
