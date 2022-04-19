@@ -1,0 +1,59 @@
+                         SciTech Display Doctor 6.53
+                                Order Form
+
+SciTech Software, Inc.                                           __/___/___
+505 Wall Street                                                  MM /DD /YY
+Chico, CA 95928 USA
+Toll free: 800-486-4823         Phone: 530-894-8400       Fax: 530-894-9069
+                  sales@scitechsoft.com  www.scitechsoft.com
+
+PLEASE PRINT CLEARLY OR TYPE!
+
+Name: _____________________________________________________________________
+
+Company: __________________________________________________________________
+
+Address: __________________________________________________________________
+
+City: __________________________________  State: __________________________
+
+Zip/Postal Code: _______________________  Country: ________________________
+
+Phone: _________________________________  Fax: ____________________________
+
+Email(required for orders placed via email):_______________________________
+
+Register product(s) to: [ ] Company     [ ] Individual
+
+Pay By:  [ ]Check*(USA only)**   [ ]Money Order(US Funds)**  [ ]Credit Card
+                  *$15.00 charge for all returned checks
+                  **Orders cannot be processed until payment is received
+
+    Credit Card Orders: MasterCard / Visa / Amex / Discover (Circle one)
+
+    Card Number ______________________________________   Expires ____/____
+
+    Cardholder's name (print) ____________________________________________
+
+                 Item                             Cost      Qty     Price
+-------------------------------------------     --------    ---     ------
+DOS and Windows Installations
+SciTech Display Doctor 6.53 w/Disks & Manual    US$44.95    ___   $ ______
+
+SciTech Display Doctor 6.53 Upgrade
+     See the Note to Registered Users (Regnote.wri) or visit the SciTech 
+     Web page (www.scitechsoft.com/down_up.html) for more information.
+
+     Subtotal                                                     $ ______
+     California residents ONLY add sales tax      7.25%           $ ______
+     Shipping & Handling Charges              US: $9.95                        
+                                            Intl: $14.95          $ ______
+
+     Total Enclosed                                               $ ______
+
+  I have read and agree to abide by the enclosed license agreement and I 
+  agree to be bound by my credit card agreement. If shipping charges have 
+  changed, I agree to pay the new charge.
+
+      (Signature required) _____________________________________
+           Shipping charges are `subject to change without notice
