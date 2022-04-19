@@ -1,5 +1,5 @@
 @echo off
-c:
+e:
 cd\
 cd mymenu
 edit mymenu.ini

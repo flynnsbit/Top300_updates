@@ -1,5 +1,5 @@
 @echo off
-mem /x /c /p
+mem /c /p
 echo.
 echo.
 echo.
