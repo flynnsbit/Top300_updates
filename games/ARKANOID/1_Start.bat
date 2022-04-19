@@ -1,6 +1,6 @@
 cd Arkanoid
 echo.
-echo Choose Tandy when prompted.
+echo Choose EGA when prompted.
 echo.
 @jchoice
 ARKANOID
