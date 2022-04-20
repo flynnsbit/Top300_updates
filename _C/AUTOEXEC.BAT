@@ -43,7 +43,7 @@ GOTO COMMON
 
 :COMMON
 CLS
-LOADHIGH C:\SDD\UNIVBE.EXE -w
+LOADHIGH E:\SDD\UNIVBE.EXE -w
 LOADHIGH C:\DRIVERS\SHSUCDX.COM /D:IDE-CD /L:F /V /C
 LOADHIGH ASSIGN D:=F:
 REM Smartdrv performance is dubious with the faster hdd, uncomment to use
