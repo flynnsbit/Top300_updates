@@ -16,6 +16,7 @@ if errorlevel = 1 goto HOMM2
 
 :HOMM2
 echo off
+CALL imgtry ide10 D "/cd/heromm2d/heroeso.chd" "/cd/heromm2d/heroeso.cue"
 cls
 echo.
 echo Press 1 for Heroes of Might and Magic II w/ SoundBlaster
@@ -33,7 +34,6 @@ if errorlevel = 2 goto HOMMMT32
 if errorlevel = 1 goto HOMMSB16
 
 :HOMMSB16
-imgmount d ".\eXoDOS\heromm2d\CD\Heroes of Might and Magic 2.cue" -t cdrom
 REM CONFIG -set"mididevice=default"
 cd HERO2
 xcopy .\sb16\*.* .\
@@ -45,7 +45,6 @@ HEROES2
 goto quit
 
 :HOMMMT32
-imgmount d ".\eXoDOS\heromm2d\CD\Heroes of Might and Magic 2.cue" -t cdrom
 mt32-pi -m -v
 cd HERO2
 xcopy .\mt32\*.* .\
@@ -57,7 +56,6 @@ HEROES2
 goto quit
 
 :HOMMCDA
-imgmount d ".\eXoDOS\heromm2d\CD\Heroes of Might and Magic 2.cue" -t cdrom
 mt32-pi -g -v
 cd HERO2
 xcopy .\CDA\*.* .\
@@ -69,7 +67,6 @@ HEROES2
 goto quit
 
 :HOMMSC55
-imgmount d ".\eXoDOS\heromm2d\CD\Heroes of Might and Magic 2.cue" -t cdrom
 mt32-pi -g -v
 cd HERO2
 xcopy .\sc55\*.* .\
@@ -83,6 +80,7 @@ goto quit
 :POL
 echo off
 cls
+CALL imgtry ide10 D "/cd/heromm2d/heroes1.chd" "/cd/heromm2d/heroes1.cue"
 echo.
 echo Press 1 for The Price of Loyalty w/ SoundBlaster
 echo Press 2 for The Price of Loyalty w/ MT-32
@@ -99,7 +97,6 @@ if errorlevel = 2 goto POLMT32
 if errorlevel = 1 goto POLSB16
 
 :POLSB16
-imgmount d ".\eXoDOS\heromm2d\CD\Heroes of Might and Magic 2 - The Price of Loyalty.cue" -t cdrom
 REM CONFIG -set"mididevice=default"
 cd HEROES2
 xcopy .\sb16\*.* .\
@@ -111,7 +108,6 @@ HEROES2
 goto quit
 
 :POLMT32
-imgmount d ".\eXoDOS\heromm2d\CD\Heroes of Might and Magic 2 - The Price of Loyalty.cue" -t cdrom
 mt32-pi -m -v
 cd HEROES2
 xcopy .\mt32\*.* .\
@@ -123,7 +119,6 @@ HEROES2
 goto quit
 
 :POLCDA
-imgmount d ".\eXoDOS\heromm2d\CD\Heroes of Might and Magic 2 - The Price of Loyalty.cue" -t cdrom
 mt32-pi -g -v
 cd HEROES2
 xcopy .\CDA\*.* .\
@@ -135,7 +130,6 @@ HEROES2
 goto quit
 
 :POLSC55
-imgmount d ".\eXoDOS\heromm2d\CD\Heroes of Might and Magic 2 - The Price of Loyalty.cue" -t cdrom
 mt32-pi -g -v
 cd HEROES2
 xcopy .\sc55\*.* .\
@@ -147,7 +141,6 @@ HEROES2
 goto quit
 
 :network
-imgmount d ".\eXoDOS\heromm2d\CD\Heroes of Might and Magic 2 - The Price of Loyalty.cue" -t cdrom
 cd HEROES2
 xcopy .\CDA\*.* .\
 cd SOUND
