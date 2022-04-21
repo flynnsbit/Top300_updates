@@ -1,7 +1,6 @@
-cd DOOMII
 :menu
 echo off
-CD\GAMES\DOOMII-H
+CD\GAMES\DOOMII-H\DOOMII
 cls
 echo.
 echo Press 1 for Fast Doom II
