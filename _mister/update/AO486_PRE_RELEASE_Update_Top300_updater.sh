@@ -1,7 +1,30 @@
 #!/bin/bash
 set -e
-ver="v.0.12"
-
+ver="v.2.0.0"
+# ========= CODE STARTS HERE =========
+# Ansi color code variables
+red="\e[0;91m"
+blue="\e[0;94m"
+expand_bg="\e[K"
+blue_bg="\e[0;104m${expand_bg}"
+red_bg="\e[0;101m${expand_bg}"
+green_bg="\e[0;102m${expand_bg}"
+green="\e[0;92m"
+white="\e[0;97m"
+bold="\e[1m"
+uline="\e[4m"
+reset="\e[0m"
+function pause(){
+ echo -en "\ec"
+ echo -e "${red_bg}${reset}"
+ echo -e "This script updates the ${green}(flynnsbit AO486 - Top 300 DOS Games pack)${reset} VHD to the ${red}PRE RELEASE Version ${reset} of the Top 300 pack.  This script directly mounts and modifies the VHD in one step. If the script fails to find your VHD you will need to edit the script and change the User options at the top to fit your setup and re-run." 
+ echo -e ""
+ echo -e "${red}BACKING UP YOUR EXISTING VHD IS RECOMMENDED BEFORE RUNNING THIS UPDATER.${reset}"
+ echo -e ""
+ echo -e "${green}Script version ${ver}${reset}"
+ read -s -n 1 -p "Press any key to continue . . ."
+ echo ""
+}
 # ======== BEGIN USER OPTIONS ========
 
 # Specifies the Games/Programs subdirectory where core specific directories will be placed.
@@ -60,14 +83,22 @@ reset="\e[0m"
 # Can we grab the file names and insert them into a variable ex. FastDoom_0.7.zip so it is not hard coded in the execution part below
 get_latest_release()
 {
-	local api_url="https://api.github.com/repos/${1}/releases"
+	local api_url="https://api.github.com/repos/${1}/releases/latest"
 	local download_url
 
 	read -r tag_name download_url < <(echo $(curl -k -s "${api_url}" | jq -r ".tag_name, .assets[0].browser_download_url"))
 	echo Downloading "${tag_name}"...
 	cd /tmp && { curl -k -L "${download_url}" -O ; cd -; }
 }
+get_pre_release()
+{
+	local api_url="https://api.github.com/repos/${1}/releases"
+	local download_url
 
+	read -r tag_name download_url < <(echo $(curl -k -s "${api_url}" | jq -r ".[0].tag_name, .[0].assets[0].browser_download_url"))
+	echo Downloading "${tag_name}"...
+	cd /tmp && { curl -k -L "${download_url}" -O ; cd -; }
+}
 # Arg $1: Path to image
 # Arg $2: Partition number 
 # Arg $3: Mount point
@@ -194,10 +225,16 @@ rm -r "${mount_dir}" 2>/dev/null
 rm -r "${extract_dir}" 2>/dev/null
 
 set -e
-
+pause
 # Download latest release zip
+echo ""
+echo "Downloading the latest FastDoom"
+echo ""
 get_latest_release "${fastdoom_repo}"
-get_latest_release "${github_repo}"
+echo ""
+echo "Downloading the Pre-Release Top 300 with MyMenu update"
+echo ""
+get_pre_release "${github_repo}"
 
 
 # Mount partition 2 for secondary and 1 for primary in the disk image for C and E
