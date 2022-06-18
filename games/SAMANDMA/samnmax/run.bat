@@ -17,7 +17,7 @@ if errorlevel = 1 goto SB16
 :SB16
 REM CONFIG -set"mididevice=default"
 cd SAMNMAX.CD
-copy SETMUSE.SB SETMUSE.INI
+copy SETMUSE.SB c:\samnmax.cd\SETMUSE.INI
 cd ..
 cls
 D:
@@ -28,7 +28,7 @@ goto quit
 :MT32
 mt32-pi -m -v
 cd SAMNMAX.CD
-copy SETMUSE.M32 SETMUSE.INI
+copy SETMUSE.M32 c:\samnmax.cd\SETMUSE.INI
 cd ..
 cls
 D:
@@ -39,7 +39,7 @@ goto quit
 :SC55
 mt32-pi -g -v
 cd SAMNMAX.CD
-copy SETMUSE.SC SETMUSE.INI
+copy SETMUSE.SC c:\samnmax.cd\SETMUSE.INI
 cd ..
 cls
 D:
