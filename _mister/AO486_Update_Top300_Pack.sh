@@ -74,6 +74,9 @@ if [[ -f "${INI_PATH}" ]] ; then
 	dos2unix < "${INI_PATH}" 2> /dev/null | grep -v "^exit" > ${TMP}
 	source ${TMP}
 	rm -f ${TMP}
+else
+	# Remove need for default INI file
+	export BASE_PATH=/media/fat
 fi
 
 # test network and https by pinging the target website 
