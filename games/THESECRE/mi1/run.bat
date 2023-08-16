@@ -42,6 +42,7 @@ goto quit
 REM CONFIG -set"mididevice=default"
 cd floppy
 cls
+call sysctl sys 30mhz l1-
 monkey a
 goto quit
 
@@ -71,6 +72,7 @@ goto quit
 mt32-pi -m -v
 cd talkie
 cls
+call sysctl sys 30mhz l1-
 monkey r1
 goto quit
 
