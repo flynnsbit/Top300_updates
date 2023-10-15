@@ -1,5 +1,5 @@
-@F:
-@cd F:\game 
+@D:
+@cd D:\game 
 :START
 @intro -E:/THEME.CD
 @main -cD:/game/ -dE:/THEME.CD/ -l0
