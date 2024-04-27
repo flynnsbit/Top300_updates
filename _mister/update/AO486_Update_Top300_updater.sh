@@ -220,6 +220,11 @@ rsync '/tmp/fastdoom/' /tmp/dos_vhds/E/games/DOOM1993/DOOM/  -r -I -v
 rsync '/tmp/fastdoom/' /tmp/dos_vhds/E/games/DOOMII-H/DOOMII/ -r -I -v
 rsync '/tmp/fastdoom/' /tmp/dos_vhds/E/games/THEULTIM/UltDoom -r -I -v
 
+#Delete bad games and cleanup space
+rm -rf /tmp/dos_vhds/E/games/PHANTASM
+rm -rf /tmp/dos_vhds/E/games/DISCWORA
+rm -rf /tmp/dos_vhds/E/games/HEROESOA/CD
+
 #Rsync all the updates to the VHDs that are mounted
 rsync -crv "${extract_dir}"/ "${mount_dir}"/ 
 echo ""
