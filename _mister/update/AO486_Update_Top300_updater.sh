@@ -211,6 +211,11 @@ mount_simage "${secondary_disk_image}" 2 "${mount_dir}/E"
 mount_pimage "${primary_disk_image}" 1 "${mount_dir}/C"
 echo ""
 
+#Delete bad games and cleanup space
+rm -rf /tmp/dos_vhds/E/games/PHANTASM
+rm -rf /tmp/dos_vhds/E/games/DISCWORA
+rm -rf /tmp/dos_vhds/E/games/HEROESOA/CD
+
 # Extract updates from repos, rsync files to both vhds
 unzip -o /tmp/update.zip -d "${extract_dir}/"
 unzip -o "/tmp/FastDoom*.zip" -d "${fastdoom_dir}/"
@@ -219,11 +224,6 @@ unzip -o "/tmp/FastDoom*.zip" -d "${fastdoom_dir}/"
 rsync '/tmp/fastdoom/' /tmp/dos_vhds/E/games/DOOM1993/DOOM/  -r -I -v
 rsync '/tmp/fastdoom/' /tmp/dos_vhds/E/games/DOOMII-H/DOOMII/ -r -I -v
 rsync '/tmp/fastdoom/' /tmp/dos_vhds/E/games/THEULTIM/UltDoom -r -I -v
-
-#Delete bad games and cleanup space
-rm -rf /tmp/dos_vhds/E/games/PHANTASM
-rm -rf /tmp/dos_vhds/E/games/DISCWORA
-rm -rf /tmp/dos_vhds/E/games/HEROESOA/CD
 
 #Rsync all the updates to the VHDs that are mounted
 rsync -crv "${extract_dir}"/ "${mount_dir}"/ 
